@@ -1,0 +1,13 @@
+_site
+_cache
+.env
+.DS_Store
+
+# Screenshots (design review records)
+light-mode.png
+dark-mode.png
+post-page-light.png
+post-page-dark.png
+final-review-home.png
+final-review-post.png
+final-review-archive.png

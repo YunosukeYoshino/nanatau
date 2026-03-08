@@ -1,0 +1,117 @@
+lang: ja
+description: テクノロジーと創造の交差点 — 技術ブログ
+
+home:
+  welcome: ようこそ。テクノロジーと創造の交差点で書いています。
+
+menu_links: []
+extra_head:
+  - <link rel="preconnect" href="https://fonts.googleapis.com">
+  - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  - <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+1+Code:wght@400;700&display=swap" rel="stylesheet">
+  - |
+    <style>
+    /* Amber Night Theme */
+    :root {
+      --color-base: #B8860B;
+      --color-text: #6B5B7B;
+      --color-dim: #9B8DAB;
+      --color-background: #FFF9F0;
+      --color-highlight: #FFFBF5;
+      --color-line: #F0E6D8;
+      --color-primary: #D4A017;
+      --color-primary-highlight: #B8860B;
+      --color-link: #D4A017;
+      --color-link-hover: #B8860B;
+      --code-background: #FFFBF5;
+      --code-text: #5D4037;
+      --code-border: #FFD54F44;
+      --code-comment: #A1887F;
+      --font-family-ui: 'Kosugi Maru', sans-serif;
+      --font-family-display: 'Kosugi Maru', sans-serif;
+      --font-family-code: 'M PLUS 1 Code', monospace;
+      --border-radius: 12px;
+    }
+    :root[data-theme="dark"] {
+      --color-base: #FFD54F;
+      --color-text: #D4C4A0;
+      --color-dim: #8A7A58;
+      --color-background: #110F08;
+      --color-highlight: #1E1A0F;
+      --color-line: #38301A;
+      --color-primary: #FFD54F;
+      --color-primary-highlight: #FFE082;
+      --color-link: #FFD54F;
+      --color-link-hover: #FFFFFF;
+      --code-background: #171408;
+      --code-text: #FDF3E1;
+      --code-border: #38301A;
+    }
+    body { background: var(--color-background) !important; color: var(--color-text); margin: 0; }
+    .navbar-avatar, .footer-avatar {
+      width: 40px !important; height: 40px !important;
+      min-width: 40px !important; min-height: 40px !important;
+      border-radius: 50% !important; object-fit: cover !important; display: block !important;
+    }
+    .navbar {
+      backdrop-filter: blur(10px); background: rgba(255,255,255,0.7) !important;
+      border-bottom: 1px solid var(--color-line); border-radius: 0 0 16px 16px;
+      padding: 16px 80px !important; display: flex !important;
+      align-items: center !important; justify-content: space-between !important;
+    }
+    :root[data-theme="dark"] .navbar { background: rgba(17, 15, 8, 0.85) !important; border-bottom-color: var(--color-line); }
+    .navbar-home-custom { display: flex !important; align-items: center !important; gap: 10px; text-decoration: none; }
+    .navbar-home-custom strong { font-size: 20px; font-weight: 700; color: var(--color-base); }
+    .navbar-links { gap: 32px !important; display: flex !important; align-items: center !important; list-style: none !important; margin: 0 !important; padding: 0 !important; }
+    .navbar-links a { font-size: 15px; font-weight: 500; color: var(--color-text) !important; text-decoration: none; }
+    .navbar-links a[href="/archive/"] { font-size: 0; }
+    .navbar-links a[href="/archive/"]::before { content: "アーカイブ"; font-size: 15px; }
+    .page-header h1, .page-title { color: var(--color-base) !important; font-weight: 800; margin-bottom: 24px; font-size: 0 !important; }
+    .page-header h1::before, .page-title::before { content: "アーカイブ"; font-size: 32px; }
+    [data-pagefind-body] .page-title::before { content: "アーカイブ: "; }
+    .post-title { font-size: 28px !important; font-weight: 800; color: var(--color-base) !important; line-height: 1.4; }
+    .post-title::before { content: none !important; }
+    .postList { display: flex; flex-direction: column; gap: 16px; list-style: none; padding: 0; }
+    .postList article.post, .postList li.post {
+      background: var(--color-highlight); border-radius: 20px; padding: 24px !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid var(--color-line) !important;
+      transition: transform 0.2s, box-shadow 0.2s; margin-top: 0 !important;
+    }
+    :root[data-theme="dark"] .postList article.post { box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important; }
+    .postList article.post:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.1) !important; }
+    .post-title a { text-decoration: none; color: var(--color-base) !important; }
+    .post-link { color: var(--color-primary) !important; font-weight: 700; font-size: 14px; text-decoration: none; }
+    .body-post { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+    .post-body.body { font-size: 14.4px; line-height: 1.9; }
+    .post-body.body h2 { font-size: 24px; font-weight: 800; color: var(--color-primary-highlight); margin-top: 60px; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--color-primary); }
+    .post-body.body blockquote { margin: 24px 0; padding: 12px 20px; border-left: 3px solid var(--color-primary); background: rgba(255, 213, 79, 0.05); color: var(--color-dim); border-radius: 0 8px 8px 0; }
+    pre[class*="language-"] { background: var(--code-background) !important; border-radius: 16px !important; border: 1px solid var(--code-border) !important; padding: 1.5rem !important; }
+    .token.keyword { color: #E65100; font-weight: 700; }
+    .token.string { color: #D4A017; }
+    .toc { background: var(--color-highlight); border: 1px solid var(--code-border); border-radius: 20px; padding: 24px; margin: 32px 0; }
+    .toc h2 { font-size: 0; color: var(--color-base); font-weight: 800; text-align: left; }
+    .toc h2::before { content: "目次"; font-size: 18px; }
+    .toc a { color: var(--color-text); text-decoration: none; }
+    .page-pagination { border-top: 1px solid var(--color-line); padding-top: 32px; margin-top: 48px; }
+    .page-pagination ul { display: flex; width: 100%; list-style: none; padding: 0; margin: 0; align-items: center; }
+    .page-pagination .pagination-next { margin-left: auto; }
+    .page-pagination a { color: var(--color-base) !important; font-weight: 700; padding: 10px 20px; border-radius: 12px; background: rgba(255, 213, 79, 0.05); text-decoration: none; display: inline-flex; align-items: center; }
+    .page-pagination a[rel="prev"] { font-size: 0; }
+    .page-pagination a[rel="prev"]::before { content: "← 前へ"; font-size: 15px; }
+    .page-pagination a[rel="next"] { font-size: 0; }
+    .page-pagination a[rel="next"]::after { content: "次へ →"; font-size: 15px; }
+    .site-footer { padding: 40px 24px; text-align: center; }
+    .footer-inner { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 16px; }
+    .footer-name { font-size: 16px; font-weight: 700; color: var(--color-base); margin: 0; }
+    .footer-desc, .footer-copy { font-size: 12px; color: var(--color-dim); margin: 0; }
+    @media (max-width: 768px) { .navbar { padding: 16px 24px !important; } }
+    ::selection { background: var(--color-primary); color: var(--color-background); }
+    </style>
+
+# Metas plugin https://lume.land/plugins/metas/#description
+metas:
+  site: ななたうのブログ
+  description: "=description"
+  title: "=title"
+  image: "=image"
+  lang: ja
