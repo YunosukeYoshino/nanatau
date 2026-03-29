@@ -4,3 +4,5 @@ draft
 .playwright-mcp
 output
 .env
+docs-report
+
