@@ -2,12 +2,12 @@
 """Generate anime character reference sheets from a reference image.
 
 Usage:
-    python3 scripts/generate_character_sheet.py \\
+    python3 .claude/skills/character-sheet/scripts/generate_character_sheet.py \\
         --reference path/to/reference.png \\
         --type turnaround \\
         --output output/character/sheets/sheet.png
 
-    python3 scripts/generate_character_sheet.py \\
+    python3 .claude/skills/character-sheet/scripts/generate_character_sheet.py \\
         --reference path/to/reference.png \\
         --type expressions \\
         --character-desc "blonde hair, golden eyes, yellow magical girl dress" \\
@@ -163,6 +163,10 @@ def generate_sheet(
         "cost_usd": cost,
         "cost_yen": int(cost * 150),
     }
+
+    if not response.candidates:
+        print("API returned no candidates. The request may have been blocked.", file=sys.stderr)
+        sys.exit(1)
 
     for part in response.candidates[0].content.parts:
         if part.inline_data is not None:

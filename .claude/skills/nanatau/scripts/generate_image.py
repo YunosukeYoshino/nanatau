@@ -2,10 +2,10 @@
 """Generate an image using Gemini's image generation API.
 
 Usage:
-    python scripts/generate_image.py "prompt text" /path/to/output.png
-    python scripts/generate_image.py --ref ref.png "prompt text" /path/to/output.png
-    python scripts/generate_image.py --ref ref1.png --ref ref2.png "prompt" /path/to/output.png
-    python scripts/generate_image.py --image-size 4K --aspect-ratio 16:9 --downscale 1200 "prompt" /path/to/output.png
+    python .claude/skills/nanatau/scripts/generate_image.py "prompt text" /path/to/output.png
+    python .claude/skills/nanatau/scripts/generate_image.py --ref ref.png "prompt text" /path/to/output.png
+    python .claude/skills/nanatau/scripts/generate_image.py --ref ref1.png --ref ref2.png "prompt" /path/to/output.png
+    python .claude/skills/nanatau/scripts/generate_image.py --image-size 4K --aspect-ratio 16:9 --downscale 1200 "prompt" /path/to/output.png
 
 Requires:
     - google-genai: pip install google-genai
@@ -38,7 +38,7 @@ def generate_image(
     downscale_width: int | None = None,
     image_size: str | None = None,
     aspect_ratio: str | None = None,
-    reference_images: list[str] | None = None,
+    reference_images: list | None = None,
 ) -> None:
     client = genai.Client()
 
@@ -51,7 +51,7 @@ def generate_image(
             kwargs["aspect_ratio"] = aspect_ratio
         image_config = genai.types.ImageConfig(**kwargs)
 
-    contents: list = []
+    contents = []
     for ref_path in reference_images or []:
         ref_img = _load_reference_image(ref_path)
         contents.append(ref_img)
@@ -66,6 +66,10 @@ def generate_image(
             image_config=image_config,
         ),
     )
+
+    if not response.candidates:
+        print("API returned no candidates. The request may have been blocked.", file=sys.stderr)
+        sys.exit(1)
 
     for part in response.candidates[0].content.parts:
         if part.inline_data is not None:
@@ -99,7 +103,7 @@ def main():
     parser.add_argument("--downscale", type=int, default=None,
                         help="Downscale to this width (px) after generation, preserving aspect ratio")
     parser.add_argument("--image-size", default=None, choices=["512px", "1K", "2K", "4K"],
-                        help="Output image size (default: 1K)")
+                        help="Output image size (default: None)")
     parser.add_argument("--aspect-ratio", default=None,
                         help="Aspect ratio (e.g. 16:9, 4:3, 1:1)")
     args = parser.parse_args()

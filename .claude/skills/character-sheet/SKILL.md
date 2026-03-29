@@ -24,7 +24,7 @@ description: Generate anime character reference sheets (model sheets) from a ref
    - E: フルセット（三面図 + 表情 + ポーズ、複数枚生成）
 3. **スタイル指定読み込み**: `output/character/prompt.md` が存在すれば、画風スタイル指定とブランドカラーを読み込む
 4. **プロンプト生成**: SHEET_TEMPLATES.md のテンプレートを使用
-5. **生成実行**: `scripts/generate_character_sheet.py` で生成
+5. **生成実行**: `.claude/skills/character-sheet/scripts/generate_character_sheet.py` で生成
 6. **検証**: 生成画像を read_file で視覚的に確認
 7. **保存**: `output/character/sheets/` に保存
 
@@ -35,10 +35,10 @@ description: Generate anime character reference sheets (model sheets) from a ref
 
 ## 生成スクリプト
 
-`scripts/generate_character_sheet.py` を使用する。
+`.claude/skills/character-sheet/scripts/generate_character_sheet.py` を使用する。
 
 ```bash
-python3 scripts/generate_character_sheet.py \
+python3 .claude/skills/character-sheet/scripts/generate_character_sheet.py \
   --reference path/to/reference.png \
   --type turnaround \
   --model gemini-3-pro-image-preview \

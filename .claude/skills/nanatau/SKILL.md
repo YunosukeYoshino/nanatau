@@ -16,16 +16,18 @@ AIキャラクター「ななたう」のデザイン・生成・アセット制
 
 1. `GEMINI_API_KEY` が `.env` に設定済み
 2. Python パッケージ: `google-genai`, `Pillow`, `rembg[cpu]`
-3. Python パス: `/Users/yunosukeyoshino/.local/share/mise/installs/python/3.13.12/bin/python3`
+3. Python パス: `mise exec python -- python3`
 
 ## プロジェクトレイアウト
 
 ```
-public/reference/          -- リファレンス画像
-output/character/images/    -- 生成されたキャラクター画像
-output/character/sheets/    -- キャラシート・PNGTuberアセット
-output/explore/             -- デザイン探索の出力
-scripts/                    -- Python 生成スクリプト
+images/concept/             -- 採用キャラ案・キービジュアル
+images/icon/                -- アイコン素材
+images/png-tuber/           -- PNGTuber素材 (transparent / opaque)
+images/reference/           -- リファレンス・参考資料
+.claude/skills/nanatau/scripts/           -- 画像生成スクリプト
+.claude/skills/character-sheet/scripts/   -- キャラシート生成スクリプト
+output/                     -- 生成出力（.gitignore）
 ```
 
 ## ワークフロー
@@ -70,16 +72,8 @@ scripts/                    -- Python 生成スクリプト
 
 **手順**:
 1. リファレンス画像と探索コンセプトを確認
-2. `scripts/design_variations.json` を作成または編集（バリエーション定義）
-3. 探索スクリプトを実行:
-   ```bash
-   export $(grep GEMINI_API_KEY .env | xargs)
-   python3 scripts/explore_designs.py \
-     --reference <リファレンス画像パス> \
-     --config scripts/design_variations.json \
-     --output output/explore/
-   ```
-4. `grid_comparison.png` で全バリエーションを比較確認
+2. TODO: 探索スクリプト (`explore_designs.py`) と設定ファイル (`design_variations.json`) は未実装。現時点では `generate` ワークフローを繰り返し実行してバリエーションを手動比較する
+3. 採用候補を `output/explore/` に保存して比較確認
 
 ### 3. sheet — キャラシート生成
 
@@ -95,7 +89,7 @@ scripts/                    -- Python 生成スクリプト
 3. シート生成スクリプトを実行:
    ```bash
    export $(grep GEMINI_API_KEY .env | xargs)
-   python3 scripts/generate_character_sheet.py \
+   python3 .claude/skills/character-sheet/scripts/generate_character_sheet.py \
      --reference <リファレンス画像パス> \
      --type <タイプ> \
      --output output/character/sheets/<name>.png
