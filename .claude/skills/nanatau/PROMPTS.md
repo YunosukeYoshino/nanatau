@@ -154,8 +154,7 @@ SCENE/EXPRESSION:
 export $(grep GEMINI_API_KEY .env | xargs)
 
 # リファレンス画像付き生成（Python インライン）
-PYTHON=/Users/yunosukeyoshino/.local/share/mise/installs/python/3.13.12/bin/python3
-$PYTHON << 'PYEOF'
+python3 << 'PYEOF'
 import io
 from pathlib import Path
 from PIL import Image

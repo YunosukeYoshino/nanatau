@@ -23,7 +23,7 @@ SHEET LAYOUT:
 - Clean spacing between views, professional settei (setting material) layout
 
 CHARACTER CONSISTENCY (maintain across ALL views):
-{character_description}
+{char_desc}
 
 STYLE: Polished anime illustration, official setting material aesthetic. Consistent design across all views. Clean lineart, soft cel shading, {head_ratio} head ratio, warm color temperature. Professional anime production studio quality.
 
@@ -46,7 +46,7 @@ SHEET LAYOUT:
 - Clean panel borders or neat spacing, highly readable presentation
 
 CHARACTER CONSISTENCY:
-{character_description}
+{char_desc}
 
 STYLE: Polished anime illustration, official settei aesthetic. Consistent across all views and close-ups. Clean lineart, soft cel shading, {head_ratio} head ratio. High detail in close-up panels.
 
@@ -70,7 +70,7 @@ SHEET LAYOUT:
 - Each expression is clearly distinct but the CHARACTER is unmistakably the same person
 
 CHARACTER BASE:
-{character_description}
+{char_desc}
 
 EXPRESSION DETAILS:
 1. NEUTRAL: Gentle default smile, calm eyes, soft blush
@@ -104,7 +104,7 @@ SHEET LAYOUT:
 - Even spacing, same ground line alignment
 
 CHARACTER:
-{character_description}
+{char_desc}
 
 STYLE: Polished anime, consistent character across all 4 poses. Clean lineart, soft cel shading, {head_ratio} head ratio. Clear silhouettes for each pose.
 
@@ -117,12 +117,12 @@ No extra fingers, consistent proportions, clean shading, no watermark.
 
 ---
 
-## {character_description} の埋め方
+## `{char_desc}` の埋め方
 
 `output/character/prompt.md` が存在する場合はそこからキャラ詳細を読み込む。
 存在しない場合は、リファレンス画像から以下を読み取って記述:
 
-```
+```text
 - Hair: [色、長さ、スタイル、特徴的な部分]
 - Eyes: [色、形、ハイライト、表情]
 - Outfit: [メインの衣装、色、ディテール]

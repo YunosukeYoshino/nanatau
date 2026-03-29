@@ -16,11 +16,11 @@ AIキャラクター「ななたう」のデザイン・生成・アセット制
 
 1. `GEMINI_API_KEY` が `.env` に設定済み
 2. Python パッケージ: `google-genai`, `Pillow`, `rembg[cpu]`
-3. Python パス: `mise exec python -- python3`
+3. Python 3.13+ が必要（`python3` コマンドで実行可能であること。必要に応じて `mise` でセットアップ）
 
 ## プロジェクトレイアウト
 
-```
+```text
 images/concept/             -- 採用キャラ案・キービジュアル
 images/icon/                -- アイコン素材
 images/png-tuber/           -- PNGTuber素材 (transparent / opaque)

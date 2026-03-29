@@ -1,0 +1,12 @@
+{
+  "name": "nanatau",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "secretlint": "bunx secretlint '**/*'"
+  },
+  "devDependencies": {
+    "@secretlint/secretlint-rule-preset-recommend": "^11.4.0",
+    "secretlint": "^11.4.0"
+  }
+}

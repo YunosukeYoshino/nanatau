@@ -22,6 +22,13 @@ from PIL import Image
 from google import genai
 
 
+def _positive_int(value: str) -> int:
+    ivalue = int(value)
+    if ivalue <= 0:
+        raise argparse.ArgumentTypeError(f"--downscale must be a positive integer, got {ivalue}")
+    return ivalue
+
+
 def _load_reference_image(path: str) -> Image.Image:
     img = Image.open(path)
     if img.mode == "RGBA":
@@ -67,11 +74,19 @@ def generate_image(
         ),
     )
 
-    if not response.candidates:
-        print("API returned no candidates. The request may have been blocked.", file=sys.stderr)
+    candidates = getattr(response, "candidates", None)
+    if not candidates:
+        print(f"No candidates in response: {response}", file=sys.stderr)
         sys.exit(1)
 
-    for part in response.candidates[0].content.parts:
+    candidate = candidates[0]
+    content = getattr(candidate, "content", None)
+    parts = getattr(content, "parts", None) if content else None
+    if not parts:
+        print("No content parts in response candidate.", file=sys.stderr)
+        sys.exit(1)
+
+    for part in parts:
         if part.inline_data is not None:
             out = Path(output_path)
             out.parent.mkdir(parents=True, exist_ok=True)
@@ -100,10 +115,10 @@ def main():
                         help="Reference image path (repeatable, e.g. --ref a.png --ref b.png)")
     parser.add_argument("--model", default="gemini-3-pro-image-preview",
                         help="Gemini model to use (default: gemini-3-pro-image-preview)")
-    parser.add_argument("--downscale", type=int, default=None,
+    parser.add_argument("--downscale", type=_positive_int, default=None,
                         help="Downscale to this width (px) after generation, preserving aspect ratio")
     parser.add_argument("--image-size", default=None, choices=["512px", "1K", "2K", "4K"],
-                        help="Output image size (default: None)")
+                        help="Output image size (optional; if omitted, the model's default size is used)")
     parser.add_argument("--aspect-ratio", default=None,
                         help="Aspect ratio (e.g. 16:9, 4:3, 1:1)")
     args = parser.parse_args()

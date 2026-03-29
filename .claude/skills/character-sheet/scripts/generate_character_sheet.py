@@ -26,6 +26,8 @@ Requires:
     - GEMINI_API_KEY environment variable
 """
 
+from __future__ import annotations
+
 import argparse
 import io
 import sys
@@ -152,23 +154,34 @@ def generate_sheet(
         ),
     )
 
-    usage = response.usage_metadata
-    is_pro = "pro" in model
-    rate = 120 if is_pro else 30
-    cost = usage.candidates_token_count * rate / 1_000_000
-    usage_info = {
-        "input_tokens": usage.prompt_token_count,
-        "output_tokens": usage.candidates_token_count,
-        "total_tokens": usage.total_token_count,
-        "cost_usd": cost,
-        "cost_yen": int(cost * 150),
-    }
+    usage = getattr(response, "usage_metadata", None)
+    if usage is not None:
+        is_pro = "pro" in model
+        rate = 120 if is_pro else 30
+        cost = usage.candidates_token_count * rate / 1_000_000
+        usage_info = {
+            "input_tokens": usage.prompt_token_count,
+            "output_tokens": usage.candidates_token_count,
+            "total_tokens": usage.total_token_count,
+            "cost_usd": cost,
+            "cost_yen": int(cost * 150),
+        }
+    else:
+        usage_info = {"error": "No usage metadata in response"}
 
-    if not response.candidates:
+    candidates = getattr(response, "candidates", None)
+    if not candidates:
         print("API returned no candidates. The request may have been blocked.", file=sys.stderr)
-        sys.exit(1)
+        return None, usage_info
 
-    for part in response.candidates[0].content.parts:
+    candidate = candidates[0]
+    content = getattr(candidate, "content", None)
+    parts = getattr(content, "parts", None) if content else None
+    if not parts:
+        print("API returned a candidate with no content parts.", file=sys.stderr)
+        return None, usage_info
+
+    for part in parts:
         if part.inline_data is not None:
             img = Image.open(io.BytesIO(part.inline_data.data))
             return img, usage_info
@@ -212,7 +225,7 @@ def main():
         out_dir.mkdir(parents=True, exist_ok=True)
         total_cost = 0.0
 
-        for sheet_type in ["turnaround", "expressions", "poses"]:
+        for sheet_type in ["turnaround", "detailed", "expressions", "poses"]:
             print(f"Generating {sheet_type} sheet...")
             img, usage = generate_sheet(
                 client, ref_img, sheet_type, char_desc, args.head_ratio, args.model
