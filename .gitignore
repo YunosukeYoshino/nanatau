@@ -1,0 +1,6 @@
+research/
+output/
+draft
+.playwright-mcp
+output
+.env
