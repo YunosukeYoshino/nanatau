@@ -19,7 +19,20 @@ Step 3: グリッドを4フレームに分割
 Step 4: 全フレームの背景透過
     -> output/character/sheets/pngtuber_frames_transparent/
          (同名4ファイル)
+
+Step 5: 4枚の検証と正本化
+    -> images/png-tuber/transparent/
+         eyes_open_mouth_closed.png
+         eyes_open_mouth_open.png
+         eyes_closed_mouth_closed.png
+         eyes_closed_mouth_open.png
 ```
+
+## 完了条件
+
+- PNGTuber の目的は「透明な4枚PNGを揃えること」。`images/png-tuber/transparent/` に4枚が正本化できたら完了
+- ユーザーが明示しない限り、MotionPNGTuber、loop.mp4、mouth sprite 化には進まない
+- 外部ツールが `eyeOFF_mouthOFF.png` 形式で出力してもよい。最終正本名は `eyes_closed_mouth_closed.png` など既存プロジェクトの命名へ揃える
 
 ## Step 1: ベースポートレート
 
@@ -101,29 +114,12 @@ base_img = Image.open("output/character/sheets/pngtuber_base.png")
 
 2x2グリッドを4つの個別フレームに分割する。
 
-### Python コード
+### スクリプト
 
-```python
-from pathlib import Path
-from PIL import Image
-
-src = Image.open("output/character/sheets/pngtuber_expressions.png")
-w, h = src.size
-hw, hh = w // 2, h // 2
-
-panels = {
-    "eyes_open_mouth_closed": (0, 0, hw, hh),
-    "eyes_open_mouth_open": (hw, 0, w, hh),
-    "eyes_closed_mouth_closed": (0, hh, hw, h),
-    "eyes_closed_mouth_open": (hw, hh, w, h),
-}
-
-out_dir = Path("output/character/sheets/pngtuber_frames")
-out_dir.mkdir(parents=True, exist_ok=True)
-
-for name, box in panels.items():
-    panel = src.crop(box)
-    panel.save(str(out_dir / f"{name}.png"), "PNG")
+```bash
+python3 .claude/skills/nanatau/scripts/split_pngtuber_grid.py \
+  --input output/character/sheets/pngtuber_expressions.png \
+  --output-dir output/character/sheets/pngtuber_frames
 ```
 
 ## Step 4: 背景透過 + ノイズ除去
@@ -135,43 +131,13 @@ for name, box in panels.items():
 Step 1 のベースポートレート生成時に、背景を**純白 (`#FFFFFF`)**で明示的に指定すること。
 これにより rembg の判定精度が上がり、ノイズが大幅に減少する。
 
-### Python コード
+### スクリプト
 
-```python
-from pathlib import Path
-from PIL import Image
-from rembg import remove
-
-
-def remove_bg_clean(img: Image.Image, noise_threshold: int = 30) -> Image.Image:
-    """背景透過 + ノイズ除去。alpha < noise_threshold のピクセルを完全透明にする。"""
-    result = remove(
-        img,
-        alpha_matting=True,
-        alpha_matting_foreground_threshold=240,
-        alpha_matting_background_threshold=10,
-        alpha_matting_erode_size=10,
-    )
-    # ノイズ除去: ほぼ透明なピクセルを完全透明にする
-    pixels = result.load()
-    w, h = result.size
-    for y in range(h):
-        for x in range(w):
-            r, g, b, a = pixels[x, y]
-            if 0 < a < noise_threshold:
-                pixels[x, y] = (0, 0, 0, 0)
-    return result
-
-
-# フレーム一括処理
-src_dir = Path("output/character/sheets/pngtuber_frames")
-out_dir = Path("output/character/sheets/pngtuber_frames_transparent")
-out_dir.mkdir(parents=True, exist_ok=True)
-
-for f in sorted(src_dir.glob("*.png")):
-    img = Image.open(f)
-    result = remove_bg_clean(img)
-    result.save(str(out_dir / f.name), "PNG")
+```bash
+python3 .claude/skills/nanatau/scripts/remove_bg_batch.py \
+  --input-dir output/character/sheets/pngtuber_frames \
+  --output-dir output/character/sheets/pngtuber_frames_transparent \
+  --noise-threshold 30
 ```
 
 ベースポートレートも同様に透過:
@@ -181,6 +147,33 @@ img = Image.open("output/character/sheets/pngtuber_base.png")
 result = remove_bg_clean(img)
 result.save("output/character/sheets/pngtuber_base_transparent.png", "PNG")
 ```
+
+## Step 5: 正本化
+
+4枚が揃ったら、検証して `images/png-tuber/transparent/` にコピーする。
+
+### スクリプト
+
+```bash
+python3 .claude/skills/nanatau/scripts/finalize_pngtuber_assets.py \
+  --input-dir output/character/sheets/pngtuber_frames_transparent \
+  --output-dir images/png-tuber/transparent
+```
+
+検証内容:
+- 必要な4枚が揃っていること
+- `RGBA` であること
+- 完全不透明ではないこと
+- 全フレームのサイズが一致すること
+
+EasyPNGTuber 形式のファイル名も受け付ける:
+
+| EasyPNGTuber | nanatau 正本 |
+|-------------|--------------|
+| `eyeOFF_mouthOFF.png` | `eyes_closed_mouth_closed.png` |
+| `eyeON_mouthOFF.png` | `eyes_open_mouth_closed.png` |
+| `eyeOFF_mouthON.png` | `eyes_closed_mouth_open.png` |
+| `eyeON_mouthON.png` | `eyes_open_mouth_open.png` |
 
 ## 出力ファイル構造
 

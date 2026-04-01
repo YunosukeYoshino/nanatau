@@ -107,6 +107,16 @@ output/                     -- 生成出力（.gitignore）
 2. **表情グリッド生成** — ベースから2x2の目・口差分グリッド生成
 3. **フレーム分割** — グリッドを4枚の個別フレームに切り出し
 4. **背景透過** — rembg で全フレームの背景を透過処理
+5. **最終化** — 4枚を検証し、`images/png-tuber/transparent/` に正本化
+
+停止条件:
+- ユーザーが EasyPNGTuber 相当の4枚PNGを求めている場合、`eyes_open_mouth_closed.png` / `eyes_open_mouth_open.png` / `eyes_closed_mouth_closed.png` / `eyes_closed_mouth_open.png` の4枚が揃った時点で完了とみなす
+- MotionPNGTuber、loop.mp4、口スプライト化はユーザーが明示した場合だけ進む
+
+ローカル処理は `scripts/` を優先:
+- 分割: `scripts/split_pngtuber_grid.py`
+- 背景透過: `scripts/remove_bg_batch.py`
+- 検証と正本化: `scripts/finalize_pngtuber_assets.py`
 
 詳細は [PNGTUBER.md](PNGTUBER.md) を参照。
 
@@ -161,3 +171,4 @@ result.save("<出力パス>", "PNG")
 - キャラシート: `output/character/sheets/<タイプ名>.png`
 - PNGTuberフレーム: `output/character/sheets/pngtuber_frames/<state>.png`
 - 透過フレーム: `output/character/sheets/pngtuber_frames_transparent/<state>.png`
+- 正本化後フレーム: `images/png-tuber/transparent/<state>.png`

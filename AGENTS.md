@@ -29,11 +29,13 @@ nanatau/
 │   ├── concept/           # 採用キャラ案・キービジュアル
 │   ├── icon/              # アイコン素材
 │   ├── png-tuber/         # PNGTuber素材
+│   │   ├── motion/        # MotionPNGTuber用セット正本
 │   │   ├── transparent/   # 透過素材
 │   │   └── opaque/        # 非透過素材
 │   ├── expression/        # 表情差分
 │   └── reference/         # リファレンス・参考資料
 ├── output/                # nanobanan等の生成出力（.gitignore）
+│   └── motion-pngtuber/   # MotionPNGTuber の作業ディレクトリ
 ├── research/              # 調査資料（.gitignore）
 └── blog/                  # Lume ブログ（独自CLAUDE.mdあり）
 ```
@@ -44,6 +46,8 @@ nanatau/
 - `research/` は調査スクリーンショット等。ローカルのみ
 - 採用した画像は `output/` から `images/` の適切なサブディレクトリへコピーして正本化する
 - `images/png-tuber/` は transparent / opaque で分ける
+- MotionPNGTuber セットは `images/png-tuber/motion/<set-name>/` にまとめる
+- MotionPNGTuber の作業中ファイルは `output/motion-pngtuber/<set-name>/` に置く
 - `images/concept/` にはキービジュアルと三面図（reference_sheet）を格納
 
 ## Art Style Constraints
