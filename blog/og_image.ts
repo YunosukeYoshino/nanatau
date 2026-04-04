@@ -196,8 +196,12 @@ function buildHomeOgSvg(iconDataUrl) {
   const contentStartY = cardCenterY - totalContentHeight / 2;
 
   const avatarCenterY = contentStartY + avatarRadius;
-  const titleY = contentStartY + avatarDiameter + gapAvatarTitle +
-    titleVisualHeight * 0.82;
+  const titleY = Math.round(
+    contentStartY + avatarDiameter + gapAvatarTitle + titleVisualHeight * 0.82,
+  );
+  const titleText = "ななたうのブログ";
+  const titleWidth = estimateTextWidth(titleText, 64);
+  const titleX = Math.round(centerX - titleWidth / 2);
 
   return `
 <svg width="${OGP_OUTPUT_WIDTH}" height="${OGP_OUTPUT_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,7 +214,7 @@ function buildHomeOgSvg(iconDataUrl) {
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#D2B06A" flood-opacity="0.24"/>
     </filter>
     <clipPath id="homeAvatarClip">
-      <circle cx="${centerX}" cy="${avatarCenterY}" r="${avatarRadius}"/>
+      <circle cx="${centerX}" cy="${Math.round(avatarCenterY)}" r="${avatarRadius}"/>
     </clipPath>
   </defs>
   <rect width="${OGP_WIDTH}" height="${OGP_HEIGHT}" fill="url(#homeBg)"/>
@@ -218,12 +222,12 @@ function buildHomeOgSvg(iconDataUrl) {
     <rect x="38" y="38" width="1124" height="554" rx="24" fill="#FFFEFB"/>
   </g>
 
-  <circle cx="${centerX}" cy="${avatarCenterY}" r="${avatarRadius + 6}" fill="#F4E2B6"/>
-  <image href="${iconDataUrl}" x="${centerX - avatarRadius}" y="${avatarCenterY - avatarRadius}" width="${avatarRadius * 2}" height="${avatarRadius * 2}" preserveAspectRatio="xMidYMid slice" clip-path="url(#homeAvatarClip)"/>
+  <circle cx="${centerX}" cy="${Math.round(avatarCenterY)}" r="${avatarRadius + 6}" fill="#F4E2B6"/>
+  <image href="${iconDataUrl}" x="${centerX - avatarRadius}" y="${Math.round(avatarCenterY) - avatarRadius}" width="${avatarRadius * 2}" height="${avatarRadius * 2}" preserveAspectRatio="xMidYMid slice" clip-path="url(#homeAvatarClip)"/>
 
-  <text x="${centerX}" y="${titleY}" text-anchor="middle" fill="#111111" font-size="64" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
+  <text x="${titleX}" y="${titleY}" fill="#111111" font-size="64" font-family="'Kosugi Maru', 'Nunito', sans-serif" font-weight="800">${escapeXml(titleText)}</text>
 
-  <text x="86" y="564" fill="#B8A07A" font-size="22" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="700">@pomufgd</text>
+  <text x="86" y="564" fill="#B8A07A" font-size="22" font-family="'Kosugi Maru', 'Nunito', sans-serif" font-weight="700">@pomufgd</text>
 </svg>
 `;
 }
