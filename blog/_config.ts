@@ -1,6 +1,10 @@
 import lume from "lume/mod.ts";
 import blog from "blog/mod.ts";
-import { getPagefindCustomRecords } from "./external_feeds.ts";
+import {
+  getExternalImageAssets,
+  getPagefindCustomRecords,
+} from "./external_feeds.ts";
+import { Page } from "lume/core/file.ts";
 import { attachOgImageData, createOgImagePages } from "./og_image.ts";
 
 const site = lume({
@@ -29,6 +33,21 @@ site.process("*", (_pages, allPages) => {
     if (allPages[index].data.draft) {
       allPages.splice(index, 1);
     }
+  }
+});
+
+site.process("*", async (_pages, allPages) => {
+  const assets = await getExternalImageAssets();
+
+  for (const asset of assets) {
+    if (allPages.some((page) => page.data.url === asset.outputPath)) {
+      continue;
+    }
+
+    allPages.push(Page.create({
+      url: asset.outputPath,
+      content: asset.content,
+    }));
   }
 });
 

@@ -28,7 +28,9 @@
         "esm.sh:443",
         "registry.npmjs.org:443",
         "zenn.dev:443",
-        "note.com:443"
+        "note.com:443",
+        "qiita.com:443",
+        "qiita-user-contents.imgix.net:443"
       ],
       "env": true,
       "run": true,

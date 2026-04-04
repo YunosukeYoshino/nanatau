@@ -49,6 +49,13 @@ export async function createOgImagePages(allPages) {
   }
 }
 
+export async function renderExternalPreviewImage(post) {
+  const fontBuffers = await fontBuffersPromise;
+  const iconDataUrl = await iconDataUrlPromise;
+  const svg = buildExternalPreviewSvg(post, iconDataUrl);
+  return renderPng(svg, fontBuffers);
+}
+
 function buildOgSvg(page, iconDataUrl) {
   const title = String(page.data.title ?? "");
   const description = String(page.data.description ?? page.data.excerpt ?? "");
@@ -114,6 +121,48 @@ function buildOgSvg(page, iconDataUrl) {
 
   <text x="88" y="545" fill="#6B5B7B" font-size="${SITE_LABEL_FONT_SIZE}" font-family="'Nunito', 'Kosugi Maru', sans-serif">ななたうのブログ</text>
   <text x="1112" y="545" text-anchor="end" fill="#A1887F" font-size="18" font-family="'Nunito', 'Kosugi Maru', sans-serif">blog.nanatau.com</text>
+</svg>
+`;
+}
+
+function buildExternalPreviewSvg(post, iconDataUrl) {
+  const title = String(post.title ?? "");
+  const description = cleanupOgText(post.excerpt ?? "");
+  const source = String(post.source ?? "External");
+  const date = post.date ? formatOgDate(post.date) : "";
+  const titleLines = wrapText(title, 50, 760, 3);
+  const descriptionLines = wrapText(description, 24, 720, 2);
+  const titleTspans = titleLines.map((line, index) =>
+    `<tspan x="92" dy="${index === 0 ? 0 : 70}">${escapeXml(line)}</tspan>`
+  ).join("");
+  const descriptionTspans = descriptionLines.map((line, index) =>
+    `<tspan x="92" dy="${index === 0 ? 0 : 34}">${escapeXml(line)}</tspan>`
+  ).join("");
+  const chips = [date, source].filter(Boolean).map((label, index) =>
+    renderChip(label, index)
+  ).join("");
+
+  return `
+<svg width="${OGP_WIDTH}" height="${OGP_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="${OGP_WIDTH}" height="${OGP_HEIGHT}" fill="#FFF9F0"/>
+  <rect x="30" y="28" width="1140" height="574" rx="34" fill="#FFFEFB" stroke="#F1E3CB" stroke-width="2"/>
+  <circle cx="1060" cy="112" r="168" fill="#F6E7C3" opacity="0.42"/>
+  <rect x="882" y="82" width="200" height="200" rx="28" fill="#FFF8E8" stroke="#F0DFC2"/>
+  <image href="${iconDataUrl}" x="902" y="102" width="160" height="160" preserveAspectRatio="xMidYMid slice" opacity="0.98"/>
+  <text x="92" y="160" fill="#D9BE79" font-size="50" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="800">
+    ${titleTspans}
+  </text>
+  <text x="92" y="338" fill="#6B5B7B" font-size="24" font-family="'Nunito', 'Kosugi Maru', sans-serif" opacity="0.92">
+    ${descriptionTspans}
+  </text>
+  <g transform="translate(92 420)">
+    ${chips}
+  </g>
+  <line x1="92" y1="500" x2="1110" y2="500" stroke="#F0E6D8" stroke-width="2"/>
+  <text x="92" y="548" fill="#6B5B7B" font-size="24" font-family="'Nunito', 'Kosugi Maru', sans-serif">ななたうのブログ</text>
+  <text x="1110" y="548" text-anchor="end" fill="#A1887F" font-size="18" font-family="'Nunito', 'Kosugi Maru', sans-serif">${
+    escapeXml(source)
+  }</text>
 </svg>
 `;
 }
