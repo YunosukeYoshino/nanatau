@@ -31,10 +31,6 @@ function renderHome(posts) {
 <section class="postList">
 ${articles}
 </section>
-
-<hr>
-
-<p class="archive-link-custom">More posts can be found in <a href="/archive/">the archive</a> →</p>
 `;
 }
 
