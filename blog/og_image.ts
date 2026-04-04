@@ -268,8 +268,7 @@ async function loadFontBuffers() {
     "https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Nunito:wght@500;700;800&display=swap",
     {
       headers: {
-        "user-agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122 Safari/537.36",
+        "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; en-us)",
       },
     },
   );
