@@ -5,4 +5,4 @@ draft
 output
 .env
 docs-report
-
+.DS_Store
