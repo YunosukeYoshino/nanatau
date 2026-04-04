@@ -2,6 +2,7 @@
 title: "デザインカタログ"
 description: "新しいCSSスタイル（見出し、引用、リストなど）の確認用ダミー記事です"
 date: 2026-03-05
+draft: true
 tags: [Design, Test]
 ---
 

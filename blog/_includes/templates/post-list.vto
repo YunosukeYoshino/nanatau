@@ -1,0 +1,32 @@
+<ul class="postList">
+  {{ for post of postslist }}
+  <li class="post">
+    {{ if post.external && post.image }}
+    <a href="{{ post.url }}" class="post-media" target="_blank" rel="noopener noreferrer">
+      <img src="{{ post.image }}" alt="" class="post-thumb" loading="lazy" decoding="async">
+    </a>
+    {{ /if }}
+
+    <h2 class="post-title">
+      <a
+        href="{{ post.url }}"
+        {{ if post.url == url }} aria-current="page"{{ /if }}
+        {{ if post.external }} target="_blank" rel="noopener noreferrer"{{ /if }}
+      >
+        {{ post.title || post.url }}
+      </a>
+    </h2>
+
+    {{ include "templates/post-details.vto" {
+      date: post.date,
+      tags: post.tags,
+      author: post.author,
+      readingInfo: post.readingInfo
+    } }}
+
+    {{ if post.external && !post.image }}
+    <p><a href="{{ post.url }}" class="post-link" target="_blank" rel="noopener noreferrer">記事を読む</a></p>
+    {{ /if }}
+  </li>
+  {{ /for }}
+</ul>

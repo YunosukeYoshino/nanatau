@@ -13,16 +13,16 @@ extra_head:
     <style>
     /* Amber Night Theme */
     :root {
-      --color-base: #B8860B;
+      --color-base: #D9BE79;
       --color-text: #6B5B7B;
       --color-dim: #9B8DAB;
       --color-background: #FFF9F0;
       --color-highlight: #FFFBF5;
       --color-line: #F0E6D8;
-      --color-primary: #D4A017;
-      --color-primary-highlight: #B8860B;
-      --color-link: #D4A017;
-      --color-link-hover: #B8860B;
+      --color-primary: #F1D2A6;
+      --color-primary-highlight: #D9BE79;
+      --color-link: #C9A35F;
+      --color-link-hover: #A97C46;
       --code-background: #FFFBF5;
       --code-text: #5D4037;
       --code-border: #FFD54F44;
@@ -33,15 +33,15 @@ extra_head:
       --border-radius: 12px;
     }
     :root[data-theme="dark"] {
-      --color-base: #FFD54F;
+      --color-base: #F5DEAC;
       --color-text: #D4C4A0;
       --color-dim: #8A7A58;
       --color-background: #110F08;
       --color-highlight: #1E1A0F;
       --color-line: #38301A;
-      --color-primary: #FFD54F;
-      --color-primary-highlight: #FFE082;
-      --color-link: #FFD54F;
+      --color-primary: #F1D2A6;
+      --color-primary-highlight: #F5DEAC;
+      --color-link: #F5DEAC;
       --color-link-hover: #FFFFFF;
       --code-background: #171408;
       --code-text: #FDF3E1;
@@ -66,21 +66,31 @@ extra_head:
     .navbar-links a { font-size: 15px; font-weight: 500; color: var(--color-text) !important; text-decoration: none; }
     .navbar-links a[href="/archive/"] { font-size: 0; }
     .navbar-links a[href="/archive/"]::before { content: "アーカイブ"; font-size: 15px; }
-    .page-header h1, .page-title { color: var(--color-base) !important; font-weight: 800; margin-bottom: 24px; font-size: 0 !important; }
+    main { word-break: auto-phrase; }
+    .page-header h1, .page-title { color: var(--color-base) !important; font-weight: 800; margin-bottom: 24px; font-size: 0 !important; word-break: auto-phrase; }
     .page-header h1::before, .page-title::before { content: "アーカイブ"; font-size: 32px; }
     [data-pagefind-body] .page-title::before { content: "アーカイブ: "; }
-    .post-title { font-size: 28px !important; font-weight: 800; color: var(--color-base) !important; line-height: 1.4; }
+    .post-title { font-size: 24px !important; font-weight: 800; color: var(--color-base) !important; line-height: 1.4; }
     .post-title::before { content: none !important; }
     .postList { display: flex; flex-direction: column; gap: 16px; list-style: none; padding: 0; }
     .postList article.post, .postList li.post {
-      background: var(--color-highlight); border-radius: 20px; padding: 24px !important;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid var(--color-line) !important;
+      background: #FFFEFB; border-radius: 20px; padding: 24px !important;
+      box-shadow: 0 1px 8px rgba(151, 104, 81, 0.025); border: 1px solid #F3E7D4 !important;
       transition: transform 0.2s, box-shadow 0.2s; margin-top: 0 !important;
     }
-    :root[data-theme="dark"] .postList article.post { box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important; }
-    .postList article.post:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.1) !important; }
-    .post-title a { text-decoration: none; color: var(--color-base) !important; }
+    :root[data-theme="dark"] .postList article.post, :root[data-theme="dark"] .postList li.post {
+      background: #18130E;
+      border-color: #3E301E !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.18) !important;
+    }
+    .postList article.post:hover { transform: translateY(-2px); box-shadow: 0 3px 12px rgba(151, 104, 81, 0.045) !important; }
+    .post-media { display: block; margin: -4px -4px 18px; border-radius: 18px; overflow: hidden; }
+    .post-thumb { display: block; width: 100%; aspect-ratio: 1200 / 630; object-fit: cover; background: #F8F1E2; }
+    .post-title a { display: block; width: 100%; text-decoration: none; color: var(--color-base) !important; }
     .post-link { color: var(--color-primary) !important; font-weight: 700; font-size: 14px; text-decoration: none; }
+    .post-details p { margin: 0; }
+    .post-details { gap: 10px; flex-wrap: wrap; }
+    .post-excerpt { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
     .body-post { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
     .post-body.body { font-size: 14.4px; line-height: 1.9; }
     .post-body.body h2 { font-size: 24px; font-weight: 800; color: var(--color-primary-highlight); margin-top: 60px; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--color-primary); }
