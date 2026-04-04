@@ -26,6 +26,14 @@ export function attachOgImageData(pages) {
   }
 }
 
+export function attachHomeOgImageData(allPages) {
+  const homePage = allPages.find((page) => page.data.url === "/");
+
+  if (homePage) {
+    homePage.data.image ??= "/og/home.png";
+  }
+}
+
 export async function createOgImagePages(allPages) {
   const postPages = allPages.filter((page) =>
     page.data.type === "post" && !page.data.draft &&
@@ -50,6 +58,18 @@ export async function createOgImagePages(allPages) {
       }),
     );
   }
+
+  if (!allPages.some((page) => page.data.url === "/og/home.png")) {
+    allPages.push(
+      Page.create({
+        url: "/og/home.png",
+        content: await renderHomeOgImage(),
+      }, {
+        path: "og/home",
+        ext: ".png",
+      }),
+    );
+  }
 }
 
 export async function renderExternalPreviewImage(post) {
@@ -59,13 +79,28 @@ export async function renderExternalPreviewImage(post) {
   return renderPng(svg, fontBuffers);
 }
 
+export async function renderHomeOgImage() {
+  const fontBuffers = await fontBuffersPromise;
+  const iconDataUrl = await iconDataUrlPromise;
+  const svg = buildHomeOgSvg(iconDataUrl);
+  return renderPng(svg, fontBuffers);
+}
+
 function buildOgSvg(page, iconDataUrl) {
   const title = String(page.data.title ?? "");
-  const titleLines = wrapText(title, 60, 980, 4);
+  const tags = Array.isArray(page.data.tags)
+    ? page.data.tags.slice(0, 2).map(String)
+    : typeof page.data.tags === "string"
+    ? [page.data.tags]
+    : [];
+  const titleLines = wrapText(title, 58, 980, 3);
 
   const titleTspans = titleLines.map((line, index) =>
-    `<tspan x="86" dy="${index === 0 ? 0 : 82}">${escapeXml(line)}</tspan>`
+    `<tspan x="86" dy="${index === 0 ? 0 : 78}">${escapeXml(line)}</tspan>`
   ).join("");
+  const chipMarkup = tags
+    .map((label, index) => renderChip(label, index))
+    .join("");
 
   return `
 <svg width="${OGP_OUTPUT_WIDTH}" height="${OGP_OUTPUT_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +111,7 @@ function buildOgSvg(page, iconDataUrl) {
       <stop offset="1" stop-color="#EFCB8B"/>
     </linearGradient>
     <clipPath id="authorAvatarClip">
-      <circle cx="124" cy="488" r="36"/>
+      <circle cx="124" cy="528" r="36"/>
     </clipPath>
     <filter id="cardShadow" x="30" y="30" width="1140" height="570" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#D2B06A" flood-opacity="0.24"/>
@@ -90,11 +125,15 @@ function buildOgSvg(page, iconDataUrl) {
     ${titleTspans}
   </text>
 
-  <circle cx="124" cy="488" r="42" fill="#F4E2B6"/>
-  <image href="${iconDataUrl}" x="88" y="452" width="72" height="72" preserveAspectRatio="xMidYMid slice" clip-path="url(#authorAvatarClip)"/>
-  <text x="184" y="488" dominant-baseline="central" fill="#111111" font-size="40" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">@pomufgd</text>
+  <g transform="translate(86 186)">
+    ${chipMarkup}
+  </g>
 
-  <text x="1110" y="522" text-anchor="end" fill="#111111" font-size="30" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
+  <circle cx="124" cy="528" r="42" fill="#F4E2B6"/>
+  <image href="${iconDataUrl}" x="88" y="492" width="72" height="72" preserveAspectRatio="xMidYMid slice" clip-path="url(#authorAvatarClip)"/>
+  <text x="184" y="528" dominant-baseline="central" fill="#111111" font-size="40" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">@pomufgd</text>
+
+  <text x="1110" y="528" dominant-baseline="central" text-anchor="end" fill="#111111" font-size="30" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
 </svg>
 `;
 }
@@ -141,19 +180,56 @@ function buildExternalPreviewSvg(post, iconDataUrl) {
 `;
 }
 
+function buildHomeOgSvg(iconDataUrl) {
+  return `
+<svg width="${OGP_OUTPUT_WIDTH}" height="${OGP_OUTPUT_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="homeBg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE8BA"/>
+      <stop offset="1" stop-color="#F2D397"/>
+    </linearGradient>
+    <filter id="homeCardShadow" x="30" y="30" width="1140" height="570" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#D2B06A" flood-opacity="0.24"/>
+    </filter>
+    <clipPath id="homeAvatarClip">
+      <circle cx="952" cy="316" r="116"/>
+    </clipPath>
+  </defs>
+  <rect width="${OGP_WIDTH}" height="${OGP_HEIGHT}" fill="url(#homeBg)"/>
+  <g filter="url(#homeCardShadow)">
+    <rect x="38" y="38" width="1124" height="554" rx="24" fill="#FFFEFB"/>
+  </g>
+
+  <text x="94" y="170" fill="#111111" font-size="72" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
+  <text x="94" y="266" fill="#6B5B7B" font-size="34" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="700">テクノロジーと創造の交差点</text>
+  <text x="94" y="324" fill="#6B5B7B" font-size="26" font-family="'Nunito', 'Kosugi Maru', sans-serif">Lume / Zenn / note / Qiita の記事をまとめた個人ブログ</text>
+
+  <circle cx="952" cy="316" r="132" fill="#F4E2B6"/>
+  <image href="${iconDataUrl}" x="836" y="200" width="232" height="232" preserveAspectRatio="xMidYMid slice" clip-path="url(#homeAvatarClip)"/>
+
+  <rect x="94" y="430" width="182" height="56" rx="16" fill="#FFF9EE" stroke="#EADCC2" stroke-width="2"/>
+  <text x="185" y="466" text-anchor="middle" fill="#8D80AB" font-size="28" font-family="'Nunito', 'Kosugi Maru', sans-serif">blog.nanatau.com</text>
+
+  <text x="94" y="548" fill="#111111" font-size="42" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">@pomufgd</text>
+</svg>
+`;
+}
+
 function renderChip(label, index) {
   const textWidth = estimateTextWidth(label, META_FONT_SIZE);
   const width = Math.max(106, Math.ceil(textWidth + 38));
-  const positions = [0, 236, 386];
+  const positions = [0, 118, 226];
   const x = positions[index] ??
     (positions[positions.length - 1] + (index - 2) * 150);
 
   return `
   <g transform="translate(${x} 0)">
-    <rect width="${width}" height="52" rx="14" fill="#FFF9EE" stroke="#EADCC2" stroke-width="2"/>
+    <rect width="${
+    Math.max(94, Math.ceil(textWidth + 32))
+  }" height="46" rx="12" fill="#FFF9EE" stroke="#EADCC2" stroke-width="2"/>
     <text x="${
-    width / 2
-  }" y="34" text-anchor="middle" fill="#8D80AB" font-size="${META_FONT_SIZE}" font-family="'Nunito', 'Kosugi Maru', sans-serif">${
+    Math.max(94, Math.ceil(textWidth + 32)) / 2
+  }" y="30" text-anchor="middle" fill="#8D80AB" font-size="19" font-family="'Nunito', 'Kosugi Maru', sans-serif">${
     escapeXml(label)
   }</text>
   </g>`;

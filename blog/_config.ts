@@ -5,7 +5,11 @@ import {
   getPagefindCustomRecords,
 } from "./external_feeds.ts";
 import { Page } from "lume/core/file.ts";
-import { attachOgImageData, createOgImagePages } from "./og_image.ts";
+import {
+  attachHomeOgImageData,
+  attachOgImageData,
+  createOgImagePages,
+} from "./og_image.ts";
 
 const site = lume({
   location: new URL("https://blog.nanatau.com/"),
@@ -34,6 +38,8 @@ site.process("*", (_pages, allPages) => {
       allPages.splice(index, 1);
     }
   }
+
+  attachHomeOgImageData(allPages);
 });
 
 site.process("*", async (_pages, allPages) => {
