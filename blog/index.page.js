@@ -54,8 +54,8 @@ function renderPost(post) {
       escapeHtml(toPlainExcerpt(post.excerpt))
     }</p>`
     : "";
-  const shouldShowExcerpt = !(post.external && post.image);
-  const image = post.external && post.image
+  const shouldShowExcerpt = !post.image;
+  const image = post.image
     ? `
     <a href="${escapeAttribute(post.url)}" class="post-media"${hrefAttrs}>
       <img src="${
@@ -71,7 +71,7 @@ function renderPost(post) {
       formatDate(post.date)
     }</time></p>`
     : "";
-  const cta = post.external ? "記事を読む" : "Continue reading →";
+  const cta = post.external ? "記事を読む" : "続きを読む";
 
   return `
   <article class="post">

@@ -8,7 +8,7 @@ menu_links: []
 extra_head:
   - <link rel="preconnect" href="https://fonts.googleapis.com">
   - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  - <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+1+Code:wght@400;700&display=swap" rel="stylesheet">
+  - <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+1+Code:wght@400;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
   - |
     <style>
     /* Amber Night Theme */
@@ -27,8 +27,8 @@ extra_head:
       --code-text: #5D4037;
       --code-border: #FFD54F44;
       --code-comment: #A1887F;
-      --font-family-ui: 'Kosugi Maru', sans-serif;
-      --font-family-display: 'Kosugi Maru', sans-serif;
+      --font-family-ui: 'Nunito', 'Kosugi Maru', sans-serif;
+      --font-family-display: 'Nunito', 'Kosugi Maru', sans-serif;
       --font-family-code: 'M PLUS 1 Code', monospace;
       --border-radius: 12px;
     }
