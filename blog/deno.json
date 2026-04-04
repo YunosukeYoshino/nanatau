@@ -25,7 +25,8 @@
         "deno.land:443",
         "esm.sh:443",
         "registry.npmjs.org:443",
-        "zenn.dev:443"
+        "zenn.dev:443",
+        "note.com:443"
       ],
       "env": true,
       "run": true,

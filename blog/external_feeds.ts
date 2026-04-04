@@ -33,6 +33,12 @@ export const externalFeedSources: ExternalFeedSource[] = [
     feedUrl: "https://zenn.dev/yuche/feed",
     tags: ["zenn"],
   },
+  {
+    id: "note-yuche",
+    title: "note",
+    feedUrl: "https://note.com/yuche__/rss",
+    tags: ["note"],
+  },
 ];
 
 let externalPostsPromise: Promise<ExternalPost[]> | undefined;
@@ -54,7 +60,6 @@ export async function getPagefindCustomRecords(): Promise<
       post.title,
       post.excerpt,
       post.source,
-      post.author,
       post.tags.join(" "),
     ]
       .filter(Boolean)
@@ -62,11 +67,9 @@ export async function getPagefindCustomRecords(): Promise<
     meta: {
       title: post.title,
       source: post.source,
-      author: post.author ?? "",
     },
     filters: {
       filter: post.tags,
-      ...(post.author ? { author: [post.author] } : {}),
     },
     sort: {
       date: post.date.toISOString(),
@@ -125,9 +128,13 @@ function parseFeed(source: ExternalFeedSource, xml: string): ExternalPost[] {
         url,
         date,
         excerpt: cleanupText(getTagText(itemXml, "description")),
-        image: getAttribute(itemXml, "enclosure", "url"),
+        image: getAttribute(itemXml, "enclosure", "url") ||
+          getAttribute(itemXml, "media:thumbnail", "url") ||
+          getTagText(itemXml, "media:thumbnail"),
         author: cleanupText(
-          getTagText(itemXml, "dc:creator") || getTagText(itemXml, "creator"),
+          getTagText(itemXml, "dc:creator") ||
+            getTagText(itemXml, "creator") ||
+            getTagText(itemXml, "note:creatorName"),
         ),
         source: source.title,
         external: true as const,

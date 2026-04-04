@@ -27,27 +27,6 @@ export default async function* ({ search, i18n, paginate }) {
       };
     }
   }
-
-  const authors = uniqueValues(
-    mergedPosts
-      .map((post) => post.author)
-      .filter(Boolean),
-  );
-
-  for (const author of authors) {
-    const url = (n) =>
-      (n === 1) ? `/author/${author}/` : `/archive/${author}/${n}/`;
-    const pages = mergedPosts.filter((post) => post.author === author);
-
-    for (const page of paginate(pages, { url, size: 10 })) {
-      yield {
-        ...page,
-        title: `${i18n.search.by_author} ${author}`,
-        type: "author",
-        author,
-      };
-    }
-  }
 }
 
 function uniqueValues(values) {
