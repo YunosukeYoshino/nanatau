@@ -181,6 +181,24 @@ function buildExternalPreviewSvg(post, iconDataUrl) {
 }
 
 function buildHomeOgSvg(iconDataUrl) {
+  const centerX = OGP_WIDTH / 2;
+  const cardTop = 38;
+  const cardHeight = 554;
+  const cardCenterY = cardTop + cardHeight / 2;
+
+  const avatarRadius = 110;
+  const avatarDiameter = avatarRadius * 2;
+  const gapAvatarTitle = 28;
+  const titleVisualHeight = 52;
+
+  const totalContentHeight = avatarDiameter + gapAvatarTitle +
+    titleVisualHeight;
+  const contentStartY = cardCenterY - totalContentHeight / 2;
+
+  const avatarCenterY = contentStartY + avatarRadius;
+  const titleY = contentStartY + avatarDiameter + gapAvatarTitle +
+    titleVisualHeight * 0.82;
+
   return `
 <svg width="${OGP_OUTPUT_WIDTH}" height="${OGP_OUTPUT_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -192,7 +210,7 @@ function buildHomeOgSvg(iconDataUrl) {
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#D2B06A" flood-opacity="0.24"/>
     </filter>
     <clipPath id="homeAvatarClip">
-      <circle cx="952" cy="316" r="116"/>
+      <circle cx="${centerX}" cy="${avatarCenterY}" r="${avatarRadius}"/>
     </clipPath>
   </defs>
   <rect width="${OGP_WIDTH}" height="${OGP_HEIGHT}" fill="url(#homeBg)"/>
@@ -200,17 +218,12 @@ function buildHomeOgSvg(iconDataUrl) {
     <rect x="38" y="38" width="1124" height="554" rx="24" fill="#FFFEFB"/>
   </g>
 
-  <text x="94" y="170" fill="#111111" font-size="72" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
-  <text x="94" y="266" fill="#6B5B7B" font-size="34" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="700">テクノロジーと創造の交差点</text>
-  <text x="94" y="324" fill="#6B5B7B" font-size="26" font-family="'Nunito', 'Kosugi Maru', sans-serif">Lume / Zenn / note / Qiita の記事をまとめた個人ブログ</text>
+  <circle cx="${centerX}" cy="${avatarCenterY}" r="${avatarRadius + 6}" fill="#F4E2B6"/>
+  <image href="${iconDataUrl}" x="${centerX - avatarRadius}" y="${avatarCenterY - avatarRadius}" width="${avatarRadius * 2}" height="${avatarRadius * 2}" preserveAspectRatio="xMidYMid slice" clip-path="url(#homeAvatarClip)"/>
 
-  <circle cx="952" cy="316" r="132" fill="#F4E2B6"/>
-  <image href="${iconDataUrl}" x="836" y="200" width="232" height="232" preserveAspectRatio="xMidYMid slice" clip-path="url(#homeAvatarClip)"/>
+  <text x="${centerX}" y="${titleY}" text-anchor="middle" fill="#111111" font-size="64" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
 
-  <rect x="94" y="430" width="182" height="56" rx="16" fill="#FFF9EE" stroke="#EADCC2" stroke-width="2"/>
-  <text x="185" y="466" text-anchor="middle" fill="#8D80AB" font-size="28" font-family="'Nunito', 'Kosugi Maru', sans-serif">blog.nanatau.com</text>
-
-  <text x="94" y="548" fill="#111111" font-size="42" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">@pomufgd</text>
+  <text x="86" y="564" fill="#B8A07A" font-size="22" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="700">@pomufgd</text>
 </svg>
 `;
 }
@@ -235,6 +248,7 @@ function renderChip(label, index) {
   </g>`;
 }
 
+
 function renderPng(svg, fontBuffers) {
   const resvg = new Resvg(svg, {
     fitTo: {
@@ -242,7 +256,7 @@ function renderPng(svg, fontBuffers) {
     },
     font: {
       loadSystemFonts: false,
-      fontFiles: fontBuffers,
+      fontBuffers: fontBuffers,
     },
   });
 
