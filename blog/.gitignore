@@ -2,6 +2,7 @@ _site
 _cache
 .env
 .DS_Store
+.og-fonts
 
 # Screenshots (design review records)
 light-mode.png

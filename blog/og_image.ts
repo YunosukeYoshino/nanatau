@@ -13,7 +13,7 @@ const SITE_LABEL_FONT_SIZE = 24;
 const TITLE_MAX_LINES = 3;
 const DESCRIPTION_MAX_LINES = 2;
 
-const fontBuffersPromise = loadFontBuffers();
+const fontFilePathsPromise = loadFontFiles();
 const iconDataUrlPromise = loadIconDataUrl();
 
 export function attachOgImageData(pages) {
@@ -40,12 +40,12 @@ export async function createOgImagePages(allPages) {
     typeof page.data.title === "string"
   );
 
-  const fontBuffers = await fontBuffersPromise;
+  const fontFilePaths = await fontFilePathsPromise;
   const iconDataUrl = await iconDataUrlPromise;
 
   for (const page of postPages) {
     const svg = buildOgSvg(page, iconDataUrl);
-    const png = renderPng(svg, fontBuffers);
+    const png = renderPng(svg, fontFilePaths);
     const ogPath = getOgImagePath(page);
 
     allPages.push(
@@ -73,17 +73,17 @@ export async function createOgImagePages(allPages) {
 }
 
 export async function renderExternalPreviewImage(post) {
-  const fontBuffers = await fontBuffersPromise;
+  const fontFilePaths = await fontFilePathsPromise;
   const iconDataUrl = await iconDataUrlPromise;
   const svg = buildExternalPreviewSvg(post, iconDataUrl);
-  return renderPng(svg, fontBuffers);
+  return renderPng(svg, fontFilePaths);
 }
 
 export async function renderHomeOgImage() {
-  const fontBuffers = await fontBuffersPromise;
+  const fontFilePaths = await fontFilePathsPromise;
   const iconDataUrl = await iconDataUrlPromise;
   const svg = buildHomeOgSvg(iconDataUrl);
-  return renderPng(svg, fontBuffers);
+  return renderPng(svg, fontFilePaths);
 }
 
 function buildOgSvg(page, iconDataUrl) {
@@ -249,21 +249,21 @@ function renderChip(label, index) {
 }
 
 
-function renderPng(svg, fontBuffers) {
+function renderPng(svg, fontFilePaths) {
   const resvg = new Resvg(svg, {
     fitTo: {
       mode: "original",
     },
     font: {
       loadSystemFonts: false,
-      fontBuffers: fontBuffers,
+      fontFiles: fontFilePaths,
     },
   });
 
   return resvg.render().asPng();
 }
 
-async function loadFontBuffers() {
+async function loadFontFiles() {
   const cssResponse = await fetch(
     "https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Nunito:wght@500;700;800&display=swap",
     {
@@ -278,11 +278,23 @@ async function loadFontBuffers() {
   );
   const uniqueUrls = [...new Set(urls)];
 
-  const fontResponses = await Promise.all(uniqueUrls.map((url) => fetch(url)));
-  return await Promise.all(fontResponses.map(async (response) => {
-    const buffer = await response.arrayBuffer();
-    return new Uint8Array(buffer);
-  }));
+  const fontDir = new URL("./.og-fonts/", import.meta.url);
+  await Deno.mkdir(fontDir, { recursive: true });
+  const paths = await Promise.all(
+    uniqueUrls.map(async (url, index) => {
+      const response = await fetch(url);
+      const buffer = new Uint8Array(await response.arrayBuffer());
+      const ext = url.includes(".woff2")
+        ? ".woff2"
+        : url.includes(".woff")
+        ? ".woff"
+        : ".ttf";
+      const fileUrl = new URL(`font-${index}${ext}`, fontDir);
+      await Deno.writeFile(fileUrl, buffer);
+      return fileUrl.pathname;
+    }),
+  );
+  return paths;
 }
 
 async function loadIconDataUrl() {
