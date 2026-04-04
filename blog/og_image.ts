@@ -3,6 +3,9 @@ import { Resvg } from "npm:@resvg/resvg-js@2.6.2";
 
 const OGP_WIDTH = 1200;
 const OGP_HEIGHT = 630;
+const OGP_RENDER_SCALE = 2;
+const OGP_OUTPUT_WIDTH = OGP_WIDTH * OGP_RENDER_SCALE;
+const OGP_OUTPUT_HEIGHT = OGP_HEIGHT * OGP_RENDER_SCALE;
 const TITLE_FONT_SIZE = 54;
 const DESCRIPTION_FONT_SIZE = 26;
 const META_FONT_SIZE = 26;
@@ -58,69 +61,40 @@ export async function renderExternalPreviewImage(post) {
 
 function buildOgSvg(page, iconDataUrl) {
   const title = String(page.data.title ?? "");
-  const description = String(page.data.description ?? page.data.excerpt ?? "");
-  const date = page.data.date ? formatOgDate(page.data.date) : "";
-  const tags = Array.isArray(page.data.tags)
-    ? page.data.tags.slice(0, 2).map(String)
-    : typeof page.data.tags === "string"
-    ? [page.data.tags]
-    : [];
-  const titleLines = wrapText(title, TITLE_FONT_SIZE, 780, TITLE_MAX_LINES);
-  const descriptionLines = wrapText(
-    cleanupOgText(description),
-    DESCRIPTION_FONT_SIZE,
-    700,
-    DESCRIPTION_MAX_LINES,
-  );
+  const titleLines = wrapText(title, 60, 980, 4);
 
   const titleTspans = titleLines.map((line, index) =>
-    `<tspan x="88" dy="${index === 0 ? 0 : 76}">${escapeXml(line)}</tspan>`
+    `<tspan x="86" dy="${index === 0 ? 0 : 82}">${escapeXml(line)}</tspan>`
   ).join("");
-  const descriptionTspans = descriptionLines.map((line, index) =>
-    `<tspan x="88" dy="${index === 0 ? 0 : 38}">${escapeXml(line)}</tspan>`
-  ).join("");
-
-  const chipMarkup = [date, ...tags].filter(Boolean)
-    .map((label, index) => renderChip(label, index))
-    .join("");
 
   return `
-<svg width="${OGP_WIDTH}" height="${OGP_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="${OGP_WIDTH}" height="${OGP_HEIGHT}" fill="#FFF9F0"/>
+<svg width="${OGP_OUTPUT_WIDTH}" height="${OGP_OUTPUT_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="${OGP_WIDTH}" height="${OGP_HEIGHT}" fill="url(#bg)"/>
   <defs>
-    <linearGradient id="cardGlow" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFDF7"/>
-      <stop offset="1" stop-color="#FFF9EF"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE8BA"/>
+      <stop offset="1" stop-color="#EFCB8B"/>
     </linearGradient>
-    <linearGradient id="accentWash" x1="802" y1="38" x2="1140" y2="316" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#F7EAC8"/>
-      <stop offset="1" stop-color="#FFF6E2"/>
-    </linearGradient>
+    <clipPath id="authorAvatarClip">
+      <circle cx="124" cy="488" r="36"/>
+    </clipPath>
+    <filter id="cardShadow" x="30" y="30" width="1140" height="570" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#D2B06A" flood-opacity="0.24"/>
+    </filter>
   </defs>
-  <circle cx="1088" cy="120" r="176" fill="#F5E6C4" opacity="0.5"/>
-  <circle cx="1030" cy="570" r="150" fill="#FBF1DD" opacity="0.85"/>
-  <rect x="30" y="28" width="1140" height="574" rx="34" fill="url(#cardGlow)" stroke="#F1E3CB" stroke-width="2"/>
+  <g filter="url(#cardShadow)">
+    <rect x="38" y="38" width="1124" height="554" rx="24" fill="#FFFEFB"/>
+  </g>
 
-  <rect x="872" y="72" width="238" height="238" rx="32" fill="url(#accentWash)" stroke="#F0DFC2"/>
-  <rect x="892" y="92" width="198" height="198" rx="28" fill="#FFF8E8"/>
-  <image href="${iconDataUrl}" x="892" y="92" width="198" height="198" preserveAspectRatio="xMidYMid slice" opacity="0.98"/>
-
-  <text x="88" y="150" fill="#D9BE79" font-size="${TITLE_FONT_SIZE}" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="800">
+  <text x="86" y="146" fill="#111111" font-size="60" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">
     ${titleTspans}
   </text>
 
-  <text x="88" y="300" fill="#6B5B7B" font-size="${DESCRIPTION_FONT_SIZE}" font-family="'Nunito', 'Kosugi Maru', sans-serif" opacity="0.92">
-    ${descriptionTspans}
-  </text>
+  <circle cx="124" cy="488" r="42" fill="#F4E2B6"/>
+  <image href="${iconDataUrl}" x="88" y="452" width="72" height="72" preserveAspectRatio="xMidYMid slice" clip-path="url(#authorAvatarClip)"/>
+  <text x="184" y="488" dominant-baseline="central" fill="#111111" font-size="40" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">@pomufgd</text>
 
-  <g transform="translate(88 414)">
-    ${chipMarkup}
-  </g>
-
-  <line x1="88" y1="494" x2="1112" y2="494" stroke="#ECDD C1" stroke-width="2"/>
-
-  <text x="88" y="545" fill="#6B5B7B" font-size="${SITE_LABEL_FONT_SIZE}" font-family="'Nunito', 'Kosugi Maru', sans-serif">ななたうのブログ</text>
-  <text x="1112" y="545" text-anchor="end" fill="#A1887F" font-size="18" font-family="'Nunito', 'Kosugi Maru', sans-serif">blog.nanatau.com</text>
+  <text x="1110" y="522" text-anchor="end" fill="#111111" font-size="30" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
 </svg>
 `;
 }
@@ -143,7 +117,7 @@ function buildExternalPreviewSvg(post, iconDataUrl) {
   ).join("");
 
   return `
-<svg width="${OGP_WIDTH}" height="${OGP_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="${OGP_OUTPUT_WIDTH}" height="${OGP_OUTPUT_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="${OGP_WIDTH}" height="${OGP_HEIGHT}" fill="#FFF9F0"/>
   <rect x="30" y="28" width="1140" height="574" rx="34" fill="#FFFEFB" stroke="#F1E3CB" stroke-width="2"/>
   <circle cx="1060" cy="112" r="168" fill="#F6E7C3" opacity="0.42"/>
