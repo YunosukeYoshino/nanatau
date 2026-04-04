@@ -1,5 +1,5 @@
 lang: ja
-description: テクノロジーと創造の交差点 — 技術ブログ
+description: Agentic AI と Web開発のあれこれを、作って試して綴るぶろぐ！
 analytics:
   measurement_id: G-D2NLCBSTCV
 
@@ -170,7 +170,7 @@ extra_head:
 
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
-  site: ななたうのブログ
+  site: ななたうのぶろぐ！
   description: "=description"
   title: "=title"
   image: "=image"

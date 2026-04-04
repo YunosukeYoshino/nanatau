@@ -24,6 +24,7 @@ export default async function* ({ search, i18n, paginate }) {
         title: `${i18n.search.by_tag}  “${tag}”`,
         type: "tag",
         tag,
+        image: "/og/home.png",
       };
     }
   }

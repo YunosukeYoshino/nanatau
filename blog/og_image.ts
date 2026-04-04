@@ -133,7 +133,7 @@ function buildOgSvg(page, iconDataUrl) {
   <image href="${iconDataUrl}" x="88" y="492" width="72" height="72" preserveAspectRatio="xMidYMid slice" clip-path="url(#authorAvatarClip)"/>
   <text x="184" y="528" dominant-baseline="central" fill="#111111" font-size="40" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">@pomufgd</text>
 
-  <text x="1110" y="528" dominant-baseline="central" text-anchor="end" fill="#111111" font-size="30" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのブログ</text>
+  <text x="1110" y="528" dominant-baseline="central" text-anchor="end" fill="#111111" font-size="30" font-family="'Nunito', 'Kosugi Maru', sans-serif" font-weight="900">ななたうのぶろぐ！</text>
 </svg>
 `;
 }
@@ -172,7 +172,7 @@ function buildExternalPreviewSvg(post, iconDataUrl) {
     ${chips}
   </g>
   <line x1="92" y1="500" x2="1110" y2="500" stroke="#F0E6D8" stroke-width="2"/>
-  <text x="92" y="548" fill="#6B5B7B" font-size="24" font-family="'Nunito', 'Kosugi Maru', sans-serif">ななたうのブログ</text>
+  <text x="92" y="548" fill="#6B5B7B" font-size="24" font-family="'Nunito', 'Kosugi Maru', sans-serif">ななたうのぶろぐ！</text>
   <text x="1110" y="548" text-anchor="end" fill="#A1887F" font-size="18" font-family="'Nunito', 'Kosugi Maru', sans-serif">${
     escapeXml(source)
   }</text>
@@ -199,7 +199,7 @@ function buildHomeOgSvg(iconDataUrl) {
   const titleY = Math.round(
     contentStartY + avatarDiameter + gapAvatarTitle + titleVisualHeight * 0.82,
   );
-  const titleText = "ななたうのブログ";
+  const titleText = "ななたうのぶろぐ！";
   const titleWidth = estimateTextWidth(titleText, 64);
   const titleX = Math.round(centerX - titleWidth / 2);
 

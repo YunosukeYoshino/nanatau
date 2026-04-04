@@ -24,6 +24,7 @@ export default async function* ({ search, paginate, i18n }) {
     yield {
       ...data,
       title: i18n.nav.archive_title,
+      image: "/og/home.png",
     };
   }
 }

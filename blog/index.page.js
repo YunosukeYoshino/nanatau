@@ -1,6 +1,8 @@
 import { getExternalPosts } from "./external_feeds.ts";
 
 export const layout = "layouts/base.vto";
+export const title = "ななたうのぶろぐ！";
+export const image = "/og/home.png";
 
 export default async function ({ search }) {
   const localPosts = search.pages("type=post", "date=desc").map((post) => ({

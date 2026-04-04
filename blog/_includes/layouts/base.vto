@@ -2,7 +2,7 @@
 <html lang="{{ lang }}"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ if it.title }}{{ it.title }} - ななたうのブログ{{ else }}ななたうのブログ{{ /if }}</title>
+    <title>{{ if it.title && it.title != metas.site }}{{ it.title }} - {{ metas.site }}{{ else }}{{ metas.site }}{{ /if }}</title>
 
     <meta name="supported-color-schemes" content="light dark">
     <meta name="theme-color" content="hsl(220, 20%, 100%)" media="(prefers-color-scheme: light)">
@@ -43,7 +43,7 @@
     <nav class="navbar">
       <a href="/" class="navbar-home navbar-home-custom">
         <img src="/images/favicon.png" alt="ななたうのアイコン" class="navbar-avatar">
-        <strong>ななたうのブログ</strong>
+        <strong>ななたうのぶろぐ！</strong>
       </a>
 
       <ul class="navbar-links">
@@ -87,7 +87,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <img src="/images/favicon.png" alt="ななたうのアイコン" class="footer-avatar">
-        <p class="footer-name">ななたうのブログ</p>
+        <p class="footer-name">ななたうのぶろぐ！</p>
         <nav class="footer-social" aria-label="フッターリンク">
           <a href="/feed.xml" class="footer-social-link footer-social-link-rss" aria-label="RSSフィード">
             <svg viewBox="0 0 24 24" aria-hidden="true">
