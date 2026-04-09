@@ -78,7 +78,138 @@
         </button>
       </li>
       </ul>
+
+      <button class="hamburger-btn" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="モバイルメニュー">
+      <div class="drawer-header">
+        <a href="/" class="drawer-profile">
+          <img src="/images/favicon.png" alt="ななたうのアイコン">
+          <strong>ななたうのぶろぐ！</strong>
+        </a>
+        <button class="drawer-close" aria-label="メニューを閉じる">&#x2715;</button>
+      </div>
+      <div class="drawer-divider"></div>
+      <ul class="drawer-nav">
+        {{ for entry of search.pages("menu.visible=true", "menu.order") }}
+        <li>
+          <a href="{{ entry.url }}" {{ if entry.url == url }}aria-current="page"{{ /if }}>
+            {{ entry.menu.title || entry.title }}
+          </a>
+        </li>
+        {{ /for }}
+        {{ for link of menu_links }}
+        <li>
+          <a href="{{ link.href }}" {{ if link.target }}target="{{ link.target }}"{{ /if }}>
+            {{ link.text }}
+          </a>
+        </li>
+        {{ /for }}
+      </ul>
+      <div class="drawer-divider"></div>
+      <div class="drawer-theme-row">
+        <span class="drawer-theme-label">ダークモード</span>
+        <button class="drawer-theme-toggle" id="drawerThemeToggle" aria-label="テーマ切替"></button>
+      </div>
+      <div class="drawer-divider"></div>
+      <nav class="drawer-social" aria-label="ソーシャルリンク">
+        <a href="/feed.xml" aria-label="RSSフィード">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="6.5" cy="17.5" r="1.8" fill="currentColor"/>
+            <path d="M5.2 10.8a8 8 0 0 1 8 8" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+            <path d="M5.2 5.5c7.07 0 12.8 5.73 12.8 12.8" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="https://x.com/pomufgd" target="_blank" rel="noopener noreferrer" aria-label="X.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-7.41L5.56 22H2.45l7.24-8.28L1.8 2h6.4l4.43 6.8L18.9 2Zm-1.1 18.1h1.72L7.26 3.8H5.42l12.38 16.3Z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://zenn.dev/yuche" target="_blank" rel="noopener noreferrer" aria-label="Zenn">
+          <img src="/images/zenn-logo.svg" alt="" loading="lazy" decoding="async">
+        </a>
+      </nav>
+    </aside>
+
+    <script>
+    (function() {
+      document.body.classList.add('js-enabled');
+
+      const hamburger = document.querySelector('.hamburger-btn');
+      const drawer = document.getElementById('mobileDrawer');
+      const overlay = document.getElementById('drawerOverlay');
+      const closeBtn = drawer.querySelector('.drawer-close');
+      const drawerThemeBtn = document.getElementById('drawerThemeToggle');
+      const mainContent = document.querySelector('main');
+      const siteFooter = document.querySelector('.site-footer');
+
+      function openDrawer() {
+        drawer.classList.add('is-open');
+        overlay.classList.add('is-visible');
+        hamburger.classList.add('is-active');
+        hamburger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        if (mainContent) mainContent.inert = true;
+        if (siteFooter) siteFooter.inert = true;
+        closeBtn.focus();
+      }
+
+      function closeDrawer() {
+        drawer.classList.remove('is-open');
+        overlay.classList.remove('is-visible');
+        hamburger.classList.remove('is-active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        if (mainContent) mainContent.inert = false;
+        if (siteFooter) siteFooter.inert = false;
+        hamburger.focus();
+      }
+
+      hamburger.addEventListener('click', function() {
+        drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+      });
+      closeBtn.addEventListener('click', closeDrawer);
+      overlay.addEventListener('click', closeDrawer);
+
+      drawerThemeBtn.addEventListener('click', function() {
+        if (typeof changeTheme === 'function') changeTheme();
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (!drawer.classList.contains('is-open')) return;
+        if (e.key === 'Escape') { closeDrawer(); return; }
+        if (e.key === 'Tab') {
+          const focusable = drawer.querySelectorAll(
+            'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+          );
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      });
+
+      const mql = window.matchMedia('(max-width: 768px)');
+      function handleBreakpoint(e) {
+        if (!e.matches) closeDrawer();
+      }
+      if (mql.addEventListener) {
+        mql.addEventListener('change', handleBreakpoint);
+      } else {
+        mql.addListener(handleBreakpoint);
+      }
+    })();
+    </script>
 
     <main class="{{ bodyClass }}">
       {{ content }}
