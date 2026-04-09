@@ -31,7 +31,8 @@ Step 5: 4枚の検証と正本化
 ## 完了条件
 
 - PNGTuber の目的は「透明な4枚PNGを揃えること」。`images/png-tuber/transparent/` に4枚が正本化できたら完了
-- ユーザーが明示しない限り、MotionPNGTuber、loop.mp4、mouth sprite 化には進まない
+- ユーザーが明示しない限り、MotionPNGTuber、loop.mp4、mouth_track.npz、loop_mouthless.mp4、browser bundle には進まない
+- MotionPNGTuber は `.claude/skills/motion-pngtuber-nanatau/SKILL.md` と `.claude/skills/motion-pngtuber-nanatau/scripts/` を使う
 - 外部ツールが `eyeOFF_mouthOFF.png` 形式で出力してもよい。最終正本名は `eyes_closed_mouth_closed.png` など既存プロジェクトの命名へ揃える
 
 ## Step 1: ベースポートレート

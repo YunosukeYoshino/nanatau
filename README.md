@@ -25,6 +25,15 @@ Soft Navy (#2C3E6B), Warm White (#FFF8E1).
 - `images/`: approved source assets
 - `research/`: research notes and screenshots
 - `blog/`: Lume-based blog
+- `.claude/skills/motion-pngtuber-nanatau/`: MotionPNGTuber skill and scripts
+
+## MotionPNGTuber
+
+動画ベースの MotionPNGTuber パイプラインは `.claude/skills/motion-pngtuber-nanatau/` に集約している。
+
+- 作業中の成果物: `output/motion-pngtuber/<set-name>/`
+- 正本: `images/png-tuber/motion/<set-name>/`
+- 標準検証: `.claude/skills/motion-pngtuber-nanatau/scripts/verify_server.py --mode stub`
 
 ## Blog
 

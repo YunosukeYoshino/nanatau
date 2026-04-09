@@ -6,3 +6,6 @@ output
 .env
 docs-report
 .DS_Store
+.venv-motion/
+.claude/skills/motion-pngtuber-nanatau/scripts/__pycache__/
+.claude/skills/motion-pngtuber-nanatau/scripts/.cache/

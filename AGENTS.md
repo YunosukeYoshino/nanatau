@@ -72,6 +72,10 @@ cd blog && deno task build   # production build
 - `.env` は `.gitignore` に含まれている
 - Python 3.13+（キャラシート生成スクリプト用）
   - 依存: `pip install google-genai Pillow "rembg[cpu]"`
+- MotionPNGTuber は別系統
+  - Python `3.10.x`
+  - 依存は repo 直下の `pyproject.toml`
+  - 実装本体は `.claude/skills/motion-pngtuber-nanatau/scripts/`
 - Deno（ブログ用）
 
 ## Git

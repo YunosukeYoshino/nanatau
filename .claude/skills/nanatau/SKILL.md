@@ -111,7 +111,8 @@ output/                     -- 生成出力（.gitignore）
 
 停止条件:
 - ユーザーが EasyPNGTuber 相当の4枚PNGを求めている場合、`eyes_open_mouth_closed.png` / `eyes_open_mouth_open.png` / `eyes_closed_mouth_closed.png` / `eyes_closed_mouth_open.png` の4枚が揃った時点で完了とみなす
-- MotionPNGTuber、loop.mp4、口スプライト化はユーザーが明示した場合だけ進む
+- MotionPNGTuber、loop.mp4、mouth_track.npz、loop_mouthless.mp4、browser bundle はこの workflow に含めない
+- MotionPNGTuber は sibling skill の `motion-pngtuber-nanatau` を使う
 
 ローカル処理は `scripts/` を優先:
 - 分割: `scripts/split_pngtuber_grid.py`
