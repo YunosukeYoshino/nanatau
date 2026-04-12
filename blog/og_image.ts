@@ -93,7 +93,7 @@ function buildOgSvg(page, iconDataUrl) {
     : typeof page.data.tags === "string"
     ? [page.data.tags]
     : [];
-  const titleLines = wrapText(title, 58, 980, 3);
+  const titleLines = wrapText(title, 60, 980, 3);
 
   const titleTspans = titleLines.map((line, index) =>
     `<tspan x="86" dy="${index === 0 ? 0 : 78}">${escapeXml(line)}</tspan>`
@@ -101,6 +101,7 @@ function buildOgSvg(page, iconDataUrl) {
   const chipMarkup = tags
     .map((label, index) => renderChip(label, index))
     .join("");
+  const chipY = 146 + (titleLines.length - 1) * 78 + 40;
 
   return `
 <svg width="${OGP_OUTPUT_WIDTH}" height="${OGP_OUTPUT_HEIGHT}" viewBox="0 0 ${OGP_WIDTH} ${OGP_HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +126,7 @@ function buildOgSvg(page, iconDataUrl) {
     ${titleTspans}
   </text>
 
-  <g transform="translate(86 186)">
+  <g transform="translate(86 ${chipY})">
     ${chipMarkup}
   </g>
 

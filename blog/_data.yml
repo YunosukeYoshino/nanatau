@@ -73,7 +73,7 @@ extra_head:
     .page-header h1, .page-title { color: var(--color-base) !important; font-weight: 800; margin-bottom: 24px; font-size: 0 !important; word-break: auto-phrase; }
     .page-header h1::before, .page-title::before { content: "アーカイブ"; font-size: 32px; }
     [data-pagefind-body] .page-title::before { content: "アーカイブ: "; }
-    .post-title { font-size: 24px !important; font-weight: 800; color: var(--color-base) !important; line-height: 1.4; }
+    .post-title { font-size: 24px !important; font-weight: 800; color: var(--color-base) !important; line-height: 1.4; text-wrap: pretty; }
     .post-title::before { content: none !important; }
     .postList { display: flex; flex-direction: column; gap: 16px; list-style: none; padding: 0; }
     .postList article.post, .postList li.post {

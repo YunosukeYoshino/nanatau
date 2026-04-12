@@ -1,5 +1,6 @@
 import lume from "lume/mod.ts";
 import blog from "blog/mod.ts";
+import markdown from "lume/plugins/markdown.ts";
 import {
   getExternalImageAssets,
   getPagefindCustomRecords,
@@ -16,6 +17,8 @@ const site = lume({
 });
 
 const externalPagefindRecords = await getPagefindCustomRecords();
+
+site.use(markdown({ options: { linkify: true } }));
 
 site.use(blog({
   toc: {
