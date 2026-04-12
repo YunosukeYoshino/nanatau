@@ -314,16 +314,14 @@ function getOgImagePath(page) {
   return `/og/${slug}.png`;
 }
 
-function wrapText(text, fontSize, maxWidth, maxLines) {
-  const segmenter = new Intl.Segmenter("ja", { granularity: "word" });
-  const segments = [...segmenter.segment(text)].map(({ segment }) => segment);
-  const lines = [];
+function greedyWrap(segments, fontSize, lineWidth, maxLines) {
+  const lines: string[] = [];
   let current = "";
 
   for (const segment of segments) {
     const next = current + segment;
 
-    if (estimateTextWidth(next, fontSize) <= maxWidth) {
+    if (estimateTextWidth(next, fontSize) <= lineWidth) {
       current = next;
       continue;
     }
@@ -336,26 +334,45 @@ function wrapText(text, fontSize, maxWidth, maxLines) {
       current = "";
     }
 
-    if (lines.length === maxLines) {
-      lines[maxLines - 1] = clampWithEllipsis(
-        lines[maxLines - 1],
-        fontSize,
-        maxWidth,
-      );
-      return lines;
-    }
+    if (lines.length === maxLines) break;
   }
 
-  if (current) {
+  if (current && lines.length < maxLines) {
     lines.push(current.trim());
   }
 
+  return lines;
+}
+
+function wrapText(text, fontSize, maxWidth, maxLines) {
+  const segmenter = new Intl.Segmenter("ja", { granularity: "word" });
+  const segments = [...segmenter.segment(text)].map(({ segment }) => segment);
+
+  // Binary search for the minimum line width that fits within maxLines.
+  // This balances line lengths instead of greedily front-loading each line.
+  const totalWidth = estimateTextWidth(text, fontSize);
+  let lo = Math.ceil(totalWidth / maxLines);
+  let hi = maxWidth;
+
+  while (lo < hi) {
+    const mid = Math.floor((lo + hi) / 2);
+    if (greedyWrap(segments, fontSize, mid, maxLines).length <= maxLines) {
+      hi = mid;
+    } else {
+      lo = mid + 1;
+    }
+  }
+
+  const lines = greedyWrap(segments, fontSize, lo, maxLines);
+
   if (lines.length > maxLines) {
-    return lines.slice(0, maxLines).map((line, index) =>
-      index === maxLines - 1
-        ? clampWithEllipsis(line, fontSize, maxWidth)
-        : line
+    const clamped = lines.slice(0, maxLines);
+    clamped[maxLines - 1] = clampWithEllipsis(
+      clamped[maxLines - 1],
+      fontSize,
+      maxWidth,
     );
+    return clamped;
   }
 
   return lines;
