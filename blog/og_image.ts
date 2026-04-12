@@ -93,7 +93,7 @@ function buildOgSvg(page, iconDataUrl) {
     : typeof page.data.tags === "string"
     ? [page.data.tags]
     : [];
-  const titleLines = wrapText(title, 60, 980, 3);
+  const titleLines = wrapText(title, 60, 1010, 3);
 
   const titleTspans = titleLines.map((line, index) =>
     `<tspan x="86" dy="${index === 0 ? 0 : 78}">${escapeXml(line)}</tspan>`
@@ -364,22 +364,7 @@ function wrapText(text, fontSize, maxWidth, maxLines) {
   const segmenter = new Intl.Segmenter("ja", { granularity: "word" });
   const segments = [...segmenter.segment(text)].map(({ segment }) => segment);
 
-  // Binary search for the minimum line width that fits within maxLines.
-  // This balances line lengths instead of greedily front-loading each line.
-  const totalWidth = estimateTextWidth(text, fontSize);
-  let lo = Math.ceil(totalWidth / maxLines);
-  let hi = maxWidth;
-
-  while (lo < hi) {
-    const mid = Math.floor((lo + hi) / 2);
-    if (greedyWrap(segments, fontSize, mid, maxLines).length <= maxLines) {
-      hi = mid;
-    } else {
-      lo = mid + 1;
-    }
-  }
-
-  const lines = greedyWrap(segments, fontSize, lo, maxLines);
+  const lines = greedyWrap(segments, fontSize, maxWidth, maxLines);
 
   if (lines.length > maxLines) {
     const clamped = lines.slice(0, maxLines);
