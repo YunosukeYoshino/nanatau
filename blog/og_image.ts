@@ -314,6 +314,10 @@ function getOgImagePath(page) {
   return `/og/${slug}.png`;
 }
 
+// line-break: strict — 行頭・行末禁則文字
+const NO_LINE_START = new Set("。、．，！？」』】）〕〉》…‥・～—");
+const NO_LINE_END = new Set("「『【（〔〈《");
+
 function greedyWrap(segments, fontSize, lineWidth, maxLines) {
   const lines: string[] = [];
   let current = "";
@@ -322,6 +326,18 @@ function greedyWrap(segments, fontSize, lineWidth, maxLines) {
     const next = current + segment;
 
     if (estimateTextWidth(next, fontSize) <= lineWidth) {
+      current = next;
+      continue;
+    }
+
+    // 禁則: 改行後の行頭が禁則文字になる場合は追い出さずに現行に留める
+    if (segment.length > 0 && NO_LINE_START.has(segment.trimStart()[0])) {
+      current = next;
+      continue;
+    }
+
+    // 禁則: 行末が行末禁則文字になる場合は次行に送る
+    if (current.length > 0 && NO_LINE_END.has(current[current.length - 1])) {
       current = next;
       continue;
     }
