@@ -122,7 +122,7 @@ function buildOgSvg(page, iconDataUrl) {
     <rect x="38" y="38" width="1124" height="554" rx="24" fill="#FFFEFB"/>
   </g>
 
-  <text x="86" y="146" fill="#111111" font-size="60" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="900">
+  <text x="86" y="146" fill="#111111" font-size="60" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="700">
     ${titleTspans}
   </text>
 
@@ -132,9 +132,9 @@ function buildOgSvg(page, iconDataUrl) {
 
   <circle cx="124" cy="528" r="42" fill="#F4E2B6"/>
   <image href="${iconDataUrl}" x="88" y="492" width="72" height="72" preserveAspectRatio="xMidYMid slice" clip-path="url(#authorAvatarClip)"/>
-  <text x="184" y="528" dominant-baseline="central" fill="#111111" font-size="40" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="900">@pomufgd</text>
+  <text x="184" y="528" dominant-baseline="central" fill="#111111" font-size="40" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="700">@pomufgd</text>
 
-  <text x="1110" y="528" dominant-baseline="central" text-anchor="end" fill="#111111" font-size="30" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="900">ななたうのぶろぐ！</text>
+  <text x="1110" y="528" dominant-baseline="central" text-anchor="end" fill="#111111" font-size="30" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="700">ななたうのぶろぐ！</text>
 </svg>
 `;
 }
@@ -163,7 +163,7 @@ function buildExternalPreviewSvg(post, iconDataUrl) {
   <circle cx="1060" cy="112" r="168" fill="#F6E7C3" opacity="0.42"/>
   <rect x="882" y="82" width="200" height="200" rx="28" fill="#FFF8E8" stroke="#F0DFC2"/>
   <image href="${iconDataUrl}" x="902" y="102" width="160" height="160" preserveAspectRatio="xMidYMid slice" opacity="0.98"/>
-  <text x="92" y="160" fill="#D9BE79" font-size="50" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="800">
+  <text x="92" y="160" fill="#D9BE79" font-size="50" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="700">
     ${titleTspans}
   </text>
   <text x="92" y="338" fill="#6B5B7B" font-size="24" font-family="'Noto Sans JP', 'Nunito', sans-serif" opacity="0.92">
@@ -226,7 +226,7 @@ function buildHomeOgSvg(iconDataUrl) {
   <circle cx="${centerX}" cy="${Math.round(avatarCenterY)}" r="${avatarRadius + 6}" fill="#F4E2B6"/>
   <image href="${iconDataUrl}" x="${centerX - avatarRadius}" y="${Math.round(avatarCenterY) - avatarRadius}" width="${avatarRadius * 2}" height="${avatarRadius * 2}" preserveAspectRatio="xMidYMid slice" clip-path="url(#homeAvatarClip)"/>
 
-  <text x="${titleX}" y="${titleY}" fill="#111111" font-size="64" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="800">${escapeXml(titleText)}</text>
+  <text x="${titleX}" y="${titleY}" fill="#111111" font-size="64" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="700">${escapeXml(titleText)}</text>
 
   <text x="86" y="564" fill="#B8A07A" font-size="22" font-family="'Noto Sans JP', 'Nunito', sans-serif" font-weight="700">@pomufgd</text>
 </svg>
@@ -270,7 +270,7 @@ function renderPng(svg, fontFilePaths) {
 
 async function loadFontFiles() {
   const cssResponse = await fetch(
-    "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&family=Nunito:wght@500;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@500;700;800&display=swap",
     {
       headers: {
         "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; en-us)",
