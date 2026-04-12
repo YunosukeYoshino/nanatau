@@ -95,7 +95,7 @@ extra_head:
     .post-details { gap: 10px; flex-wrap: wrap; }
     .post-excerpt { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
     .body-post { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
-    .post-body.body { font-size: 14.4px; line-height: 1.9; }
+    .post-body.body { font-size: 14.4px; line-height: 1.9; text-wrap: pretty; }
     .post-body.body h2 { font-size: 24px; font-weight: 800; color: var(--color-primary-highlight); margin-top: 60px; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid var(--color-primary); }
     .post-body.body blockquote { margin: 24px 0; padding: 12px 20px; border-left: 3px solid var(--color-primary); background: rgba(255, 213, 79, 0.05); color: var(--color-dim); border-radius: 0 8px 8px 0; }
     :root[data-theme="dark"] .post-body.body blockquote { background: rgba(246, 230, 168, 0.1); }
