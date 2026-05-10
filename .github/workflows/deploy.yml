@@ -3,6 +3,8 @@ name: Build and deploy
 on:
   push:
     branches: [main]
+  repository_dispatch:
+    types: [feed-updated]
 
 permissions:
   contents: read

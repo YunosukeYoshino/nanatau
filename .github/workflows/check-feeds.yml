@@ -1,0 +1,41 @@
+name: Check external feeds
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: blog
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: denoland/setup-deno@v2
+
+      - name: Restore feed state
+        uses: actions/cache@v4
+        with:
+          path: blog/.feed-state.json
+          key: feed-state-${{ github.run_id }}
+          restore-keys: feed-state-
+
+      - name: Check feeds
+        id: check
+        run: deno run --allow-net --allow-read --allow-write --allow-env scripts/check-feeds.ts
+
+      - name: Trigger deploy
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHANGED_FEEDS: ${{ steps.check.outputs.changed_feeds }}
+        run: |
+          gh api "repos/${{ github.repository }}/dispatches" \
+            -f event_type=feed-updated \
+            -f "client_payload[changed_feeds]=$CHANGED_FEEDS"

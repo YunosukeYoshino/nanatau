@@ -4,6 +4,7 @@ draft
 .playwright-mcp
 output
 .env
+.feed-state.json
 docs-report
 .DS_Store
 .venv-motion/
