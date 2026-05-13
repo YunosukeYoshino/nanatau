@@ -13,8 +13,8 @@ const SITE_LABEL_FONT_SIZE = 24;
 const TITLE_MAX_LINES = 3;
 const DESCRIPTION_MAX_LINES = 2;
 
-const fontFilePathsPromise = loadFontFiles();
-const iconDataUrlPromise = loadIconDataUrl();
+let fontFilePathsPromise: Promise<string[]> | undefined;
+let iconDataUrlPromise: Promise<string> | undefined;
 
 export function attachOgImageData(pages) {
   for (const page of pages) {
@@ -40,8 +40,8 @@ export async function createOgImagePages(allPages) {
     typeof page.data.title === "string"
   );
 
-  const fontFilePaths = await fontFilePathsPromise;
-  const iconDataUrl = await iconDataUrlPromise;
+  const fontFilePaths = await getFontFilePaths();
+  const iconDataUrl = await getIconDataUrl();
 
   for (const page of postPages) {
     const svg = buildOgSvg(page, iconDataUrl);
@@ -73,17 +73,27 @@ export async function createOgImagePages(allPages) {
 }
 
 export async function renderExternalPreviewImage(post) {
-  const fontFilePaths = await fontFilePathsPromise;
-  const iconDataUrl = await iconDataUrlPromise;
+  const fontFilePaths = await getFontFilePaths();
+  const iconDataUrl = await getIconDataUrl();
   const svg = buildExternalPreviewSvg(post, iconDataUrl);
   return renderPng(svg, fontFilePaths);
 }
 
 export async function renderHomeOgImage() {
-  const fontFilePaths = await fontFilePathsPromise;
-  const iconDataUrl = await iconDataUrlPromise;
+  const fontFilePaths = await getFontFilePaths();
+  const iconDataUrl = await getIconDataUrl();
   const svg = buildHomeOgSvg(iconDataUrl);
   return renderPng(svg, fontFilePaths);
+}
+
+function getFontFilePaths(): Promise<string[]> {
+  fontFilePathsPromise ??= loadFontFiles();
+  return fontFilePathsPromise;
+}
+
+function getIconDataUrl(): Promise<string> {
+  iconDataUrlPromise ??= loadIconDataUrl();
+  return iconDataUrlPromise;
 }
 
 function buildOgSvg(page, iconDataUrl) {
