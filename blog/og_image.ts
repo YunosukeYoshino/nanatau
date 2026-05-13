@@ -87,12 +87,18 @@ export async function renderHomeOgImage() {
 }
 
 function getFontFilePaths(): Promise<string[]> {
-  fontFilePathsPromise ??= loadFontFiles();
+  fontFilePathsPromise ??= loadFontFiles().catch((error) => {
+    fontFilePathsPromise = undefined;
+    throw error;
+  });
   return fontFilePathsPromise;
 }
 
 function getIconDataUrl(): Promise<string> {
-  iconDataUrlPromise ??= loadIconDataUrl();
+  iconDataUrlPromise ??= loadIconDataUrl().catch((error) => {
+    iconDataUrlPromise = undefined;
+    throw error;
+  });
   return iconDataUrlPromise;
 }
 
