@@ -1,5 +1,3 @@
-import { renderExternalPreviewImage } from "./og_image.ts";
-
 export interface ExternalFeedSource {
   id: string;
   title: string;
@@ -167,7 +165,7 @@ async function fetchExternalImageAssets(): Promise<ExternalImageAsset[]> {
 
 async function fetchQiitaPreviewImage(post: ExternalPost): Promise<Uint8Array> {
   if (!post.image) {
-    return await renderExternalPreviewImage(post);
+    return await renderFallbackExternalPreviewImage(post);
   }
 
   try {
@@ -187,6 +185,13 @@ async function fetchQiitaPreviewImage(post: ExternalPost): Promise<Uint8Array> {
     // Fall through to generated preview.
   }
 
+  return await renderFallbackExternalPreviewImage(post);
+}
+
+async function renderFallbackExternalPreviewImage(
+  post: ExternalPost,
+): Promise<Uint8Array> {
+  const { renderExternalPreviewImage } = await import("./og_image.ts");
   return await renderExternalPreviewImage(post);
 }
 
