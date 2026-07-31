@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <>
       <Header />
-      <section className="kv" aria-labelledby="hero-title">
+      <section className="kv" id="content" tabIndex={-1} aria-labelledby="hero-title">
         <img className="kv-image" src={stageBanner} alt="" width="1672" height="941" fetchPriority="high" />
         <div className="kv-grid" aria-hidden="true" />
         <div className="kv-copy">

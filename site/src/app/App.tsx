@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div id="top">
       <a className="skip-link" href="#content">本文へ移動</a>
-      <main id="content" tabIndex={-1}>
+      <main>
         <Hero />
         <Announcement />
         <Topics />
