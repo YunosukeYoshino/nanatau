@@ -1,8 +1,8 @@
-# nanatau showcase
+# nanatau site
 
 nanatau のキャラクター紹介・MotionPNGTuber・ビジュアルアーカイブをまとめた静的ランディングページです。
 
-`showcase/` で次のコマンドを実行すると開発サーバーを起動できます。
+`site/` で次のコマンドを実行すると開発サーバーを起動できます。
 
 ```bash
 bun install
