@@ -7,6 +7,8 @@
     "build": "cd site && bun run build",
     "preview": "cd site && bun run preview",
     "typecheck": "cd site && bun run typecheck",
+    "deploy:dry-run": "cd site && bun run deploy:dry-run",
+    "deploy": "cd site && bun run deploy",
     "secretlint": "bunx secretlint '**/*'"
   },
   "devDependencies": {

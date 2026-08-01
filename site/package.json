@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "deploy:dry-run": "bun run build && wrangler deploy --dry-run",
+    "deploy": "bun run build && wrangler deploy"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -16,6 +18,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "typescript": "^5.8.3",
-    "vite": "^7.0.6"
+    "vite": "^7.0.6",
+    "wrangler": "^4.92.0"
   }
 }

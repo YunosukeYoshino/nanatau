@@ -14,6 +14,16 @@ bun run dev
 本番ビルドは `bun run build`、成果物の確認は `bun run preview` です。
 型チェックは `bun run typecheck` です。
 
+Cloudflare Workers Static Assetsへデプロイする場合は、Wranglerの認証後に次を実行します。
+
+```bash
+bun run deploy:dry-run
+bun run deploy
+```
+
+`wrangler.jsonc` はViteの`dist/`を静的アセットとして配信し、React SPAの未一致URLを`index.html`へフォールバックします。
+正規URLは`https://nanatau.com/`で、`https://www.nanatau.com/`へのアクセスはWorkerが301リダイレクトします。
+
 画像の正本は `../images/concept/showcase/` に置いています。表情パネルはReactのstateとeffectで自動再生・手動切り替えを行います。
 
 ## 構成

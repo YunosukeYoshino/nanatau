@@ -71,7 +71,11 @@ bun run dev        # 開発サーバー
 bun run typecheck  # TypeScriptチェック
 bun run build      # 本番ビルド
 bun run preview    # 本番ビルドの確認
+bun run deploy:dry-run  # Cloudflare Worker dry-run
+bun run deploy           # Cloudflare Workerへデプロイ
 ```
+
+デプロイにはWranglerのCloudflare認証が必要。設定は`site/wrangler.jsonc`で管理する。
 
 ## Blog Commands
 

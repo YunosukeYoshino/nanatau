@@ -55,6 +55,8 @@ cd site
 bun run typecheck
 bun run build
 bun run preview
+bun run deploy:dry-run
+bun run deploy
 
 # Blog production build
 cd ../blog
