@@ -54,10 +54,6 @@ def promote(asset_dir: Path, repo_root: Path, set_name: str, include_source: boo
         for src in source_candidates:
             shutil.copy2(src, dest_dir / src.name)
 
-    runbook = asset_dir / "RUNBOOK.md"
-    if runbook.is_file():
-        shutil.copy2(runbook, dest_dir / "RUNBOOK.md")
-
     return dest_dir
 
 

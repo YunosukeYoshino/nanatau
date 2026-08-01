@@ -1,4 +1,4 @@
-import stageBanner from "../../../../images/concept/showcase/nanatau-stage-banner-v3.png";
+import stageBanner from "@showcase-assets/nanatau-stage-banner-v3.png";
 import { blogUrl, repositoryUrl } from "../../shared/config/links";
 import Star from "../../shared/ui/Star";
 

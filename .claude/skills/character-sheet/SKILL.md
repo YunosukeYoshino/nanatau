@@ -13,7 +13,7 @@ description: Generate anime character reference sheets (model sheets) from a ref
 2. `google-genai` と `Pillow` がインストール済みであること
 3. リファレンス画像が存在すること
 
-## ワークフロー
+## Step 1: ワークフロー
 
 1. **リファレンス確認**: ユーザーからリファレンス画像のパスを受け取る（なければ `output/character/images/` から選択）
 2. **シートタイプ選択**: AskUserQuestion で以下から選択

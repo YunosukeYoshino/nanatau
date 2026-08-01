@@ -1,9 +1,6 @@
 ---
 name: motion-pngtuber-nanatau
-description: |
-  Orchestrate MotionPNGTuber asset generation inside the nanatau repo.
-  Use when user mentions "MotionPNGTuber", "loop.mp4", "mouth_track.npz",
-  "mouthless", "browser bundle", "動画ベースのPNGTuber", "口消し動画", "ループ候補".
+description: Orchestrate MotionPNGTuber asset generation inside the nanatau repo. Trigger when the user mentions MotionPNGTuber, loop.mp4, mouth_track.npz, mouthless, browser bundle, or ループ候補.
 ---
 
 # MotionPNGTuber Nanatau
@@ -23,7 +20,7 @@ description: |
 - `.claude/skills/motion-pngtuber-nanatau/scripts/verify_server.py --mode stub` で `/healthz` と `/api/chat` が通る
 - 採用版だけ `images/png-tuber/motion/<set-name>/` に正本化する
 
-## 標準ワークフロー
+## Step 1: 標準ワークフロー
 
 1. `output/motion-pngtuber/<set-name>/source*.mp4` を用意
 2. `.claude/skills/motion-pngtuber-nanatau/scripts/find_loop_candidates.py` で loop 候補を比較

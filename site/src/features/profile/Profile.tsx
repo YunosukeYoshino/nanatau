@@ -1,4 +1,4 @@
-import heroFullbody from "../../../../images/concept/showcase/nanatau-hero-fullbody-v7.png";
+import heroFullbody from "@showcase-assets/nanatau-hero-fullbody-v7.png";
 import { repositoryUrl } from "../../shared/config/links";
 
 export default function Profile() {

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">nanatau</title>
+  <rect width="64" height="64" rx="16" fill="#FFFDE7"/>
+  <path d="M32 8c-1.7 4.5-14.5 16.9-14.5 29.1A14.5 14.5 0 0 0 32 51.6a14.5 14.5 0 0 0 14.5-14.5C46.5 24.9 33.7 12.5 32 8Z" fill="#B9D9E8" stroke="#2C3E6B" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="m32 22 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8L32 22Z" fill="#FFFDE7" stroke="#2C3E6B" stroke-width="2.2" stroke-linejoin="round"/>
+</svg>

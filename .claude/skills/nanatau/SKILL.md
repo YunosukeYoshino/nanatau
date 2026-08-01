@@ -1,11 +1,6 @@
 ---
 name: nanatau
-description: |
-  Unified skill for nanatau AI character design, image generation, character sheets,
-  and PNGTuber asset creation. Handles personality variant generation, design exploration,
-  reference sheets, and PNGTuber pipelines.
-  Use when user mentions "ななたう", "nanatau", "キャラ生成", "キャラシート",
-  "PNGTuber", "表情差分", "三面図", "デザイン探索", "背景透過".
+description: Unified skill for nanatau AI character design, image generation, character sheets, and PNGTuber assets. Trigger when the user mentions nanatau, キャラ生成, キャラシート, PNGTuber, 表情差分, 三面図, or 背景透過.
 ---
 
 # ななたう 統合スキル
@@ -32,7 +27,7 @@ output/                     -- 生成出力（.gitignore）
 
 ## ワークフロー
 
-### 1. generate — キャラ画像生成
+### Step 1: generate — キャラ画像生成
 
 性格バリエーション（A-G）またはカスタムプロンプトから画像を生成する。
 
@@ -64,7 +59,7 @@ output/                     -- 生成出力（.gitignore）
 4. Read ツールで生成画像を視覚的に確認
 5. 必要に応じてプロンプト調整・再生成
 
-### 2. explore — デザイン探索
+### Step 2: explore — デザイン探索
 
 リファレンス画像から複数のデザインバリエーションを一括生成し、比較グリッドを作成する。
 
@@ -75,7 +70,7 @@ output/                     -- 生成出力（.gitignore）
 2. TODO: 探索スクリプト (`explore_designs.py`) と設定ファイル (`design_variations.json`) は未実装。現時点では `generate` ワークフローを繰り返し実行してバリエーションを手動比較する
 3. 採用候補を `output/explore/` に保存して比較確認
 
-### 3. sheet — キャラシート生成
+### Step 3: sheet — キャラシート生成
 
 リファレンス画像からプロのアニメ設定画風キャラシートを生成する。
 
@@ -96,7 +91,7 @@ output/                     -- 生成出力（.gitignore）
    ```
 4. Read ツールで生成画像を視覚的に確認
 
-### 4. pngtuber — PNGTuberアセットパイプライン
+### Step 4: pngtuber — PNGTuberアセットパイプライン
 
 ベースポートレートから PNGTuber 用の表情フレーム一式を生成する。
 
@@ -121,7 +116,9 @@ output/                     -- 生成出力（.gitignore）
 
 詳細は [PNGTUBER.md](PNGTUBER.md) を参照。
 
-### 5. rembg — 背景透過
+**完了確認:** 4枚の表情フレームを検証し、採用版を正本化できていること。
+
+### Step 5: rembg — 背景透過
 
 任意のキャラ画像の背景を透過処理する。
 
@@ -152,6 +149,8 @@ result.save("<出力パス>", "PNG")
 ```
 
 ノイズ除去: `alpha < 30` のピクセルを完全透明にしてクリーンな出力を保証。
+
+**完了確認:** 入力画像の背景が透過され、指定した出力パスにPNGが保存されていること。
 
 ## モデル選択ガイド
 

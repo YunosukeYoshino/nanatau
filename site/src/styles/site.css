@@ -71,3 +71,132 @@
     animation: none;
   }
 }
+
+/* Design engineering refinements: calm, responsive, and easy to read. */
+:root {
+  --font-geist-sans: "Avenir Next", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --focus-ring: 2px solid var(--navy);
+}
+
+body {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+:where(h1, h2, h3) {
+  text-wrap: balance;
+}
+
+:where(p, dd) {
+  text-wrap: pretty;
+}
+
+:where(a, button):focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 4px;
+}
+
+.profile :where(a, button):focus-visible,
+.visuals :where(a, button):focus-visible,
+footer :where(a, button):focus-visible {
+  --focus-ring: 2px solid var(--butter);
+}
+
+.skip-link {
+  transition: transform 160ms var(--ease-out);
+}
+
+.menu-button,
+.kv-actions a,
+.pill-link,
+.cta-links a,
+.auto-toggle,
+.state-list button {
+  transition-duration: 180ms;
+  transition-timing-function: var(--ease-out);
+}
+
+.menu-button:active,
+.kv-actions a:active,
+.pill-link:active,
+.cta-links a:active,
+.auto-toggle:active,
+.state-list button:active {
+  transform: scale(0.98);
+}
+
+.kv-actions a span,
+.pill-link span,
+.cta-links a span,
+.announcement-arrow,
+.footer-links a {
+  transition: transform 180ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menu-button:hover,
+  .kv-actions a:hover,
+  .pill-link:hover,
+  .cta-links a:hover {
+    transform: translateY(-2px);
+  }
+
+  .kv-actions a:hover span,
+  .pill-link:hover span,
+  .cta-links a:hover span,
+  .announcement:hover .announcement-arrow,
+  .footer-links a:hover {
+    transform: translateX(3px);
+  }
+
+  .visual-grid img {
+    transition: transform 360ms var(--ease-out);
+  }
+}
+
+.expression-images img {
+  filter: blur(2px);
+  transition: opacity 320ms var(--ease-out), transform 520ms var(--ease-out), filter 260ms var(--ease-out);
+}
+
+.expression-images img.active {
+  filter: blur(0);
+}
+
+.state-list button:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline-offset: -3px;
+}
+
+.auto-toggle:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 4px;
+}
+
+@media (pointer: coarse) {
+  .menu-button:hover,
+  .kv-actions a:hover,
+  .pill-link:hover,
+  .cta-links a:hover {
+    transform: none;
+  }
+
+  .topic-item:hover {
+    background: transparent;
+    padding-left: 10px;
+  }
+
+  .visual-grid figure:hover img {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expression-images img {
+    filter: none;
+    transition: opacity 160ms ease;
+  }
+}
