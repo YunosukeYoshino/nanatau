@@ -53,37 +53,37 @@ macOS や Apple Silicon では `mmcv-full` / `xtcocotools` のビルド調整が
 
 ```bash
 python .claude/skills/motion-pngtuber-nanatau/scripts/find_loop_candidates.py \
-  --video output/motion-pngtuber/grok_377c88d2/source.mp4 \
-  --output-dir output/motion-pngtuber/grok_377c88d2/candidates
+  --video output/motion-pngtuber/sample/source.mp4 \
+  --output-dir output/motion-pngtuber/sample/candidates
 
 python .claude/skills/motion-pngtuber-nanatau/scripts/build_mouth_track.py \
-  --video output/motion-pngtuber/grok_377c88d2/loop.mp4 \
-  --out output/motion-pngtuber/grok_377c88d2/mouth_track.npz \
-  --debug output/motion-pngtuber/grok_377c88d2/mouth_track_debug.mp4 \
+  --video output/motion-pngtuber/sample/loop.mp4 \
+  --out output/motion-pngtuber/sample/mouth_track.npz \
+  --debug output/motion-pngtuber/sample/mouth_track_debug.mp4 \
   --device cpu \
   --quality high
 
 python .claude/skills/motion-pngtuber-nanatau/scripts/build_mouthless.py \
-  --video output/motion-pngtuber/grok_377c88d2/loop.mp4 \
-  --track output/motion-pngtuber/grok_377c88d2/mouth_track.npz \
-  --out output/motion-pngtuber/grok_377c88d2/loop_mouthless.mp4 \
-  --debug output/motion-pngtuber/grok_377c88d2/erase_debug
+  --video output/motion-pngtuber/sample/loop.mp4 \
+  --track output/motion-pngtuber/sample/mouth_track.npz \
+  --out output/motion-pngtuber/sample/loop_mouthless.mp4 \
+  --debug output/motion-pngtuber/sample/erase_debug
 
 python .claude/skills/motion-pngtuber-nanatau/scripts/extract_mouth.py \
-  --video output/motion-pngtuber/grok_377c88d2/loop.mp4 \
-  --track output/motion-pngtuber/grok_377c88d2/mouth_track.npz \
-  --out output/motion-pngtuber/grok_377c88d2/mouth
+  --video output/motion-pngtuber/sample/loop.mp4 \
+  --track output/motion-pngtuber/sample/mouth_track.npz \
+  --out output/motion-pngtuber/sample/mouth
 
 python .claude/skills/motion-pngtuber-nanatau/scripts/export_browser_bundle.py \
-  output/motion-pngtuber/grok_377c88d2
+  output/motion-pngtuber/sample
 
 python .claude/skills/motion-pngtuber-nanatau/scripts/verify_server.py \
-  --asset-dir output/motion-pngtuber/grok_377c88d2/browser \
+  --asset-dir output/motion-pngtuber/sample/browser \
   --mode stub
 
 python .claude/skills/motion-pngtuber-nanatau/scripts/promote_assets.py \
-  output/motion-pngtuber/grok_377c88d2 \
-  --set-name grok-377c88d2
+  output/motion-pngtuber/sample \
+  --set-name sample
 ```
 
 ## 検証モード
