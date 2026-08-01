@@ -24,7 +24,7 @@ bun run deploy
 `wrangler.jsonc` はViteの`dist/`を静的アセットとして配信し、React SPAの未一致URLを`index.html`へフォールバックします。
 正規URLは`https://nanatau.com/`で、`https://www.nanatau.com/`へのアクセスはWorkerが301リダイレクトします。
 
-画像の正本は `../images/concept/showcase/` に置いています。表情パネルはReactのstateとeffectで自動再生・手動切り替えを行います。
+画像の正本は `../images/concept/showcase/` に置いています。アプリケーションコードからは `@showcase-assets/*` エイリアス経由で参照します。表情パネルはReactのstateとeffectで自動再生・手動切り替えを行います。
 
 ## 構成
 

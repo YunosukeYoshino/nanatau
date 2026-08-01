@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import idle from "../../../../images/concept/showcase/nanatau-state-idle.png";
-import talk from "../../../../images/concept/showcase/nanatau-state-talk.png";
-import blink from "../../../../images/concept/showcase/nanatau-state-blink.png";
-import shy from "../../../../images/concept/showcase/nanatau-state-shy.png";
-import teary from "../../../../images/concept/showcase/nanatau-state-teary.png";
+import idle from "@showcase-assets/nanatau-state-idle.png";
+import talk from "@showcase-assets/nanatau-state-talk.png";
+import blink from "@showcase-assets/nanatau-state-blink.png";
+import shy from "@showcase-assets/nanatau-state-shy.png";
+import teary from "@showcase-assets/nanatau-state-teary.png";
 import { repositoryUrl } from "../../shared/config/links";
 
 type MotionState = {
