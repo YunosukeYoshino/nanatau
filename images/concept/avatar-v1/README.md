@@ -9,7 +9,21 @@
 Tripo向けのAポーズ資料・パーツ資料・未採用の3D試作は `output/tripo/` に保存する。
 Showcaseの画像はこの正本への切り替え対象に含めない。
 
-## 制作中の3D候補
+## 前髪 v4・ダンス v3（最新候補）
+
+前髪の額の隙間と大きな尖った毛束を、頭に沿う下地と11本の薄い毛束で修正した。頭・首のダンスも調整し、最大前傾を約85度から36度へ抑えた。作業領域は `output/tripo/nanatau-avatar-v1/`。
+
+- `nanatau-avatar-v4-candidate.vrm`: 前髪、表情、揺れ物を含む静的VRM 1.0。
+- `nanatau-avatar-v4-editable.blend`: 中立姿勢の編集用モデル。
+- `nanatau-dance-v3-editable.blend`: 頭・首の調整と前髪修正を反映した16秒・30fpsのダンス。
+- `motion-polish-v3/dance.mp4` / `motion-polish-v3/comparison.mp4`: 新版と、同じ区間を左に旧v2・右に新v3で並べた比較動画。
+- `fringe-polish-v4/README.md` / `motion-polish-v3/README.md`: 変更、素材出典、検証結果と制約。
+
+VRMの再読み込み、表情と揺れ物、全頂点のウェイト、ダンス480フレームの姿勢・接地、33時点の変形と画角を検査した。新版と比較MP4は全フレームの正常デコードを確認済み。前髪の揺れ物22本を追加し、全体は95ジョイント・117,299三角形となった。配信アプリでの性能測定は未完了。静的VRMにはダンスを含めない。
+
+制作候補はGit管理外の作業領域に保持し、採用画像の正本は変更していない。
+
+## 旧3D候補 v3
 
 目元と挨拶動作を調整したv3は `output/tripo/nanatau-avatar-v1/` に保存する。モデルは未採用の制作候補のため、Git管理外の作業領域で保持する。
 
