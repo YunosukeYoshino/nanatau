@@ -11,10 +11,13 @@ Showcaseの画像はこの正本への切り替え対象に含めない。
 
 ## 制作中の3D候補
 
-後ろ髪を調整したv2は `output/tripo/nanatau-avatar-v1/` に保存する。モデルは未採用の制作候補のため、Git管理外の作業領域で保持する。
+目元と挨拶動作を調整したv3は `output/tripo/nanatau-avatar-v1/` に保存する。モデルは未採用の制作候補のため、Git管理外の作業領域で保持する。
 
-- `nanatau-avatar-v2-candidate.vrm`: 表情・揺れ物を含むVRM 1.0。
-- `nanatau-avatar-v2-editable.blend`: 編集用Blenderファイル。
-- `hair-polish-v2/README.md`: 後ろ髪の変更内容、画像生成条件、検証結果と制約。
+- `nanatau-avatar-v3-candidate.vrm`: 表情・揺れ物を含むVRM 1.0。
+- `nanatau-avatar-v3-editable.blend`: 編集用Blenderファイル。3秒の挨拶アクションを含む。
+- `face-polish-v3/greeting.mp4`: 再読み込みしたVRMによる挨拶・表情・揺れ物の確認動画。
+- `face-polish-v3/README.md`: 目元の変更内容、検証結果と制約。
+
+挨拶アニメーション自体はBlenderファイルに保存し、VRMには含めない。後ろ髪を調整したv2と `hair-polish-v2/README.md` も保持する。
 
 配信アプリでの実トラッキングと負荷測定は未完了。
