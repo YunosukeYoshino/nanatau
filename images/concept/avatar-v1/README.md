@@ -9,6 +9,15 @@
 Tripo向けのAポーズ資料・パーツ資料・未採用の3D試作は `output/tripo/` に保存する。
 Showcaseの画像はこの正本への切り替え対象に含めない。
 
+## 口・首・輪郭・髪の修正 v7（採用確認用）
+
+口周囲の穴と重複面、首の浮いた破片と前面の重なりを修復。BlenderのGUIで口幅・顎・襟・横髪・リボン・花の奥行きを調整し、顔のUVを描画用に整理して肌の境目をペイントした。
+
+- `output/tripo/nanatau-avatar-v1/nanatau-avatar-v7-cua-editable.blend` / `nanatau-avatar-v7-candidate.vrm`: 編集用モデルと静的VRM。
+- `output/tripo/nanatau-avatar-v1/face-neck-v7/`: 4方向画像、10種類の表情、4秒の首振り動画、回帰検査と再読み込み検証、変更内容・制約を記したREADME。
+
+口・首・埋め込み画像の検査とVRM再読み込み検証は合格。最終採用は未確認。既存の生成メッシュを生かした修正で、髪や衣装の細部には粗さが残る。配信アプリの負荷測定は今回の範囲に含めていない。
+
 ## Computer Useによる髪の局所調整 v6（制作途中）
 
 BlenderのGUIで、v5の左側と頭頂の飛び出した毛束を寄せ、前髪の幅を4%広げた。顔の輪郭・表情・UV・ウェイトは保持している。作業領域は `output/tripo/nanatau-avatar-v1/`。
