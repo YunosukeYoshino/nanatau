@@ -57,3 +57,12 @@ v3の既存リグを使った6秒のダンスは、同じ作業領域に保存�
 ダンスはBlenderのアクションとして保存し、v3のVRMには追加していない。
 
 改善方針と公式モーション素材の調査は `dance-research/motion-sources.md` に記録。公開素材の取得・選定と既存リグへの転送をv2で実施した。
+
+## AI制作ノウハウの調査（2026-09-12）
+
+指定されたX 3件とnote 1件から、生成後のUV・法線補修、実モデルのレンダーを基準にした投影ベイク、陰影テクスチャのマスク利用、Text-To-VRMA / ARDYの公開実装を調査した。
+
+- `output/tripo/nanatau-avatar-v1/workflow-research/workflow-notes.md`: 4件の要点、公式資料との照合、現在のモデルとの差と適用順序。
+- `output/tripo/nanatau-avatar-v1/workflow-research/x-findings.md`: Xスレッドの続き、OSS実装、Macの実行経路、ライセンスの確認範囲。
+
+公開資料とソースの閲覧のみ。モデルへの実装、依存ソフトのインストール、動作生成の速度・品質測定は行っていない。
