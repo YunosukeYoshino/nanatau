@@ -9,6 +9,16 @@
 Tripo向けのAポーズ資料・パーツ資料・未採用の3D試作は `output/tripo/` に保存する。
 Showcaseの画像はこの正本への切り替え対象に含めない。
 
+## Mac配信アプリの白潰れ修正（v55互換版 / v61検証）
+
+Webcam Motion Receiverで目・肌・髪が白く潰れる問題を実機で再現し、発光の強さがゼロの70材質で発光色もゼロにした別ファイルで解消を確認した。元v55の形・表情・画像・骨格・揺れ物と、採用デザイン画像は保持する。
+
+- `output/tripo/nanatau-avatar-v1/finish-v61-receiver-materials/nanatau-avatar-v55-receiver-study.vrm` / 同名の `.blend`: 表示互換性の確認用ファイル。
+- 同ディレクトリの `receiver-material-comparison.jpg` / `v55-receiver-idle-sampled.mp4`: 実アプリの修正前後と19.88秒の待機動作記録。
+- `README.md` / `manifest.json`: 修正範囲、保持検査、観測条件とSHA。前段の袖の18案は `finish-v60-sleeve-root/README.md` に未採用の診断として保持する。
+
+VRMの全バイナリと、発光色以外のJSONは元と一致。保存したBlenderの形・UV・法線・ウェイト・形状キー・内包画像・骨・全アクションも一致した。記録は約9枚/秒の画面取得で、描画FPSの測定ではない。本人トラッキング・口パク・OBS同時動作・最終採用は未確認。購入・外部公開・pushは行っていない。
+
 ## 腕と髪のモーション仕上げ v8
 
 v7の首・頭の連動と上向き補正を保持し、腕を元の振り付けへ寄せた。手と髪の通り道を前後の動きごと調整し、必要な場面だけ横髪を外へ流す。右ひじの急な回転も、手の位置と向きを保って修正した。
