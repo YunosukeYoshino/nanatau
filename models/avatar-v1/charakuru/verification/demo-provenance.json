@@ -1,0 +1,42 @@
+{
+  "verifiedDate": "2026-10-09",
+  "userInstruction": "よくデモで使われるダンスをつかって",
+  "danceSelectionDelegatedByUser": "おまかせ",
+  "motion": "Samba Dancing",
+  "provider": "Adobe Mixamo",
+  "credit": "モーション: Adobe Mixamo「Samba Dancing」（Three.js公式FBXLoaderデモと同じ素材）",
+  "referenceDemo": "https://threejs.org/examples/webgl_loader_fbx.html",
+  "officialAssetPage": "https://github.com/mrdoob/three.js/blob/dev/examples/models/fbx/Samba%20Dancing.fbx",
+  "downloadUrl": "https://raw.githubusercontent.com/mrdoob/three.js/b5d6ed3dfab8e395d6f804405ee85f78514c02d4/examples/models/fbx/Samba%20Dancing.fbx",
+  "assetCommit": "b5d6ed3dfab8e395d6f804405ee85f78514c02d4",
+  "sourceFbx": {
+    "sha256": "b9003ee562c87bf03051c3a502411b0808d3513f1d74a2011f7530d9f067069f",
+    "bytes": 3681360
+  },
+  "usageSource": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+  "retargetReference": "https://github.com/pixiv/three-vrm/blob/dev/packages/three-vrm/examples/humanoidAnimation/loadMixamoAnimation.js",
+  "sourceFrameRange": [
+    1,
+    547
+  ],
+  "fullClip": true,
+  "seconds": 18.2,
+  "fps": 30,
+  "renderedFrames": 546,
+  "avatarVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "privateVrma": {
+    "path": "output/charakuru/nanatau-avatar-v1/dance-demo/dance.vrma",
+    "sha256": "d10b630b204b36a53b8384d311eadffe6100000e74e05ca02306d71d7cd9625c",
+    "bytes": 606372
+  },
+  "canonicalVideo": "models/avatar-v1/charakuru/dance-demo.mp4",
+  "videoSha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c",
+  "audio": null,
+  "selectionScope": "Matches the initial dance in the official Three.js FBXLoader demo; no survey or ranking of usage frequency claimed.",
+  "usageScope": "Local rendered derivative video; original FBX, converted motion and animated working Blend retained in ignored output/. Three.js software MIT license is not assigned as the motion license.",
+  "sourceDataRedistribution": false,
+  "rawMotionCommitted": false,
+  "publicUpload": false,
+  "additionalCredits": 0,
+  "additionalPurchase": false
+}

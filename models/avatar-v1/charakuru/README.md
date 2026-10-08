@@ -6,12 +6,15 @@
 
 2026-10-09、完成VRMをCharakuruで踊らせ、髪・スカート・リボンの物理を確認した。公式「愛包ダンスホール」の身体モーションとインスト音源を使った、音付き16秒の縦動画を採用する。
 
+同日、ユーザーの「よくデモで使われるダンスをつかって」に合わせ、Three.js公式デモと同じMixamo「Samba Dancing」を追加。デモ用の動作確認はこの18.2秒サンバを使う。
+
 | ファイル | 用途 |
 | --- | --- |
 | [avatar.blend](avatar.blend) | 編集用の正本。`Nanatau_Charakuru_Production`シーン、`Nanatau_Charakuru_Rig`を編集する |
 | [avatar.vrm](avatar.vrm) | MToonを保存したVRM 1.0の採用出力。バージョン`1.0.1-charakuru-mtoon` |
 | [project.charakit](project.charakit) | Charakuruプロジェクト。元絵、8方向素材、候補、配置、骨対応、制作履歴を保持 |
 | [review.fbx](review.fbx) | 髪を含むスキニング確認用。VRMの物理・利用条件は保存しない |
+| [dance-demo.mp4](dance-demo.mp4) | デモ用サンバ。1080×1080、30fps、18.2秒、音声なし。全身と揺れ物を確認する |
 | [dance-short.mp4](dance-short.mp4) | 採用ダンス動画。720×1280、30fps、16秒、音付き。全身と揺れ物を確認できる |
 | [motion-16s.mp4](motion-16s.mp4) | 再読み込みしたMToon版VRMへ同じ16秒身体入力を与えた動作確認動画 |
 | [manifest.json](manifest.json) | 採用判断、来歴、仕様、利用条件、各成果物のSHA-256 |
@@ -31,7 +34,7 @@ MToonはv1.0.3の共通設定（陰色係数0.64、影境界0、トゥーン係�
 
 ## ダンス再生と動画
 
-Charakuru v1.0.3の「完成VRM」プレビューへ`avatar.vrm`と作業用`output/charakuru/nanatau-avatar-v1/dance/dance.vrma`を読み込むと再生できる。現在のブラウザには両方を読み込み済み。「再生」で身体と揺れ物を確認する。完成VRMとVRMAの選択は`.charakit`へ保存されないため、ページを再読み込みした場合は再選択する。
+Charakuru v1.0.3の「完成VRM」プレビューへ`avatar.vrm`と作業用`output/charakuru/nanatau-avatar-v1/dance/dance.vrma`を読み込むと「愛包ダンスホール」を再生できる。「再生」で身体と揺れ物を確認する。完成VRMとVRMAの選択は`.charakit`へ保存されないため、ページを再読み込みした場合は再選択する。
 
 VRMAは公式VRM Add-on 4.7.1で書き出し、空のシーンへ読み込んだ正本VRMで再検査した。51 Humanoid骨の回転とhipsの位置だけを渡し、揺れ物は再生環境で計算する。480フレームの身体関節位置の差は最大0.061mm、6時点の身体変形頂点の差は最大0.023mm。記録は`verification/dance-vrma.json`に保存する。
 
@@ -40,6 +43,18 @@ VRMAは公式VRM Add-on 4.7.1で書き出し、空のシーンへ読み込んだ
 モーション・音源は **HIMEHINA / Studio LaRa「愛包ダンスホール」**の[公式素材倉庫](https://himehina.jp/gallery?slug=material)から提供された素材。曲の44〜60秒を使用し、[二次創作ガイドライン](https://himehina.jp/guideline)を2026-10-09に確認した。元FBX、元WAV、変換VRMA、モーションを含む作業Blendは`output/`の作業素材とし、Gitには撮影済み動画と検証情報を保存する。出典・ハッシュは`verification/dance-provenance.json`に記録する。
 
 目標として確認した[なのさんのダンス作例](https://x.com/Dstudio_ai/status/2101549849556721968)は[「With U_Challenge Ver.」](https://www.xstage.co/jp/motions/products/31932)の21秒モーションを使用している。その素材は購入が必要だったため、追加購入なしの方針に合わせ、手元の「愛包ダンスホール」で踊るところまで仕上げた。同じ振付や表情機能すべてを再現したという判定ではない。
+
+## デモ用サンバ
+
+**モーション: Adobe Mixamo「Samba Dancing」**。[Three.js公式FBXLoaderデモ](https://threejs.org/examples/webgl_loader_fbx.html)の初期ダンスと同じ[公開FBX](https://github.com/mrdoob/three.js/blob/dev/examples/models/fbx/Samba%20Dancing.fbx)を使う。動作の参照を明確にするために選んだもので、デモ全体での利用頻度を調査したという意味ではない。
+
+身体モーションをななたうのHumanoid骨へ合わせ、MToonと既存の髪・衣装の揺れ設定を保って撮影する。18.2秒の全体を30fpsで再生する、音声なしの動作確認動画。横へ広げた腕まで見える1080×1080の正方形で、全フレームに最低6%の画面余白を確保する。元のMixamoキャラクターは動画へ含めない。サンバ用の作業VRMAは`output/charakuru/nanatau-avatar-v1/dance-demo/dance.vrma`に保存する。Charakuruで見る場合は、完成VRMへこのVRMAを選択する。
+
+身体モーションは公式VRM Add-on 4.7.1のVRMA Exporterで書き出し、空のシーンへ読み込んだ正本VRMで再検査した。546フレームの関節位置の差は最大0.021mm、7時点の身体変形頂点の差は最大0.027mm。揺れ物は60Hz、各フレーム2回の合計1092ステップで計算する。隔離したBlenderプロセス内では自動フレーム処理との二重計算を抑止し、終了前に元の処理へ戻す。正本モデルとライブのBlenderには変更を加えない。
+
+[Adobe公式FAQ](https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html)のMixamo素材による動画制作の条件を2026-10-09に確認した。追加購入なし。元FBX・変換モーション・モーションを含む作業Blendは`output/`へ保持し、撮影した動画と検証情報を正本化する。Three.js本体のMITライセンスをモーションの利用条件として扱わない。
+
+検証記録は`verification/demo-motion.json`（骨対応と物理）、`verification/demo-vrma.json`（再読み込み）、`verification/demo-video.json`（撮影と全体デコード）、`verification/demo-provenance.json`（出典）に保存する。サンバのブラウザ再生は今回の検査範囲に含めず、VRMAの正式な再読み込みと撮影済み動画を確認した。既存の「愛包ダンスホール」のブラウザ検査とは分けて記録する。
 
 ## 確認範囲と残課題
 

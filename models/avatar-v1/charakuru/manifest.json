@@ -80,7 +80,8 @@
     "providerJobDurationSumSeconds": 519.441863,
     "timingScope": "Sum of provider-recorded created-to-completed intervals, including rejected successful rigs; may overlap. Excludes free UI UV, image generation, manual processing, validation and waiting. Total human/agent production time not inferred.",
     "additionalCreditsForMToonUpdate": 0,
-    "additionalCreditsForDance": 0
+    "additionalCreditsForDance": 0,
+    "additionalCreditsForDemoDance": 0
   },
   "limitations": [
     "Fixed normal face and eyes; no expression keys, lip sync, blink or LookAt.",
@@ -186,8 +187,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 8595,
-      "sha256": "8096faaf89e9d7e8e17907b8dbf4d3824453cf222fcd8a59fea5dbfead3831e2"
+      "bytes": 11377,
+      "sha256": "be5212062aa726cf7673912e31b70c13bb0679cb89eef798e6127b21ddc15148"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
@@ -198,6 +199,11 @@
       "path": "models/avatar-v1/charakuru/avatar.vrm",
       "bytes": 15472600,
       "sha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dance-demo.mp4",
+      "bytes": 10007965,
+      "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
     },
     {
       "path": "models/avatar-v1/charakuru/dance-short.mp4",
@@ -238,6 +244,26 @@
       "path": "models/avatar-v1/charakuru/verification/dance-vrma.json",
       "bytes": 2041,
       "sha256": "ebca570a96dac61ee6f6cd2ff12f311722c23df08fedf5a328b90766ccd325a8"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/demo-motion.json",
+      "bytes": 3285,
+      "sha256": "33ba2bee0df814f768053e747816759492cffdbc71d506b4a449bb47a0426d53"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/demo-provenance.json",
+      "bytes": 2145,
+      "sha256": "d7903e605f71b55669ba05d8114583138aed11411c18a6481e71406e9ffb4192"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/demo-video.json",
+      "bytes": 5146,
+      "sha256": "0b4aaf7965be30b39f4ba3c719016857786e0ec2ef935b033654917f384c9dd0"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/demo-vrma.json",
+      "bytes": 1432,
+      "sha256": "d823d2911911aaec4a55f311e74ccc313705cf2658aac298621747c2c0630b1a"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/fbx-roundtrip.json",
@@ -345,6 +371,49 @@
       "playback": "verification/dance-playback.json",
       "video": "verification/dance-short-video.json",
       "provenance": "verification/dance-provenance.json"
+    },
+    "additionalCredits": 0,
+    "additionalPurchase": false,
+    "publicUpload": false
+  },
+  "preferredDemo": "models/avatar-v1/charakuru/dance-demo.mp4",
+  "danceDemo": {
+    "completedAt": "2026-10-09T01:47:28.188132+09:00",
+    "userInstruction": "よくデモで使われるダンスをつかって",
+    "danceSelectionDelegatedByUser": "おまかせ",
+    "motion": "Samba Dancing",
+    "motionProvider": "Adobe Mixamo",
+    "referenceDemo": "https://threejs.org/examples/webgl_loader_fbx.html",
+    "canonicalVideo": "models/avatar-v1/charakuru/dance-demo.mp4",
+    "videoSha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "fps": 30,
+    "frames": 546,
+    "seconds": 18.2,
+    "fullClip": true,
+    "videoCodec": "h264",
+    "pixelFormat": "yuv420p",
+    "audioStreamCount": 0,
+    "privateVrma": {
+      "path": "output/charakuru/nanatau-avatar-v1/dance-demo/dance.vrma",
+      "sha256": "d10b630b204b36a53b8384d311eadffe6100000e74e05ca02306d71d7cd9625c",
+      "bytes": 606372
+    },
+    "bodyOnlyVrmaReloadVerified": true,
+    "browserPlaybackCheck": "Not performed for this Samba clip; earlier 愛包 browser verification is recorded separately.",
+    "mtoonMaterials": 3,
+    "springSolverHz": 60,
+    "springSolverStepCount": 1092,
+    "canonicalModelsUnchanged": true,
+    "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+    "verification": {
+      "motion": "verification/demo-motion.json",
+      "vrma": "verification/demo-vrma.json",
+      "video": "verification/demo-video.json",
+      "provenance": "verification/demo-provenance.json"
     },
     "additionalCredits": 0,
     "additionalPurchase": false,

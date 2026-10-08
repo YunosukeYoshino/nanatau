@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "privateWorkOnly": true,
+  "rawMotionCommitted": false,
+  "source": "Three.js official FBXLoader initial Samba Dancing (Mixamo)",
+  "sourceFbxSha256": "b9003ee562c87bf03051c3a502411b0808d3513f1d74a2011f7530d9f067069f",
+  "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "canonicalBlendSha256": "08e35801dd59537a9c3ad1b3143412071e5bf8f27072cf5972fd8da0c723fc70",
+  "canonicalModelsUnchanged": true,
+  "FRAMES": 546,
+  "FPS": 30,
+  "DURATION": 18.2,
+  "frameCount": 546,
+  "frames": 546,
+  "fps": 30,
+  "seconds": 18.2,
+  "fullClip": true,
+  "sourceFrameRange": [
+    1,
+    547
+  ],
+  "samplerKeys": 547,
+  "timing": "546 intervals at 30fps =18.2s; original final key retained in VRMA, render samples frames1–546",
+  "humanoidBones": 51,
+  "totalPoseBones": 127,
+  "motionChannelsShape": [
+    546,
+    127,
+    10
+  ],
+  "motionSha256": "b92381ff35ed31c6b1e50e1f2a0fb06abb8d2d8ceda06ef8038c06c86bdf94fe",
+  "bodyOnlySha256": "8f4b9fd3beb8fb333939fb7406b0eb85745fc025dfe3af437edf7cc2e7ad8906",
+  "previewBlendSha256": "47b642850041a1db0117478eb38cfbc1dcf63b32c61c8bcdac9fc81c0fc5e011",
+  "vrmaSha256": "d10b630b204b36a53b8384d311eadffe6100000e74e05ca02306d71d7cd9625c",
+  "retargetReference": "Source Mixamo true skin T-pose rest world rotation deltas; adopted original Charakuru geometric T-pose transformed through VRM import bind basis. Imported display hand tails not used. Source Spine2 drives target chest because upperChest is absent.",
+  "hipTranslationScale": 0.8626984839372482,
+  "horizontalCenterOffsetMeters": [
+    0.10617949813604355,
+    0.05928787589073181,
+    0.0
+  ],
+  "retargetMaximumJointPositionErrorMeters": 3.4639531262748217e-06,
+  "springChains": 17,
+  "springNodes": 75,
+  "springColliders": 9,
+  "springSolverHz": 60,
+  "springSubstepsPerFrame": 2,
+  "maximumSpringRotationRadians": 1.906699538230896,
+  "mtoonMaterials": 3,
+  "textureAndMeshUnchanged": true,
+  "eyesAnimated": false,
+  "expressionsAnimated": false,
+  "deformedBoundsAtSevenCheckpointsMeters": {
+    "minimum": [
+      -0.9860399961471558,
+      -1.054520606994629,
+      -0.002973900642246008
+    ],
+    "maximum": [
+      0.5754626989364624,
+      0.6025238633155823,
+      1.6465727090835571
+    ]
+  },
+  "knownLimits": [
+    "Fixed facial expression; no blink or mouth movement",
+    "Authored avatar hair/clothing intersections may remain",
+    "No seamless looping promise; full original Samba clip"
+  ],
+  "springSolverStepSeconds": 0.016666666666666666,
+  "springSolverStepCount": 1092,
+  "automaticSpringFrameHandlerDisabled": true,
+  "automaticHandlerDisableScope": "This isolated background Blender process only; installed add-on files and live Blender unchanged",
+  "visualReviewStatus": "Passed representative native render review by motion worker",
+  "visualReview": {
+    "nativeFrames": [
+      1,
+      137,
+      273,
+      409,
+      546
+    ],
+    "checkpointCount": 5,
+    "scope": "view_image inspection of separate native 3D renders; front, both sideways turns and front return. No evident inverted or collapsed upper arms, wrists, knees or feet at these checkpoints. Whole-body silhouette preserved. This does not certify every frame or remove pre-existing authored accessory intersections."
+  }
+}

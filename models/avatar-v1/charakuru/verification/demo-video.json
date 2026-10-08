@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "renderPassed": true,
+  "previewRenderPassed": true,
+  "previewOnly": false,
+  "encodingPending": false,
+  "title": "Samba Dancing — Three.js FBXLoader / Mixamo demonstration",
+  "motionPreviewBlendSha256": "47b642850041a1db0117478eb38cfbc1dcf63b32c61c8bcdac9fc81c0fc5e011",
+  "motionChannelsSha256": "b92381ff35ed31c6b1e50e1f2a0fb06abb8d2d8ceda06ef8038c06c86bdf94fe",
+  "motionVerificationSha256": "33ba2bee0df814f768053e747816759492cffdbc71d506b4a449bb47a0426d53",
+  "renderScriptSha256": "06f4f8031cf5e14946af1b9b93711d2dc70bae40854289d8d5b7948fcb70378e",
+  "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "motionSource": "New Samba body retarget with verified 60 Hz VRM spring solver; direct replay of all 127 baked pose channels",
+  "blenderVersion": "5.2.1 LTS",
+  "engine": "BLENDER_EEVEE",
+  "viewTransform": "Standard",
+  "dimensions": [
+    1080,
+    1080
+  ],
+  "frames": 546,
+  "fps": 30,
+  "seconds": 18.2,
+  "audio": null,
+  "meshCount": 6,
+  "boneCount": 127,
+  "mtoonMaterialCount": 3,
+  "mtoonMaterialsUnchanged": true,
+  "mtoonMaterials": [
+    {
+      "name": "SmartUV Untextured",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColorFactor": [
+        0.6399999856948853,
+        0.6399999856948853,
+        0.6399999856948853
+      ],
+      "shadingToonyFactor": 0.8999999761581421,
+      "giEqualizationFactor": 1.0,
+      "outlineWidthMode": "none",
+      "baseImage": "head_texture_4k.jpg",
+      "shadeImage": "head_texture_4k.jpg"
+    },
+    {
+      "name": "SmartUV Untextured.001",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColorFactor": [
+        0.6399999856948853,
+        0.6399999856948853,
+        0.6399999856948853
+      ],
+      "shadingToonyFactor": 0.8999999761581421,
+      "giEqualizationFactor": 1.0,
+      "outlineWidthMode": "none",
+      "baseImage": "body_texture_4k.jpg",
+      "shadeImage": "body_texture_4k.jpg"
+    },
+    {
+      "name": "SmartUV Untextured.002",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColorFactor": [
+        0.6399999856948853,
+        0.6399999856948853,
+        0.6399999856948853
+      ],
+      "shadingToonyFactor": 0.8999999761581421,
+      "giEqualizationFactor": 1.0,
+      "outlineWidthMode": "none",
+      "baseImage": "head_texture_4k.jpg.001",
+      "shadeImage": "head_texture_4k.jpg.001"
+    }
+  ],
+  "finiteVertexAndCameraBoundsPassed": true,
+  "checkedPoseFrames": 546,
+  "overallWorldBoundsMeters": [
+    [
+      -1.0121879577636719,
+      -1.167820930480957,
+      -0.05887007713317871
+    ],
+    [
+      0.9369589686393738,
+      0.9086655974388123,
+      1.7089370489120483
+    ]
+  ],
+  "camera": {
+    "projection": "ORTHO",
+    "position": [
+      -0.03761449456214905,
+      -6.167820930480957,
+      0.8250334858894348
+    ],
+    "target": [
+      -0.03761449456214905,
+      -0.1295776665210724,
+      0.8250334858894348
+    ],
+    "scale": 2.2149396890943702,
+    "fixedThroughoutClip": true,
+    "facing": "Actual avatar front from negative Blender Y",
+    "minimumNormalizedMargin": 0.06000000000000005
+  },
+  "palette": {
+    "background": "#FFF8E1",
+    "stage": "#FFFDE7",
+    "avatarAccent": "#2C3E6B"
+  },
+  "frameSha256AtCheckpoints": {
+    "0001.png": "bb6cc64ff2730a0c745a51274e966eeb5f82e933397b289051b5bf34046c34ce",
+    "0137.png": "a9d2dd905fac67bd3fe5952572070af47bb1c61def47165a751a0c0d6a29463d",
+    "0273.png": "e9a28bc9dcb649b7c38eb927cfb7215f46e17f41a2bedd8b201f163b74d8dc56",
+    "0409.png": "2f0bbe79405fc4632bf3a762015db4c578174c6ac71cd2d4a23162246f217d29",
+    "0546.png": "3731c18831a456d4e05354c4f65f71e5f980aa91977135eb6b71d2f1f5c022cc"
+  },
+  "existingLimitations": [
+    "fixed neutral facial expression; blink and lip sync absent",
+    "existing hair/accessory intersections"
+  ],
+  "publicUpload": false,
+  "sourceDataRedistribution": false,
+  "visualReviewPending": false,
+  "encodingPassed": true,
+  "video": {
+    "filename": "dance-demo.mp4",
+    "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c",
+    "bytes": 10007965,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "fps": "30/1",
+    "decodedFrames": 546,
+    "encodedDurationSeconds": 18.2,
+    "fullDecodePassed": true,
+    "audioStreamCount": 0
+  },
+  "visualReview": {
+    "checkedNativeRenderedFrames": [
+      1,
+      137,
+      273,
+      409,
+      546
+    ],
+    "checkedDimensions": [
+      1080,
+      1080
+    ],
+    "actualImportedMtoonShader": true,
+    "noObviousWristUpperArmKneeFootInversionObserved": true,
+    "wholeCharacterAndExtendedHandsInsideFrame": true,
+    "sambaTurnsAndReturnToFrontObserved": true,
+    "fixedFacialExpression": true,
+    "existingHairAccessoryIntersections": true,
+    "newGeometryOrMaterialChanges": false
+  },
+  "videoPlayback": "One full 18.2-second Samba clip; no encoded repetition or audio",
+  "canonicalVideo": "models/avatar-v1/charakuru/dance-demo.mp4",
+  "rawMotionCommitted": false
+}
