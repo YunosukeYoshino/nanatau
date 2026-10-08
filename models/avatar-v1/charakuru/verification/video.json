@@ -1,72 +1,26 @@
 {
-  "current-16s.mp4": {
-    "sha256": "e03d3f1c33d915e62bd44be24096339e2df89766e14e188873c39de7b6104f8f",
-    "bytes": 4813229,
-    "probe": {
-      "programs": [],
-      "stream_groups": [],
-      "streams": [
-        {
-          "codec_name": "h264",
-          "width": 640,
-          "height": 720,
-          "avg_frame_rate": "30/1",
-          "nb_read_frames": "480"
-        }
-      ],
-      "format": {
-        "duration": "16.000000"
-      }
-    }
-  },
-  "charakuru-16s.mp4": {
-    "sha256": "df0cda445e3daf75efbf4048b551035ddd62889f1128e25e669bf4e03bccf973",
-    "bytes": 6527190,
-    "probe": {
-      "programs": [],
-      "stream_groups": [],
-      "streams": [
-        {
-          "codec_name": "h264",
-          "width": 640,
-          "height": 720,
-          "avg_frame_rate": "30/1",
-          "nb_read_frames": "480"
-        }
-      ],
-      "format": {
-        "duration": "16.000000"
-      }
-    }
-  },
-  "comparison-16s.mp4": {
-    "sha256": "23dfe033d058129e27e06fa23b53004aaba920120bb098607e98b84ab4a2b8fe",
-    "bytes": 10779565,
-    "probe": {
-      "programs": [],
-      "stream_groups": [],
-      "streams": [
-        {
-          "codec_name": "h264",
-          "width": 1280,
-          "height": 720,
-          "avg_frame_rate": "30/1",
-          "nb_read_frames": "480"
-        }
-      ],
-      "format": {
-        "duration": "16.000000"
-      }
-    }
-  },
-  "conditions": {
-    "left": "Latest saved current VRM v108",
-    "right": "Charakuru standard workflow plus approved manual rig repair",
-    "bodyInputSha256": "24f1d838921e08714dee10fbb6c7f3b5aca06622ad68f264fe531fad861be011",
-    "neutralFaceAndEyes": true,
-    "sameCameraLightsRenderer": true,
-    "springSimulation": "Separate simulations; installed Blender VRM1 spring handler,60Hz",
-    "formalCharakuruVrmReload": "Pending metadata and formal export",
-    "colorComparison": "Common diffuse material from source base color texture and color factor; original MToon/PBR rendering not compared"
-  }
+  "passed": true,
+  "videoSha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68",
+  "sourceVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "motionChannelsSha256": "726188f289dbc74cd73807f621e5d3cd96f3ae98bdc0482c5af41322240e7945",
+  "codec": "h264",
+  "pixelFormat": "yuv420p",
+  "dimensions": [
+    640,
+    720
+  ],
+  "frames": 480,
+  "fps": 30,
+  "seconds": 16.0,
+  "fullDecodePassed": true,
+  "audioTracks": 0,
+  "materialPreview": "Actual imported VRM MToon shader without replacement",
+  "source": "480 frames rendered from fresh VRM reload and verified 60Hz spring solver channels",
+  "visualCheckpoints": [
+    "static/front.png",
+    "static/face.png",
+    "static/back.png",
+    "frames/0091.png",
+    "frames/0271.png"
+  ]
 }

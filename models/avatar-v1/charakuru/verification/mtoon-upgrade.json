@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "releaseUrl": "https://github.com/nanocle/Charakuru/releases/tag/v1.0.3",
+  "charakuruVersion": "v1.0.3",
+  "officialZipSha256": "5b2d9c45c2b13e6acb26e4f99def6af24103f91760bb97311898d3eda575d81b",
+  "officialExporterSha256": "d0b78017b6c18d7b542ff8c063786458293db865a8f4503016c979ac127f107b",
+  "localExporterSha256": "727554beb322f96d5078414209aac466de612052a2fc279ab90add710e06789a",
+  "localExporterPatch": "mtoon.gi_intensity_factor → mtoon.gi_equalization_factor (VRM Add-on 4.7.1 RNA)",
+  "compatibilityRegression": {
+    "officialGiProfile": 1,
+    "beforePatchExportedGiEqualizationFactor": 0.8999999761581421,
+    "beforePatchAssertion": "Official GI profile was not persisted",
+    "afterPatchExportedGiEqualizationFactor": 1,
+    "passed": true
+  },
+  "baseColorPreservation": "Restored original exported factor [1,1,1,1] after conversion, instead of unused Principled socket default [.8,.8,.8]; official shade multiplier .64.",
+  "sourceVrmSha256": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
+  "vrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "additionalCredits": 0,
+  "geometryUvWeightsRigTexturesSpringsPreserved": true,
+  "metadataPolicy": "Existing author and usage terms preserved; version 1.0.1-charakuru-mtoon.",
+  "workingProject": "projects/756f4f3f-f32a-4f09-97d5-16ab21d33820/project.charakit",
+  "browserPreview": "Pending; Blender reimport and actual MToon rendering verified."
+}

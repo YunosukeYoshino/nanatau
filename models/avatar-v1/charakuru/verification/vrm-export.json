@@ -1,7 +1,181 @@
 {
-  "exported": true,
-  "vrmVersion": "1.0",
-  "meta": {
+  "passed": true,
+  "charakuruVersion": "v1.0.3",
+  "releaseUrl": "https://github.com/nanocle/Charakuru/releases/tag/v1.0.3",
+  "releaseZipSha256": "5b2d9c45c2b13e6acb26e4f99def6af24103f91760bb97311898d3eda575d81b",
+  "profile": {
+    "shadeMultiplier": 0.64,
+    "shadingShiftFactor": 0,
+    "shadingToonyFactor": 0.9,
+    "giIntensityFactor": 1,
+    "outlineWidthMode": "none"
+  },
+  "sourceVrmSha256": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
+  "vrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "blendSha256": "08e35801dd59537a9c3ad1b3143412071e5bf8f27072cf5972fd8da0c723fc70",
+  "materialCount": 3,
+  "mtoonMaterialCount": 3,
+  "materials": [
+    {
+      "name": "SmartUV Untextured.001",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "mtoon": {
+        "giEqualizationFactor": 1.0,
+        "outlineColorFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outlineLightingMixFactor": 1.0,
+        "outlineWidthFactor": 0.0,
+        "outlineWidthMode": "none",
+        "parametricRimColorFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parametricRimFresnelPowerFactor": 1.0,
+        "parametricRimLiftFactor": 1.0,
+        "renderQueueOffsetNumber": 0,
+        "rimLightingMixFactor": 0.0,
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadeMultiplyTexture": {
+          "index": 0
+        },
+        "shadingShiftFactor": 0.0,
+        "shadingToonyFactor": 0.8999999761581421,
+        "specVersion": "1.0",
+        "transparentWithZWrite": false,
+        "uvAnimationRotationSpeedFactor": 0.0,
+        "uvAnimationScrollXSpeedFactor": 0.0,
+        "uvAnimationScrollYSpeedFactor": 0.0
+      }
+    },
+    {
+      "name": "SmartUV Untextured",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "mtoon": {
+        "giEqualizationFactor": 1.0,
+        "outlineColorFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outlineLightingMixFactor": 1.0,
+        "outlineWidthFactor": 0.0,
+        "outlineWidthMode": "none",
+        "parametricRimColorFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parametricRimFresnelPowerFactor": 1.0,
+        "parametricRimLiftFactor": 1.0,
+        "renderQueueOffsetNumber": 0,
+        "rimLightingMixFactor": 0.0,
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadeMultiplyTexture": {
+          "index": 1
+        },
+        "shadingShiftFactor": 0.0,
+        "shadingToonyFactor": 0.8999999761581421,
+        "specVersion": "1.0",
+        "transparentWithZWrite": false,
+        "uvAnimationRotationSpeedFactor": 0.0,
+        "uvAnimationScrollXSpeedFactor": 0.0,
+        "uvAnimationScrollYSpeedFactor": 0.0
+      }
+    },
+    {
+      "name": "SmartUV Untextured.002",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "mtoon": {
+        "giEqualizationFactor": 1.0,
+        "outlineColorFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "outlineLightingMixFactor": 1.0,
+        "outlineWidthFactor": 0.0,
+        "outlineWidthMode": "none",
+        "parametricRimColorFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parametricRimFresnelPowerFactor": 1.0,
+        "parametricRimLiftFactor": 1.0,
+        "renderQueueOffsetNumber": 0,
+        "rimLightingMixFactor": 0.0,
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadeMultiplyTexture": {
+          "index": 2
+        },
+        "shadingShiftFactor": 0.0,
+        "shadingToonyFactor": 0.8999999761581421,
+        "specVersion": "1.0",
+        "transparentWithZWrite": false,
+        "uvAnimationRotationSpeedFactor": 0.0,
+        "uvAnimationScrollXSpeedFactor": 0.0,
+        "uvAnimationScrollYSpeedFactor": 0.0
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "body_texture_4k.jpg",
+      "sha256": "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab",
+      "mimeType": "image/jpeg"
+    },
+    {
+      "name": "head_texture_4k.jpg",
+      "sha256": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+      "mimeType": "image/jpeg"
+    },
+    {
+      "name": "head_texture_4k.jpg.001",
+      "sha256": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+      "mimeType": "image/jpeg"
+    }
+  ],
+  "geometryUvWeightsRestBonesHumanoidUnchanged": true,
+  "springExtensionUnchanged": true,
+  "metadataPreservedExceptVersion": true,
+  "metadata": {
     "allowAntisocialOrHateUsage": false,
     "allowExcessivelySexualUsage": false,
     "allowExcessivelyViolentUsage": false,
@@ -16,36 +190,34 @@
     "licenseUrl": "https://vrm.dev/licenses/1.0/",
     "modification": "allowModification",
     "name": "ななたう",
-    "version": "1.0.0-charakuru"
+    "version": "1.0.1-charakuru-mtoon"
   },
-  "metaSource": "Author and usage policies inherited unchanged from the existing Nanatau VRM; name/version identify the user-adopted Charakuru asset.",
-  "metaSourceVrmSha256": "cb34216d9e697bdabbbb5e81205d5fb5d1b51c438779d5c075b32c4ab1d1b6bc",
-  "adoptionStatement": "Charakuruが勝ちですね！これを正本にしていきましょう",
-  "workflow": "Charakuru標準工程＋手動骨修正",
-  "validatorHasFatalErrors": false,
-  "validatorMessages": [],
-  "humanoidBoneCount": 51,
-  "springChains": 17,
-  "springJoints": 75,
-  "colliders": 9,
-  "faceCount": 96751,
-  "rigBoneCount": 129,
-  "textures": [
-    {
-      "name": "body_texture_4k",
-      "mimeType": "image/jpeg",
-      "sha256": "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab",
-      "bytes": 4251995
-    },
-    {
-      "name": "head_texture_4k",
-      "mimeType": "image/jpeg",
-      "sha256": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
-      "bytes": 3259498
+  "conversion": {
+    "materials": 3,
+    "mtoon": 3
+  },
+  "outputInspector": {
+    "materials": 3,
+    "mtoon": 3,
+    "export": {
+      "materials": 3,
+      "mtoon": 3,
+      "textures": 3
     }
+  },
+  "compatibilityAdjustments": [
+    "Official exporter GI property changed from gi_intensity_factor to installed gi_equalization_factor; matches official browser MToon mapping.",
+    "Preserved actual adopted glTF baseColorFactor=1 instead of unused Principled socket RGB default=.8; shade recomputed with official multiplier=.64."
   ],
-  "vrmSha256": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
-  "vrmBytes": 12210320,
-  "blendSha256": "1a15bfce0599d30bcf21c7b2fb141eb5d0bce4f627f4d82c442aa96798b54861",
-  "reloadVerified": true
+  "reloadPending": false,
+  "reloadVerification": "vrm-reload.json",
+  "exportedMeshNodesSkinsUnchanged": {
+    "meshes": true,
+    "nodes": true,
+    "skins": true,
+    "scene": true
+  },
+  "identicalGeometrySkinAccessorViews": 37,
+  "accessorBufferViewRenumberingOnly": true,
+  "sceneChanges": "Added material_workflow provenance only"
 }

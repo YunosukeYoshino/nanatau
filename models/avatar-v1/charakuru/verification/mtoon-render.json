@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "sourceVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "sourceBlendSha256": "d213631f359b5603d70fdfbcfae96fa44560ca0d9f24002567a0a0c73d109b99",
+  "motionChannelsSha256": "726188f289dbc74cd73807f621e5d3cd96f3ae98bdc0482c5af41322240e7945",
+  "blenderVersion": "5.2.1 LTS",
+  "materialPreview": "Actual imported VRM MToon shader; materials were not replaced",
+  "mtoonMaterialCount": 3,
+  "meshCount": 6,
+  "boneCount": 127,
+  "engine": "BLENDER_EEVEE",
+  "viewTransform": "Standard",
+  "staticDimensions": [
+    1100,
+    1200
+  ],
+  "staticSha256": {
+    "back.png": "71ce8bd9ffe8551d049aad755fc56c5ec281634db6240a7fe69179cff0107a96",
+    "face.png": "d2dd7ff68a8651187dec5158a4d03bb8d5e49516a8af5bf6c8a2296ddaefd25a",
+    "front.png": "804fe824e425b4163cf33cdf58e9930fb2157cf0132939d062878eca841b766c",
+    "left.png": "f629b5dd7d5f66d406989eb4de2fa48065b2b49b0c8af914841af84051c37a2e",
+    "left45.png": "b287e939b9f32a89bf5a0c98e06003ce24f7867b2caab41df4908260676e3ff5",
+    "right.png": "d52f058ab8e2dcd9df0d982ab47de316d57a28d3dad40aca942f188694804ebb",
+    "right45.png": "a1516313afc978aa1eb5b3e7f027aab3cc772bb4d6241f2b3e23c42decdf5372"
+  },
+  "frames": 480,
+  "fps": 30,
+  "seconds": 16,
+  "videoDimensions": [
+    640,
+    720
+  ],
+  "motionSource": "Fresh VRM reload, approved body input and 60Hz VRM spring solver; directly replayed verified pose channels",
+  "frameCount": 480,
+  "videoEncodingPending": false,
+  "videoSha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68",
+  "videoFullDecodePassed": true
+}

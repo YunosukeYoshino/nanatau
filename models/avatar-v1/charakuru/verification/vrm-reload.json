@@ -1,7 +1,7 @@
 {
   "passed": true,
   "scope": "Fresh import of the written VRM in an empty Blender scene, actual 60Hz VRM spring solver and 480 frames of the same body input; 12 front/side render checkpoints.",
-  "vrmSha256": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
+  "vrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
   "blenderVersion": "5.2.1 LTS",
   "vrmAddonVersion": "4.7.1",
   "meshCount": 6,
@@ -34,23 +34,16 @@
   "maximumDeformedVertexErrorMetersAtSixCheckpoints": 0.0003582434437703341,
   "boneBasisHandling": "Approved T-pose reference transformed through original/imported bind bases; Blender-reconstructed hand tails do not change the input pose.",
   "maximumSpringLocalRotationRadians": 1.1903250217437744,
+  "mtoonMaterials": 3,
+  "materialPreview": "Actual imported MToon shader without replacement",
   "applicationScope": "Blender VRM Add-on; streaming applications not tested.",
   "visualReviewPending": false,
   "visualReview": {
-    "reviewedCheckpoints": [
-      1,
-      91,
-      181,
-      271,
-      361,
-      480
+    "scope": "Front/side rendered checkpoints inspected; actual reimported MToon shader",
+    "existingLimitations": [
+      "hair/accessory intersections",
+      "ground offset from common body input"
     ],
-    "views": [
-      "front",
-      "side"
-    ],
-    "reviewedImages": 12,
-    "result": "No explosion, detached roots or lost head/body texture observed. Accessory/hair intersections remain known limitations."
-  },
-  "poseMatrixDifferenceInterpretation": "Raw bone matrices use different imported bone display axes; compare bind-relative deformation and vertex/joint positions. This raw matrix difference is not a skin deformation error."
+    "materialConversionRegressionObserved": false
+  }
 }
