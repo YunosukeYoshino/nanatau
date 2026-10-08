@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "adoption": {
+    "adoptedAt": "2026-10-08T10:02:05.326697+00:00",
+    "decisionSource": "Human user in current Codex session",
+    "userStatement": "Charakuruが勝ちですね！これを正本にしていきましょう",
+    "winner": "Charakuru",
+    "workflow": "Charakuru標準工程＋手動骨修正",
+    "canonicalDirectory": "models/avatar-v1/charakuru",
+    "canonicalPreviewDirectory": "images/concept/avatar-v1/charakuru",
+    "metadataPolicy": "Existing Nanatau author and usage terms inherited unchanged; no new distribution permission assigned.",
+    "formalVrmExport": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
+    "verification": "adopted-vrm-reload-verification.json",
+    "additionalCredits": 0,
+    "publicationAuthorized": false,
+    "pushAuthorized": false
+  },
+  "workflow": "Charakuru標準工程＋手動骨修正",
+  "geometry": {
+    "meshes": 6,
+    "triangles": 96751,
+    "blendBones": 129,
+    "vrmBones": 127,
+    "humanoidBones": 51,
+    "springChains": 17,
+    "springJoints": 75,
+    "colliders": 9,
+    "textureResolution": [
+      4096,
+      4096
+    ],
+    "textureCount": 2
+  },
+  "vrmMeta": {
+    "allowAntisocialOrHateUsage": false,
+    "allowExcessivelySexualUsage": false,
+    "allowExcessivelyViolentUsage": false,
+    "allowPoliticalOrReligiousUsage": false,
+    "allowRedistribution": false,
+    "authors": [
+      "Nanatau"
+    ],
+    "avatarPermission": "onlyAuthor",
+    "commercialUsage": "personalProfit",
+    "creditNotation": "required",
+    "licenseUrl": "https://vrm.dev/licenses/1.0/",
+    "modification": "allowModification",
+    "name": "ななたう",
+    "version": "1.0.0-charakuru"
+  },
+  "vrmMetaSourceSha256": "cb34216d9e697bdabbbb5e81205d5fb5d1b51c438779d5c075b32c4ab1d1b6bc",
+  "sourceDesigns": [
+    {
+      "path": "images/concept/avatar-v1/approved-design.png",
+      "sha256": "03b3cf8bc3bbd6e5954dacc62d27980e1a499ba49ecee77f67d1ac940e9292e9"
+    },
+    {
+      "path": "images/concept/avatar-v1/approved-turnaround.png",
+      "sha256": "4df4c3f0ece9531f38f3d67333e6e07d9409db43b3ef93801ad6a6a489139c05"
+    }
+  ],
+  "comparison": {
+    "existingSavedVrmSha256": "cb34216d9e697bdabbbb5e81205d5fb5d1b51c438779d5c075b32c4ab1d1b6bc",
+    "winner": "Charakuru",
+    "bodyInputSha256": "24f1d838921e08714dee10fbb6c7f3b5aca06622ad68f264fe531fad861be011",
+    "frames": 480,
+    "fps": 30,
+    "seconds": 16,
+    "videoSource": "Reviewed pre-export Blend motion; written VRM separately reimported and simulated for all480frames.",
+    "allFrameJointDifferenceMeters": 0.0005568077118296003,
+    "sixCheckpointVertexDifferenceMeters": 0.0003582434437703341
+  },
+  "cost": {
+    "tripoCreditsConsumed": 400,
+    "remainingCreditsAtVerification": 195,
+    "additionalCreditsForCanonization": 0,
+    "topUp": false,
+    "providerJobDurationSumSeconds": 519.441863,
+    "timingScope": "Sum of provider-recorded created-to-completed intervals, including rejected successful rigs; may overlap. Excludes free UI UV, image generation, manual processing, validation and waiting. Total human/agent production time not inferred."
+  },
+  "limitations": [
+    "Fixed normal face and eyes; no expression keys, lip sync, blink or LookAt.",
+    "Accessory/hair intersections and proportion-dependent ground offset remain.",
+    "Streaming applications and human tracking untested."
+  ],
+  "files": [
+    {
+      "path": "models/avatar-v1/charakuru/README.md",
+      "bytes": 3867,
+      "sha256": "61d0314232924cf04690fb4e0fb0e020a863b89ab840584419e93e46fde33fc2"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/avatar.blend",
+      "bytes": 22021855,
+      "sha256": "1a15bfce0599d30bcf21c7b2fb141eb5d0bce4f627f4d82c442aa96798b54861"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/avatar.vrm",
+      "bytes": 12210320,
+      "sha256": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/motion-16s.mp4",
+      "bytes": 6527190,
+      "sha256": "df0cda445e3daf75efbf4048b551035ddd62889f1128e25e669bf4e03bccf973"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/project.charakit",
+      "bytes": 120498124,
+      "sha256": "67a89702ed6d193bdd5e7ef25d02118d033e4f053632207000562cf1c38399d0"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/review.fbx",
+      "bytes": 12486476,
+      "sha256": "5aa64dd00f2bbea9774021cb1539e6470e2eddfbb2ce8811171ec52cf8ee325f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/fbx-roundtrip.json",
+      "bytes": 636,
+      "sha256": "3b16ec2d27ecaa2a656751900bb80f21c86e5824d41844de71f82a0c5585c369"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/manual-rig.json",
+      "bytes": 1656,
+      "sha256": "185fb46651efbbf90b288b291dd587b55c27aec1338b5a5f0ed3151ea9fa9e8a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/video.json",
+      "bytes": 1993,
+      "sha256": "aba7ab73f80fe9b0ca98f2e069cff226964a14e13c7f1ab6509842b5ac94a3dc"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/vrm-export.json",
+      "bytes": 1780,
+      "sha256": "3ac05424cbb958e7451cc02e4ae71d82d1a67e9b1ea32ceacec589130d3f7947"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/vrm-reload.json",
+      "bytes": 2274,
+      "sha256": "21bd8626790aea5dce444b00a89682c211192422831d986b120113aa96b2021b"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/back.png",
+      "bytes": 1802548,
+      "sha256": "99b3316a569845453ceaaf228728351b04dcb3dc460b5042a4dd527ebde35050"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/face.png",
+      "bytes": 2066668,
+      "sha256": "ac29158693d725c35b6b3cf477e6a0ab163aa75970ac8e38467345159c897c84"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/front.png",
+      "bytes": 1862601,
+      "sha256": "aafd4e36088382941ce53a0774715bdaab6208b43410e45e97b638e11c92656a"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/left.png",
+      "bytes": 1688895,
+      "sha256": "8d54c539ca7e6dba867b144633417c60050460d039d0bd6d673e76bb65dcf761"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/left45.png",
+      "bytes": 1805802,
+      "sha256": "460b3162922127de34b319ad660ff06656ec6135ad67ee241f2be9f69fb89ff7"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0001.png",
+      "bytes": 632580,
+      "sha256": "458f7ef210a162617a3e452b6f6c436932ab51403251d6004149907fb56bae70"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0091.png",
+      "bytes": 612035,
+      "sha256": "529430a947431009fc90d2d0349b78b0f224da6e93a7debbbee2fe9da024deec"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0181.png",
+      "bytes": 612513,
+      "sha256": "c1933de0073dcd0d5ca548acbd4667453c8c69e43234ee117c8f6f614d6e3899"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0271.png",
+      "bytes": 627295,
+      "sha256": "c4f3af0bd30aabae39c4e42139c27ab12c3c7932e61182c7f6490f3c1b8026ec"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0361.png",
+      "bytes": 620922,
+      "sha256": "f2ef2cd3879547f6cd4182c5977b5c8ad48cff7640e6762af592130f5d7bbf85"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0480.png",
+      "bytes": 610389,
+      "sha256": "635b792910583543489b300113e7e256429cdf2a9e55714ee38b89ca53893c2d"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0001.png",
+      "bytes": 582806,
+      "sha256": "efc83321104f2117a65190c3f1132fba4f17167325fa506c2178fe4222e86e4f"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0091.png",
+      "bytes": 613118,
+      "sha256": "0b6e2ad75760be7b04391232c619207ccb032811a27394de980c3810ecab9baf"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0181.png",
+      "bytes": 599632,
+      "sha256": "6b92bb9fc700ff80cb1183f36a685d046495834f13b180ee6c4d228c7f67ac8c"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0271.png",
+      "bytes": 611010,
+      "sha256": "f19edc0301b3636b8d6f46857e17b7859c21e1635de11707725e0312a2f8c88e"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0361.png",
+      "bytes": 590203,
+      "sha256": "6344076ea2d1c9f1809c2a296a9fe179c58d588dfbbb9ad5486f6afe7f0d5422"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0480.png",
+      "bytes": 606141,
+      "sha256": "00c45a0a4d2e7eeb0c4f832ee608cfaf8d1f3973f00f033395079b4129bf33a0"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/right.png",
+      "bytes": 1692875,
+      "sha256": "5d3365a477cdbf2283faa57e58aa9b6cee036f691877d1d8dad5308dab5f8919"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/right45.png",
+      "bytes": 1809560,
+      "sha256": "567345dcafafde6dc3a52da2a2d911417557c4b4bde2fcab7012891b04e25a68"
+    }
+  ]
+}

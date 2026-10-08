@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "meshes": 6,
+  "faces": 96751,
+  "boneCount": 129,
+  "maximumRestVertexErrorMeters": 3.5341206865404313e-07,
+  "maximumUvError": 0.0,
+  "maximumVertexWeightError": 0.0,
+  "maximumBoneHeadErrorMeters": 7.701266243563889e-07,
+  "embeddedTexturesSha256": [
+    "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+    "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab"
+  ],
+  "allSourceTexturesReturnedUnchanged": true,
+  "scope": "FBX reload validates mesh, UV, skinned weights and rest bone positions. FBX does not store VRM spring settings or metadata; VRM reload remains pending."
+}

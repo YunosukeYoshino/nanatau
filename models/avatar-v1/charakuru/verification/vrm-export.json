@@ -1,0 +1,51 @@
+{
+  "exported": true,
+  "vrmVersion": "1.0",
+  "meta": {
+    "allowAntisocialOrHateUsage": false,
+    "allowExcessivelySexualUsage": false,
+    "allowExcessivelyViolentUsage": false,
+    "allowPoliticalOrReligiousUsage": false,
+    "allowRedistribution": false,
+    "authors": [
+      "Nanatau"
+    ],
+    "avatarPermission": "onlyAuthor",
+    "commercialUsage": "personalProfit",
+    "creditNotation": "required",
+    "licenseUrl": "https://vrm.dev/licenses/1.0/",
+    "modification": "allowModification",
+    "name": "ななたう",
+    "version": "1.0.0-charakuru"
+  },
+  "metaSource": "Author and usage policies inherited unchanged from the existing Nanatau VRM; name/version identify the user-adopted Charakuru asset.",
+  "metaSourceVrmSha256": "cb34216d9e697bdabbbb5e81205d5fb5d1b51c438779d5c075b32c4ab1d1b6bc",
+  "adoptionStatement": "Charakuruが勝ちですね！これを正本にしていきましょう",
+  "workflow": "Charakuru標準工程＋手動骨修正",
+  "validatorHasFatalErrors": false,
+  "validatorMessages": [],
+  "humanoidBoneCount": 51,
+  "springChains": 17,
+  "springJoints": 75,
+  "colliders": 9,
+  "faceCount": 96751,
+  "rigBoneCount": 129,
+  "textures": [
+    {
+      "name": "body_texture_4k",
+      "mimeType": "image/jpeg",
+      "sha256": "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab",
+      "bytes": 4251995
+    },
+    {
+      "name": "head_texture_4k",
+      "mimeType": "image/jpeg",
+      "sha256": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+      "bytes": 3259498
+    }
+  ],
+  "vrmSha256": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
+  "vrmBytes": 12210320,
+  "blendSha256": "1a15bfce0599d30bcf21c7b2fb141eb5d0bce4f627f4d82c442aa96798b54861",
+  "reloadVerified": true
+}

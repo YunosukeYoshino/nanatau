@@ -1,0 +1,72 @@
+{
+  "current-16s.mp4": {
+    "sha256": "e03d3f1c33d915e62bd44be24096339e2df89766e14e188873c39de7b6104f8f",
+    "bytes": 4813229,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 720,
+          "avg_frame_rate": "30/1",
+          "nb_read_frames": "480"
+        }
+      ],
+      "format": {
+        "duration": "16.000000"
+      }
+    }
+  },
+  "charakuru-16s.mp4": {
+    "sha256": "df0cda445e3daf75efbf4048b551035ddd62889f1128e25e669bf4e03bccf973",
+    "bytes": 6527190,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 720,
+          "avg_frame_rate": "30/1",
+          "nb_read_frames": "480"
+        }
+      ],
+      "format": {
+        "duration": "16.000000"
+      }
+    }
+  },
+  "comparison-16s.mp4": {
+    "sha256": "23dfe033d058129e27e06fa23b53004aaba920120bb098607e98b84ab4a2b8fe",
+    "bytes": 10779565,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "30/1",
+          "nb_read_frames": "480"
+        }
+      ],
+      "format": {
+        "duration": "16.000000"
+      }
+    }
+  },
+  "conditions": {
+    "left": "Latest saved current VRM v108",
+    "right": "Charakuru standard workflow plus approved manual rig repair",
+    "bodyInputSha256": "24f1d838921e08714dee10fbb6c7f3b5aca06622ad68f264fe531fad861be011",
+    "neutralFaceAndEyes": true,
+    "sameCameraLightsRenderer": true,
+    "springSimulation": "Separate simulations; installed Blender VRM1 spring handler,60Hz",
+    "formalCharakuruVrmReload": "Pending metadata and formal export",
+    "colorComparison": "Common diffuse material from source base color texture and color factor; original MToon/PBR rendering not compared"
+  }
+}

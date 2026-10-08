@@ -66,6 +66,7 @@ deno task build
 ## Directory
 
 - `images/`: approved source assets
+- `models/avatar-v1/charakuru/`: adopted Charakuru 3D avatar, editable Blend, VRM, and verification records
 - `site/`: React/TypeScript/Vite showcase site
 - `blog/`: Lume-based blog
 - `.claude/skills/motion-pngtuber-nanatau/`: MotionPNGTuber skill and scripts

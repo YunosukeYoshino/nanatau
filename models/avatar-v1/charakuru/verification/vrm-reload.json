@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "scope": "Fresh import of the written VRM in an empty Blender scene, actual 60Hz VRM spring solver and 480 frames of the same body input; 12 front/side render checkpoints.",
+  "vrmSha256": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
+  "blenderVersion": "5.2.1 LTS",
+  "vrmAddonVersion": "4.7.1",
+  "meshCount": 6,
+  "faceCount": 96751,
+  "rigBoneCount": 127,
+  "omittedUnusedSourceBones": [
+    "eye.L",
+    "eye.R"
+  ],
+  "humanoidBoneCount": 51,
+  "springChains": 17,
+  "springJoints": 75,
+  "colliders": 9,
+  "maximumRestGeometryErrorMeters": 3.1048657547216862e-06,
+  "maximumRestBoneHeadErrorMeters": 1.1235938472964335e-06,
+  "maximumUvError": 0.0,
+  "maximumWeightSumError": 1.4156103134155273e-07,
+  "textureSha256": [
+    "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+    "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab"
+  ],
+  "bodyInputSha256": "24f1d838921e08714dee10fbb6c7f3b5aca06622ad68f264fe531fad861be011",
+  "frames": 480,
+  "fps": 30,
+  "seconds": 16,
+  "physicsSteps": 960,
+  "maximumBodyJointErrorMetersAfterPhysics": 8.844626873877335e-06,
+  "maximumWorldJointErrorMetersVsReviewedBlendMotion": 0.0005568077118296003,
+  "maximumWorldPoseMatrixErrorVsReviewedBlendMotion": 1.4140249490737915,
+  "maximumDeformedVertexErrorMetersAtSixCheckpoints": 0.0003582434437703341,
+  "boneBasisHandling": "Approved T-pose reference transformed through original/imported bind bases; Blender-reconstructed hand tails do not change the input pose.",
+  "maximumSpringLocalRotationRadians": 1.1903250217437744,
+  "applicationScope": "Blender VRM Add-on; streaming applications not tested.",
+  "visualReviewPending": false,
+  "visualReview": {
+    "reviewedCheckpoints": [
+      1,
+      91,
+      181,
+      271,
+      361,
+      480
+    ],
+    "views": [
+      "front",
+      "side"
+    ],
+    "reviewedImages": 12,
+    "result": "No explosion, detached roots or lost head/body texture observed. Accessory/hair intersections remain known limitations."
+  },
+  "poseMatrixDifferenceInterpretation": "Raw bone matrices use different imported bone display axes; compare bind-relative deformation and vertex/joint positions. This raw matrix difference is not a skin deformation error."
+}
