@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "renderPassed": true,
+  "encodingPending": false,
+  "sourceVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "sourceBlendSha256": "d213631f359b5603d70fdfbcfae96fa44560ca0d9f24002567a0a0c73d109b99",
+  "motionChannelsSha256": "726188f289dbc74cd73807f621e5d3cd96f3ae98bdc0482c5af41322240e7945",
+  "motionSource": "Verified fresh VRM reload body input and 60 Hz spring solver; direct replay of all 127 baked bone channels",
+  "blenderVersion": "5.2.1 LTS",
+  "engine": "BLENDER_EEVEE",
+  "viewTransform": "Standard",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "frames": 480,
+  "fps": 30,
+  "seconds": 16.0,
+  "meshCount": 6,
+  "boneCount": 127,
+  "mtoonMaterialCount": 3,
+  "mtoonMaterialsUnchanged": true,
+  "mtoonMaterials": [
+    {
+      "name": "SmartUV Untextured",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColorFactor": [
+        0.6399999856948853,
+        0.6399999856948853,
+        0.6399999856948853
+      ],
+      "shadingToonyFactor": 0.8999999761581421,
+      "giEqualizationFactor": 1.0,
+      "outlineWidthMode": "none",
+      "baseImage": "head_texture_4k.jpg",
+      "shadeImage": "head_texture_4k.jpg"
+    },
+    {
+      "name": "SmartUV Untextured.001",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColorFactor": [
+        0.6399999856948853,
+        0.6399999856948853,
+        0.6399999856948853
+      ],
+      "shadingToonyFactor": 0.8999999761581421,
+      "giEqualizationFactor": 1.0,
+      "outlineWidthMode": "none",
+      "baseImage": "body_texture_4k.jpg",
+      "shadeImage": "body_texture_4k.jpg"
+    },
+    {
+      "name": "SmartUV Untextured.002",
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "shadeColorFactor": [
+        0.6399999856948853,
+        0.6399999856948853,
+        0.6399999856948853
+      ],
+      "shadingToonyFactor": 0.8999999761581421,
+      "giEqualizationFactor": 1.0,
+      "outlineWidthMode": "none",
+      "baseImage": "head_texture_4k.jpg.001",
+      "shadeImage": "head_texture_4k.jpg.001"
+    }
+  ],
+  "finiteVertexAndCameraBoundsPassed": true,
+  "checkedPoseFrames": 480,
+  "overallWorldBoundsMeters": [
+    [
+      -0.8952805995941162,
+      -0.768393337726593,
+      -0.07441500574350357
+    ],
+    [
+      0.7056978940963745,
+      0.7590267658233643,
+      1.8890211582183838
+    ]
+  ],
+  "camera": {
+    "projection": "ORTHO",
+    "position": [
+      -0.09479135274887085,
+      -5.768393516540527,
+      0.9073030948638916
+    ],
+    "target": [
+      -0.09479135274887085,
+      -0.00468328595161438,
+      0.9073030948638916
+    ],
+    "scale": 3.2342999872535168,
+    "fixedThroughoutClip": true,
+    "facing": "Actual avatar front from negative Blender Y",
+    "minimumNormalizedMargin": 0.06000000000000005
+  },
+  "palette": {
+    "background": "#FFF8E1",
+    "stage": "#FFFDE7",
+    "avatarAccent": "#2C3E6B"
+  },
+  "frameSha256AtCheckpoints": {
+    "0001.png": "602c266eb2b379b0688ea0cae6b4f59a900963b132e52f6d0a8986333fcd2c55",
+    "0091.png": "57864b16db4ccf2a1164fdbb69e828fc7ca767a54321d959c317c05ea29474c3",
+    "0181.png": "1465f3f0c99403f51edb3ad98155500a4147b482318479b823d1015259adcd31",
+    "0271.png": "341cc9e5295e34c51012509e101d20130c6a2016fc99a909a2ede9dcf03050f3",
+    "0361.png": "89b2449ca3f2b58ae8b83341c43a0d65c864acf6ff9b2ec643f9aae6523381f1",
+    "0480.png": "49d01071e17286cb10ebe88cc7a955f8573c5b1ad5de161d8176e0ded2ed247f"
+  },
+  "existingLimitations": [
+    "fixed neutral facial expression; blink and lip sync absent",
+    "hair/accessory intersections",
+    "ground offset from shared body input"
+  ],
+  "publicUpload": false,
+  "sourceDataRedistribution": false,
+  "visualReviewPending": false,
+  "videos": {
+    "dance-short-silent.mp4": {
+      "sha256": "01e46fcc6c5ba542b3ec521607bfc9603ec9e74d336ba3553ec6bf5e70311d34",
+      "bytes": 6056166,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "fps": "30/1",
+      "decodedFrames": 480,
+      "durationSeconds": 16.0,
+      "fullDecodePassed": true,
+      "audio": []
+    },
+    "dance-short.mp4": {
+      "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773",
+      "bytes": 6467915,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "fps": "30/1",
+      "decodedFrames": 480,
+      "durationSeconds": 16.0,
+      "fullDecodePassed": true,
+      "audio": [
+        {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "duration": "16.000000",
+          "bit_rate": "199440"
+        }
+      ]
+    }
+  },
+  "audioSource": {
+    "title": "HIMEHINA 愛包ダンスホール / Heart Pie Dancehall — official instrumental",
+    "publisher": "HIMEHINA / Studio LaRa",
+    "officialWarehouse": "https://himehina.jp/gallery?slug=material",
+    "officialFolder": "https://larainc.link/Aipai",
+    "guideline": "https://himehina.jp/guideline",
+    "officialDriveFileId": "1c_7htABhwS55JSJbN2X0kHAriIvpKDY7",
+    "sha256": "39da6ed9ef0df447e6c6127927b9572b4b2ae1df4c4aae872f994239f3595b8b",
+    "bytes": 63273250,
+    "sourceClipSeconds": [
+      44,
+      60
+    ],
+    "encodedDurationSeconds": 16,
+    "streamCodec": "aac",
+    "targetBitrate": 192000,
+    "use": "Local derivative preview; no source-data redistribution or public upload"
+  },
+  "visualReview": {
+    "checkedNativeRenderedFrames": [
+      1,
+      91,
+      361
+    ],
+    "characterFullyInsideFrame": true,
+    "actualMtoonMaterialsRendered": true,
+    "danceBodyAndAccessoryMotionObserved": true,
+    "noNewGeometryOrMaterialChanges": true,
+    "limitations": [
+      "fixed neutral facial expression; blink and lip sync absent",
+      "hair/accessory intersections",
+      "ground offset from shared body input"
+    ]
+  },
+  "videoPlayback": "One 16-second clip, without an encoded repetition; excerpt endpoints are not a seamless loop",
+  "canonicalVideo": "models/avatar-v1/charakuru/dance-short.mp4",
+  "rawMotionCommitted": false
+}

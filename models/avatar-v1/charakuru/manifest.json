@@ -79,13 +79,14 @@
     "topUp": false,
     "providerJobDurationSumSeconds": 519.441863,
     "timingScope": "Sum of provider-recorded created-to-completed intervals, including rejected successful rigs; may overlap. Excludes free UI UV, image generation, manual processing, validation and waiting. Total human/agent production time not inferred.",
-    "additionalCreditsForMToonUpdate": 0
+    "additionalCreditsForMToonUpdate": 0,
+    "additionalCreditsForDance": 0
   },
   "limitations": [
     "Fixed normal face and eyes; no expression keys, lip sync, blink or LookAt.",
     "Accessory/hair intersections and proportion-dependent ground offset remain.",
     "Streaming applications and human tracking untested.",
-    "Charakuru v1.0.3 browser VRM preview loading did not complete during verification; native Blender VRM reload and MToon/spring validation passed."
+    "Dance excerpt endpoints are not a seamless loop; browser verification uses a session-only one-pass setting."
   ],
   "files": [
     {
@@ -185,8 +186,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 5188,
-      "sha256": "2812b65b48e9ad186e4e07f890516c6b6fbe5591974ad2ab1a5bd1c01960a1c8"
+      "bytes": 8595,
+      "sha256": "8096faaf89e9d7e8e17907b8dbf4d3824453cf222fcd8a59fea5dbfead3831e2"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
@@ -197,6 +198,11 @@
       "path": "models/avatar-v1/charakuru/avatar.vrm",
       "bytes": 15472600,
       "sha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dance-short.mp4",
+      "bytes": 6467915,
+      "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
     },
     {
       "path": "models/avatar-v1/charakuru/motion-16s.mp4",
@@ -212,6 +218,26 @@
       "path": "models/avatar-v1/charakuru/review.fbx",
       "bytes": 12486476,
       "sha256": "5aa64dd00f2bbea9774021cb1539e6470e2eddfbb2ce8811171ec52cf8ee325f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/dance-playback.json",
+      "bytes": 1567,
+      "sha256": "d2f3e03476c074d42f389ce8b605cfab69f87dd6fae709c37823f38d42a39b29"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/dance-provenance.json",
+      "bytes": 2028,
+      "sha256": "072993954de8d1e5e3c72f8dce29161657a75d2e895454b65de9e57fe77ad17f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/dance-short-video.json",
+      "bytes": 6187,
+      "sha256": "4fc0abdd8b920ab06e634e7a39722dd25e473aa14d61ea7173c1cd7d31bb1344"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/dance-vrma.json",
+      "bytes": 2041,
+      "sha256": "ebca570a96dac61ee6f6cd2ff12f311722c23df08fedf5a328b90766ccd325a8"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/fbx-roundtrip.json",
@@ -281,5 +307,47 @@
     "workingProjectSha256": "fb428067d68963c3f0a7967e13f3bb61bf2994b87dc1a2363ffa4f2001f1c75c",
     "additionalCredits": 0,
     "verification": "verification/mtoon-upgrade.json"
+  },
+  "dance": {
+    "completedAt": "2026-10-08T15:33:10.657736+00:00",
+    "userInstruction": "なのさんがやってるところまで仕上げたい！踊らせるところまで？",
+    "canonicalVideo": "models/avatar-v1/charakuru/dance-short.mp4",
+    "videoSha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773",
+    "dimensions": [
+      720,
+      1280
+    ],
+    "fps": 30,
+    "frames": 480,
+    "seconds": 16,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "audioChannels": 2,
+    "motionAndAudioCredit": "モーション・音源: HIMEHINA / Studio LaRa「愛包ダンスホール」",
+    "sourceClipSeconds": [
+      44,
+      60
+    ],
+    "privateVrma": {
+      "privatePath": "output/charakuru/nanatau-avatar-v1/dance/dance.vrma",
+      "sha256": "b96af009678535417938b107738d60fd78801275f0b994b4b5fa7fd483d466ad",
+      "bytes": 537876,
+      "rawMotionCommitted": false
+    },
+    "browserPlaybackVerified": true,
+    "mtoonMaterials": 3,
+    "springSegments": 58,
+    "canonicalVrmUnchanged": true,
+    "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+    "verification": {
+      "animation": "verification/dance-vrma.json",
+      "playback": "verification/dance-playback.json",
+      "video": "verification/dance-short-video.json",
+      "provenance": "verification/dance-provenance.json"
+    },
+    "additionalCredits": 0,
+    "additionalPurchase": false,
+    "publicUpload": false
   }
 }

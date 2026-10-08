@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "vrmName": "avatar.vrm",
+  "motion": "愛包ダンスホール-16s.vrma",
+  "materialCounts": {
+    "total": 3,
+    "mtoon": 3
+  },
+  "physics": true,
+  "springSegments": 58,
+  "allSpringTransformsFinite": true,
+  "clipDuration": 16,
+  "clipTime": 16,
+  "onePassFinished": true,
+  "renderedTicks": 455,
+  "playbackSeconds": 16,
+  "fileLoading": "Canonical VRM/VRMA bytes fetched from own localhost and supplied as browser-native Files through normal Charakuru input handlers.",
+  "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "vrmaSha256": "b96af009678535417938b107738d60fd78801275f0b994b4b5fa7fd483d466ad",
+  "charakuruVersion": "v1.0.3",
+  "springChains": 17,
+  "springJoints": 75,
+  "springSegmentCountExplanation": "75 joint nodes minus 17 terminal nodes gives 58 parent-to-child simulated segments.",
+  "checkedScope": "Actual browser load, MToon classification, one-pass playback, visual dance and finite spring transforms; body-fidelity numerical validation is recorded separately in dance-vrma.json.",
+  "playbackMode": "Three.js LoopOnce set on the live preview action, clampWhenFinished=true, finished event updates UI. Browser-session-only; standard Kit repeats.",
+  "appSourceModified": false,
+  "fileSelectionDiagnostic": "Filesystem File supplied by browser automation did not resolve File.arrayBuffer(). Identical local HTTP bytes supplied as a browser-native File through the normal input handler loaded successfully.",
+  "rawPoseSamplesCommitted": false,
+  "additionalCredits": 0
+}

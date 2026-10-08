@@ -1,0 +1,45 @@
+{
+  "verifiedDate": "2026-10-09",
+  "work": "ななたう Charakuru MToon dance short",
+  "video": "models/avatar-v1/charakuru/dance-short.mp4",
+  "videoSha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773",
+  "avatarVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "credit": "モーション・音源: HIMEHINA / Studio LaRa「愛包ダンスホール」",
+  "officialMaterialWarehouse": "https://himehina.jp/gallery?slug=material",
+  "officialMaterialFolder": "https://larainc.link/Aipai",
+  "guideline": "https://himehina.jp/guideline",
+  "sourceClipSeconds": [
+    44,
+    60
+  ],
+  "originalMotion": {
+    "fileName": "AipaiDanceHall_Motion(FBX)_Full_HimeTanaka_v1.0[f-19].fbx",
+    "sha256": "eb7fead3948569fa9189534971f628dd7e47de76f6e995faa37b84ea55b0556c"
+  },
+  "originalInstrumental": {
+    "sha256": "39da6ed9ef0df447e6c6127927b9572b4b2ae1df4c4aae872f994239f3595b8b",
+    "bytes": 63273250,
+    "officialDriveFileId": "1c_7htABhwS55JSJbN2X0kHAriIvpKDY7"
+  },
+  "derivedVrma": {
+    "privatePath": "output/charakuru/nanatau-avatar-v1/dance/dance.vrma",
+    "sha256": "b96af009678535417938b107738d60fd78801275f0b994b4b5fa7fd483d466ad",
+    "bytes": 537876,
+    "rawMotionCommitted": false
+  },
+  "usage": "Local rendered derivative preview. Original/converted motion, original WAV and animated source Blend remain private working data in ignored output/.",
+  "referenceExample": {
+    "author": "なの / Nano",
+    "post": "https://x.com/Dstudio_ai/status/2101549849556721968",
+    "sourceCreditPost": "https://x.com/Dstudio_ai/status/2101550528450994615",
+    "motion": "With U_Challenge Ver.",
+    "product": "https://www.xstage.co/jp/motions/products/31932",
+    "durationSeconds": 21,
+    "acquired": false,
+    "reason": "Requires purchase; user authorized no additional purchases. Existing official HIMEHINA excerpt used instead."
+  },
+  "sourceDataRedistribution": false,
+  "publicUpload": false,
+  "additionalCredits": 0,
+  "additionalPurchase": false
+}
