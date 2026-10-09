@@ -66,10 +66,21 @@ deno task build
 ## Directory
 
 - `images/`: approved source assets
-- `models/avatar-v1/charakuru/`: adopted Charakuru 3D avatar, editable Blend, VRM, and verification records
+- [models/](models/README.md): adopted 3D models, videos, and verification records
+- `output/`: generated work files and source materials, excluded from Git
 - `site/`: React/TypeScript/Vite showcase site
 - `blog/`: Lume-based blog
 - `.claude/skills/motion-pngtuber-nanatau/`: MotionPNGTuber skill and scripts
+
+## 3D Avatar
+
+採用したCharakuru版の[成果物一覧](models/avatar-v1/charakuru/README.md)から、編集用Blend・MToon対応VRM・動画・検証記録へ進める。
+
+| 見たいもの | 確認先 |
+| --- | --- |
+| 現在のデモ | [Samba Dancing](models/avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒・1080×1080・無音 |
+| 音付きショート | [愛包ダンスホール](models/avatar-v1/charakuru/videos/dance-short.mp4)：16秒・720×1280 |
+| 外観 | [6方向・顔アップ・動作確認画像](images/concept/avatar-v1/charakuru/README.md) |
 
 ## MotionPNGTuber
 

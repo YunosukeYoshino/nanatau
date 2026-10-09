@@ -29,7 +29,7 @@
     "sha256": "d10b630b204b36a53b8384d311eadffe6100000e74e05ca02306d71d7cd9625c",
     "bytes": 606372
   },
-  "canonicalVideo": "models/avatar-v1/charakuru/dance-demo.mp4",
+  "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
   "videoSha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c",
   "audio": null,
   "selectionScope": "Matches the initial dance in the official Three.js FBXLoader demo; no survey or ranking of usage frequency claimed.",

@@ -27,6 +27,7 @@ VTuber "ななたう" のキャラクターデザイン・素材管理・ブロ�
 ```text
 Top-level:
 ├── images/                # 正本・製本済み素材（git管理）
+├── models/                # 採用3Dモデル・確認動画・検証記録（git管理）
 ├── output/                # 生成AIの作業出力（git管理外）
 ├── site/                  # React/TypeScript/Vite Showcaseサイト
 ├── blog/                  # Lume ブログ（独自CLAUDE.mdあり）
@@ -36,6 +37,8 @@ Top-level:
 ## Key Locations
 
 - `images/concept/showcase/`: Showcaseで使用するキービジュアル・表情素材
+- `models/README.md`: 採用3D成果物の入口
+- `models/avatar-v1/charakuru/README.md`: Charakuru正本と動画・検証記録の一覧
 - `images/png-tuber/motion/`: MotionPNGTuberの正本セット
 - `output/`: MotionPNGTuberを含む生成作業の作業領域
 - `site/src/app/`: Reactのcomposition root
@@ -52,6 +55,8 @@ Top-level:
 - MotionPNGTuber の作業中ファイルは `output/` 配下のセット用サブディレクトリに置く
 - `images/concept/` にはキービジュアルと三面図（`reference_sheet`）を格納
 - `site/` の正本画像は `images/concept/showcase/` から参照する
+- Charakuru成果物の追加・配置変更時は `models/avatar-v1/charakuru/ORGANIZATION.md` を読み、manifestの現パス・サイズ・SHA-256も更新する
+- ディレクトリの新設・移動前に `~/.agents/skills/directory-architecture/references/instructions.md` を読み、repoの既存配置を優先する
 
 ## Art Style Constraints
 

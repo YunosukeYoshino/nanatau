@@ -21,7 +21,7 @@
   "springChains": 17,
   "springJoints": 75,
   "springSegmentCountExplanation": "75 joint nodes minus 17 terminal nodes gives 58 parent-to-child simulated segments.",
-  "checkedScope": "Actual browser load, MToon classification, one-pass playback, visual dance and finite spring transforms; body-fidelity numerical validation is recorded separately in dance-vrma.json.",
+  "checkedScope": "Actual browser load, MToon classification, one-pass playback, visual dance and finite spring transforms; body-fidelity numerical validation is recorded separately in vrma.json.",
   "playbackMode": "Three.js LoopOnce set on the live preview action, clampWhenFinished=true, finished event updates UI. Browser-session-only; standard Kit repeats.",
   "appSourceModified": false,
   "fileSelectionDiagnostic": "Filesystem File supplied by browser automation did not resolve File.arrayBuffer(). Identical local HTTP bytes supplied as a browser-native File through the normal input handler loaded successfully.",

@@ -10,7 +10,7 @@
     "canonicalPreviewDirectory": "images/concept/avatar-v1/charakuru",
     "metadataPolicy": "Existing Nanatau author and usage terms inherited unchanged; no new distribution permission assigned.",
     "formalVrmExport": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
-    "verification": "verification/vrm-reload.json",
+    "verification": "verification/avatar/vrm-reload.json",
     "additionalCredits": 0,
     "publicationAuthorized": false,
     "pushAuthorized": false,
@@ -90,6 +90,11 @@
     "Dance excerpt endpoints are not a seamless loop; browser verification uses a session-only one-pass setting."
   ],
   "files": [
+    {
+      "path": "images/concept/avatar-v1/charakuru/README.md",
+      "bytes": 1746,
+      "sha256": "3bf3bc85e1c16f4c41b580046baa1612a1e5a705c4a9d115d76b3adb17937215"
+    },
     {
       "path": "images/concept/avatar-v1/charakuru/back.png",
       "bytes": 1747652,
@@ -186,9 +191,19 @@
       "sha256": "a1516313afc978aa1eb5b3e7f027aab3cc772bb4d6241f2b3e23c42decdf5372"
     },
     {
+      "path": "models/avatar-v1/charakuru/ORGANIZATION.md",
+      "bytes": 7607,
+      "sha256": "cb4140809223f3167cf20f4d01e7d80f5b26ab1b2955b1614c9d406b2822003a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/PRODUCTION.md",
+      "bytes": 11486,
+      "sha256": "087f918b48cb5b55e18c3ed64f39e07a7f0c6685e1fa0acaf605519b6699f3fd"
+    },
+    {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 11377,
-      "sha256": "be5212062aa726cf7673912e31b70c13bb0679cb89eef798e6127b21ddc15148"
+      "bytes": 2390,
+      "sha256": "0221b536e72b63e4588454143baa13a3220f8df397c136037a46b810a6ebe91d"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
@@ -201,21 +216,6 @@
       "sha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9"
     },
     {
-      "path": "models/avatar-v1/charakuru/dance-demo.mp4",
-      "bytes": 10007965,
-      "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/dance-short.mp4",
-      "bytes": 6467915,
-      "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/motion-16s.mp4",
-      "bytes": 4938207,
-      "sha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68"
-    },
-    {
       "path": "models/avatar-v1/charakuru/project.charakit",
       "bytes": 120512239,
       "sha256": "fb428067d68963c3f0a7967e13f3bb61bf2994b87dc1a2363ffa4f2001f1c75c"
@@ -226,79 +226,94 @@
       "sha256": "5aa64dd00f2bbea9774021cb1539e6470e2eddfbb2ce8811171ec52cf8ee325f"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/dance-playback.json",
-      "bytes": 1567,
-      "sha256": "d2f3e03476c074d42f389ce8b605cfab69f87dd6fae709c37823f38d42a39b29"
+      "path": "models/avatar-v1/charakuru/verification/aipai/playback.json",
+      "bytes": 1561,
+      "sha256": "6618a54c8b63a5d6b1a44158c4b9d19709e3858d8382d74be719cfecb16406c6"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/dance-provenance.json",
-      "bytes": 2028,
-      "sha256": "072993954de8d1e5e3c72f8dce29161657a75d2e895454b65de9e57fe77ad17f"
+      "path": "models/avatar-v1/charakuru/verification/aipai/provenance.json",
+      "bytes": 2035,
+      "sha256": "86c1e4752163172e29acf992d91e96331779486ba9baa9480694e88363535890"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/dance-short-video.json",
-      "bytes": 6187,
-      "sha256": "4fc0abdd8b920ab06e634e7a39722dd25e473aa14d61ea7173c1cd7d31bb1344"
+      "path": "models/avatar-v1/charakuru/verification/aipai/video.json",
+      "bytes": 6194,
+      "sha256": "83dc0cc3ee1ea5d178c21569e5c6e6da52267fcf0392f01fb99ad03c1cc838eb"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/dance-vrma.json",
+      "path": "models/avatar-v1/charakuru/verification/aipai/vrma.json",
       "bytes": 2041,
       "sha256": "ebca570a96dac61ee6f6cd2ff12f311722c23df08fedf5a328b90766ccd325a8"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/demo-motion.json",
-      "bytes": 3285,
-      "sha256": "33ba2bee0df814f768053e747816759492cffdbc71d506b4a449bb47a0426d53"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/demo-provenance.json",
-      "bytes": 2145,
-      "sha256": "d7903e605f71b55669ba05d8114583138aed11411c18a6481e71406e9ffb4192"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/demo-video.json",
-      "bytes": 5146,
-      "sha256": "0b4aaf7965be30b39f4ba3c719016857786e0ec2ef935b033654917f384c9dd0"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/demo-vrma.json",
-      "bytes": 1432,
-      "sha256": "d823d2911911aaec4a55f311e74ccc313705cf2658aac298621747c2c0630b1a"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/fbx-roundtrip.json",
+      "path": "models/avatar-v1/charakuru/verification/avatar/fbx-roundtrip.json",
       "bytes": 636,
       "sha256": "3b16ec2d27ecaa2a656751900bb80f21c86e5824d41844de71f82a0c5585c369"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/manual-rig.json",
+      "path": "models/avatar-v1/charakuru/verification/avatar/manual-rig.json",
       "bytes": 1656,
       "sha256": "185fb46651efbbf90b288b291dd587b55c27aec1338b5a5f0ed3151ea9fa9e8a"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/mtoon-render.json",
+      "path": "models/avatar-v1/charakuru/verification/avatar/mtoon-render.json",
       "bytes": 1598,
       "sha256": "a758063bea9aa164b09686f5f0daa6cdb06301e54f4cc8390a58bed872c2f5ea"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/mtoon-upgrade.json",
+      "path": "models/avatar-v1/charakuru/verification/avatar/mtoon-upgrade.json",
       "bytes": 1488,
       "sha256": "76fec3acae39ba6079fc0970efa85728ad39e9e0da70b6598008024167d441b7"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/video.json",
+      "path": "models/avatar-v1/charakuru/verification/avatar/video.json",
       "bytes": 793,
       "sha256": "50f6723f6be97cb845a438c7434793f500beb9bc27ea922fece1775fb8daee57"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/vrm-export.json",
+      "path": "models/avatar-v1/charakuru/verification/avatar/vrm-export.json",
       "bytes": 6384,
       "sha256": "69b05f95f0f83c0e7a2c3c7cb93f11d87bffc392ec1e1079a7efa4a22c800252"
     },
     {
-      "path": "models/avatar-v1/charakuru/verification/vrm-reload.json",
+      "path": "models/avatar-v1/charakuru/verification/avatar/vrm-reload.json",
       "bytes": 2094,
       "sha256": "9c83d8b5585465300457a1d5269ba04cfaf070484108ab99d859753a6dd86300"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/samba/motion.json",
+      "bytes": 3285,
+      "sha256": "33ba2bee0df814f768053e747816759492cffdbc71d506b4a449bb47a0426d53"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/samba/provenance.json",
+      "bytes": 2152,
+      "sha256": "be5e12e99dffcd0dc7f5a746cdf212de30cac9d15d370749cff221014b6599b8"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/samba/video.json",
+      "bytes": 5153,
+      "sha256": "03578a939a9292f5af47c3454746630972945851c92083eed773bcc46f13eeb9"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/samba/vrma.json",
+      "bytes": 1432,
+      "sha256": "d823d2911911aaec4a55f311e74ccc313705cf2658aac298621747c2c0630b1a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
+      "bytes": 10007965,
+      "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/dance-short.mp4",
+      "bytes": 6467915,
+      "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/motion-16s.mp4",
+      "bytes": 4938207,
+      "sha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68"
     }
   ],
   "materialUpdate": {
@@ -332,12 +347,12 @@
     ],
     "workingProjectSha256": "fb428067d68963c3f0a7967e13f3bb61bf2994b87dc1a2363ffa4f2001f1c75c",
     "additionalCredits": 0,
-    "verification": "verification/mtoon-upgrade.json"
+    "verification": "verification/avatar/mtoon-upgrade.json"
   },
   "dance": {
     "completedAt": "2026-10-08T15:33:10.657736+00:00",
     "userInstruction": "なのさんがやってるところまで仕上げたい！踊らせるところまで？",
-    "canonicalVideo": "models/avatar-v1/charakuru/dance-short.mp4",
+    "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-short.mp4",
     "videoSha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773",
     "dimensions": [
       720,
@@ -367,16 +382,16 @@
     "canonicalVrmUnchanged": true,
     "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
     "verification": {
-      "animation": "verification/dance-vrma.json",
-      "playback": "verification/dance-playback.json",
-      "video": "verification/dance-short-video.json",
-      "provenance": "verification/dance-provenance.json"
+      "animation": "verification/aipai/vrma.json",
+      "playback": "verification/aipai/playback.json",
+      "video": "verification/aipai/video.json",
+      "provenance": "verification/aipai/provenance.json"
     },
     "additionalCredits": 0,
     "additionalPurchase": false,
     "publicUpload": false
   },
-  "preferredDemo": "models/avatar-v1/charakuru/dance-demo.mp4",
+  "preferredDemo": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
   "danceDemo": {
     "completedAt": "2026-10-09T01:47:28.188132+09:00",
     "userInstruction": "よくデモで使われるダンスをつかって",
@@ -384,7 +399,7 @@
     "motion": "Samba Dancing",
     "motionProvider": "Adobe Mixamo",
     "referenceDemo": "https://threejs.org/examples/webgl_loader_fbx.html",
-    "canonicalVideo": "models/avatar-v1/charakuru/dance-demo.mp4",
+    "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
     "videoSha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c",
     "dimensions": [
       1080,
@@ -410,13 +425,32 @@
     "canonicalModelsUnchanged": true,
     "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
     "verification": {
-      "motion": "verification/demo-motion.json",
-      "vrma": "verification/demo-vrma.json",
-      "video": "verification/demo-video.json",
-      "provenance": "verification/demo-provenance.json"
+      "motion": "verification/samba/motion.json",
+      "vrma": "verification/samba/vrma.json",
+      "video": "verification/samba/video.json",
+      "provenance": "verification/samba/provenance.json"
     },
     "additionalCredits": 0,
     "additionalPurchase": false,
     "publicUpload": false
+  },
+  "layout": {
+    "organizedDate": "2026-10-09",
+    "mode": "knowledge-agent-ops",
+    "entrypoint": "models/avatar-v1/charakuru/README.md",
+    "productionNotes": "models/avatar-v1/charakuru/PRODUCTION.md",
+    "organizationRecord": "models/avatar-v1/charakuru/ORGANIZATION.md",
+    "videos": "models/avatar-v1/charakuru/videos",
+    "verification": {
+      "avatar": "models/avatar-v1/charakuru/verification/avatar",
+      "aipai": "models/avatar-v1/charakuru/verification/aipai",
+      "samba": "models/avatar-v1/charakuru/verification/samba"
+    },
+    "images": "images/concept/avatar-v1/charakuru/README.md",
+    "workingDirectory": "output/charakuru/nanatau-avatar-v1",
+    "canonicalModelPathsPreserved": true,
+    "sourceMediaBytesPreserved": true,
+    "rawMotionCommitted": false,
+    "appliedMoveCount": 19
   }
 }
