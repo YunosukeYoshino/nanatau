@@ -1,10 +1,47 @@
-# nanatau
-
-Repository for the VTuber "nanatau" character design, asset management, showcase site, and blog.
+# ななたう / nanatau
 
 <p align="center">
-  <img src="./blog/images/favicon.png" alt="nanatau icon" width="420">
+  <img src="./blog/images/favicon.png" alt="ななたうのアイコン" width="140">
+  <br>
+  <strong>涙を魔力に変える、ちょっぴり泣き虫な魔法少女。</strong>
+  <br>
+  <sub>キャラクターデザイン・3Dモデル・素材をまとめた、ななたうの制作ノート。</sub>
 </p>
+
+## 3Dのななたう
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="images/concept/avatar-v1/charakuru/face.png">
+        <img src="images/concept/avatar-v1/charakuru/face.png" alt="MToon対応3Dななたうの顔アップ。金色の瞳とお花の髪飾り" width="360">
+      </a>
+      <br>
+      <sub>きらきらの瞳と、お花の髪飾り。</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="images/concept/avatar-v1/charakuru/front.png">
+        <img src="images/concept/avatar-v1/charakuru/front.png" alt="MToon対応3Dななたうの全身正面。黄色の衣装とリボン、フリル" width="360">
+      </a>
+      <br>
+      <sub>リボンもフリルも、いつものななたう。</sub>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  ふわりと揺れる髪と衣装まで、Charakuruで3Dに。
+  <br>
+  <sub>VRM 1.0 · MToon · 髪と衣装の揺れ物</sub>
+</p>
+
+| 楽しみ方 | 確認先 |
+| --- | --- |
+| ダンスを見る | [Samba Dancing](models/avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒・1080×1080・無音 |
+| 音付きショートを見る | [愛包ダンスホール](models/avatar-v1/charakuru/videos/dance-short.mp4)：16秒・720×1280 |
+| いろんな角度から見る | [6方向・顔アップ・動作確認画像](images/concept/avatar-v1/charakuru/README.md) |
+
+編集用Blend・MToon対応VRM・制作記録は、[Charakuru版の成果物一覧](models/avatar-v1/charakuru/README.md)へ。
 
 ## Character Prompt
 
@@ -71,16 +108,6 @@ deno task build
 - `site/`: React/TypeScript/Vite showcase site
 - `blog/`: Lume-based blog
 - `.claude/skills/motion-pngtuber-nanatau/`: MotionPNGTuber skill and scripts
-
-## 3D Avatar
-
-採用したCharakuru版の[成果物一覧](models/avatar-v1/charakuru/README.md)から、編集用Blend・MToon対応VRM・動画・検証記録へ進める。
-
-| 見たいもの | 確認先 |
-| --- | --- |
-| 現在のデモ | [Samba Dancing](models/avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒・1080×1080・無音 |
-| 音付きショート | [愛包ダンスホール](models/avatar-v1/charakuru/videos/dance-short.mp4)：16秒・720×1280 |
-| 外観 | [6方向・顔アップ・動作確認画像](images/concept/avatar-v1/charakuru/README.md) |
 
 ## MotionPNGTuber
 
