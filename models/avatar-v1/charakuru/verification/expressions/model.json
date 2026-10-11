@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "scope": "Facial expressions on adopted Charakuru VRM and editable Blend",
+  "verifiedAt": "2026-10-11",
+  "avatarPath": "models/avatar-v1/charakuru/avatar.vrm",
+  "blendPath": "models/avatar-v1/charakuru/avatar.blend",
+  "baselineCheckpoint": "22258cd",
+  "construction": {
+    "constructionPassed": true,
+    "visualReviewPending": false,
+    "baselineCommit": "22258cd",
+    "sourceVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+    "candidateVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "candidateVrmBytes": 25763800,
+    "atlasSha256": "08d30d20e01137af0d2d89059339b0160447f4b14fb1fa563547fbca1ec4ff43",
+    "atlasDimensions": [
+      4096,
+      4096
+    ],
+    "atlasTiles": {
+      "neutral": [
+        0,
+        0
+      ],
+      "blink": [
+        1,
+        0
+      ],
+      "happy": [
+        0,
+        1
+      ]
+    },
+    "atlasTilePixels": 2048,
+    "implementation": "VRM1 Head texture transform and ClosedEyes morph binds; binary blink/happy",
+    "geometrySkinningNodesRestPosesUnchanged": "Base geometry, skinning, nodes and rest poses unchanged; added expression morph affects137Head vertices only",
+    "originalBinaryPrefixUnchanged": true,
+    "bodyHairMaterialsUnchanged": true,
+    "springSettingsUnchanged": true,
+    "eyeCapMorphVertices": 137,
+    "irisCapsCollapsedInsideHead": true,
+    "detachedEyeFragmentsCollapsed": 41,
+    "eyelidSurfaceZ": 0.105,
+    "allTrianglesAndPositionSkinAttributesPreserved": true,
+    "sourceModelUnchanged": true,
+    "meshCount": 6,
+    "mtoonMaterialCount": 3,
+    "facialUvScaled": 0.5,
+    "faceMaterialIndex": 1,
+    "expressionBinds": {
+      "blink": {
+        "isBinary": true,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none",
+        "morphTargetBinds": [
+          {
+            "node": 128,
+            "index": 0,
+            "weight": 1.0
+          }
+        ],
+        "textureTransformBinds": [
+          {
+            "material": 1,
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.5,
+              0
+            ]
+          }
+        ]
+      },
+      "happy": {
+        "isBinary": true,
+        "overrideBlink": "block",
+        "overrideLookAt": "none",
+        "overrideMouth": "none",
+        "morphTargetBinds": [
+          {
+            "node": 128,
+            "index": 0,
+            "weight": 1.0
+          }
+        ],
+        "textureTransformBinds": [
+          {
+            "material": 1,
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0,
+              0.5
+            ]
+          }
+        ]
+      }
+    },
+    "neutralFaceTextureResolutionTradeoff": "Head material is sampled at2048px per state; original Body/Hair material4ktextures retained",
+    "editedFeatureMasks": {
+      "eyeEllipses": [
+        [
+          163,
+          500,
+          349,
+          674
+        ],
+        [
+          341,
+          336,
+          518,
+          497
+        ]
+      ],
+      "mouthEllipse": [
+        359,
+        516,
+        451,
+        595
+      ],
+      "cropXY": [
+        0,
+        3250
+      ]
+    },
+    "publicUpload": false,
+    "additionalPurchase": false
+  },
+  "roundtrip": {
+    "importExportPassed": true,
+    "visualReviewPending": false,
+    "meshCount": 6,
+    "bones": 127,
+    "humanoidBones": 51,
+    "mtoonMaterials": 3,
+    "expressions": [
+      "blink",
+      "happy"
+    ],
+    "expressionType": "Binary VRM1 texture transform and ClosedEyes morph binds",
+    "expressionBindsRoundtripPassed": true,
+    "savedBlendReloadPassed": true,
+    "imagesPacked": true,
+    "actualShapeKeyStatesPassed": true,
+    "candidateVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "candidateBlendSha256": "4c5259e4300c990e80d50c7c361a1e68760020bf0585b1863bdd8bb4211f9ffa",
+    "roundtripVrmSha256": "163379e87d7cbfbc4875f74f15b4e8846e90ea54e22d8b86ad96fa7114a5208c",
+    "faceFrames": [
+      "face-original-control.png",
+      "face-neutral.png",
+      "face-blink.png",
+      "face-happy.png",
+      "face-happy-blink.png"
+    ],
+    "happyOverrideBlink": "block",
+    "publicUpload": false,
+    "headGeometryAndMorphValuesPreserved": true,
+    "headOriginalVertexCount": 2726,
+    "headRoundtripVertexCount": 2731,
+    "headGeometryComparison": "Both directions matched combined base-position, UV and expression morph-delta tuples with1e-5tolerance; exporter adds5equivalent seam vertices",
+    "maxCombinedPositionUvMorphError": 2.384185791015625e-07
+  },
+  "visual": {
+    "passed": true,
+    "neutralVsOriginalControlRmse255": 0.3997578632201613,
+    "neutralVsOriginalControlMae255": 0.04277142857142857,
+    "blinkAndHappyClosedEyesConfirmed": true,
+    "goldIrisPixelsInEyeRegions": {
+      "neutral": 1365,
+      "blink": 0,
+      "happy": 0
+    },
+    "regressionBeforeFix": {
+      "neutral": 1365,
+      "blink": 1348,
+      "happy": 1343
+    },
+    "happyBlinkEqualsHappy": true,
+    "cleanDetachedIrisAndFragmentRemoval": true,
+    "reviewer": "Codex root; frontal stills and seven body-motion preview frames",
+    "previewFrames": [
+      1,
+      57,
+      81,
+      131,
+      190,
+      357,
+      476
+    ],
+    "faceFrames": [
+      "images/concept/avatar-v1/charakuru/face-neutral.png",
+      "images/concept/avatar-v1/charakuru/face-blink.png",
+      "images/concept/avatar-v1/charakuru/face-happy.png"
+    ]
+  },
+  "limitations": [
+    "Binary open/closed eyelid switching; no continuous eyelid interpolation",
+    "Gentle closed-eye smile; no lip sync or mouth phoneme rig",
+    "Head material uses 2048px per atlas state; Body and Hair materials retain original 4096px textures",
+    "project.charakit and review.fbx retain the prior body-production snapshot"
+  ],
+  "publicUpload": false,
+  "additionalPurchase": false,
+  "canonicalDirectory": "models/avatar-v1/charakuru"
+}

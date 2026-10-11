@@ -10,30 +10,35 @@
 
 2026-10-11、[ユーザー指定のテトリス動画](https://x.com/sekai_no_bonjin/status/2108843728945483950)に合わせ、八ツ橋まろんの無料モーションを使う音付き動画を追加。既存の正本モデルを使い、サンバと愛包ダンスホールの動画も保持する。
 
+同日、まばたき`blink`と閉じ目の笑顔`happy`を正本VRM・Blendへ追加。モデルの再読み込み・通常顔の比較・閉じ目・Charakuruの実再生を確認し、表情付きのテトリス動画を採用した。
+
 | ファイル | 用途 |
 | --- | --- |
 | [avatar.blend](avatar.blend) | 編集用の正本。`Nanatau_Charakuru_Production`シーン、`Nanatau_Charakuru_Rig`を編集する |
-| [avatar.vrm](avatar.vrm) | MToonを保存したVRM 1.0の採用出力。バージョン`1.0.1-charakuru-mtoon` |
-| [project.charakit](project.charakit) | Charakuruプロジェクト。元絵、8方向素材、候補、配置、骨対応、制作履歴を保持 |
-| [review.fbx](review.fbx) | 髪を含むスキニング確認用。VRMの物理・利用条件は保存しない |
+| [avatar.vrm](avatar.vrm) | MToon・`blink`・`happy`を保存したVRM 1.0。バージョン`1.1.0-charakuru-expressions` |
+| [project.charakit](project.charakit) | 表情追加前の身体制作スナップショット。元絵、8方向素材、候補、配置、骨対応、制作履歴を保持 |
+| [review.fbx](review.fbx) | 表情追加前の髪を含むスキニング確認用。現在の表情・VRM物理・利用条件は保存しない |
+| [dance-tetris-expressions.mp4](videos/dance-tetris-expressions.mp4) | 表情付きテトリス。1080×1350、30fps、約15.87秒、公式伴奏付き、まばたき4回・笑顔3区間 |
 | [dance-demo.mp4](videos/dance-demo.mp4) | デモ用サンバ。1080×1080、30fps、18.2秒、音声なし。全身と揺れ物を確認する |
 | [dance-short.mp4](videos/dance-short.mp4) | 採用ダンス動画。720×1280、30fps、16秒、音付き。全身と揺れ物を確認できる |
-| [dance-tetris.mp4](videos/dance-tetris.mp4) | テトリス。1080×1350、30fps、約15.87秒、公式伴奏付き。正面全身と揺れ物を確認する |
+| [dance-tetris.mp4](videos/dance-tetris.mp4) | 表情追加前のテトリス。1080×1350、30fps、約15.87秒、公式伴奏付き。正面全身と揺れ物を確認する |
 | [motion-16s.mp4](videos/motion-16s.mp4) | 再読み込みしたMToon版VRMへ同じ16秒身体入力を与えた動作確認動画 |
 | [manifest.json](manifest.json) | 採用判断、来歴、仕様、利用条件、各成果物のSHA-256 |
 | [verification/](verification/) | 正式VRMの出力・再読み込み、FBX、動画の検証記録 |
 
-採用した6方向と顔アップは[画像正本](../../../images/concept/avatar-v1/charakuru/)に保存する。現在の画像は書き出したMToon版VRMを再読み込みしてレンダリングしたもの。更新前の比較画像はGitの採用コミット`173e549`に残る。元の[キャラクター資料](../../../images/concept/avatar-v1/README.md)も参照する。
+現在の通常顔・まばたき・笑顔と、表情追加前の6方向・顔アップ・動作画像を[画像正本](../../../images/concept/avatar-v1/charakuru/)に保存する。いずれも対応するVRMを再読み込みしてレンダリングしたもの。MToon更新前の比較画像はGitの採用コミット`173e549`に残る。元の[キャラクター資料](../../../images/concept/avatar-v1/README.md)も参照する。
 
 ## 編集と保存
 
-`avatar.blend`が形状・ウェイト・材質・VRM物理設定の正本。6メッシュ、96,751三角面、129骨、51 Humanoid対応、17揺れチェーン・75ジョイント・9コライダー、2枚の4096×4096テクスチャを持つ。VRMでは未使用の非変形目骨2本が省かれ127骨となる。
+`avatar.blend`が形状・ウェイト・材質・VRM物理・表情設定の正本。現在のBlendとVRMは6メッシュ、96,751三角面、127骨、51 Humanoid対応、17揺れチェーン・75ジョイント・9コライダー、3種類の有効な4096×4096画像を持つ。身体と髪は元の4K画像を使い、顔だけは通常・まばたき・笑顔を2×2に配置した4Kアトラスを使う。顔の各状態の実効解像度は2048×2048。表情追加前の編集用Blendは未使用の非変形目骨2本を含む129骨だった。
 
-`.charakit`だけではBlend内の揺れ設定を復元できない。編集時は対応するBlendとVRMを一緒に保管する。作業を`output/`で行い、採用した更新をこの固定パスへ反映する。Charakuruアプリの作業用プロジェクトも同じ内容で保存済み。このディレクトリはその採用チェックポイントであり、日付別の正本を増やさない。
+現在の表情を編集・復元するにはBlendとVRMを使う。`.charakit`とFBXは身体制作時のスナップショットを保持し、新しい顔表情を含まない。`.charakit`だけではBlend内の揺れ設定も復元できない。作業を`output/`で行い、採用した更新をこの固定パスへ反映する。このディレクトリは採用チェックポイントであり、日付別の正本を増やさない。
 
 MToonはv1.0.3の共通設定（陰色係数0.64、影境界0、トゥーン係数0.9、間接光均等化1、輪郭線なし）を使う。手元のVRM Add-on 4.7.1に合わせ、配布スクリプトの`gi_intensity_factor`を`gi_equalization_factor`へ修正した。元VRMの色係数`[1,1,1,1]`も保持し、未使用のPrincipled入力値による暗色化を防ぐ。配布ZIP・修正スクリプトのハッシュと修正前後の検査結果は`verification/avatar/mtoon-upgrade.json`に記録する。
 
 `project.charakit`は100MiBを超えるためGit LFSで管理する。チェックアウト後に実体が未取得なら`git lfs pull`を実行する。公開やpushは別途ユーザーの指示に従う。
+
+表情追加前のモデルはGitチェックポイント`22258cd`に保持する。VRMのSHA-256は`c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9`、Blendは`08e35801dd59537a9c3ad1b3143412071e5bf8f27072cf5972fd8da0c723fc70`。以下の愛包・サンバ・表情なしテトリスの動画と`verification/{avatar,aipai,samba,tetris}/`は、その身体制作時のモデルに対する証跡として保持する。現モデルの検証は`verification/expressions/`を参照する。
 
 ## ダンス再生と動画
 
@@ -73,11 +78,31 @@ Charakuru v1.0.3で正本VRMと`output/charakuru/nanatau-avatar-v1/dance-tetris/
 
 検証記録は`verification/tetris/motion.json`（頭の対応補正と51骨・物理）、`verification/tetris/video.json`（撮影・映像音声の全体デコード・同期・画面クレジット）、`verification/tetris/provenance.json`（出典・利用条件・素材ハッシュ）、`verification/tetris/playback.json`（Charakuruでの実再生）に保存する。
 
+## 現在の表情とテトリス
+
+VRM 1.0の標準表情`blink`・`happy`を追加した。Head材質のUV切り替えと`ClosedEyes`モーフを組み合わせ、まばたきと閉じ目の笑顔を表示する。どちらも二値の表情で、開いた目から閉じた目への連続補間は持たない。`happy.overrideBlink`は`block`とし、笑顔中にまばたきが重なっても笑顔を保持する。小さな閉じ口の笑顔で、口パクは含まない。
+
+顔のUVパッチはimage_genでまばたき・笑顔を編集し、別に白目のUV領域へ肌色を補填した。目・口の編集箇所だけを元テクスチャへマスク合成し、切り出し・リサイズ・アトラス配置を機械的に行った。制作指示は`verification/expressions/production.json`へ保存する。まばたき・笑顔の記録は`promptSummary`に相当する要約で、実ツールへ渡した指示の全文を再取得したものではない。最終の白目領域の肌色補填は記録した指示全文を保持する。
+
+`ClosedEyes`はHeadの137頂点だけを動かす。58頂点の虹彩と41頂点の分離した目の断片を頭の内側へ隠し、38頂点の白目面をまぶたとして表示する。Headのprimitiveや三角面を増やさず、通常顔の基本座標・トポロジー・ウェイト・骨・身体と髪の材質・揺れ設定を保持する。顔のUV配置と表情用アトラス、モーフと表情bindを追加した。
+
+正式な読み込み・書き出しと保存Blendの再読み込みで、両表情のbindと実際の目・口の切り替えを確認した。通常顔と元モデルの正面比較画像のRMSEは0.3998/255。閉じ目の画像では、検査した目領域の金色の虹彩画素が0となり、目が閉じることを視認した。笑顔にまばたきを重ねても笑顔の表示が同じになることを確認した。顔の各状態が元の4Kから2K相当になる点は制作上のトレードオフとして残る。
+
+公式の再書き出しでは、Headに等価なUV境界の頂点が5個追加される。基本座標・UV・モーフ差分を双方向で照合し、最大の対応誤差は`2.38×10^-7`。追加された境界頂点を含め、形状と表情の値を保持することを確認した。
+
+Charakuru v1.0.3で、採用VRMの実際に読み込まれたバイナリとSHA-256を照合し、身体モーションと表情を全約15.87秒再生した。まばたき4回・笑顔3区間、全3材質のMToon・58本のSpringBone区間を確認し、変換値のNaN・無限値は0。口パク、LookAt、本人トラッキング、配信アプリとの連携は今回の検査に含めない。
+
+表情付きの身体モーションは元のテトリスVRMAへ`blink`・`happy`の2チャンネルだけを追加する。元の身体バイナリ・accessor・view・sampler・channel・骨対応を保持し、撮影の身体と揺れ物は前回の検証済み入力を再利用する。まばたきは1.8・4.2・8.8・11.8秒から各0.16秒の区間に設定し、30fpsの動画では各4フレーム（約0.13秒）・計16フレームで閉じ目を表示する。笑顔は2.35〜2.95秒、6.0〜6.6秒、13.0秒〜終端に設定し、計121フレームで表示する。作業用VRMAは`output/charakuru/nanatau-avatar-v1/expressions/dance-tetris-expressions.vrma`。
+
+表情付き動画は1080×1350、30fps、476フレーム、約15.87秒のH.264 / AACで保存した。固定正面の全身カメラと最低6%の余白を使い、前回と同じ公式伴奏の36.0841875〜51.9508542秒を合わせる。映像・音声の全体デコード、7時点の描画画像と4時点の最終エンコード画像の表情・画角・クレジットを確認した。最終AACと公式WAV区間の相関は0.993313、時刻差は0サンプル。モーション・音源の出典と利用条件、画面クレジットは前節を引き継ぐ。元モーション・音源・生成UVパッチ・アトラス・描画素材・スクリプトは`output/`の作業領域に置く。
+
+検証記録は`verification/expressions/model.json`（構築・正式な再読み込み・通常顔と閉じ目）、`motion.json`（身体の保持と表情チャンネル）、`playback.json`（実際のCharakuru再生）、`production.json`（生成指示と制作素材）、`video.json`（撮影・最終エンコード・音声同期・視認）へ保存する。追加Tripo消費・素材購入・外部公開は行っていない。
+
 ## 確認範囲と残課題
 
-Blender 5.2.1 / VRM Add-on 4.7.1で正式VRMを空のシーンへ再読み込みし、形状・UV・ウェイト・元の4K画像・全3材質のMToon設定を検査する。同じ身体入力を480フレーム・30fps・16秒で与え、実際のVRM物理を60Hzで計算する。更新前に確認した動きとの差は、全フレームの関節位置で最大0.557mm、6時点の変形頂点で最大0.359mm。動画も再読み込み後のVRMから作成する。数値は`verification/avatar/vrm-reload.json`、画像と動画の出力記録は`verification/avatar/mtoon-render.json`と`verification/avatar/video.json`に保存する。
+表情追加前のMToon更新では、Blender 5.2.1 / VRM Add-on 4.7.1で正式VRMを空のシーンへ再読み込みし、形状・UV・ウェイト・元の4K画像・全3材質のMToon設定を検査した。同じ身体入力を480フレーム・30fps・16秒で与え、実際のVRM物理を60Hzで計算する。更新前に確認した動きとの差は、全フレームの関節位置で最大0.557mm、6時点の変形頂点で最大0.359mm。動画も再読み込み後のVRMから作成する。数値は`verification/avatar/vrm-reload.json`、画像と動画の出力記録は`verification/avatar/mtoon-render.json`と`verification/avatar/video.json`に保存する。
 
-標準工程は通常顔・固定視線。口パク、まばたき、表情キー、LookAtは未実装。配信アプリと本人トラッキングは未検証。髪や細かい装飾の交差、モーション中の接地差は残る。これは採用した制作基準であり、配信機能をすべて備えた完成品という判定ではない。
+現在は通常顔・二値のまばたき・閉じ目の笑顔と固定視線。口パク、LookAt、まぶたの連続補間、他の表情は未実装。配信アプリと本人トラッキングは未検証。髪や細かい装飾の交差、モーション中の接地差は残る。これは採用した制作基準であり、配信機能をすべて備えた完成品という判定ではない。
 
 Charakuru v1.0.3のブラウザでも完成VRMとVRMAの読み込み・16秒再生・全3材質のMToon・揺れ物を確認済み。17チェーン・75ジョイントは、末端を除く58本のSpringBone区間として再生され、各区間の変換値が有限であることを確認した。以前の読み込み停止は、自動操作で選択したファイルの`File.arrayBuffer()`が完了しない段階で発生していた。同じ正本のバイト列をローカルHTTPから取得してブラウザ内のFileにし、通常の選択イベントへ渡すと読み込めた。アプリ本体のコードは変更していない。表示・再生の検査記録は`verification/aipai/playback.json`に保存する。
 

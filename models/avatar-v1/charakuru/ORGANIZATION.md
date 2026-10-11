@@ -28,7 +28,8 @@ models/avatar-v1/charakuru/
     ├── avatar/            # 骨・VRM・FBX・MToon
     ├── aipai/             # 愛包ダンスホール
     ├── samba/             # Samba Dancing
-    └── tetris/            # テトリス
+    ├── tetris/            # 表情追加前のテトリス
+    └── expressions/       # 現在の顔表情と表情付きテトリス
 ```
 
 採用画像は `images/concept/avatar-v1/charakuru/` のまま、READMEから一覧とモデル正本へ進める。ルートREADMEと `models/README.md` から成果物一覧を案内する。
@@ -96,3 +97,27 @@ Branch: `apply`。Mode: `knowledge-agent-ops`。既存の`videos/`とダンス�
 適用状況: 全5行を追加済み。正本化したJSONの成果物参照は現パスを指し、作業素材のパスは来歴として残す。manifestの全現パス・サイズ・SHA-256を更新する。正本モデル4ファイルのSHA-256は追加前と同一。
 
 今回の検証はmanifest全行の実ファイル・SHA-256、相対Markdownリンク、JSONの現パス、正本モデルと既存動画の不変、原素材のGit非混入、`git diff --check`と対象Markdown/JSONのsecretlintを確認する。2026-10-09の移動検証スクリプトは当時の作業用Blend等の保持も前提とするため、Drive整理後の今回の検証とは分ける。
+
+## 2026-10-11：表情モデルと表情付きテトリス
+
+Branch: `apply`。Mode: `knowledge-agent-ops`。現在の正本VRM・Blendを同じ固定パスで更新し、通常顔・まばたき・笑顔の確認画像、表情付き動画と検証を既存の配置へ追加する。実行コード・site/blog・CI・依存・LFS設定と元の制作素材のパスは変更しない。
+
+表情追加前のモデルはGitチェックポイント`22258cd`に保持する。`project.charakit`・`review.fbx`は当時の身体制作スナップショットの内容を保持し、新表情を含まない。既存の全動画・画像と`verification/{avatar,aipai,samba,tetris}/`も上書きしない。以前の「正本モデル4ファイル不変」は各追加時点の検証結果で、今回のVRM・Blendの更新とは区別する。
+
+| Current path | New path | Reason | Updates needed | Validation |
+| --- | --- | --- | --- | --- |
+| `output/charakuru/nanatau-avatar-v1/expressions/avatar.vrm` | `models/avatar-v1/charakuru/avatar.vrm` | `blink`・`happy`を持つ現在の正本へ更新 | README・PRODUCTION・manifestの現入口と旧SHA | 正式な再読み込み・閉じ目・通常顔・身体/物理保持・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/avatar.blend` | `models/avatar-v1/charakuru/avatar.blend` | 表情を編集できる正本へ更新 | README・PRODUCTION・manifest | 保存後の再読み込み・表情bind・画像pack・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/face-neutral.png` | `images/concept/avatar-v1/charakuru/face-neutral.png` | 現モデルの通常顔 | 画像README・manifest | 視認・元通常顔との比較・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/face-blink.png` | `images/concept/avatar-v1/charakuru/face-blink.png` | まばたきの確認 | 画像README・manifest | 閉じ目の視認・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/face-happy.png` | `images/concept/avatar-v1/charakuru/face-happy.png` | 閉じ目の笑顔の確認 | 画像README・manifest | 閉じ目と小さな笑顔の視認・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/model-final-verification.json` | `models/avatar-v1/charakuru/verification/expressions/model.json` | 構築・再読み込み・顔の比較 | README・PRODUCTION・manifest・現パス | JSON・参照・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/motion-verification.json` | `models/avatar-v1/charakuru/verification/expressions/motion.json` | 身体モーション保持と表情チャンネル | README・PRODUCTION・manifest・完了検証参照 | JSON・身体バイナリ保持・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/browser-playback-verification.json` | `models/avatar-v1/charakuru/verification/expressions/playback.json` | Charakuruの実再生 | README・PRODUCTION・manifest・現パス | 4まばたき/3笑顔・MToon/物理・有限変換・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/production-verification.json` | `models/avatar-v1/charakuru/verification/expressions/production.json` | 画像生成指示と制作素材 | README・PRODUCTION・manifest・現パス | 指示要約と記録全文の区別・JSON・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/dance-tetris-expressions.mp4` | `models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4` | 表情付きの採用動画 | README・PRODUCTION・manifest | 全体デコード・同期・画面クレジット・表情視認・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/expressions/{video-verification,final-video-verification}.json`と最終視認・音声検証 | `models/avatar-v1/charakuru/verification/expressions/video.json` | 撮影と最終映像・音声・表情の検証を統合 | README・PRODUCTION・manifest・現パス | JSON・全476フレーム・SHA-256 |
+
+適用状況: 全11行のモデル2件・画像3件・動画1件・検証JSON5件を反映済み。現manifestの実パス・サイズ・SHA-256を更新した。元モーション・音源・表情付きVRMA・生成UVパッチ・アトラス・描画素材・制作スクリプトは`output/charakuru/nanatau-avatar-v1/expressions/`と従来の作業素材のパスに置き、Gitへ追加しない。
+
+検証は現manifest全行の実サイズ・SHA-256、相対Markdownリンク、JSONの現パス、旧動画・旧画像・charakit/FBXの不変、身体・材質・物理の保持、VRM/Blendの表情bindと実表示、素材原本のGit非混入、対象Markdown/JSONのsecretlint、`git diff --check`を確認する。site/blogのコードは変更しないため、そのビルドは対象外。

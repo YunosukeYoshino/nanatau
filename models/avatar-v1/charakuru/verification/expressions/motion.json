@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "sourceUrl": "https://booth.pm/ja/items/6438933",
+  "sourceVrmAnimationSha256": "5e3551b4e347f4a34f84b70b1af6ccc946dbdfaaa0de6a14601877be6a2cda35",
+  "correctedHeadVrmAnimationSha256": "50d95c6ef0871574d9ded85af7b8190f957bc33d4f92d080ea6be74cb9339b6e",
+  "expressionVrmAnimationSha256": "e105a4b079157302f8af7d63a41763230e5ecd6dfc828c197e473b6f76125371",
+  "expressionFixtureSha256": "10a18972607d1c8ef23596b8e4ad21adb71b3e0f633c943dee4ee65bcd72e0e5",
+  "bodyFixtureSha256": "47a8e0fe4bdb23ee7b10eb4e55562ecfcfc54cf87196901ff0daae1fc00a110f",
+  "bodyFixtureReusedWithoutRebake": true,
+  "bodyBinarySha256": "c588fd17463a134ec11aa55ebfa7b210cd16ecf514e993e0c6f17a6543a0da3a",
+  "bodyBinaryPrefixUnchanged": true,
+  "allOriginalBodyAccessorsAndViewsUnchanged": true,
+  "allOriginalBodyChannelsAndSamplersUnchanged": true,
+  "allOriginalBodyNodesAndHumanBonesUnchanged": true,
+  "allOtherOriginalDocumentFieldsUnchanged": true,
+  "bodyChannelCount": 65,
+  "addedExpressionChannelCount": 2,
+  "expressionNames": [
+    "blink",
+    "happy"
+  ],
+  "expressionKeyCount": 477,
+  "sourceMotionDurationSeconds": 15.866507530212402,
+  "fps": 30,
+  "frames": 476,
+  "videoSeconds": 15.866666666666667,
+  "blinkWindowsSeconds": [
+    [
+      1.8,
+      1.96
+    ],
+    [
+      4.2,
+      4.36
+    ],
+    [
+      8.8,
+      8.96
+    ],
+    [
+      11.8,
+      11.96
+    ]
+  ],
+  "happyWindowsSeconds": [
+    [
+      2.35,
+      2.95
+    ],
+    [
+      6.0,
+      6.6
+    ],
+    [
+      13.0,
+      15.866507530212402
+    ]
+  ],
+  "binaryExpressionThreshold": 0.5,
+  "blinkVisibleFrameCount": 16,
+  "happyVisibleFrameCount": 121,
+  "rawMotionCommitted": false,
+  "publicUpload": false,
+  "avatarAndRuntimeVerificationPending": false,
+  "canonicalDirectory": "models/avatar-v1/charakuru",
+  "avatarAndRuntimeVerification": [
+    "models/avatar-v1/charakuru/verification/expressions/model.json",
+    "models/avatar-v1/charakuru/verification/expressions/playback.json"
+  ]
+}

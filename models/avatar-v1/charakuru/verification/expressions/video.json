@@ -1,0 +1,564 @@
+{
+  "date": "2026-10-11",
+  "passed": true,
+  "videoPath": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
+  "videoSha256": "f23bf1b66e22e3f5b6c39d36165fe776c2923bbca0a9f27610c08e6fd436b7de",
+  "videoBytes": 9428735,
+  "expressionAvatarVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+  "render": {
+    "passed": true,
+    "renderPassed": true,
+    "previewRenderPassed": true,
+    "previewOnly": false,
+    "encodingPending": false,
+    "title": "テトリス — 表情付きななたう / 八ツ橋まろん BOOTH 6438933",
+    "expressionAvatarVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "expressionFixtureSha256": "10a18972607d1c8ef23596b8e4ad21adb71b3e0f633c943dee4ee65bcd72e0e5",
+    "expressionVrmAnimationSha256": "e105a4b079157302f8af7d63a41763230e5ecd6dfc828c197e473b6f76125371",
+    "motionChannelsSha256": "47a8e0fe4bdb23ee7b10eb4e55562ecfcfc54cf87196901ff0daae1fc00a110f",
+    "motionVerificationSha256": "5a4f6767068b81ade0d5c4724805c242b71615af8a77d7e36515d0c7f685bde3",
+    "renderScriptSha256": "ffe4548b678488fa8ac80493d8f0a7b345b54049c3f8ed0c5b4cc18b8c786d71",
+    "sourceBaseCanonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+    "motionSource": "Licensed Tetris body/spring fixture reused unchanged; appended standard VRMA blink/happy tracks imported and verified with the official add-on; all 127 pose channels replayed",
+    "officialExpressionVrmAnimationImportPassed": true,
+    "actualBaseAndShadeExpressionShaderInputsVerified": true,
+    "verifiedExpressionShaderStates": {
+      "neutral": {
+        "baseColor": {
+          "offsetBind": [
+            0.0,
+            0.0
+          ],
+          "scaleBind": [
+            0.0,
+            0.0
+          ]
+        },
+        "shade": {
+          "offsetBind": [
+            0.0,
+            0.0
+          ],
+          "scaleBind": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "blink": {
+        "baseColor": {
+          "offsetBind": [
+            0.5,
+            0.0
+          ],
+          "scaleBind": [
+            0.0,
+            0.0
+          ]
+        },
+        "shade": {
+          "offsetBind": [
+            0.5,
+            0.0
+          ],
+          "scaleBind": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "happy": {
+        "baseColor": {
+          "offsetBind": [
+            0.0,
+            0.5
+          ],
+          "scaleBind": [
+            0.0,
+            0.0
+          ]
+        },
+        "shade": {
+          "offsetBind": [
+            0.0,
+            0.5
+          ],
+          "scaleBind": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "morphTargetBindCounts": {
+      "blink": 1,
+      "happy": 1
+    },
+    "verifiedExpressionMorphStates": {
+      "neutral": {
+        "Head/ClosedEyes": 0.0
+      },
+      "blink": {
+        "Head/ClosedEyes": 1.0
+      },
+      "happy": {
+        "Head/ClosedEyes": 1.0
+      }
+    },
+    "officialImportedBodyMaximumComponentError": 9.059906005859375e-06,
+    "expressionNames": [
+      "blink",
+      "happy"
+    ],
+    "blinkWindowsSeconds": [
+      [
+        1.8,
+        1.96
+      ],
+      [
+        4.2,
+        4.36
+      ],
+      [
+        8.8,
+        8.96
+      ],
+      [
+        11.8,
+        11.96
+      ]
+    ],
+    "happyWindowsSeconds": [
+      [
+        2.35,
+        2.95
+      ],
+      [
+        6.0,
+        6.6
+      ],
+      [
+        13.0,
+        15.866507530212402
+      ]
+    ],
+    "blinkVisibleFrameCount": 16,
+    "happyVisibleFrameCount": 121,
+    "expressionWeightsAtCheckpoints": {
+      "0001.png": [
+        0.0,
+        0.0
+      ],
+      "0057.png": [
+        1.0,
+        0.0
+      ],
+      "0081.png": [
+        0.0,
+        1.0
+      ],
+      "0131.png": [
+        0.9987030029296875,
+        0.0
+      ],
+      "0190.png": [
+        0.0,
+        1.0
+      ],
+      "0357.png": [
+        1.0,
+        0.0
+      ],
+      "0476.png": [
+        0.0,
+        1.0
+      ]
+    },
+    "blenderVersion": "5.2.1 LTS",
+    "engine": "BLENDER_EEVEE",
+    "viewTransform": "Standard",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "frames": 476,
+    "fps": 30,
+    "seconds": 15.866666666666667,
+    "audio": null,
+    "meshCount": 6,
+    "boneCount": 127,
+    "mtoonMaterialCount": 3,
+    "mtoonMaterialsUnchanged": true,
+    "mtoonMaterials": [
+      {
+        "name": "SmartUV Untextured",
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadingToonyFactor": 0.8999999761581421,
+        "giEqualizationFactor": 1.0,
+        "outlineWidthMode": "none",
+        "baseImage": "Nanatau_FaceExpressions_4k.png",
+        "shadeImage": "Nanatau_FaceExpressions_4k.png"
+      },
+      {
+        "name": "SmartUV Untextured.001",
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadingToonyFactor": 0.8999999761581421,
+        "giEqualizationFactor": 1.0,
+        "outlineWidthMode": "none",
+        "baseImage": "body_texture_4k.jpg",
+        "shadeImage": "body_texture_4k.jpg"
+      },
+      {
+        "name": "SmartUV Untextured.002",
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadingToonyFactor": 0.8999999761581421,
+        "giEqualizationFactor": 1.0,
+        "outlineWidthMode": "none",
+        "baseImage": "head_texture_4k.jpg.001",
+        "shadeImage": "head_texture_4k.jpg.001"
+      }
+    ],
+    "finiteVertexAndCameraBoundsPassed": true,
+    "checkedPoseFrames": 476,
+    "overallWorldBoundsMeters": [
+      [
+        -0.7770392894744873,
+        -0.6625737547874451,
+        -0.01726892963051796
+      ],
+      [
+        0.8111689686775208,
+        0.6955763697624207,
+        1.7499948740005493
+      ]
+    ],
+    "camera": {
+      "projection": "ORTHO",
+      "position": [
+        0.017064839601516724,
+        -5.66257381439209,
+        0.866362988948822
+      ],
+      "target": [
+        0.017064839601516724,
+        0.016501307487487793,
+        0.866362988948822
+      ],
+      "scale": 2.256000280380249,
+      "fixedThroughoutClip": true,
+      "facing": "Actual avatar front from negative Blender Y",
+      "minimumNormalizedMargin": 0.06000444293022156
+    },
+    "palette": {
+      "background": "#FFF8E1",
+      "stage": "#FFFDE7",
+      "avatarAccent": "#2C3E6B"
+    },
+    "frameSha256AtCheckpoints": {
+      "0001.png": "b0ca49615073778d1216ccff94ac8219066bbd6e4e8db86e8eb5430b7a6153a1",
+      "0057.png": "4943efdc9bf2a319a79c9291de7e636ab266235dae0c27514e5acb93aa9dc10d",
+      "0081.png": "37a8e2ed9ccc3e0c6c660595f1b2811ddd1e6b9873c832ea797787008c4a51ef",
+      "0131.png": "2dd74d53a5b37dc76d9759c850246fe896da6b8d62f3728eba81e0b453dc1e50",
+      "0190.png": "8311c471772ceb134e4fa2d4244c388787e34b31f55ed63022f83f03841521b9",
+      "0357.png": "f39ac8f73f6f83c599ca3ae45d6978edd7edae5003d96cf4fde4f1a3ed269cde",
+      "0476.png": "ebc56ee0a51f8fd94821e1242b1affbc9f6cb7b5e0485907ed00b627cf8ff3be"
+    },
+    "existingLimitations": [
+      "binary blink/happy with texture transforms and iris occlusion morphs, with no intermediate eyelid poses or lip sync",
+      "existing hair/accessory intersections"
+    ],
+    "publicUpload": false,
+    "sourceDataRedistribution": false,
+    "visualReviewPending": false,
+    "encodingPassed": true,
+    "video": {
+      "filename": "dance-tetris-expressions-silent.mp4",
+      "sha256": "fe510eb0172d720a4495b7e079307fbc165024171ea2c6b0592092c0b1517753",
+      "bytes": 9505767,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "fps": "30/1",
+      "decodedFrames": 476,
+      "encodedDurationSeconds": 15.866667,
+      "fullDecodePassed": true,
+      "audioStreamCount": 0
+    }
+  },
+  "finalEncoding": {
+    "passed": true,
+    "fullVideoAndAudioDecodePassed": true,
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "frames": 476,
+    "fps": 30,
+    "seconds": 15.866666666666667,
+    "videoCodec": "h264",
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "audioChannels": 2,
+    "audioSourceClipSeconds": [
+      36.0841875,
+      51.950854166666666
+    ],
+    "audioSourceSha256": "3834f3e6a5ca30357187d884c832bc2fe34c1769c731964dff76a8ed0cbec68b",
+    "silentVideoSha256": "fe510eb0172d720a4495b7e079307fbc165024171ea2c6b0592092c0b1517753",
+    "renderVerificationInputSha256AtMux": "75633a2f6d57551184c151bb4f691f597115baa85dbaaaa1fff2d3f9b6d3617a",
+    "expressionAvatarVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "videoSha256": "f23bf1b66e22e3f5b6c39d36165fe776c2923bbca0a9f27610c08e6fd436b7de",
+    "videoBytes": 9428735,
+    "onScreenCredits": [
+      "NANATAU",
+      "テトリス / 柊マグネタイト",
+      "モーション：八ツ橋まろん"
+    ],
+    "originalMusicUrl": "https://youtu.be/Soy4jGPHr3g",
+    "motionUrl": "https://booth.pm/ja/items/6438933",
+    "rawMotionCommitted": false,
+    "publicUpload": false,
+    "facialExpressions": [
+      "blink",
+      "happy"
+    ],
+    "expressionMethod": "VRM 1.0 binary texture transform and morph target expression binds",
+    "visualAndSynchronizationReviewPending": false,
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "mime_codec_string": "avc1.640028",
+          "width": 1080,
+          "height": 1350,
+          "coded_width": 1088,
+          "coded_height": 1360,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "4:5",
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "color_range": "tv",
+          "color_transfer": "iec61966-2-1",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 4,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 243712,
+          "duration": "15.866667",
+          "bit_rate": "4547097",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "476",
+          "nb_read_frames": "476",
+          "extradata_size": 52,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "Lavc63.1.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "mime_codec_string": "mp4a.40.2",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 1024,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 761600,
+          "duration": "15.866667",
+          "bit_rate": "197078",
+          "nb_frames": "745",
+          "nb_read_frames": "744",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/charakuru/nanatau-avatar-v1/expressions/dance-tetris-expressions.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "15.866667",
+        "size": "9428735",
+        "bit_rate": "4753983",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf63.1.102",
+          "comment": "テトリス / 柊マグネタイト https://youtu.be/Soy4jGPHr3g; モーション：八ツ橋まろん https://booth.pm/ja/items/6438933"
+        }
+      }
+    }
+  },
+  "audioReview": {
+    "passed": true,
+    "audioWaveformCorrelation": 0.993313453647113,
+    "audioBestLagSamplesWithin10ms": 0,
+    "audioBestLagSeconds": 0.0,
+    "audioStartSeconds": 36.0841875,
+    "comparisonSeconds": 15.7,
+    "comparisonSampleRate": 48000,
+    "comparison": "Encoded AAC against official WAV segment; final50ms fade excluded",
+    "reviewFrameNumbers": [
+      1,
+      57,
+      81,
+      131,
+      190,
+      357,
+      476
+    ]
+  },
+  "visualReview": {
+    "passed": true,
+    "reviewFrameNumbers": [
+      1,
+      57,
+      81,
+      131,
+      190,
+      357,
+      476
+    ],
+    "checks": [
+      "Neutral face identity retained",
+      "Blink and happy have closed eyes without visible iris fragments",
+      "Dance poses, final smile and framing reviewed",
+      "On-screen music and motion credits readable"
+    ],
+    "encodedFramesReviewed": [
+      1,
+      57,
+      81,
+      476
+    ],
+    "renderedFramesReviewed": [
+      1,
+      57,
+      81,
+      131,
+      190,
+      357,
+      476
+    ]
+  },
+  "provenance": "models/avatar-v1/charakuru/verification/tetris/provenance.json",
+  "rawMotionCommitted": false,
+  "publicUpload": false,
+  "limitations": [
+    "Binary open/closed expression changes; no intermediate eyelid motion or lip sync",
+    "Existing hair and accessory intersections retained"
+  ]
+}
