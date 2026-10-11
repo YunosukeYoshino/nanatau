@@ -1,0 +1,1316 @@
+{
+  "passed": true,
+  "source": "八ツ橋まろん TikTok_ダンスモーション58_テトリス",
+  "sourceUrl": "https://booth.pm/ja/items/6438933",
+  "sourceVrmAnimationSha256": "5e3551b4e347f4a34f84b70b1af6ccc946dbdfaaa0de6a14601877be6a2cda35",
+  "importedVrmAnimationSha256": "50d95c6ef0871574d9ded85af7b8190f957bc33d4f92d080ea6be74cb9339b6e",
+  "sourceMappingCorrections": [
+    {
+      "bone": "head",
+      "originalNode": 70,
+      "originalNodeName": "ENDSITE",
+      "correctedNode": 72,
+      "correctedNodeName": "Head",
+      "reason": "Preserve authored head rotation omitted by the original humanoid mapping",
+      "scope": "Private derivative only; original motion remains byte-for-byte unchanged",
+      "allAnimationBinaryBytesUnchanged": true,
+      "originalHeadNode": {
+        "translation": [
+          -2.461e-05,
+          0.00155257,
+          -0.00021358
+        ],
+        "name": "ENDSITE"
+      },
+      "correctedHeadNode": {
+        "translation": [
+          0,
+          0.00078253,
+          -2.022e-05
+        ],
+        "name": "Head",
+        "children": [
+          71
+        ]
+      },
+      "originalHeadParentNodeIndices": [
+        71
+      ],
+      "correctedHeadParentNodeIndices": [
+        73
+      ],
+      "headRotationChannelIndices": [
+        63
+      ],
+      "animationBinarySha256": "c588fd17463a134ec11aa55ebfa7b210cd16ecf514e993e0c6f17a6543a0da3a",
+      "allAccessorsUnchanged": true,
+      "allSamplersUnchanged": true,
+      "allChannelsUnchanged": true,
+      "allOtherDocumentFieldsUnchanged": true,
+      "beforeFixImportedHumanoidAnimatedBoneCount": 50,
+      "beforeFixImportedHeadKeyPresent": false,
+      "beforeFixFailEvidence": "Initial original-motion import failed required animated bones assertion: missing head; all other 50 mapped bones had pose action channels"
+    }
+  ],
+  "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "canonicalVrmUnchanged": true,
+  "importer": "VrmAnimationImporter.execute directly into freshly imported adopted VRM",
+  "blenderVersion": "5.2.1 LTS",
+  "vrmAddonVersion": "4.7.1",
+  "sourceStartSeconds": 0.0,
+  "sourceEndSeconds": 15.866507530212402,
+  "sourceActionFrameRange": [
+    1.0,
+    477.0
+  ],
+  "sourceHumanBones": [
+    "chest",
+    "head",
+    "hips",
+    "leftFoot",
+    "leftHand",
+    "leftIndexDistal",
+    "leftIndexIntermediate",
+    "leftIndexProximal",
+    "leftLittleDistal",
+    "leftLittleIntermediate",
+    "leftLittleProximal",
+    "leftLowerArm",
+    "leftLowerLeg",
+    "leftMiddleDistal",
+    "leftMiddleIntermediate",
+    "leftMiddleProximal",
+    "leftRingDistal",
+    "leftRingIntermediate",
+    "leftRingProximal",
+    "leftShoulder",
+    "leftThumbDistal",
+    "leftThumbMetacarpal",
+    "leftThumbProximal",
+    "leftToes",
+    "leftUpperArm",
+    "leftUpperLeg",
+    "neck",
+    "rightFoot",
+    "rightHand",
+    "rightIndexDistal",
+    "rightIndexIntermediate",
+    "rightIndexProximal",
+    "rightLittleDistal",
+    "rightLittleIntermediate",
+    "rightLittleProximal",
+    "rightLowerArm",
+    "rightLowerLeg",
+    "rightMiddleDistal",
+    "rightMiddleIntermediate",
+    "rightMiddleProximal",
+    "rightRingDistal",
+    "rightRingIntermediate",
+    "rightRingProximal",
+    "rightShoulder",
+    "rightThumbDistal",
+    "rightThumbMetacarpal",
+    "rightThumbProximal",
+    "rightToes",
+    "rightUpperArm",
+    "rightUpperLeg",
+    "spine"
+  ],
+  "sourceAnimationChannelCount": 65,
+  "targetHumanoidBoneCount": 51,
+  "animatedTargetBoneCount": 51,
+  "maximumHeadMotionRelativeToFirstFrameRadians": 0.3804763853549957,
+  "targetBonesAbsentFromSource": [],
+  "sourceOptionalBonesAbsentFromTarget": [],
+  "clipStartSeconds": 0,
+  "requestedClipSeconds": 15.866507530212402,
+  "frameCount": 476,
+  "fps": 30,
+  "seconds": 15.866666666666667,
+  "timing": "Source at original speed; 30 fps sample intervals, final boundary sample held in body-only fixture",
+  "motionChannelsShape": [
+    476,
+    127,
+    10
+  ],
+  "motionSha256": "47a8e0fe4bdb23ee7b10eb4e55562ecfcfc54cf87196901ff0daae1fc00a110f",
+  "bodyOnlySha256": "131a0e79f9670a2c64f2350a57a81eac9f4f8e69bc0fa178bd13b22e32695f33",
+  "previewBlendSha256": "dfd88bb2c4f338e403bfd10b8b3ff099d77cd158c9a07ab8f5e31d2517655858",
+  "buildScriptSha256": "4337cd7aa40643571855e69eb9f4837ac336fce6c178bf48f1f4f01335a7658a",
+  "reloadBodyWorldJointMaximumErrorMeters": 0.0,
+  "reloadBodyWorldRotationMaximumErrorDegrees": 0.07912936529690494,
+  "maximumHumanoidNonHipsTranslationMeters": 0.0,
+  "maximumHumanoidScaleDeviation": 0.0,
+  "springChains": 17,
+  "springNodes": 75,
+  "springColliders": 9,
+  "springSettingsUnchanged": true,
+  "springSolverHz": 60,
+  "springSubstepsPerFrame": 2,
+  "springSolverStepCount": 952,
+  "automaticSpringFrameHandlerDisabled": true,
+  "automaticHandlerDisableScope": "Isolated background Blender process only",
+  "maximumSpringRotationRadians": 0.9209539294242859,
+  "meshAndPackedTexturesUnchanged": true,
+  "mtoonMaterialsUnchanged": true,
+  "modelSignature": {
+    "meshes": {
+      "Body": {
+        "vertices": 28567,
+        "polygons": 37171,
+        "coordinatesSha256": "7c98f25cb593a92768d1316cae4d9826f9bf2742d7f68ac6454d78ddd5121cdb"
+      },
+      "Head": {
+        "vertices": 2726,
+        "polygons": 3577,
+        "coordinatesSha256": "df278c0c05fa4fc4a43d9422d7bec949d7a83e7129b42a6b2073fc72bfc76f9f"
+      },
+      "Spring_01_hair_flow": {
+        "vertices": 33979,
+        "polygons": 40261,
+        "coordinatesSha256": "1ba928483c27472ab81e4d9a4dbedefc317100ccedf305e89072da0fa19a88df"
+      },
+      "Spring_02_skirt": {
+        "vertices": 8548,
+        "polygons": 10278,
+        "coordinatesSha256": "dc9b4f30596602d7902a5ec113d7e7db204d6648c43c50d186bfb3754d7274d9"
+      },
+      "Spring_03_ribbon_left": {
+        "vertices": 3958,
+        "polygons": 5389,
+        "coordinatesSha256": "5d1f7e9c5bed6d7136c2467d0c32bb4c58d594e10c29f45393c5e4d259a9058c"
+      },
+      "Spring_04_ribbon_right": {
+        "vertices": 71,
+        "polygons": 75,
+        "coordinatesSha256": "e3af2a4b5a33c1d629c0a9d74597c232add7b49bd946589ce5b99832014d9e59"
+      }
+    },
+    "materials": [
+      {
+        "name": "SmartUV Untextured",
+        "mtoonEnabled": true,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadingToonyFactor": 0.8999999761581421,
+        "giEqualizationFactor": 1.0
+      },
+      {
+        "name": "SmartUV Untextured.001",
+        "mtoonEnabled": true,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadingToonyFactor": 0.8999999761581421,
+        "giEqualizationFactor": 1.0
+      },
+      {
+        "name": "SmartUV Untextured.002",
+        "mtoonEnabled": true,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadeColorFactor": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.6399999856948853
+        ],
+        "shadingToonyFactor": 0.8999999761581421,
+        "giEqualizationFactor": 1.0
+      }
+    ],
+    "packedTexturesSha256": {
+      "body_texture_4k.jpg": "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab",
+      "head_texture_4k.jpg": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+      "head_texture_4k.jpg.001": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6"
+    },
+    "springSettings": {
+      "colliderCount": 9,
+      "springs": [
+        {
+          "name": "HairFront_L",
+          "center": "head",
+          "joints": [
+            {
+              "bone": "HairFront_L_0",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_L_1",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_L_2",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_L_3",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_L_4",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "HairSide_L",
+          "center": "head",
+          "joints": [
+            {
+              "bone": "HairSide_L_0",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_L_1",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_L_2",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_L_3",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_L_4",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "HairBack_L",
+          "center": "head",
+          "joints": [
+            {
+              "bone": "HairBack_L_0",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_L_1",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_L_2",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_L_3",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_L_4",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "HairFront_R",
+          "center": "head",
+          "joints": [
+            {
+              "bone": "HairFront_R_0",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_R_1",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_R_2",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_R_3",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairFront_R_4",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "HairSide_R",
+          "center": "head",
+          "joints": [
+            {
+              "bone": "HairSide_R_0",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_R_1",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_R_2",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_R_3",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairSide_R_4",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "HairBack_R",
+          "center": "head",
+          "joints": [
+            {
+              "bone": "HairBack_R_0",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_R_1",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_R_2",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_R_3",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "HairBack_R_4",
+              "hitRadius": 0.012000000104308128,
+              "stiffness": 1.600000023841858,
+              "gravityPower": 0.18000000715255737,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_0",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_0_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_0_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_0_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_0_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_1",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_1_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_1_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_1_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_1_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_2",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_2_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_2_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_2_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_2_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_3",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_3_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_3_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_3_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_3_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_4",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_4_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_4_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_4_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_4_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_5",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_5_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_5_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_5_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_5_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_6",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_6_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_6_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_6_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_6_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "SkirtPanel_7",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "SkirtPanel_7_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_7_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_7_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "SkirtPanel_7_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.100000023841858,
+              "gravityPower": 0.10000000149011612,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "RearRibbon_L",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "RearRibbon_L_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "RearRibbon_L_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "RearRibbon_L_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "RearRibbon_L_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "RearRibbon_R",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "RearRibbon_R_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "RearRibbon_R_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "RearRibbon_R_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            },
+            {
+              "bone": "RearRibbon_R_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 1.25,
+              "gravityPower": 0.20000000298023224,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.550000011920929
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        },
+        {
+          "name": "BagDecoration",
+          "center": "hips",
+          "joints": [
+            {
+              "bone": "BagDecoration_0",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 2.4000000953674316,
+              "gravityPower": 0.07999999821186066,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.699999988079071
+            },
+            {
+              "bone": "BagDecoration_1",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 2.4000000953674316,
+              "gravityPower": 0.07999999821186066,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.699999988079071
+            },
+            {
+              "bone": "BagDecoration_2",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 2.4000000953674316,
+              "gravityPower": 0.07999999821186066,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.699999988079071
+            },
+            {
+              "bone": "BagDecoration_3",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 2.4000000953674316,
+              "gravityPower": 0.07999999821186066,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.699999988079071
+            },
+            {
+              "bone": "BagDecoration_4",
+              "hitRadius": 0.017000000923871994,
+              "stiffness": 2.4000000953674316,
+              "gravityPower": 0.07999999821186066,
+              "gravityDirection": [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              "dragForce": 0.699999988079071
+            }
+          ],
+          "colliderGroups": [
+            "018aa79aa59a4cf3a06c79c39b81757e"
+          ]
+        }
+      ]
+    }
+  },
+  "rawSourceMotionCommitted": false,
+  "publicUpload": false,
+  "eyesAnimated": false,
+  "expressionsAnimated": false,
+  "visualReviewStatus": "Pending separate rendered preview; numeric tests do not establish visual quality",
+  "knownLimits": [
+    "Fixed neutral face; no blink or lip sync",
+    "Existing hair/clothing intersections can remain",
+    "Body motion only; source facial expression channels are unsupported by the adopted avatar"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "title": "テトリス",
+  "composer": "柊マグネタイト",
+  "referencePost": "https://x.com/sekai_no_bonjin/status/2108843728945483950",
+  "referenceDimensions": [
+    1080,
+    1350
+  ],
+  "referenceSeconds": 15.103999,
+  "motionProvider": "八ツ橋まろん",
+  "motionItem": "https://booth.pm/ja/items/6438933",
+  "motionDownloadFileName": "テトリス_20250104.zip",
+  "motionPriceJpy": 0,
+  "motionStatus": "Official ZIP downloaded; embedded and current linked license read; authorized derivative video use",
+  "audio": {
+    "name": "テトリス_inst_Master_BPM170.wav",
+    "originalMusic": "https://youtu.be/Soy4jGPHr3g",
+    "authorAnnouncement": "https://x.com/hiiragi_magne/status/1854889839935865060",
+    "officialFolder": "https://drive.google.com/drive/folders/1J-hJ3eJNJZHH3iTnqlJ8MRdOQzAdvx7B",
+    "officialFile": "https://drive.google.com/file/d/1cYvzt5hsClsHpkxmza8fNoOJWSjjJGUx/view",
+    "guideline": "https://hiiragimagnetite.wixsite.com/my-site",
+    "bpm": 170,
+    "path": "output/charakuru/nanatau-avatar-v1/dance-tetris/source/tetris-instrumental.wav",
+    "bytes": 41065496,
+    "sha256": "3834f3e6a5ca30357187d884c832bc2fe34c1769c731964dff76a8ed0cbec68b",
+    "duration": 142.58825,
+    "codec": "pcm_s24le",
+    "sampleRate": 48000,
+    "channels": 2,
+    "providedAudioType": "official instrumental",
+    "requiredCredit": "Video: テトリス / 柊マグネタイト; description: original music URL",
+    "downloadVerified": true,
+    "startSeconds": 36.0841875,
+    "endSeconds": 51.950854166666666,
+    "alignment": {
+      "method": "Normalized 70-1300Hz band-limited waveform cross-correlation; creator demo audio used only for alignment",
+      "sampleRate": 16000,
+      "instrumentalDurationSeconds": 142.58825,
+      "demoDurationSeconds": 14.5356875,
+      "candidateOriginalStartSeconds": [
+        {
+          "seconds": 36.0841875,
+          "correlation": 0.8767498812496913
+        },
+        {
+          "seconds": 86.9076875,
+          "correlation": 0.8346615276089561
+        },
+        {
+          "seconds": 47.3783125,
+          "correlation": 0.7142239844443822
+        },
+        {
+          "seconds": 98.2018125,
+          "correlation": 0.7001826930360567
+        },
+        {
+          "seconds": 41.7311875,
+          "correlation": 0.47278269887731955
+        }
+      ],
+      "reference": "https://www.youtube.com/shorts/UOXGJWHmbPY",
+      "timelineBodyStartSeconds": 1,
+      "sourceMotionDurationSeconds": 15.866507530212402,
+      "visualTimingReviewPending": false,
+      "publicUpload": false,
+      "referenceAudioUsedInFinalVideo": false,
+      "selectedOriginalStartSeconds": 36.0841875,
+      "selectedOriginalEndSeconds": 51.950854166666666,
+      "visualTimingReview": {
+        "passed": true,
+        "bodyMotionVideoStartOffsetSeconds": 0,
+        "reviewedSeconds": [
+          0.5,
+          0.667,
+          0.833,
+          1.0,
+          1.167,
+          1.333,
+          4,
+          8,
+          12,
+          14
+        ],
+        "precisionSeconds": 0.03333333333333333,
+        "method": "Independent same-time pose comparison of official creator demo and full motion render; no one-second timeline adjustment"
+      },
+      "finalEncodedAudioCheck": {
+        "passed": true,
+        "normalizedCorrelation": 0.9964646466715595,
+        "startErrorSeconds": 0.0,
+        "checkedSeconds": 14,
+        "toleranceSeconds": 0.03333333333333333
+      }
+    },
+    "finalAudioCodec": "aac"
+  },
+  "additionalCredits": 0,
+  "additionalPurchase": false,
+  "publicUpload": false,
+  "rawMotionCommitted": false,
+  "recordedUtc": "2026-10-11T04:50:56.223378+00:00",
+  "motionZip": {
+    "path": "output/charakuru/nanatau-avatar-v1/dance-tetris/source/tetris-motion.zip",
+    "bytes": 5038328,
+    "sha256": "ff80641f93e0eceaef721f7894855606409f5eb8d5ce8c8d560db1056aebca03",
+    "originalFilename": "テトリス_20250104.zip"
+  },
+  "originalMotion": {
+    "path": "output/charakuru/nanatau-avatar-v1/dance-tetris/source/tetris.vrma",
+    "bytes": 663696,
+    "sha256": "5e3551b4e347f4a34f84b70b1af6ccc946dbdfaaa0de6a14601877be6a2cda35",
+    "seconds": 15.866507530212402,
+    "rawSourceCommitted": false
+  },
+  "motionLicense": {
+    "linkedFolder": "https://drive.google.com/drive/folders/1IlJd9jE3RBX9QEa65MNSbmVVN7_88h7k",
+    "currentTermsFile": "https://drive.google.com/file/d/16KGd2t12l2CB6K2WoWfuoLoIcIBzt-x5/view",
+    "currentTermsTextSha256": "d1af522f1433f376b6d0ce1cf8b4903d0199e14377d1ea73db870ee0783627db",
+    "embeddedTermsSha256": "e38759eb8a053bc9d933662a95c1bc3afccd4274d507b0aad011aabd8763f7e1",
+    "permission": "Commercial and non-commercial video/stream/audiovisual use and collaborative motion modification allowed",
+    "prohibition": "Unauthorized redistribution and resale",
+    "credit": "Motion creator credited on screen and in production notes",
+    "reviewedUtc": "2026-10-11T04:59:56.157064+00:00"
+  },
+  "status": "Adopted finished dance video; original model and sources unchanged",
+  "video": {
+    "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+    "filename": "dance-tetris.mp4",
+    "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d",
+    "bytes": 9405868,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "fps": "30/1",
+    "decodedFrames": 476,
+    "encodedDurationSeconds": 15.866666666666667,
+    "fullVideoAndAudioDecodePassed": true,
+    "audioStreamCount": 1
+  },
+  "mappingCorrection": {
+    "scope": "Private derivative VRMA only; head humanoid node 70 ENDSITE -> 72 Head",
+    "originalSha256": "5e3551b4e347f4a34f84b70b1af6ccc946dbdfaaa0de6a14601877be6a2cda35",
+    "derivedSha256": "50d95c6ef0871574d9ded85af7b8190f957bc33d4f92d080ea6be74cb9339b6e",
+    "derivedPath": "output/charakuru/nanatau-avatar-v1/dance-tetris/head-map-corrected.vrma",
+    "animationBinaryAndAllOtherDocumentFieldsUnchanged": true
+  },
+  "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+  "sourceMotionSeconds": 15.866507530212402,
+  "exportedVideoSeconds": 15.866666666666667,
+  "referenceTimingDemo": "https://www.youtube.com/shorts/UOXGJWHmbPY",
+  "rawAudioCommitted": false,
+  "referenceAudioUsedInFinalVideo": false,
+  "additionalCostJpy": 0,
+  "faceAnimation": "Fixed normal face; no blink, lip sync or expressions"
+}

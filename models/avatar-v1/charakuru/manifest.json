@@ -81,7 +81,8 @@
     "timingScope": "Sum of provider-recorded created-to-completed intervals, including rejected successful rigs; may overlap. Excludes free UI UV, image generation, manual processing, validation and waiting. Total human/agent production time not inferred.",
     "additionalCreditsForMToonUpdate": 0,
     "additionalCreditsForDance": 0,
-    "additionalCreditsForDemoDance": 0
+    "additionalCreditsForDemoDance": 0,
+    "additionalCreditsForTetrisDance": 0
   },
   "limitations": [
     "Fixed normal face and eyes; no expression keys, lip sync, blink or LookAt.",
@@ -192,18 +193,18 @@
     },
     {
       "path": "models/avatar-v1/charakuru/ORGANIZATION.md",
-      "bytes": 7607,
-      "sha256": "cb4140809223f3167cf20f4d01e7d80f5b26ab1b2955b1614c9d406b2822003a"
+      "bytes": 10508,
+      "sha256": "8513cfad8965a4bf0672725aa66072db43cb6e3d1caa311d701a1c829c0e73b6"
     },
     {
       "path": "models/avatar-v1/charakuru/PRODUCTION.md",
-      "bytes": 11486,
-      "sha256": "087f918b48cb5b55e18c3ed64f39e07a7f0c6685e1fa0acaf605519b6699f3fd"
+      "bytes": 15065,
+      "sha256": "10f8e953f411753af7ade082c2549974bde980e757bba6c62eb4ed32be055c0b"
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 2390,
-      "sha256": "0221b536e72b63e4588454143baa13a3220f8df397c136037a46b810a6ebe91d"
+      "bytes": 2562,
+      "sha256": "a0ee7a224ac2d81de01a7bab0a64fe142fd47b3fde6090b89a5be66022e711cd"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
@@ -301,6 +302,26 @@
       "sha256": "d823d2911911aaec4a55f311e74ccc313705cf2658aac298621747c2c0630b1a"
     },
     {
+      "path": "models/avatar-v1/charakuru/verification/tetris/motion.json",
+      "bytes": 39805,
+      "sha256": "273854c2b284a5ab1cb6dec3e693d7d1bac88114d298be5f58a150b48fa0cbc8"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/tetris/playback.json",
+      "bytes": 14504,
+      "sha256": "dfed9cdef4d898e81a53114eb8289d348dd04062fe27984e3592ad69ea0dbdec"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/tetris/provenance.json",
+      "bytes": 6386,
+      "sha256": "85d6688d609835049116648399520d921241fc90e077e58b3b9ee824c9e87f7a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/verification/tetris/video.json",
+      "bytes": 7709,
+      "sha256": "e472956a27d2a35881f594910e6aa928cc6f139a9fbf4a735114ffe11334e3a1"
+    },
+    {
       "path": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
       "bytes": 10007965,
       "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
@@ -309,6 +330,11 @@
       "path": "models/avatar-v1/charakuru/videos/dance-short.mp4",
       "bytes": 6467915,
       "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+      "bytes": 9405868,
+      "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d"
     },
     {
       "path": "models/avatar-v1/charakuru/videos/motion-16s.mp4",
@@ -444,13 +470,87 @@
     "verification": {
       "avatar": "models/avatar-v1/charakuru/verification/avatar",
       "aipai": "models/avatar-v1/charakuru/verification/aipai",
-      "samba": "models/avatar-v1/charakuru/verification/samba"
+      "samba": "models/avatar-v1/charakuru/verification/samba",
+      "tetris": "models/avatar-v1/charakuru/verification/tetris"
     },
     "images": "images/concept/avatar-v1/charakuru/README.md",
     "workingDirectory": "output/charakuru/nanatau-avatar-v1",
     "canonicalModelPathsPreserved": true,
     "sourceMediaBytesPreserved": true,
     "rawMotionCommitted": false,
-    "appliedMoveCount": 19
+    "appliedMoveCount": 19,
+    "lastAddedDate": "2026-10-11"
+  },
+  "danceTetris": {
+    "completedAt": "2026-10-11T05:12:04.867768+00:00",
+    "userInstruction": "これ見てこのダンスも踊らせたい",
+    "referencePost": "https://x.com/sekai_no_bonjin/status/2108843728945483950",
+    "motion": "テトリス",
+    "motionProvider": "八ツ橋まろん",
+    "motionItem": "https://booth.pm/ja/items/6438933",
+    "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+    "videoSha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "fps": 30,
+    "frames": 476,
+    "seconds": 15.866666666666667,
+    "fullClip": true,
+    "videoCodec": "h264",
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "audioChannels": 2,
+    "audioType": "Official instrumental; no vocal recording",
+    "motionCredit": "モーション：八ツ橋まろん",
+    "musicCredit": "テトリス / 柊マグネタイト",
+    "originalMusic": "https://youtu.be/Soy4jGPHr3g",
+    "sourceClipSeconds": [
+      36.0841875,
+      51.950854166666666
+    ],
+    "sourceMotionSeconds": 15.866507530212402,
+    "privateVrma": {
+      "path": "output/charakuru/nanatau-avatar-v1/dance-tetris/head-map-corrected.vrma",
+      "sha256": "50d95c6ef0871574d9ded85af7b8190f957bc33d4f92d080ea6be74cb9339b6e",
+      "bytes": 663680,
+      "rawMotionCommitted": false
+    },
+    "originalMotionSha256": "5e3551b4e347f4a34f84b70b1af6ccc946dbdfaaa0de6a14601877be6a2cda35",
+    "sourceMappingCorrection": {
+      "bone": "head",
+      "originalNode": 70,
+      "correctedNode": 72,
+      "scope": "Private derivative only; original motion and adopted model unchanged",
+      "allAnimationBinaryAndOtherDocumentFieldsUnchanged": true,
+      "animatedHumanoidBones": 51
+    },
+    "audioSynchronizationVerified": true,
+    "audioStartErrorSeconds": 0.0,
+    "browserPlaybackVerified": true,
+    "browserPlaybackSeconds": 15.866507530212402,
+    "browserRenderedTicks": 455,
+    "browserTransformsFinite": true,
+    "mtoonMaterials": 3,
+    "springSegments": 58,
+    "springSolverHz": 60,
+    "springSolverStepCount": 952,
+    "canonicalModelsUnchanged": true,
+    "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
+    "faceAnimation": "Fixed normal face; no blink, lip sync or expressions",
+    "verification": {
+      "motion": "verification/tetris/motion.json",
+      "video": "verification/tetris/video.json",
+      "provenance": "verification/tetris/provenance.json",
+      "playback": "verification/tetris/playback.json"
+    },
+    "additionalCredits": 0,
+    "additionalPurchase": false,
+    "additionalCostJpy": 0,
+    "publicUpload": false,
+    "rawMotionCommitted": false,
+    "rawAudioCommitted": false
   }
 }

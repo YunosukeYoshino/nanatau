@@ -8,6 +8,8 @@
 
 同日、ユーザーの「よくデモで使われるダンスをつかって」に合わせ、Three.js公式デモと同じMixamo「Samba Dancing」を追加。デモ用の動作確認はこの18.2秒サンバを使う。
 
+2026-10-11、[ユーザー指定のテトリス動画](https://x.com/sekai_no_bonjin/status/2108843728945483950)に合わせ、八ツ橋まろんの無料モーションを使う音付き動画を追加。既存の正本モデルを使い、サンバと愛包ダンスホールの動画も保持する。
+
 | ファイル | 用途 |
 | --- | --- |
 | [avatar.blend](avatar.blend) | 編集用の正本。`Nanatau_Charakuru_Production`シーン、`Nanatau_Charakuru_Rig`を編集する |
@@ -16,6 +18,7 @@
 | [review.fbx](review.fbx) | 髪を含むスキニング確認用。VRMの物理・利用条件は保存しない |
 | [dance-demo.mp4](videos/dance-demo.mp4) | デモ用サンバ。1080×1080、30fps、18.2秒、音声なし。全身と揺れ物を確認する |
 | [dance-short.mp4](videos/dance-short.mp4) | 採用ダンス動画。720×1280、30fps、16秒、音付き。全身と揺れ物を確認できる |
+| [dance-tetris.mp4](videos/dance-tetris.mp4) | テトリス。1080×1350、30fps、約15.87秒、公式伴奏付き。正面全身と揺れ物を確認する |
 | [motion-16s.mp4](videos/motion-16s.mp4) | 再読み込みしたMToon版VRMへ同じ16秒身体入力を与えた動作確認動画 |
 | [manifest.json](manifest.json) | 採用判断、来歴、仕様、利用条件、各成果物のSHA-256 |
 | [verification/](verification/) | 正式VRMの出力・再読み込み、FBX、動画の検証記録 |
@@ -55,6 +58,20 @@ VRMAは公式VRM Add-on 4.7.1で書き出し、空のシーンへ読み込んだ
 [Adobe公式FAQ](https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html)のMixamo素材による動画制作の条件を2026-10-09に確認した。追加購入なし。元FBX・変換モーション・モーションを含む作業Blendは`output/`へ保持し、撮影した動画と検証情報を正本化する。Three.js本体のMITライセンスをモーションの利用条件として扱わない。
 
 検証記録は`verification/samba/motion.json`（骨対応と物理）、`verification/samba/vrma.json`（再読み込み）、`verification/samba/video.json`（撮影と全体デコード）、`verification/samba/provenance.json`（出典）に保存する。サンバのブラウザ再生は今回の検査範囲に含めず、VRMAの正式な再読み込みと撮影済み動画を確認した。既存の「愛包ダンスホール」のブラウザ検査とは分けて記録する。
+
+## テトリス
+
+モーションは **八ツ橋まろん「テトリス」**の[BOOTH無料配布](https://booth.pm/ja/items/6438933)を使う。配布VRMAの全体約15.87秒を元の速度で再生する。元VRMAの`head`対応が末端の`ENDSITE`を指し、頭の回転キーが取り込まれなかったため、作業用の派生VRMAで対応先を実際の`Head`へ補正した。アニメーションのバイナリ・accessor・sampler・channelと他の文書フィールドは保持し、補正後は51 Humanoid骨すべてのキーを確認した。配布原本と正本モデルは変更しない。
+
+採用動画は1080×1350、30fps、476フレーム、約15.87秒のH.264 / AAC。正本VRMを空のシーンへ読み込み、髪・衣装の揺れを60Hz・952ステップで計算して撮影した。カメラは固定の正面全身で、全フレームに最低6%の画面余白を確保する。全3材質のMToon、形状・テクスチャ・揺れ設定を保持する。通常表情・固定視線のままで、口パクや表情キーは追加しない。
+
+音源は **柊マグネタイト「テトリス」**の[公式インスト音源](https://drive.google.com/file/d/1cYvzt5hsClsHpkxmza8fNoOJWSjjJGUx/view)を使い、歌声は含まない。曲の36.0841875〜51.9508542秒を使用する。作者のデモと音源の波形相関、同じ時刻の身体姿勢を照合し、開始位置を確認した。最終AACと元WAVの相関は0.996465、開始時刻の差は0秒。参考デモの音声は採用動画に含めない。
+
+[作者の利用ガイドライン](https://hiiragimagnetite.wixsite.com/my-site)とモーションZIP同梱規約・[作者指定の現行規約](https://drive.google.com/file/d/16KGd2t12l2CB6K2WoWfuoLoIcIBzt-x5/view)を2026-10-11に確認した。曲名・音源作者・モーション作者を画面に表記し、[曲の本家](https://youtu.be/Soy4jGPHr3g)をここから案内する。モーションは動画制作・改変に使用できるが、無断再配布・再販売はできない。元ZIP・VRMA・WAVと派生VRMAは`output/charakuru/nanatau-avatar-v1/dance-tetris/`に保持し、Gitには撮影動画と検証情報だけを保存する。追加購入・Tripo消費・外部公開は行っていない。
+
+Charakuru v1.0.3で正本VRMと`output/charakuru/nanatau-avatar-v1/dance-tetris/head-map-corrected.vrma`を読み込み、約15.87秒の1回再生を確認した。全3材質のMToon・58本のSpringBone区間・頭の回転を含む身体と揺れ物を再生し、455回の描画更新で変換値が有限であることを検査した。1回再生への変更は検査中の設定のみで、アプリのソースは変更しない。
+
+検証記録は`verification/tetris/motion.json`（頭の対応補正と51骨・物理）、`verification/tetris/video.json`（撮影・映像音声の全体デコード・同期・画面クレジット）、`verification/tetris/provenance.json`（出典・利用条件・素材ハッシュ）、`verification/tetris/playback.json`（Charakuruでの実再生）に保存する。
 
 ## 確認範囲と残課題
 

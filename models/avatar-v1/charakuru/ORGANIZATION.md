@@ -27,7 +27,8 @@ models/avatar-v1/charakuru/
 └── verification/
     ├── avatar/            # 骨・VRM・FBX・MToon
     ├── aipai/             # 愛包ダンスホール
-    └── samba/             # Samba Dancing
+    ├── samba/             # Samba Dancing
+    └── tetris/            # テトリス
 ```
 
 採用画像は `images/concept/avatar-v1/charakuru/` のまま、READMEから一覧とモデル正本へ進める。ルートREADMEと `models/README.md` から成果物一覧を案内する。
@@ -77,3 +78,21 @@ models/avatar-v1/charakuru/
 - `git diff --check`
 
 実行コード・ルート・alias・CI・依存は変更しないため、site/blogビルド、動画再描画、外部公開を伴う検査は対象外。移動前の制作証跡はGitの `2ed5425` に保持し、JSONでは現成果物を指すパスだけ更新する。元動画のエンコード時ファイル名やGit管理外の作業パスは来歴として残す。
+
+## 2026-10-11：テトリスの追加
+
+Branch: `apply`。Mode: `knowledge-agent-ops`。既存の`videos/`とダンス別の`verification/`に合わせ、採用動画1件・検証JSON4件を追加した。既存19行の移動記録、モデル4ファイル、画像、愛包・サンバの動画を保持し、既存ファイルの移動は行わない。サンバをデモ用の入口として保持する。site/blogの実行コード・参照・CI・依存とLFS設定も変更しない。
+
+以下の作業用ファイルから正本へコピーした。元ZIP・VRMA・WAV、頭対応だけを補正した派生VRMA、描画用Blend・フレームは`output/charakuru/nanatau-avatar-v1/dance-tetris/`に残し、Gitへ追加しない。
+
+| Current path | New path | Reason | Updates needed | Validation |
+| --- | --- | --- | --- | --- |
+| `output/charakuru/nanatau-avatar-v1/dance-tetris/dance-tetris.mp4` | `models/avatar-v1/charakuru/videos/dance-tetris.mp4` | 採用した公式伴奏付き動画 | README・PRODUCTION・manifest | 全体デコード・同期・画面確認・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/dance-tetris/motion-verification.json` | `models/avatar-v1/charakuru/verification/tetris/motion.json` | 頭対応の補正と骨・物理の検証 | README・PRODUCTION・manifest・現パス | JSON・参照・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/dance-tetris/{video-verification,final-video-verification}.json` | `models/avatar-v1/charakuru/verification/tetris/video.json` | 撮影と最終音声同期・画面確認の検証をまとめる | README・PRODUCTION・manifest・現パス | JSON・参照・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/dance-tetris/provenance.json` | `models/avatar-v1/charakuru/verification/tetris/provenance.json` | 出典・利用条件・素材ハッシュ | README・PRODUCTION・manifest・現パス | JSON・参照・SHA-256 |
+| `output/charakuru/nanatau-avatar-v1/dance-tetris/browser-playback-verification.json` | `models/avatar-v1/charakuru/verification/tetris/playback.json` | Charakuruでの実再生の検証 | README・PRODUCTION・manifest・現パス | JSON・参照・SHA-256 |
+
+適用状況: 全5行を追加済み。正本化したJSONの成果物参照は現パスを指し、作業素材のパスは来歴として残す。manifestの全現パス・サイズ・SHA-256を更新する。正本モデル4ファイルのSHA-256は追加前と同一。
+
+今回の検証はmanifest全行の実ファイル・SHA-256、相対Markdownリンク、JSONの現パス、正本モデルと既存動画の不変、原素材のGit非混入、`git diff --check`と対象Markdown/JSONのsecretlintを確認する。2026-10-09の移動検証スクリプトは当時の作業用Blend等の保持も前提とするため、Drive整理後の今回の検証とは分ける。

@@ -10,4 +10,4 @@
 | 編集用Blender | [avatar.blend](avatar-v1/charakuru/avatar.blend) |
 | 外観・動作確認画像 | [画像一覧](../images/concept/avatar-v1/charakuru/README.md) |
 
-音付き「愛包ダンスホール」の16秒縦動画、Charakuruプロジェクト、利用条件と確認範囲も、成果物一覧から参照できる。
+音付き「愛包ダンスホール」の16秒縦動画と[「テトリス」の約15.87秒動画](avatar-v1/charakuru/videos/dance-tetris.mp4)、Charakuruプロジェクト、利用条件と確認範囲も、成果物一覧から参照できる。

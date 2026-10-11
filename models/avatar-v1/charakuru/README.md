@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | デモを見る | [Samba Dancing](videos/dance-demo.mp4) | 18.2秒・1080×1080・30fps・無音、MToonと揺れ物 |
 | 音付きショートを見る | [愛包ダンスホール](videos/dance-short.mp4) | 16秒・720×1280・30fps・音付き |
+| テトリスを見る | [テトリス](videos/dance-tetris.mp4) | 約15.87秒・1080×1350・30fps・公式伴奏付き |
 | VRMを使う | [avatar.vrm](avatar.vrm) | 採用VRM 1.0、MToon・髪と衣装の物理設定 |
 | モデルを編集する | [avatar.blend](avatar.blend) | 編集用の正本、`Nanatau_Charakuru_Production`シーン |
 | Charakuruプロジェクトを復元する | [project.charakit](project.charakit) | 元絵・候補・配置・骨対応・制作履歴、Git LFS管理 |
@@ -17,7 +18,7 @@
 
 - [制作記録](PRODUCTION.md): 採用理由、仕様、編集・再生、出典、利用条件、確認範囲。
 - [manifest](manifest.json): 現パスとSHA-256、モデル仕様、採用判断。
-- [採用モデルの検証](verification/avatar/)、[愛包の検証](verification/aipai/)、[サンバの検証](verification/samba/)。
+- [採用モデルの検証](verification/avatar/)、[愛包の検証](verification/aipai/)、[サンバの検証](verification/samba/)、[テトリスの検証](verification/tetris/)。
 - [配置と移動記録](ORGANIZATION.md): このディレクトリの配置ルールと移動表。
 - ローカルの作業領域: `output/charakuru/nanatau-avatar-v1/README.md` に、このマシンのKit・再現用データ・元モーションへの案内を置く。Git管理外のためcloneには含まれない。
 
