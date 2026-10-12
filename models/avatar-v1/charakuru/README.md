@@ -1,14 +1,14 @@
 # ななたう：Charakuru成果物
 
-3D制作の正本。VRMとBlendはまばたき・閉じ目の笑顔に対応する。まず[表情付きテトリス](videos/dance-tetris-expressions.mp4)を開く。身体と揺れ物のデモは[サンバ](videos/dance-demo.mp4)を参照する。
+3D制作の正本。VRMとBlendは短いまばたき・目を開けたにっこりに対応する。同じ顔を保ち、笑顔では口元だけを変える。まず[表情付きテトリス](videos/dance-tetris-expressions.mp4)を開く。身体と揺れ物のデモは[サンバ](videos/dance-demo.mp4)を参照する。
 
 | 目的 | ファイル | 内容 |
 | --- | --- | --- |
-| 表情付きのテトリスを見る | [まばたきと笑顔](videos/dance-tetris-expressions.mp4) | 約15.87秒・1080×1350・30fps・公式伴奏付き、まばたき4回・笑顔3区間 |
+| 表情付きのテトリスを見る | [まばたきと笑顔](videos/dance-tetris-expressions.mp4) | 約15.87秒・1080×1350・30fps・公式伴奏付き、短いまばたき4回・開眼の笑顔3区間 |
 | デモを見る | [Samba Dancing](videos/dance-demo.mp4) | 18.2秒・1080×1080・30fps・無音、MToonと揺れ物 |
 | 音付きショートを見る | [愛包ダンスホール](videos/dance-short.mp4) | 16秒・720×1280・30fps・音付き |
 | 表情追加前と比べる | [テトリス](videos/dance-tetris.mp4) | 約15.87秒・1080×1350・30fps・公式伴奏付き、通常表情 |
-| VRMを使う | [avatar.vrm](avatar.vrm) | 採用VRM 1.0、MToon・髪と衣装の物理設定、`blink`・`happy` |
+| VRMを使う | [avatar.vrm](avatar.vrm) | 採用VRM 1.0、MToon・髪と衣装の物理設定、`blink`・開眼の`happy` |
 | モデルを編集する | [avatar.blend](avatar.blend) | 編集用の正本、`Nanatau_Charakuru_Production`シーン |
 | 身体制作プロジェクトを復元する | [project.charakit](project.charakit) | 元絵・候補・配置・骨対応・制作履歴、表情追加前のスナップショット、Git LFS管理 |
 | スキニングを確認する | [review.fbx](review.fbx) | 表情追加前のFBX確認用。現在の表情・物理・MToon・利用条件はVRMを参照 |
@@ -26,4 +26,4 @@
 
 現在の表情を編集・復元するにはBlendとVRMを使う。`.charakit`とFBXは表情追加前の身体制作スナップショットで、現在の顔表情を含まない。`.charakit`だけではBlend内の揺れ設定も復元できない。LFSの実体が未取得なら `git lfs pull` を実行する。
 
-顔は通常顔、まばたき、閉じ目の笑顔を切り替える。視線は固定、口パクとLookAtは未実装。表情は開閉の二値切り替えで、なめらかなまぶたの中間変形は持たない。配信アプリと本人トラッキングの確認範囲、衣装の交差や接地の残りは制作記録を参照する。
+顔は通常顔、短いまばたき、目を開けたにっこりを切り替える。笑顔中は瞳が見え、まばたきではまつげが残る。視線は固定、口パクとLookAtは未実装。表情は開閉の二値切り替えで、なめらかなまぶたの中間変形は持たない。配信アプリと本人トラッキングの確認範囲、衣装の交差や接地の残りは制作記録を参照する。

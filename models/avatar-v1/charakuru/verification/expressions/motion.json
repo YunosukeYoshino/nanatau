@@ -62,9 +62,18 @@
   "rawMotionCommitted": false,
   "publicUpload": false,
   "avatarAndRuntimeVerificationPending": false,
-  "canonicalDirectory": "models/avatar-v1/charakuru",
-  "avatarAndRuntimeVerification": [
-    "models/avatar-v1/charakuru/verification/expressions/model.json",
-    "models/avatar-v1/charakuru/verification/expressions/playback.json"
-  ]
+  "sourceExpressionMotionVerificationSha256": "5a4f6767068b81ade0d5c4724805c242b71615af8a77d7e36515d0c7f685bde3",
+  "expressionMotionAndAnimationReusedByteIdentical": true,
+  "requestedFacialBehavior": "Same Head: open-eyed mouth-only happy; blink collapses 141 iris/reflection fragments while 38 original eye sockets retain positions/normals and skin-only texture",
+  "avatarAndRuntimeVerification": {
+    "passed": true,
+    "model": "models/avatar-v1/charakuru/verification/expressions/model.json",
+    "playback": "models/avatar-v1/charakuru/verification/expressions/playback.json",
+    "video": "models/avatar-v1/charakuru/verification/expressions/video.json",
+    "candidateVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1"
+  },
+  "originalWorkerRecord": {
+    "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/motion-verification.json",
+    "sha256": "4c958a159b423acef0edce3ccc2272f3d2effe04707088e3cad09e433d4e83eb"
+  }
 }

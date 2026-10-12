@@ -9,7 +9,7 @@
     "canonicalDirectory": "models/avatar-v1/charakuru",
     "canonicalPreviewDirectory": "images/concept/avatar-v1/charakuru",
     "metadataPolicy": "Existing Nanatau author and usage terms inherited unchanged; no new distribution permission assigned.",
-    "formalVrmExport": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "formalVrmExport": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
     "verification": "verification/expressions/model.json",
     "additionalCredits": 0,
     "publicationAuthorized": false,
@@ -53,7 +53,7 @@
     "licenseUrl": "https://vrm.dev/licenses/1.0/",
     "modification": "allowModification",
     "name": "ななたう",
-    "version": "1.1.0-charakuru-expressions"
+    "version": "1.2.0-charakuru-open-eye-smile"
   },
   "vrmMetaSourceSha256": "cb34216d9e697bdabbbb5e81205d5fb5d1b51c438779d5c075b32c4ab1d1b6bc",
   "sourceDesigns": [
@@ -89,21 +89,23 @@
     "additionalCreditsForDance": 0,
     "additionalCreditsForDemoDance": 0,
     "additionalCreditsForTetrisDance": 0,
-    "additionalCreditsForExpressions": 0
+    "additionalCreditsForExpressions": 0,
+    "additionalCreditsForExpressionRepair": 0
   },
   "limitations": [
-    "Binary blink and gentle closed-eye happy; fixed gaze, no intermediate eyelid poses, lip sync or LookAt.",
+    "Binary short blink and open-eyed mouth smile; fixed gaze, no continuous eyelid/mouth interpolation, lip sync or LookAt.",
     "Accessory/hair intersections and proportion-dependent ground offset remain.",
     "Streaming applications and human tracking untested.",
     "Dance excerpt endpoints are not a seamless loop; browser verification uses a session-only one-pass setting.",
     "Head expression atlas has 2048px effective resolution per state; original Body/Hair 4096px textures retained.",
-    "project.charakit and review.fbx are prior body-production snapshots without the new facial expressions."
+    "project.charakit and review.fbx are prior body-production snapshots without the new facial expressions.",
+    "Existing binary preserved append-only during expression repair; current VRM is 10,274,412 bytes larger than the previous version."
   ],
   "files": [
     {
       "path": "images/concept/avatar-v1/charakuru/README.md",
-      "bytes": 2739,
-      "sha256": "881e1c1592676def83ed85ea9fe09c427dc3bd4f90ad41b3cca0744191f98248"
+      "bytes": 2890,
+      "sha256": "1826155f9222bb7056aeb2bae19b716cdb8b1c2efadc85f0de3b92ffbb743648"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/back.png",
@@ -112,18 +114,18 @@
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-blink.png",
-      "bytes": 654637,
-      "sha256": "ca6d238c9dff4d907fc6a4acd323e0b9b3e6a9cb297bcab638ce0f337031aafd"
+      "bytes": 655548,
+      "sha256": "2b9295f6676fbec25da6c4957efd5cd02f9bcb55558d79b72868233d15c8150a"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-happy.png",
-      "bytes": 654874,
-      "sha256": "8f07900343c34bd85767f0ccd0ba0d2b9bff9a8c81b8bb4e1c7f2541702fb38d"
+      "bytes": 661031,
+      "sha256": "73d9f91f21fb9457bb2bee4d808ad9833a0e54d300faf2f64f86a308c321b442"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
-      "bytes": 659644,
-      "sha256": "25bde8443364ed725ce5595c8ad04bb040c89552c151993096d86404c0ce9479"
+      "bytes": 659649,
+      "sha256": "e74f3659301f7f7a2842c01cc85c0f2da4b2a20687fec69da4699ed56f3a34d2"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face.png",
@@ -217,28 +219,28 @@
     },
     {
       "path": "models/avatar-v1/charakuru/ORGANIZATION.md",
-      "bytes": 15336,
-      "sha256": "d8b93d32c1d28a31e9e53e041e9f9af43bc1cfb7b012c4dbef918d50677afa3e"
+      "bytes": 20678,
+      "sha256": "7e8c6754c667d69770aecf0feb2ae3781f191dee1ac85721acd52050bdf7a3ff"
     },
     {
       "path": "models/avatar-v1/charakuru/PRODUCTION.md",
-      "bytes": 21070,
-      "sha256": "78de7fe452a94eab1f99e0dcede1a4d2d4cff65e6810c59176cb5c0dd8972211"
+      "bytes": 27282,
+      "sha256": "66a0c0b3614e8aec28427d5ee09243ed0a8ca6cac197106d9f9a621d5f8493b9"
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 3444,
-      "sha256": "d4a841859ec722d1fecdbaa32b3f34f1828267878f435256e61e66f57aff40fd"
+      "bytes": 3624,
+      "sha256": "e12470eff9c61040749fc3e71f7b4ae2f219e809e93025495e6cb0863124d504"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
-      "bytes": 22434141,
-      "sha256": "4c5259e4300c990e80d50c7c361a1e68760020bf0585b1863bdd8bb4211f9ffa"
+      "bytes": 22438131,
+      "sha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.vrm",
-      "bytes": 25763800,
-      "sha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54"
+      "bytes": 36038212,
+      "sha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1"
     },
     {
       "path": "models/avatar-v1/charakuru/project.charakit",
@@ -307,28 +309,28 @@
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/model.json",
-      "bytes": 6018,
-      "sha256": "58a2f2ec6123d94a7ba0b82885debc9820617e42986777d4a4e0d017fc3bf1f5"
+      "bytes": 38169,
+      "sha256": "e14744b46d10e5cab1ce5d6f98bf64fa5379b9f813bc61e11c753119d423e062"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/motion.json",
-      "bytes": 1979,
-      "sha256": "930e1afc60122e53e1bc567f3acb0033cd152c444a2525b20b69bbdbdfa1604a"
+      "bytes": 2717,
+      "sha256": "77a958c7554e8bf2537d3499d073858afb1a13a185f79dfdd02f18fe2aeea83b"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/playback.json",
-      "bytes": 26297,
-      "sha256": "e7bb3b13e755400b9e55b07422461bd334f63e62a49c5ea7ff3d37e259be6622"
+      "bytes": 2992,
+      "sha256": "97cfc92e1f5dc13348a26296ab8ba2e4d034a9d302c9ab6d27bceaccbb490155"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/production.json",
-      "bytes": 5769,
-      "sha256": "73072a65026b711e67b59402193d1fbe82a5ded6d4296e7360a6ac3afbb4343e"
+      "bytes": 11448,
+      "sha256": "27f4f9c3c7465e235747aedc678b02182f7a6892df45a0b32ad3675e9794778b"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/video.json",
-      "bytes": 15644,
-      "sha256": "2574bf3d536caecc5bd4404f207eb841bcb7ccc4888c2bb16ac4fbc02fab12f5"
+      "bytes": 23259,
+      "sha256": "4e0006d283dff00f48555201f845b18291ba4c62d2c53b75e5e1b72d56cead0d"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/samba/motion.json",
@@ -382,8 +384,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
-      "bytes": 9428735,
-      "sha256": "f23bf1b66e22e3f5b6c39d36165fe776c2923bbca0a9f27610c08e6fd436b7de"
+      "bytes": 9497649,
+      "sha256": "69551201ea40726839d3a8f4b678c02ac77de6cbe62491e1903c5c454ad3d4b2"
     },
     {
       "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
@@ -534,7 +536,7 @@
     "sourceMediaBytesPreserved": true,
     "rawMotionCommitted": false,
     "appliedMoveCount": 19,
-    "lastAddedDate": "2026-10-11"
+    "lastAddedDate": "2026-10-13"
   },
   "danceTetris": {
     "completedAt": "2026-10-11T05:12:04.867768+00:00",
@@ -609,33 +611,29 @@
     "rawAudioCommitted": false
   },
   "expressionUpdate": {
-    "updatedAt": "2026-10-11T07:26:47.067986+00:00",
+    "updatedAt": "2026-10-12T19:33:59.221042+00:00",
     "requestedFeatures": [
-      "blink",
-      "gentle happy smile",
-      "Tetris dance with expressions"
+      "short blink with visible lashes",
+      "open-eyed clearly smiling mouth",
+      "same face identity in Tetris dance"
     ],
-    "baselineCheckpoint": "22258cd",
-    "previousVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
-    "previousBlendSha256": "08e35801dd59537a9c3ad1b3143412071e5bf8f27072cf5972fd8da0c723fc70",
-    "canonicalVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
-    "canonicalBlendSha256": "4c5259e4300c990e80d50c7c361a1e68760020bf0585b1863bdd8bb4211f9ffa",
-    "vrmVersion": "1.1.0-charakuru-expressions",
+    "baselineCheckpoint": "d71bbb0b23c1886769ea131f83b44342d8e71814",
+    "previousVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "previousBlendSha256": "4c5259e4300c990e80d50c7c361a1e68760020bf0585b1863bdd8bb4211f9ffa",
+    "canonicalVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+    "canonicalBlendSha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303",
+    "vrmVersion": "1.2.0-charakuru-open-eye-smile",
     "expressionPresets": [
       "blink",
       "happy"
     ],
-    "implementation": "VRM1 Head texture transform and ClosedEyes morph binds; binary blink/happy",
+    "implementation": "Single shared Head; mouth-only happy UV transform without eye morph; blink UV transform plus 141 iris/fragments inside, original 38 sockets retained",
     "happyOverrideBlink": "block",
     "headMorphName": "ClosedEyes",
-    "headMorphVertexCount": 137,
+    "headMorphVertexCount": 141,
     "baseGeometrySkinningAndSpringsPreserved": true,
     "bodyAndHairMaterialsPreserved": true,
-    "neutralFacePortraitRmse255": 0.3997578632201613,
-    "closedEyeIrisPixels": {
-      "blink": 0,
-      "happy": 0
-    },
+    "neutralFacePortraitRmse255": 0.0,
     "atlasDimensions": [
       4096,
       4096
@@ -645,7 +643,7 @@
       2048
     ],
     "activeUniqueImageCount": 3,
-    "productionPromptRecordType": "Prompt summary for blink/happy; exact recorded final eyelid skin-fill prompt",
+    "productionPromptRecordType": "Exact prompts for two new image_gen edits; prior blink artwork reused with historical summary provenance",
     "sourceProductionSnapshots": [
       {
         "path": "models/avatar-v1/charakuru/project.charakit",
@@ -666,7 +664,7 @@
       "modelVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9"
     },
     "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
-    "videoSha256": "f23bf1b66e22e3f5b6c39d36165fe776c2923bbca0a9f27610c08e6fd436b7de",
+    "videoSha256": "69551201ea40726839d3a8f4b678c02ac77de6cbe62491e1903c5c454ad3d4b2",
     "dimensions": [
       1080,
       1350
@@ -684,7 +682,7 @@
       36.0841875,
       51.950854166666666
     ],
-    "audioWaveformCorrelation": 0.993313453647113,
+    "audioWaveformCorrelation": 0.9931912819288106,
     "audioStartErrorSamples": 0,
     "blinkWindowsSeconds": [
       [
@@ -722,7 +720,7 @@
     ],
     "happyVisibleFrameCount": 121,
     "privateVrma": {
-      "path": "output/charakuru/nanatau-avatar-v1/expressions/dance-tetris-expressions.vrma",
+      "path": "output/charakuru/nanatau-avatar-v1/expression-fix/dance-tetris-expressions.vrma",
       "sha256": "e105a4b079157302f8af7d63a41763230e5ecd6dfc828c197e473b6f76125371",
       "bytes": 675780,
       "rawMotionCommitted": false
@@ -752,6 +750,11 @@
     "pushAuthorized": false,
     "rawMotionCommitted": false,
     "rawAudioCommitted": false,
-    "lipSync": false
+    "lipSync": false,
+    "happyOriginalEyeTexturePixelExact": true,
+    "blinkSocketPositionsAndNormalsPreserved": true,
+    "browserRenderedTicks": 229,
+    "previousExpressionVideoSha256": "f23bf1b66e22e3f5b6c39d36165fe776c2923bbca0a9f27610c08e6fd436b7de",
+    "sameHeadIdentityVisuallyVerified": true
   }
 }

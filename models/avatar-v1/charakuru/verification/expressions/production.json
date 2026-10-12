@@ -1,52 +1,118 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-13",
   "character": "Nanatau",
-  "workflow": "Built-in image_gen edit; local Head UV atlas packing and VRM1 expression morph/texture binds; local Blender VRMA render",
-  "imagePrompts": {
-    "mode": "Built-in image_gen edit",
-    "target": "face-uv-reference.png (crop x0 y3250 width1100 height846 from original 4096 head texture)",
-    "support": "images/concept/avatar-v1/charakuru/face.png",
-    "blink": "Edit image 1 as a game face UV texture patch, NOT a portrait. Image 2 is only the character identity/style reference. Preserve the EXACT pixel layout, rotated face orientation, face outline, ears, hair fragments, skin shading, UV distortion, dimensions and all other content of image 1. Change only the two painted open eyes to softly closed eyes for a normal brief blink. Draw delicate curved dark lashes at exactly the existing eye locations, erase the iris and eye whites into matching eyelid skin; eyebrows and tiny closed mouth must stay unchanged. Do not rotate, straighten, center, beautify, sharpen, reinterpret or add features. Every feature must remain registered to the same coordinates as the input texture. No labels. Warm gentle Nanatau anime cel-painted texture; matching original pale butter yellow #FFFDE7, soft navy #2C3E6B, warm white #FFF8E1 accents. Clean thin-to-medium linework, subtle vulnerable expression, no glossy rendering.",
-    "happy": "Edit image 1 as a game face UV texture patch, NOT a portrait. Image 2 is only the character identity/style reference. Preserve the EXACT pixel layout, rotated face orientation, face outline, ears, hair fragments, skin shading, UV distortion, dimensions and all other content of image 1. Change only the two painted eyes and tiny mouth into a gentle joyful smile: both eyes softly closed with upward happy crescent lashes at exactly their current locations, tiny curved smiling mouth at exactly the current mouth location (small closed-mouth smile, no broad open mouth or teeth). Remove old iris/eye whites into matching eyelid skin. Keep eyebrows, cheek blush and nose as original. Do not rotate, straighten, center, beautify, sharpen, reinterpret or add features. Every feature must remain registered to the same coordinates as the input texture. No labels. Warm gentle Nanatau anime cel-painted texture; matching original pale butter yellow #FFFDE7, soft navy #2C3E6B, warm white #FFF8E1 accents. Clean thin-to-medium linework, quietly happy and soft, no glossy rendering.",
-    "recordType": "Prompt summary for blink/happy; exact recorded final eyelid skin-fill prompt",
-    "eyelidSkin": "Edit image 1 as a precisely registered game UV texture patch. Source dimensions 550x400. Replace TWO ENTIRE RECTANGULAR AREAS, first x125..250 y40..235, second x340..480 y50..255, with uniform smooth pale warm peach-pink anime eyelid skin matching the cheeks in image 2. Fill ALL pixels inside BOTH rectangles with that skin; remove every dark patch, gold/brown mark, eye, opening, white, fold, teardrop footprint, border, tiny spot and hair color within those rectangles. This is technical padding for UV eye surface islands: all of the rectangle must be seamless matching skin, not only its teardrop-shaped interior. Keep all pixels outside the rectangles unchanged. Preserve exact image layout, dimensions ratio and orientation. Soft flat cel shading only, no highlights, no cast shadows, no gradient into dark brown, no outline or lashes, no iris, no pupil, no drawn features or text. Image 2 is ONLY a color reference for the eyelid skin. Do not create a face or a portrait."
-  },
-  "textureAssembly": "AI eyelash/mouth edits masked onto original Head face UV; AI skin fill masked to separate eye-white UV triangles; neutral tile retains original source pixels before2kresampling",
-  "geometryAssembly": "Head ClosedEyes morph collapses58iris +41detachedfragment vertices insidehead and fills38whitecap vertices as eyelid surface; topology, base positions, skin weights and springs unchanged",
-  "artStyle": "Existing Nanatau colors, face identity and gentle expression preserved",
-  "outputs": {
-    "blink-uv-generated.png": {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/expressions/blink-uv-generated.png",
-      "sha256": "523761aa1ebbc2a5b8e4875cb6f93c95d9f680eb65b48253119d75b1d4644f2c",
-      "bytes": 1700852
+  "workflow": "Existing shared Head; binary blink and mouth-only open-eyed happy",
+  "baselineCheckpoint": "d71bbb0b23c1886769ea131f83b44342d8e71814",
+  "baselineVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+  "modelVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+  "modelBlendSha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303",
+  "imagePrompts": [
+    {
+      "mode": "built-in image_gen edit",
+      "intent": "open-eyed visible smile, mouth-only registered UV edit",
+      "prompt": "Use case: precise-object-edit. Edit Image1, a registered 1100x846 UV texture crop for an existing 3D anime character head. It contains a tilted facial skin island and surrounding hair/accessory UV fragments. Image2 is only an identity/style reference. This is a UV asset edit, not a new portrait.\nPreserve the exact crop aspect, island outlines, placement and orientation, original eyes, eyelashes, eyebrows, glasses lines, nose, cheek color, hair, ornaments and all pixels outside the mouth area. Do not recenter, rotate, scale, redraw or rearrange any UV island. The existing mouth is the tiny brown curved mark centered approximately (405,555) in the 1100x846 crop, inside the facial skin. Match the TILTED face's mouth axis and orientation, not the horizontal canvas.\nReplace ONLY that tiny mouth with a clearly readable warm, happy smiling mouth: lifted corners, a modest but visible opening, a narrow warm-white upper-tooth crescent and soft warm peach lower lip/interior. The expression should unmistakably read as smiling at 3D avatar viewing distance, instead of a tiny ambiguous comma. Target width about 75-95 pixels along the mouth's tilted local axis and height about 30-45 pixels, centered at exactly the existing mouth. Keep it within the mouth neighborhood x320..490,y490..620. Make a friendly gentle open-mouth smile; not a wide scream or exaggerated grin. Do not add lipstick, chin shadow, tongue sticking out, dimples, extra teeth or marks. Do not change the eyes: they remain the same original OPEN eyes from Image1. Face proportions, geometry, identity and all other features are fixed. Return the same registered UV crop layout.\n## Art Style (MANDATORY for all nanatau generations)\n- Proportions: 5.5-6 head ratio. NOT chibi, NOT tall-realistic. Compact-cute middle ground.\n- Lineart: Clean, thin-to-medium weight lines with clear intent. Hair strands clearly separated with visible flow direction. NOT thick chunky outlines, NOT sketchy.\n- Coloring: FLAT cel shading only. Warm color temperature throughout. Minimal shadows (soft single-layer if any). NO excessive gradients, NO AI-like glossy sheen, NO heavy rendering.\n- Eyes: Large but proportionally natural. Round with multiple highlight layers. Detailed iris (gradient within, visible reflection layers). Expressive and emotional — the eyes carry the character's personality. Preserve the existing open eyes exactly in this edit.\n- Expression preference: Introverted, fragile emotions — teary, sleepy, embarrassed, trying-her-best. \"Quiet bravery in vulnerability.\" NOT genki/energetic, NOT cool/sharp.\n- Composition: Character-centered, 1-2 poses per image (character sheet style works well). Props held close to body. For this technical edit preserve the input UV layout.\n- Background: MINIMAL. Simple warm gradient (cream/pale yellow to white) or dark navy night sky with stars. Never complex or distracting. For this technical edit preserve every existing UV fragment.\n- Color temperature: WARM throughout. Even dark backgrounds should feel warm due to the character's yellow palette.\n- Overall feel: Soft, gentle, healing. The kind of illustration that makes you feel warm and want to protect this character. Existing accents Pale Butter Yellow #FFFDE7 / Soft Navy #2C3E6B / Warm White #FFF8E1.",
+      "inputs": [
+        "output/charakuru/nanatau-avatar-v1/expression-fix/happy-mouth-target.png",
+        "images/concept/avatar-v1/charakuru/face-neutral.png"
+      ],
+      "additionalTripoCredits": 0,
+      "recordType": "Exact prompt passed to built-in image_gen edit",
+      "outputs": {
+        "mode": "built-in image_gen edit",
+        "generatedSource": "output/charakuru/nanatau-avatar-v1/expression-fix/happy-mouth-source-generated.png",
+        "sourceDimensions": [
+          1430,
+          1100
+        ],
+        "savedPath": "output/charakuru/nanatau-avatar-v1/expression-fix/happy-mouth-generated.png",
+        "savedDimensions": [
+          1100,
+          846
+        ],
+        "savedSha256": "1cf7d5dc4fad3c401f15b0d29ed6259d59c219ecab84637b383227fee4e9b41e",
+        "processing": "aspect-preserving registered crop resize; builder composites mouth mask only",
+        "additionalTripoCredits": 0,
+        "generatedSourceCopySha256": "475422f680bed4208a578bd8e4813afee0faf8095e0fd47484da7fec60263545"
+      }
     },
-    "happy-uv-generated.png": {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/expressions/happy-uv-generated.png",
-      "sha256": "6b2646d0cc95716e338227385d3962c6daecc7a8c6defed1add0c1e75c217c23",
-      "bytes": 1701301
-    },
-    "eyelid-skin-uv-generated.png": {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/expressions/eyelid-skin-uv-generated.png",
-      "sha256": "f904638614a4e5fb38d488c57dca2f172308d7d3e68088f8c0e4e6701eadcfe4",
-      "bytes": 1523618
-    },
-    "face-expression-atlas.png": {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/expressions/face-expression-atlas.png",
-      "sha256": "08d30d20e01137af0d2d89059339b0160447f4b14fb1fa563547fbca1ec4ff43",
-      "bytes": 10202816
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Use case: precise-object-edit. Technical 3D avatar UV repair, registered crop 550x400. Image1 has TWO pale pink teardrop-shaped eyelid-skin UV islands on a background of unrelated hair/accessory fragments. Image2 is only a skin-color reference. Keep the exact canvas aspect, each island outline, size, orientation, location and every background pixel. Do not rearrange, rotate, reframe, enlarge or crop anything.\nInside ONLY the two pale pink skin islands, remove ALL black/gray eyelash strokes and red line hatching. Replace those strokes with smooth pale warm peach-pink eyelid skin matching the surrounding existing pink skin within the same island, with only its subtle soft blush. The whole two island interiors must be SKIN ONLY, no eyes, lashes, eyebrows, gold spots, highlights, lines or new features. Preserve skin color coherently, no white disks, no dark gray patches, no harsh boundaries. The separate existing 3D skin surface already carries the desired closed eyelashes, so any lash inside these UV islands would duplicate it. This output will be composited using the exact original island mask; make it a technically registered texture correction. No portrait output. Preserve the two island contours and the surrounding dark/hair UV layout exactly.\n## Art Style (MANDATORY for all nanatau generations)\n- Proportions: 5.5-6 head ratio. NOT chibi, NOT tall-realistic. Compact-cute middle ground.\n- Lineart: Clean, thin-to-medium weight lines with clear intent. Hair strands clearly separated with visible flow direction. NOT thick chunky outlines, NOT sketchy.\n- Coloring: FLAT cel shading only. Warm color temperature throughout. Minimal shadows (soft single-layer if any). NO excessive gradients, NO AI-like glossy sheen, NO heavy rendering.\n- Eyes: Large but proportionally natural. Round with multiple highlight layers. Detailed iris (gradient within, visible reflection layers). Expressive and emotional — the eyes carry the character's personality. Preserve the existing open eyes exactly in this edit.\n- Expression preference: Introverted, fragile emotions — teary, sleepy, embarrassed, trying-her-best. \"Quiet bravery in vulnerability.\" NOT genki/energetic, NOT cool/sharp.\n- Composition: Character-centered, 1-2 poses per image (character sheet style works well). Props held close to body. For this technical edit preserve the input UV layout.\n- Background: MINIMAL. Simple warm gradient (cream/pale yellow to white) or dark navy night sky with stars. Never complex or distracting. For this technical edit preserve every existing UV fragment.\n- Color temperature: WARM throughout. Even dark backgrounds should feel warm due to the character's yellow palette.\n- Overall feel: Soft, gentle, healing. The kind of illustration that makes you feel warm and want to protect this character. Existing accents Pale Butter Yellow #FFFDE7 / Soft Navy #2C3E6B / Warm White #FFF8E1.",
+      "inputs": [
+        "output/charakuru/nanatau-avatar-v1/expression-fix/root-cap-skin-target.png",
+        "output/charakuru/nanatau-avatar-v1/expression-fix/face-happy.png"
+      ],
+      "skinIslandsOnly": true,
+      "additionalTripoCredits": 0,
+      "recordType": "Exact prompt passed to built-in image_gen edit",
+      "outputs": {
+        "mode": "built-in image_gen edit",
+        "promptFile": "cap-skin-prompt.json",
+        "generatedSource": "output/charakuru/nanatau-avatar-v1/expression-fix/blink-cap-skin-source-generated.png",
+        "sourceDimensions": [
+          1470,
+          1070
+        ],
+        "savedPath": "output/charakuru/nanatau-avatar-v1/expression-fix/blink-cap-skin-generated.png",
+        "savedDimensions": [
+          550,
+          400
+        ],
+        "sha256": "434e5f923e071134ae466e6afee73c9b99dcdc67122e5318951f41e35da841f6",
+        "registration": "technical crop resize only; actual socket mask composite by builder",
+        "generatedSourceCopySha256": "868adcda085331a025d8f54032dc0abf068ed4cee3e9e65a024082e7901f5bb3"
+      }
     }
+  ],
+  "reusedBlinkTexture": {
+    "sourceVrmWorkingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/baseline-avatar.vrm",
+    "sourceVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "source": "Original blink tile, altered only within 38 socket UV triangles plus gutter; existing main-face eyelash drawing retained",
+    "historicalPromptDocumentation": "Original 2026-10-11 record at Git checkpoint d71bbb0; earlier blink prompt is a summary, not newly reconstructed exact text"
   },
-  "additionalTripoCredits": 0,
-  "additionalPurchase": false,
-  "publicationAuthorized": false,
-  "pushAuthorized": false,
+  "textureAssembly": {
+    "happy": "Neutral tile copied exact; generated mouth composited only inside ellipse x320..490,y490..620 within original crop [0,3250,1100,4096]",
+    "blink": "Original blink tile with masked skin-only socket fill; no duplication of eyelash marks",
+    "atlasDimensions": [
+      4096,
+      4096
+    ],
+    "perStateResolution": [
+      2048,
+      2048
+    ],
+    "mechanicalOperations": [
+      "registered crop resize",
+      "UV mask composition",
+      "atlas placement"
+    ]
+  },
+  "geometryAssembly": {
+    "sameSharedHead": true,
+    "happyMorphWeight": 0,
+    "blinkCollapsedIrisFragmentVertices": 141,
+    "originalSocketVertices": 38,
+    "socketPositionsAndNormalsPreserved": true,
+    "happyOverrideBlink": "block",
+    "bodySkinBonesMtoonAndSpringsPreserved": true
+  },
+  "outputs": {
+    "avatar.vrm": "output/charakuru/nanatau-avatar-v1/expression-fix/avatar.vrm",
+    "avatar.blend": "output/charakuru/nanatau-avatar-v1/expression-fix/avatar.blend",
+    "face-neutral.png": "output/charakuru/nanatau-avatar-v1/expression-fix/face-neutral.png",
+    "face-blink.png": "output/charakuru/nanatau-avatar-v1/expression-fix/face-blink.png",
+    "face-happy.png": "output/charakuru/nanatau-avatar-v1/expression-fix/face-happy.png"
+  },
   "canonicalDirectory": "models/avatar-v1/charakuru",
   "canonicalFaceFrames": {
     "neutral": "images/concept/avatar-v1/charakuru/face-neutral.png",
     "blink": "images/concept/avatar-v1/charakuru/face-blink.png",
     "happy": "images/concept/avatar-v1/charakuru/face-happy.png"
   },
-  "modelVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
-  "builderScriptWorkingPath": "output/charakuru/nanatau-avatar-v1/expressions/build-face-vrm.py",
-  "builderScriptSha256": "452a24e46754bf843e8b7d33d8f7679586843766be735566b98aa23bbad4a09f"
+  "additionalTripoCredits": 0,
+  "additionalPurchase": false,
+  "publicationAuthorized": false,
+  "pushAuthorized": false,
+  "builderScriptWorkingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/build_face_vrm.py",
+  "builderScriptSha256": "bc50d378a0477baf38d6fb15312af6873470cba36197e8045ac08a8506c09aac"
 }

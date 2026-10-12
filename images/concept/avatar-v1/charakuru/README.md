@@ -4,13 +4,13 @@
 
 ## 現在の表情
 
-2026-10-11に採用した、通常顔・まばたき・閉じ目の笑顔。現在の`avatar.vrm`と`avatar.blend`に対応する。閉じ目では虹彩と白目を隠し、まぶたを表示する。口パクは含まない。
+2026-10-13に更新した、通常顔・短いまばたき・目を開けたにっこり。現在の`avatar.vrm`と`avatar.blend`に対応する。同じHeadを使い、笑顔では元の瞳と顔の形を保って口元だけを変える。まばたきでは眼窩の元の曲面を保ち、肌色と一重の閉じまつげを表示する。口パクは含まない。
 
 | 表情 | 画像 |
 | --- | --- |
 | 通常顔 | [face-neutral.png](face-neutral.png) |
 | まばたき | [face-blink.png](face-blink.png) |
-| 閉じ目の笑顔 | [face-happy.png](face-happy.png) |
+| 目を開けたにっこり | [face-happy.png](face-happy.png) |
 
 [表情モデルの検証](../../../../models/avatar-v1/charakuru/verification/expressions/model.json)と[表情付きテトリス](../../../../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)を参照できる。
 

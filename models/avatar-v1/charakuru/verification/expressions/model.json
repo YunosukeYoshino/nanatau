@@ -1,52 +1,486 @@
 {
   "passed": true,
-  "scope": "Facial expressions on adopted Charakuru VRM and editable Blend",
-  "verifiedAt": "2026-10-11",
+  "scope": "Existing shared-head open-eye smile and local blink repair",
+  "verifiedAt": "2026-10-12T19:33:59.221042+00:00",
   "avatarPath": "models/avatar-v1/charakuru/avatar.vrm",
   "blendPath": "models/avatar-v1/charakuru/avatar.blend",
-  "baselineCheckpoint": "22258cd",
+  "baselineCheckpoint": "d71bbb0b23c1886769ea131f83b44342d8e71814",
+  "baselineVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+  "candidateVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+  "candidateBlendSha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303",
+  "baselineRegression": {
+    "passed": false,
+    "checks": {
+      "happy_preserves_original_head_and_visible_eye_geometry": false,
+      "blink_preserves_original_curved_eye_socket_surface": false,
+      "blink_preserves_original_socket_normals": false,
+      "blink_hides_only_iris_and_detached_eye_fragments": false,
+      "happy_retains_open_eye_face_texture": false
+    },
+    "happyMaximumHeadDisplacement": 0.11004393547773361,
+    "blinkSocketMaximumDisplacement": 0.03188815712928772,
+    "eyeSocketVertexIndices": [
+      2677,
+      2678,
+      2679,
+      2680,
+      2681,
+      2682,
+      2683,
+      2684,
+      2685,
+      2686,
+      2687,
+      2688,
+      2689,
+      2690,
+      2691,
+      2692,
+      2693,
+      2694,
+      2695,
+      2707,
+      2708,
+      2709,
+      2710,
+      2711,
+      2712,
+      2713,
+      2714,
+      2715,
+      2716,
+      2717,
+      2718,
+      2719,
+      2720,
+      2721,
+      2722,
+      2723,
+      2724,
+      2725
+    ],
+    "irisAndFragmentVertexIndices": [
+      1180,
+      1181,
+      1182,
+      1183,
+      1184,
+      1185,
+      1186,
+      1187,
+      1188,
+      1189,
+      1190,
+      1191,
+      1192,
+      1193,
+      1194,
+      1195,
+      1196,
+      1197,
+      1198,
+      1199,
+      1200,
+      1201,
+      1202,
+      1203,
+      1204,
+      1205,
+      1206,
+      1207,
+      1208,
+      1423,
+      1424,
+      1425,
+      1426,
+      1427,
+      1428,
+      1429,
+      1430,
+      1431,
+      1432,
+      1433,
+      1434,
+      1435,
+      1436,
+      1437,
+      1438,
+      1439,
+      1440,
+      1441,
+      1442,
+      1443,
+      1444,
+      1445,
+      1446,
+      1447,
+      1448,
+      1449,
+      1450,
+      1451,
+      1402,
+      1403,
+      1404,
+      1405,
+      1406,
+      1407,
+      1408,
+      1409,
+      1410,
+      1411,
+      1412,
+      1413,
+      1414,
+      1415,
+      1416,
+      1417,
+      1418,
+      1419,
+      1420,
+      1421,
+      1422,
+      1230,
+      1231,
+      1232,
+      1233,
+      1234,
+      1235,
+      1236,
+      1237,
+      1238,
+      1239,
+      1240,
+      1241,
+      1242,
+      1243,
+      1244,
+      1245,
+      1246,
+      1247,
+      1248,
+      1249,
+      1209,
+      1210,
+      1211,
+      1212,
+      1213,
+      1214,
+      1215,
+      1216,
+      1217,
+      1218,
+      1219,
+      1220,
+      1221,
+      1222,
+      1223,
+      1224,
+      1225,
+      1226,
+      1227,
+      1228,
+      1229,
+      1452,
+      1453,
+      1454,
+      1455,
+      1456,
+      1457,
+      1458,
+      1459,
+      1460,
+      1461,
+      1462,
+      1463,
+      1464,
+      1465,
+      1466,
+      1467,
+      1468,
+      1469,
+      1470,
+      1471,
+      1472
+    ],
+    "visualSmileAndLashReviewStillRequired": true
+  },
+  "regressionContract": {
+    "passed": true,
+    "checks": {
+      "happy_preserves_original_head_and_visible_eye_geometry": true,
+      "blink_preserves_original_curved_eye_socket_surface": true,
+      "blink_preserves_original_socket_normals": true,
+      "blink_hides_only_iris_and_detached_eye_fragments": true,
+      "happy_retains_open_eye_face_texture": true
+    },
+    "happyMaximumHeadDisplacement": 0.0,
+    "blinkSocketMaximumDisplacement": 0.0,
+    "eyeSocketVertexIndices": [
+      2677,
+      2678,
+      2679,
+      2680,
+      2681,
+      2682,
+      2683,
+      2684,
+      2685,
+      2686,
+      2687,
+      2688,
+      2689,
+      2690,
+      2691,
+      2692,
+      2693,
+      2694,
+      2695,
+      2707,
+      2708,
+      2709,
+      2710,
+      2711,
+      2712,
+      2713,
+      2714,
+      2715,
+      2716,
+      2717,
+      2718,
+      2719,
+      2720,
+      2721,
+      2722,
+      2723,
+      2724,
+      2725
+    ],
+    "irisAndFragmentVertexIndices": [
+      1180,
+      1181,
+      1182,
+      1183,
+      1184,
+      1185,
+      1186,
+      1187,
+      1188,
+      1189,
+      1190,
+      1191,
+      1192,
+      1193,
+      1194,
+      1195,
+      1196,
+      1197,
+      1198,
+      1199,
+      1200,
+      1201,
+      1202,
+      1203,
+      1204,
+      1205,
+      1206,
+      1207,
+      1208,
+      1423,
+      1424,
+      1425,
+      1426,
+      1427,
+      1428,
+      1429,
+      1430,
+      1431,
+      1432,
+      1433,
+      1434,
+      1435,
+      1436,
+      1437,
+      1438,
+      1439,
+      1440,
+      1441,
+      1442,
+      1443,
+      1444,
+      1445,
+      1446,
+      1447,
+      1448,
+      1449,
+      1450,
+      1451,
+      1402,
+      1403,
+      1404,
+      1405,
+      1406,
+      1407,
+      1408,
+      1409,
+      1410,
+      1411,
+      1412,
+      1413,
+      1414,
+      1415,
+      1416,
+      1417,
+      1418,
+      1419,
+      1420,
+      1421,
+      1422,
+      1230,
+      1231,
+      1232,
+      1233,
+      1234,
+      1235,
+      1236,
+      1237,
+      1238,
+      1239,
+      1240,
+      1241,
+      1242,
+      1243,
+      1244,
+      1245,
+      1246,
+      1247,
+      1248,
+      1249,
+      1209,
+      1210,
+      1211,
+      1212,
+      1213,
+      1214,
+      1215,
+      1216,
+      1217,
+      1218,
+      1219,
+      1220,
+      1221,
+      1222,
+      1223,
+      1224,
+      1225,
+      1226,
+      1227,
+      1228,
+      1229,
+      1452,
+      1453,
+      1454,
+      1455,
+      1456,
+      1457,
+      1458,
+      1459,
+      1460,
+      1461,
+      1462,
+      1463,
+      1464,
+      1465,
+      1466,
+      1467,
+      1468,
+      1469,
+      1470,
+      1471,
+      1472
+    ],
+    "visualSmileAndLashReviewStillRequired": true
+  },
   "construction": {
     "constructionPassed": true,
-    "visualReviewPending": false,
-    "baselineCommit": "22258cd",
-    "sourceVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
-    "candidateVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
-    "candidateVrmBytes": 25763800,
-    "atlasSha256": "08d30d20e01137af0d2d89059339b0160447f4b14fb1fa563547fbca1ec4ff43",
+    "mouthEditReady": true,
+    "sourceVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+    "candidateVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+    "candidateVrmBytes": 36038212,
+    "atlasSha256": "609e32ae3b40680848a6bd110a572921763f8670c4fbd53fe425c43d8cb195bc",
     "atlasDimensions": [
       4096,
       4096
     ],
-    "atlasTiles": {
-      "neutral": [
-        0,
-        0
-      ],
-      "blink": [
-        1,
-        0
-      ],
-      "happy": [
-        0,
-        1
-      ]
-    },
     "atlasTilePixels": 2048,
-    "implementation": "VRM1 Head texture transform and ClosedEyes morph binds; binary blink/happy",
-    "geometrySkinningNodesRestPosesUnchanged": "Base geometry, skinning, nodes and rest poses unchanged; added expression morph affects137Head vertices only",
-    "originalBinaryPrefixUnchanged": true,
+    "implementation": "Same shared Head; mouth-only happy; blink hides 141 iris/reflection vertices and uses local skin-only UV on 38 original curved socket vertices",
+    "allOriginalBinaryBytesPreserved": true,
+    "originalNeutralTilePixelExact": true,
+    "basePositionNormalUvSkinTrianglesUnchanged": true,
+    "happyHeadAndEyesGeometryUnchanged": true,
+    "happyEyeTexturePixelExact": true,
     "bodyHairMaterialsUnchanged": true,
-    "springSettingsUnchanged": true,
-    "eyeCapMorphVertices": 137,
-    "irisCapsCollapsedInsideHead": true,
-    "detachedEyeFragmentsCollapsed": 41,
-    "eyelidSurfaceZ": 0.105,
-    "allTrianglesAndPositionSkinAttributesPreserved": true,
-    "sourceModelUnchanged": true,
-    "meshCount": 6,
-    "mtoonMaterialCount": 3,
-    "facialUvScaled": 0.5,
-    "faceMaterialIndex": 1,
+    "bonesRestPoseAndSpringsUnchanged": true,
+    "collapsedEyeVertices": 141,
+    "newlyDiagnosedReflectionFragmentVertices": 42,
+    "originalCurvedEyelidGeometryAndNormalsPreserved": true,
+    "reprojectedEyelidVertices": 38,
+    "eyelidTextureProjection": [
+      {
+        "vertices": 19,
+        "facialSkinFitVertices": 40,
+        "rmsTilePixels": 1.289306594055101,
+        "sourceUvTileMinimum": [
+          105.45718253209384,
+          1881.1336359741563
+        ],
+        "sourceUvTileMaximum": [
+          166.7150907351147,
+          1939.9076939898732
+        ]
+      },
+      {
+        "vertices": 19,
+        "facialSkinFitVertices": 40,
+        "rmsTilePixels": 1.4939538349514172,
+        "sourceUvTileMinimum": [
+          172.89292674153444,
+          1809.7766964843688
+        ],
+        "sourceUvTileMaximum": [
+          232.80587172435696,
+          1873.7321479763627
+        ]
+      }
+    ],
+    "blinkTileChangedPixels": 5222,
+    "skinOnlySocketPatchReady": true,
+    "socketPatchSha256": "434e5f923e071134ae466e6afee73c9b99dcdc67122e5318951f41e35da841f6",
+    "socketPatchOriginal4kBox": [
+      850,
+      1400,
+      1400,
+      1800
+    ],
+    "socketPatchTileBox": [
+      425,
+      700,
+      700,
+      900
+    ],
+    "socketTriangleAndGutterMaskPixels": 5283,
+    "mouthCropOriginalPixels": [
+      0,
+      3250,
+      1100,
+      4096
+    ],
+    "mouthEllipseOriginalCropPixels": [
+      320,
+      490,
+      490,
+      620
+    ],
+    "mouthInputSha256": "1cf7d5dc4fad3c401f15b0d29ed6259d59c219ecab84637b383227fee4e9b41e",
     "expressionBinds": {
       "blink": {
         "isBinary": true,
@@ -79,13 +513,7 @@
         "overrideBlink": "block",
         "overrideLookAt": "none",
         "overrideMouth": "none",
-        "morphTargetBinds": [
-          {
-            "node": 128,
-            "index": 0,
-            "weight": 1.0
-          }
-        ],
+        "morphTargetBinds": [],
         "textureTransformBinds": [
           {
             "material": 1,
@@ -101,39 +529,14 @@
         ]
       }
     },
-    "neutralFaceTextureResolutionTradeoff": "Head material is sampled at2048px per state; original Body/Hair material4ktextures retained",
-    "editedFeatureMasks": {
-      "eyeEllipses": [
-        [
-          163,
-          500,
-          349,
-          674
-        ],
-        [
-          341,
-          336,
-          518,
-          497
-        ]
-      ],
-      "mouthEllipse": [
-        359,
-        516,
-        451,
-        595
-      ],
-      "cropXY": [
-        0,
-        3250
-      ]
-    },
+    "meshCount": 6,
+    "mtoonMaterialCount": 3,
+    "sourceModelUnchanged": true,
     "publicUpload": false,
     "additionalPurchase": false
   },
   "roundtrip": {
     "importExportPassed": true,
-    "visualReviewPending": false,
     "meshCount": 6,
     "bones": 127,
     "humanoidBones": 51,
@@ -142,69 +545,907 @@
       "blink",
       "happy"
     ],
-    "expressionType": "Binary VRM1 texture transform and ClosedEyes morph binds",
+    "expressionType": "Binary UV mouth-only happy and ClosedEyes local blink",
     "expressionBindsRoundtripPassed": true,
+    "roundtripVrmFreshImportPassed": true,
     "savedBlendReloadPassed": true,
     "imagesPacked": true,
     "actualShapeKeyStatesPassed": true,
-    "candidateVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
-    "candidateBlendSha256": "4c5259e4300c990e80d50c7c361a1e68760020bf0585b1863bdd8bb4211f9ffa",
-    "roundtripVrmSha256": "163379e87d7cbfbc4875f74f15b4e8846e90ea54e22d8b86ad96fa7114a5208c",
+    "candidateVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+    "candidateBlendSha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303",
+    "roundtripVrmSha256": "02ba6af86264bd5d8667615c94d5b6c021cb22a0fb195073f50559b389f27560",
     "faceFrames": [
-      "face-original-control.png",
       "face-neutral.png",
+      "face-neutral-side.png",
+      "face-neutral-quarter.png",
       "face-blink.png",
+      "face-blink-side.png",
+      "face-blink-quarter.png",
       "face-happy.png",
+      "face-happy-side.png",
+      "face-happy-quarter.png",
       "face-happy-blink.png"
     ],
     "happyOverrideBlink": "block",
-    "publicUpload": false,
-    "headGeometryAndMorphValuesPreserved": true,
-    "headOriginalVertexCount": 2726,
-    "headRoundtripVertexCount": 2731,
-    "headGeometryComparison": "Both directions matched combined base-position, UV and expression morph-delta tuples with1e-5tolerance; exporter adds5equivalent seam vertices",
-    "maxCombinedPositionUvMorphError": 2.384185791015625e-07
+    "happyClosedEyesWeight": 0,
+    "blinkClosedEyesWeight": 1,
+    "publicUpload": false
   },
-  "visual": {
+  "reload": {
     "passed": true,
-    "neutralVsOriginalControlRmse255": 0.3997578632201613,
-    "neutralVsOriginalControlMae255": 0.04277142857142857,
-    "blinkAndHappyClosedEyesConfirmed": true,
-    "goldIrisPixelsInEyeRegions": {
-      "neutral": 1365,
-      "blink": 0,
-      "happy": 0
-    },
-    "regressionBeforeFix": {
-      "neutral": 1365,
-      "blink": 1348,
-      "happy": 1343
-    },
-    "happyBlinkEqualsHappy": true,
-    "cleanDetachedIrisAndFragmentRemoval": true,
-    "reviewer": "Codex root; frontal stills and seven body-motion preview frames",
-    "previewFrames": [
-      1,
-      57,
-      81,
-      131,
-      190,
-      357,
-      476
+    "reloadActualExpressionStateChecks": [
+      {
+        "asset": "exportedVRM",
+        "sha256": "02ba6af86264bd5d8667615c94d5b6c021cb22a0fb195073f50559b389f27560",
+        "passed": true,
+        "actualExpressionStates": [
+          {
+            "blink": 0,
+            "happy": 0,
+            "closedEyes": 0.0
+          },
+          {
+            "blink": 1,
+            "happy": 0,
+            "closedEyes": 1.0
+          },
+          {
+            "blink": 0,
+            "happy": 1,
+            "closedEyes": 0.0
+          },
+          {
+            "blink": 1,
+            "happy": 1,
+            "closedEyes": 0.0
+          }
+        ]
+      },
+      {
+        "asset": "savedBlend",
+        "sha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303",
+        "passed": true,
+        "actualExpressionStates": [
+          {
+            "blink": 0,
+            "happy": 0,
+            "closedEyes": 0.0
+          },
+          {
+            "blink": 1,
+            "happy": 0,
+            "closedEyes": 1.0
+          },
+          {
+            "blink": 0,
+            "happy": 1,
+            "closedEyes": 0.0
+          },
+          {
+            "blink": 1,
+            "happy": 1,
+            "closedEyes": 0.0
+          }
+        ]
+      }
     ],
-    "faceFrames": [
-      "images/concept/avatar-v1/charakuru/face-neutral.png",
-      "images/concept/avatar-v1/charakuru/face-blink.png",
-      "images/concept/avatar-v1/charakuru/face-happy.png"
+    "noAssetFilesModified": true
+  },
+  "protectedDataAudit": {
+    "schemaVersion": 1,
+    "createdAt": "2026-10-12T19:25:39.557000+00:00",
+    "passed": true,
+    "sourceBaseline": {
+      "path": "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/charakuru/nanatau-avatar-v1/expression-fix/baseline-avatar.vrm",
+      "sha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+      "bytes": 25763800
+    },
+    "candidate": {
+      "path": "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/charakuru/nanatau-avatar-v1/expression-fix/avatar.vrm",
+      "sha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+      "bytes": 36038212
+    },
+    "scriptSha256": "a01dd30be0073b7f086095a40f432f6a86172a27eeaca3d5e79265cdcc2b8077",
+    "sourceBaselineRecordSha256": "78eaa46fd10730efeb93c35028e3653ebe460c3ce880fbf4f6a7a54fc5104f79",
+    "checks": [
+      {
+        "name": "frozen_source_and_candidate_hashes",
+        "passed": true,
+        "expectedBaseline": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
+        "expectedCandidate": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1"
+      },
+      {
+        "name": "entire_original_binary_is_an_exact_prefix",
+        "passed": true,
+        "originalBinaryBytes": 25697836,
+        "originalBinarySha256": "945a1c339f19540fa6e8ec72727f185d870a957116c7c099d08ba5f137f05244",
+        "candidatePrefixSha256": "945a1c339f19540fa6e8ec72727f185d870a957116c7c099d08ba5f137f05244",
+        "appendedBytes": 10273876
+      },
+      {
+        "name": "json_changes_only_in_authorized_expression_atlas_target_and_version_paths",
+        "passed": true,
+        "observedChanges": [
+          {
+            "path": "/accessors",
+            "kind": "length",
+            "before": 40,
+            "after": 42
+          },
+          {
+            "path": "/bufferViews",
+            "kind": "length",
+            "before": 44,
+            "after": 47
+          },
+          {
+            "path": "/buffers/0/byteLength",
+            "kind": "value",
+            "before": 25697836,
+            "after": 35971712
+          },
+          {
+            "path": "/extensions/VRMC_vrm/expressions/preset/happy/morphTargetBinds",
+            "kind": "length",
+            "before": 1,
+            "after": 0
+          },
+          {
+            "path": "/extensions/VRMC_vrm/meta/version",
+            "kind": "value",
+            "before": "1.1.0-charakuru-expressions",
+            "after": "1.2.0-charakuru-open-eye-smile"
+          },
+          {
+            "path": "/images",
+            "kind": "length",
+            "before": 4,
+            "after": 5
+          },
+          {
+            "path": "/materials/1/extensions/VRMC_materials_mtoon/shadeMultiplyTexture/index",
+            "kind": "value",
+            "before": 3,
+            "after": 4
+          },
+          {
+            "path": "/materials/1/pbrMetallicRoughness/baseColorTexture/index",
+            "kind": "value",
+            "before": 3,
+            "after": 4
+          },
+          {
+            "path": "/meshes/1/primitives/0/targets/0/NORMAL",
+            "kind": "value",
+            "before": 39,
+            "after": 41
+          },
+          {
+            "path": "/meshes/1/primitives/0/targets/0/POSITION",
+            "kind": "value",
+            "before": 38,
+            "after": 40
+          },
+          {
+            "path": "/textures",
+            "kind": "length",
+            "before": 4,
+            "after": 5
+          }
+        ],
+        "unexpectedChanges": []
+      },
+      {
+        "name": "original_accessors_buffer_views_images_textures_are_preserved",
+        "passed": true
+      },
+      {
+        "name": "all_nodes_transforms_and_skin_bindings_are_identical",
+        "passed": true,
+        "nodes": 133,
+        "skinJointCounts": [
+          127
+        ],
+        "inverseBindMatricesSha256": [
+          "e1118d49b2262a998cfcdaa612ba2f2e70b2a226fcb8aa0a2f92292aecc49d27"
+        ]
+      },
+      {
+        "name": "all_mesh_base_positions_normals_uvs_joints_weights_and_indices_identical",
+        "passed": true,
+        "meshCount": 6,
+        "totalVertices": 77849,
+        "totalTriangles": 96751,
+        "meshes": [
+          {
+            "mesh": 0,
+            "name": "body_00001.002",
+            "primitive": 0,
+            "vertices": 28567,
+            "triangles": 37171,
+            "attributes": {
+              "JOINTS_0": {
+                "identical": true,
+                "sha256": "8cce2f1ae93390a35ddf08af4e4ee4f246c99b856db81f18af4e685440de67f6",
+                "count": 28567
+              },
+              "NORMAL": {
+                "identical": true,
+                "sha256": "8815e2c4c99aa6f71146b41f34f8a5c047ba77f197a8e561d11b2e5c8f18222b",
+                "count": 28567
+              },
+              "POSITION": {
+                "identical": true,
+                "sha256": "f09aebe64435f2497e01a80cd68d6d1b1d1210759b02ba9df84eec8c62d413e5",
+                "count": 28567
+              },
+              "TEXCOORD_0": {
+                "identical": true,
+                "sha256": "b3bf072b77982c18eee35d906ad8f33bacb8e949f3e790d71f54aab56dc9873e",
+                "count": 28567
+              },
+              "WEIGHTS_0": {
+                "identical": true,
+                "sha256": "b136b001df681eba4dc6a97e9a82426c913e889d574247a350bcd6764c8137d0",
+                "count": 28567
+              }
+            },
+            "indicesIdentical": true
+          },
+          {
+            "mesh": 1,
+            "name": "head_00003.003",
+            "primitive": 0,
+            "vertices": 2726,
+            "triangles": 3577,
+            "attributes": {
+              "JOINTS_0": {
+                "identical": true,
+                "sha256": "2be77d56b376dbf79eeccd53641b3a62c26d384cf3181191d491b7722a37f843",
+                "count": 2726
+              },
+              "NORMAL": {
+                "identical": true,
+                "sha256": "9ab31d4259212b98eaaaf563e962944c3f64b790735a3890a44d504102085a8d",
+                "count": 2726
+              },
+              "POSITION": {
+                "identical": true,
+                "sha256": "a91fe80048f598f4791c111a9b0e4b836e62d9fb8224d314f4d895384091fa71",
+                "count": 2726
+              },
+              "TEXCOORD_0": {
+                "identical": true,
+                "sha256": "4b7c932e9cb40327df051e4db74bbd40fe3f666c839444c83a999b94626ac5f9",
+                "count": 2726
+              },
+              "WEIGHTS_0": {
+                "identical": true,
+                "sha256": "3c42b0c72b52543b0b36552953909e96bb929c01f9ab3b37c7c93b53781a7f54",
+                "count": 2726
+              }
+            },
+            "indicesIdentical": true
+          },
+          {
+            "mesh": 2,
+            "name": "head_00001.001",
+            "primitive": 0,
+            "vertices": 33979,
+            "triangles": 40261,
+            "attributes": {
+              "JOINTS_0": {
+                "identical": true,
+                "sha256": "f50c979d0769267e8737bcb28ef18f973db3b8d74a9e3fcd0ebf8fb922c86c23",
+                "count": 33979
+              },
+              "NORMAL": {
+                "identical": true,
+                "sha256": "543c25bf35853c10ed6bd776beeab1873e736ddba89966be0427bd2b1df766c2",
+                "count": 33979
+              },
+              "POSITION": {
+                "identical": true,
+                "sha256": "12013fe01ced3e41fdf62d8f08bd42702153ca9b29acbc1660d10d6917907c97",
+                "count": 33979
+              },
+              "TEXCOORD_0": {
+                "identical": true,
+                "sha256": "41e96b375f8ba5199582b043deda352d39d8adbcf568c9333132f3c8d859afbd",
+                "count": 33979
+              },
+              "WEIGHTS_0": {
+                "identical": true,
+                "sha256": "a5b762c758a095108adb4d43de352a56f9dea3172b5f434fcdd9fd421867d46b",
+                "count": 33979
+              }
+            },
+            "indicesIdentical": true
+          },
+          {
+            "mesh": 3,
+            "name": "body_00105.003",
+            "primitive": 0,
+            "vertices": 8548,
+            "triangles": 10278,
+            "attributes": {
+              "JOINTS_0": {
+                "identical": true,
+                "sha256": "9219fe6d1501b544d90dcea23b5d63b71ac25c547e48ae6cf479e45f85915dce",
+                "count": 8548
+              },
+              "NORMAL": {
+                "identical": true,
+                "sha256": "7614bf09362dbc64b3957aa356e9031443399a94cfedfdb0022cefe1e81e442a",
+                "count": 8548
+              },
+              "POSITION": {
+                "identical": true,
+                "sha256": "c30f40d74854b38c06c3640920ead6036a32471b0ca99296e2b6c9df5975cb8c",
+                "count": 8548
+              },
+              "TEXCOORD_0": {
+                "identical": true,
+                "sha256": "51756327a7c7ac7ca26060a809bb0cca8468dd943d83e20bb8c7979f383bbc94",
+                "count": 8548
+              },
+              "WEIGHTS_0": {
+                "identical": true,
+                "sha256": "b7bec6cdbd90855f1a1e4972116e0cc62e30af3cdf77e3ac4904e586ef8e84e0",
+                "count": 8548
+              }
+            },
+            "indicesIdentical": true
+          },
+          {
+            "mesh": 4,
+            "name": "body_00019.003",
+            "primitive": 0,
+            "vertices": 3958,
+            "triangles": 5389,
+            "attributes": {
+              "JOINTS_0": {
+                "identical": true,
+                "sha256": "a0ca0d9d2c84cf9c245503c1e85d39a9a3ccdd2a892e5d00c9889e7a9ff7b150",
+                "count": 3958
+              },
+              "NORMAL": {
+                "identical": true,
+                "sha256": "8ca9393eefa1c194a614025be3fc33987a71e0167a47782fea30cc60391a6d8d",
+                "count": 3958
+              },
+              "POSITION": {
+                "identical": true,
+                "sha256": "f651184f7daa17771ee68459f178969f335fe655822c135096c457fb6890ef02",
+                "count": 3958
+              },
+              "TEXCOORD_0": {
+                "identical": true,
+                "sha256": "ba74816febf0b99339989c123c2a1e34be2a5f3345fdc4be27717d7770efedec",
+                "count": 3958
+              },
+              "WEIGHTS_0": {
+                "identical": true,
+                "sha256": "4d2726ded4dbdee8ec5add286dad66cd976fac65aa8443b0f99bc244b6302db5",
+                "count": 3958
+              }
+            },
+            "indicesIdentical": true
+          },
+          {
+            "mesh": 5,
+            "name": "body_00534.002",
+            "primitive": 0,
+            "vertices": 71,
+            "triangles": 75,
+            "attributes": {
+              "JOINTS_0": {
+                "identical": true,
+                "sha256": "2256d60ccd32bca2a701db82704b126741c550154dafb193bb389a16b1070de6",
+                "count": 71
+              },
+              "NORMAL": {
+                "identical": true,
+                "sha256": "1ad91ad089f073b0afe3281baa9959dd68a0394c931f7bdb46ffadcdcc3ba7ea",
+                "count": 71
+              },
+              "POSITION": {
+                "identical": true,
+                "sha256": "a289a3ad6a638c8c8547b3c81f760f4ca6227f0bfafeebe55c5dbf19f6b0bebb",
+                "count": 71
+              },
+              "TEXCOORD_0": {
+                "identical": true,
+                "sha256": "6eef989924ba5fb0c9ba6c9d2b618c9593e5a2dcffe935b67f3aa25f23bb689a",
+                "count": 71
+              },
+              "WEIGHTS_0": {
+                "identical": true,
+                "sha256": "6f8226cd9b50f73cb754805171ca6134cd1ccc0ae821c05304410131254185b5",
+                "count": 71
+              }
+            },
+            "indicesIdentical": true
+          }
+        ]
+      },
+      {
+        "name": "non_head_morph_targets_unchanged",
+        "passed": true
+      },
+      {
+        "name": "all_mesh_base_attributes_finite",
+        "passed": true
+      },
+      {
+        "name": "blink_changes_exactly_141_connected_iris_and_reflection_vertices",
+        "passed": true,
+        "changedVertexCount": 141,
+        "irisAndReflectionIndices": [
+          1180,
+          1181,
+          1182,
+          1183,
+          1184,
+          1185,
+          1186,
+          1187,
+          1188,
+          1189,
+          1190,
+          1191,
+          1192,
+          1193,
+          1194,
+          1195,
+          1196,
+          1197,
+          1198,
+          1199,
+          1200,
+          1201,
+          1202,
+          1203,
+          1204,
+          1205,
+          1206,
+          1207,
+          1208,
+          1209,
+          1210,
+          1211,
+          1212,
+          1213,
+          1214,
+          1215,
+          1216,
+          1217,
+          1218,
+          1219,
+          1220,
+          1221,
+          1222,
+          1223,
+          1224,
+          1225,
+          1226,
+          1227,
+          1228,
+          1229,
+          1230,
+          1231,
+          1232,
+          1233,
+          1234,
+          1235,
+          1236,
+          1237,
+          1238,
+          1239,
+          1240,
+          1241,
+          1242,
+          1243,
+          1244,
+          1245,
+          1246,
+          1247,
+          1248,
+          1249,
+          1402,
+          1403,
+          1404,
+          1405,
+          1406,
+          1407,
+          1408,
+          1409,
+          1410,
+          1411,
+          1412,
+          1413,
+          1414,
+          1415,
+          1416,
+          1417,
+          1418,
+          1419,
+          1420,
+          1421,
+          1422,
+          1423,
+          1424,
+          1425,
+          1426,
+          1427,
+          1428,
+          1429,
+          1430,
+          1431,
+          1432,
+          1433,
+          1434,
+          1435,
+          1436,
+          1437,
+          1438,
+          1439,
+          1440,
+          1441,
+          1442,
+          1443,
+          1444,
+          1445,
+          1446,
+          1447,
+          1448,
+          1449,
+          1450,
+          1451,
+          1452,
+          1453,
+          1454,
+          1455,
+          1456,
+          1457,
+          1458,
+          1459,
+          1460,
+          1461,
+          1462,
+          1463,
+          1464,
+          1465,
+          1466,
+          1467,
+          1468,
+          1469,
+          1470,
+          1471,
+          1472
+        ],
+        "hiddenMaximumAbsoluteZ": 0.0
+      },
+      {
+        "name": "blink_keeps_original_38_curved_socket_vertices_and_every_normal",
+        "passed": true,
+        "socketVertexIndices": [
+          2677,
+          2678,
+          2679,
+          2680,
+          2681,
+          2682,
+          2683,
+          2684,
+          2685,
+          2686,
+          2687,
+          2688,
+          2689,
+          2690,
+          2691,
+          2692,
+          2693,
+          2694,
+          2695,
+          2707,
+          2708,
+          2709,
+          2710,
+          2711,
+          2712,
+          2713,
+          2714,
+          2715,
+          2716,
+          2717,
+          2718,
+          2719,
+          2720,
+          2721,
+          2722,
+          2723,
+          2724,
+          2725
+        ],
+        "socketSourceZRange": [
+          0.07311183959245682,
+          0.10520759969949722
+        ],
+        "maximumSocketDisplacement": 0.0,
+        "maximumNormalDelta": 0.0
+      },
+      {
+        "name": "happy_has_no_geometry_bind_and_keeps_blink_override",
+        "passed": true
+      },
+      {
+        "name": "binary_blink_and_happy_texture_tile_selection_unchanged",
+        "passed": true,
+        "blinkTextureBinds": [
+          {
+            "material": 1,
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0.5,
+              0
+            ]
+          }
+        ],
+        "happyTextureBinds": [
+          {
+            "material": 1,
+            "scale": [
+              1.0,
+              1.0
+            ],
+            "offset": [
+              0,
+              0.5
+            ]
+          }
+        ]
+      },
+      {
+        "name": "humanoid_and_all_spring_physics_parameters_identical",
+        "passed": true,
+        "humanoidBones": 51,
+        "springs": 17,
+        "springJoints": 75,
+        "colliders": 9,
+        "springParametersSha256": "55eb2bb4038d021a68f8f936431bb1ae2bad85a3d0646ec50affac1dfab47d39"
+      },
+      {
+        "name": "all_mtoon_material_settings_unchanged_except_face_atlas_pointer",
+        "passed": true,
+        "materialCount": 3
+      },
+      {
+        "name": "all_original_embedded_images_byte_identical",
+        "passed": true,
+        "images": [
+          {
+            "index": 0,
+            "name": "body_texture_4k.jpg",
+            "sha256": "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab",
+            "identical": true
+          },
+          {
+            "index": 1,
+            "name": "head_texture_4k.jpg",
+            "sha256": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+            "identical": true
+          },
+          {
+            "index": 2,
+            "name": "head_texture_4k.jpg.001",
+            "sha256": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6",
+            "identical": true
+          },
+          {
+            "index": 3,
+            "name": "Nanatau_FaceExpressions_4k.png",
+            "sha256": "08d30d20e01137af0d2d89059339b0160447f4b14fb1fa563547fbca1ec4ff43",
+            "identical": true
+          }
+        ]
+      },
+      {
+        "name": "neutral_2048_tile_pixel_identical_to_baseline",
+        "passed": true,
+        "sourceDecodedPixelsSha256": "c346bf3a22da7fd9884c2333247c1d90606833ee5503b486e41c5c33daebe0fc",
+        "candidateDecodedPixelsSha256": "c346bf3a22da7fd9884c2333247c1d90606833ee5503b486e41c5c33daebe0fc"
+      },
+      {
+        "name": "happy_differs_from_neutral_only_inside_authored_mouth_mask",
+        "passed": true,
+        "changedPixels": 4262,
+        "allowedMaskPixels": 4744,
+        "changedPixelsOutsideMask": 0,
+        "changedBoundingBox": [
+          174,
+          1873,
+          249,
+          1939
+        ]
+      },
+      {
+        "name": "happy_keeps_original_open_eye_texels",
+        "passed": true
+      },
+      {
+        "name": "fourth_atlas_tile_is_identical_happy_duplicate",
+        "passed": true
+      },
+      {
+        "name": "blink_texture_changes_confined_to_original_socket_uv_islands_and_four_texel_gutter",
+        "passed": true,
+        "changedPixels": 5222,
+        "allowedIslandAndGutterPixels": 5283,
+        "changedPixelsOutsideMask": 0
+      },
+      {
+        "name": "three_active_material_images_retained",
+        "passed": true,
+        "activeImageIndices": [
+          0,
+          2,
+          4
+        ],
+        "embeddedImages": 5,
+        "note": "Append-only preservation retains the old inactive atlas; it is not used by a material."
+      },
+      {
+        "name": "source_files_unchanged_while_auditing",
+        "passed": true
+      }
+    ],
+    "limitations": [
+      "This audit establishes protected-data and bounded-texture preservation. It does not replace visual review of the smile, eyelash appearance, or rendered motion.",
+      "The mouth/socket masks certify where pixels changed; artistic quality is assessed by the parent agent's actual images and runtime playback."
     ]
   },
+  "visual": {
+    "date": "2026-10-13",
+    "passed": true,
+    "scope": "Root visual acceptance of final static renders and seven motion previews; full encoded video review remains pending",
+    "candidateVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+    "candidateBlendSha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303",
+    "checks": {
+      "sameHeadFaceIdentityPreserved": true,
+      "happyOriginalEyesVisible": true,
+      "happyMouthClearlySmiling": true,
+      "blinkSingleClosedLashVisible": true,
+      "blinkNoWhiteOvalOrDarkHole": true,
+      "blinkNoDoubleLashOrAmberFragment": true,
+      "profileAndQuarterViewsPreserveFaceContour": true,
+      "neutralMatchesOriginalCharacter": true,
+      "motionPreviewFramingAndExpressionsPassed": true
+    },
+    "staticViews": [
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-neutral.png",
+        "sha256": "e74f3659301f7f7a2842c01cc85c0f2da4b2a20687fec69da4699ed56f3a34d2"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-neutral-side.png",
+        "sha256": "253cf487e99ff80a9454bd5edceb0c86903b8d05b77dbb3985b8f0c6157c91ca"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-neutral-quarter.png",
+        "sha256": "1cf15e818068d637a14d06b0c14016503abb93c390d970897e018e8180f8090e"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-blink.png",
+        "sha256": "2b9295f6676fbec25da6c4957efd5cd02f9bcb55558d79b72868233d15c8150a"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-blink-side.png",
+        "sha256": "aa70eade5f339caafc552c34830d4685ccdd72394779e6fa9c60793f8b1bb47d"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-blink-quarter.png",
+        "sha256": "b7ce1e23dcb92891848aecf22dadfd9caab3efd652e3562dfe807f2b7d272ec4"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-happy.png",
+        "sha256": "73d9f91f21fb9457bb2bee4d808ad9833a0e54d300faf2f64f86a308c321b442"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-happy-side.png",
+        "sha256": "9561b7e1db6c502ffc59e4ebccd553a0bba8e60da8cd2a913e28eceec02aa8b3"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-happy-quarter.png",
+        "sha256": "2aae51c7220146811e66f12103dda247fdc984acb7b3762d0806fabc69b3ee8c"
+      },
+      {
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/face-happy-blink.png",
+        "sha256": "ff2e0cd624779b8ce8ab75c82405ac124dee4fb8a96ba1953bd1ce8089f8d29b"
+      }
+    ],
+    "motionPreviewFrames": [
+      {
+        "frame": 1,
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/frames/0001.png",
+        "sha256": "202b68aa7d1ddac076836abd8fe3d8ad146dd5e2e2e2d0fe6e974538060ca149"
+      },
+      {
+        "frame": 57,
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/frames/0057.png",
+        "sha256": "ec854ed2a8b8ec646a10eec68f987c0c25a0f6c941d433caddebfb5a7e24515b"
+      },
+      {
+        "frame": 81,
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/frames/0081.png",
+        "sha256": "32305b79917ff9a7848d0595015421f78ed1b1b80cebc36ba6c8d723fb0c7ff3"
+      },
+      {
+        "frame": 131,
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/frames/0131.png",
+        "sha256": "7ef2729e207f878eec76b996a3072d166972b8804cfb2c23ad45189d31fdf6e1"
+      },
+      {
+        "frame": 190,
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/frames/0190.png",
+        "sha256": "3a8108eff87b5f7c44beaf6a85916f8e2a79598b7bdb2275d7bb5abf43f70703"
+      },
+      {
+        "frame": 357,
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/frames/0357.png",
+        "sha256": "4dc1658f5f7418525cc17a462097bdf24f0122bd52869abb5142a4535089b3fa"
+      },
+      {
+        "frame": 476,
+        "path": "output/charakuru/nanatau-avatar-v1/expression-fix/frames/0476.png",
+        "sha256": "4c9caf9c947d45dd315164f1a75b5560014d74174c8af3377b2b96219f91a7f9"
+      }
+    ],
+    "reviewMethod": "Actual image inspection by root, supported by full-resolution 57/81/476 frames and contact sheet",
+    "fullEncodedVideoReviewPending": false,
+    "fullEncodedVideoReview": {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/root-encoded-video-review.json",
+      "sha256": "e1ed63d1b0e8ef22741dcf01b1aaa3af58964039ecb7aea587c55c4758dc8512",
+      "passed": true
+    }
+  },
+  "neutralPortraitRmseAgainstPreviousExpressionModel255": 0.0,
+  "sourceReports": [
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/model-construction-verification.json",
+      "sha256": "2221700a718d919730b6edcbeaafdeaae145bc6d72ee9813e1113089ace4d63c"
+    },
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/model-roundtrip-verification.json",
+      "sha256": "fd1a49b213a48ff4ceeccd0d76f224d3eea5392a10330db30fd2ec2880798bfc"
+    },
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/model-reload-state-verification.json",
+      "sha256": "85295787e60d2b4af7ac781e0adb640a352cbefc9b114cd01ee11b6de6f2415b"
+    },
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/model-contract-verification.json",
+      "sha256": "f9414cb5789b7f5b5283b9d6522315d611bb4e9652499ff908e4be29bbd806c0"
+    },
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/root-protected-data-audit.json",
+      "sha256": "dc16489be388360996f4d15d41368ba24318ff024957c804166c652019601f6e"
+    },
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/root-visual-review.json",
+      "sha256": "95e1eb21e1cd87180cc8383d22d2c9706494ddca551f2fe42229e576e5831305"
+    }
+  ],
   "limitations": [
-    "Binary open/closed eyelid switching; no continuous eyelid interpolation",
-    "Gentle closed-eye smile; no lip sync or mouth phoneme rig",
-    "Head material uses 2048px per atlas state; Body and Hair materials retain original 4096px textures",
-    "project.charakit and review.fbx retain the prior body-production snapshot"
+    "Binary expression states; no continuous eyelid or mouth interpolation",
+    "No lip sync, LookAt or live face tracking",
+    "Face tile resolution 2048px",
+    "Old binary retained append-only; VRM grows by 10,274,412 bytes"
   ],
   "publicUpload": false,
-  "additionalPurchase": false,
-  "canonicalDirectory": "models/avatar-v1/charakuru"
+  "additionalPurchase": false
 }
