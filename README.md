@@ -10,21 +10,39 @@
 
 ## 3Dのななたう
 
+2026-10-24、顔立ちを保ったまばたきと笑顔の修正版を正本に採用しました。表情は0〜100%でなめらかに変化し、まばたきと笑顔を重ねられます。
+
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="images/concept/avatar-v1/charakuru/face.png">
-        <img src="images/concept/avatar-v1/charakuru/face.png" alt="MToon対応3Dななたうの顔アップ。金色の瞳とお花の髪飾り" width="360">
+      <a href="images/concept/avatar-v1/charakuru/face-neutral.png">
+        <img src="images/concept/avatar-v1/charakuru/face-neutral.png" alt="現在の3Dななたうの通常顔。金色の瞳とお花の髪飾り" width="360">
       </a>
       <br>
-      <sub>きらきらの瞳と、お花の髪飾り。</sub>
+      <sub>いつもの顔。きらきらの瞳と、お花の髪飾り。</sub>
     </td>
     <td align="center" width="50%">
       <a href="images/concept/avatar-v1/charakuru/front.png">
         <img src="images/concept/avatar-v1/charakuru/front.png" alt="MToon対応3Dななたうの全身正面。黄色の衣装とリボン、フリル" width="360">
       </a>
       <br>
-      <sub>リボンもフリルも、いつものななたう。</sub>
+      <sub>リボンもフリルも、いつものななたう。<br>全身の参考画像（表情追加前）。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="images/concept/avatar-v1/charakuru/face-blink.png">
+        <img src="images/concept/avatar-v1/charakuru/face-blink.png" alt="現在の3Dななたうのまばたき。両目を閉じた表情" width="360">
+      </a>
+      <br>
+      <sub>そっと目を閉じて、まばたき。</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="images/concept/avatar-v1/charakuru/face-happy.png">
+        <img src="images/concept/avatar-v1/charakuru/face-happy.png" alt="現在の3Dななたうの笑顔。目を開けたまま、口元でにっこり" width="360">
+      </a>
+      <br>
+      <sub>目を開けたまま、ちょっぴりにっこり。</sub>
     </td>
   </tr>
 </table>
@@ -32,17 +50,19 @@
 <p align="center">
   ふわりと揺れる髪と衣装まで、Charakuruで3Dに。
   <br>
-  <sub>VRM 1.0 · MToon · 髪と衣装の揺れ物</sub>
+  <sub>VRM 1.0 · MToon · まばたきと笑顔 · 髪と衣装の揺れ物</sub>
 </p>
 
 | 楽しみ方 | 確認先 |
 | --- | --- |
-| 表情付きのダンスを見る | [テトリス](models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：連続まばたき・笑顔、約15.87秒・1080×1350・公式伴奏付き |
+| 最新の表情付きダンスを見る | [テトリス](models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：まばたき4回・笑顔3区間、約15.87秒・1080×1350・30fps・公式伴奏付き |
+| モデルを使う | [VRM](models/avatar-v1/charakuru/avatar.vrm)：現在の正本。MToon・まばたき・笑顔に対応 |
+| モデルを編集する | [Blend](models/avatar-v1/charakuru/avatar.blend)：現在の表情を含む編集用正本 |
 | ダンスを見る | [Samba Dancing](models/avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒・1080×1080・無音 |
 | 音付きショートを見る | [愛包ダンスホール](models/avatar-v1/charakuru/videos/dance-short.mp4)：16秒・720×1280 |
-| いろんな角度から見る | [6方向・顔アップ・動作確認画像](images/concept/avatar-v1/charakuru/README.md) |
+| 画像を見る | [現在の3表情と、表情追加前の全身・6方向・動作確認画像](images/concept/avatar-v1/charakuru/README.md) |
 
-編集用Blend・MToon対応VRM・制作記録は、[Charakuru版の成果物一覧](models/avatar-v1/charakuru/README.md)へ。
+仕様・利用条件・検証結果・現在の制約は、[Charakuru版の成果物一覧](models/avatar-v1/charakuru/README.md)へ。
 
 ## Character Prompt
 
