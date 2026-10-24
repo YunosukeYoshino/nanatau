@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import neutral from "@showcase-assets/nanatau-avatar-neutral.png";
-import blink from "@showcase-assets/nanatau-avatar-blink.png";
-import happy from "@showcase-assets/nanatau-avatar-happy.png";
+import neutral from "@showcase-assets/nanatau-avatar-neutral-720.webp";
+import neutralLarge from "@showcase-assets/nanatau-avatar-neutral-1440.webp";
+import blink from "@showcase-assets/nanatau-avatar-blink-720.webp";
+import blinkLarge from "@showcase-assets/nanatau-avatar-blink-1440.webp";
+import happy from "@showcase-assets/nanatau-avatar-happy-720.webp";
+import happyLarge from "@showcase-assets/nanatau-avatar-happy-1440.webp";
 import tetrisPoster from "@showcase-assets/nanatau-avatar-tetris-poster.jpg";
 import danceTetris from "@avatar-videos/dance-tetris-expressions.mp4";
 import { avatarArchiveUrl, avatarProductionUrl } from "../../shared/config/links";
@@ -9,6 +12,7 @@ import { avatarArchiveUrl, avatarProductionUrl } from "../../shared/config/links
 type MotionState = {
   name: string;
   image: string;
+  imageLarge: string;
   alt: string;
 };
 
@@ -17,9 +21,9 @@ type SelectionSource = "auto" | "manual";
 const reducedMotionQuery = "(prefers-reduced-motion: reduce)";
 
 const states = [
-  { name: "通常", image: neutral, alt: "目を開けた通常の表情のななたう3Dアバター" },
-  { name: "まばたき", image: blink, alt: "まばたきで両目を閉じたななたう3Dアバター" },
-  { name: "笑顔", image: happy, alt: "目と口元をゆるめて笑うななたう3Dアバター" },
+  { name: "通常", image: neutral, imageLarge: neutralLarge, alt: "目を開けた通常の表情のななたう3Dアバター" },
+  { name: "まばたき", image: blink, imageLarge: blinkLarge, alt: "まばたきで両目を閉じたななたう3Dアバター" },
+  { name: "笑顔", image: happy, imageLarge: happyLarge, alt: "目と口元をゆるめて笑うななたう3Dアバター" },
 ] as const satisfies readonly MotionState[];
 
 export default function Motion() {
@@ -74,10 +78,12 @@ export default function Motion() {
                 key={state.name}
                 className={index === activeState ? "active" : ""}
                 src={state.image}
+                srcSet={`${state.image} 720w, ${state.imageLarge} 1440w`}
+                sizes="(max-width: 700px) min(calc(100vw - 76px), 302px), 415px"
                 alt={state.alt}
                 aria-hidden={index !== activeState}
-                width="480"
-                height="560"
+                width="720"
+                height="840"
                 loading="lazy"
                 fetchPriority="low"
               />

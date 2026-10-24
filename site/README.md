@@ -26,7 +26,11 @@ bun run deploy
 
 サイト用画像は `../images/concept/showcase/` に置き、`@showcase-assets/*` エイリアス経由で参照します。表情パネルはReactのstateとeffectで通常・まばたき・笑顔の静止画を自動／手動で切り替えます。
 
-現在の3D表情は2026-10-24採用の修正版に対応します。`nanatau-avatar-{neutral,blink,happy}.png` は [Charakuruの画像正本](../images/concept/avatar-v1/charakuru/README.md) にある `face-{neutral,blink,happy}.png` の同一内容のコピーです。モデル更新時はこの3枚も同期してください。
+現在の3D表情は2026-10-24採用の修正版に対応します。`nanatau-avatar-{neutral,blink,happy}-{720,1440}.webp` は [正本VRM](../models/avatar-v1/charakuru/avatar.vrm) から作成したサイト用画像です。[Charakuruの画像正本](../images/concept/avatar-v1/charakuru/README.md) と同じカメラ・照明・表情で、1440×1680、EEVEE TAA 128 samplesにて再レンダーし、720×840版とともに可逆圧縮WebPで保存しています。モデル更新時はこの6枚も再生成してください。
+
+再レンダー元のVRM SHA-256は `88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be`。Blender 5.2.1 LTS、正投影カメラ `(0, -2, 1.46)`・注視点 `(0, -0.06, 1.46)`・scale `0.5`、Standard / None / exposure 0 / gamma 1を使用しています。表情は通常 `(blink=0, happy=0)`、まばたき `(1, 0)`、笑顔 `(0, 1)`。モデルやテクスチャの形状・色は変更していません。
+
+`srcset` と `sizes` で表示幅・画面密度に合う画像を選びます。`sizes` は `object-fit: contain` 後の実際の描画幅（モバイル最大約302px、その他約415px）に合わせています。表情切り替えにぼかし・拡大・フェードは使いません。
 
 動画は `@avatar-videos/dance-tetris-expressions.mp4` から [正本](../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4) を直接参照し、Viteがハッシュ付きアセットとして配信します。ポスター `nanatau-avatar-tetris-poster.jpg` はこの動画の先頭フレームを640×800へ縮小したものです。動画は操作して再生する方式で、`preload="none"` と `loading="lazy"` を使います。遅延読み込み非対応ブラウザーでは `preload` が読み込みを抑えます。
 
