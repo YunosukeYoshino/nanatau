@@ -37,6 +37,7 @@
 
 | 楽しみ方 | 確認先 |
 | --- | --- |
+| 表情付きのダンスを見る | [テトリス](models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：連続まばたき・笑顔、約15.87秒・1080×1350・公式伴奏付き |
 | ダンスを見る | [Samba Dancing](models/avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒・1080×1080・無音 |
 | 音付きショートを見る | [愛包ダンスホール](models/avatar-v1/charakuru/videos/dance-short.mp4)：16秒・720×1280 |
 | いろんな角度から見る | [6方向・顔アップ・動作確認画像](images/concept/avatar-v1/charakuru/README.md) |

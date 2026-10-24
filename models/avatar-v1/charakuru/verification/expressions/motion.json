@@ -3,8 +3,8 @@
   "sourceUrl": "https://booth.pm/ja/items/6438933",
   "sourceVrmAnimationSha256": "5e3551b4e347f4a34f84b70b1af6ccc946dbdfaaa0de6a14601877be6a2cda35",
   "correctedHeadVrmAnimationSha256": "50d95c6ef0871574d9ded85af7b8190f957bc33d4f92d080ea6be74cb9339b6e",
-  "expressionVrmAnimationSha256": "e105a4b079157302f8af7d63a41763230e5ecd6dfc828c197e473b6f76125371",
-  "expressionFixtureSha256": "10a18972607d1c8ef23596b8e4ad21adb71b3e0f633c943dee4ee65bcd72e0e5",
+  "expressionVrmAnimationSha256": "8b13100d85ebb8869d04b4e45af0630107ad04229eb6e6150c4f5fec5b415786",
+  "expressionFixtureSha256": "4ac0b457d9c5b314f98924199b8f4f5d4bf393fec1c9c9169ed01f72fb3c5726",
   "bodyFixtureSha256": "47a8e0fe4bdb23ee7b10eb4e55562ecfcfc54cf87196901ff0daae1fc00a110f",
   "bodyFixtureReusedWithoutRebake": true,
   "bodyBinarySha256": "c588fd17463a134ec11aa55ebfa7b210cd16ecf514e993e0c6f17a6543a0da3a",
@@ -26,20 +26,20 @@
   "videoSeconds": 15.866666666666667,
   "blinkWindowsSeconds": [
     [
-      1.8,
-      1.96
+      1.7333333333333334,
+      2.0
     ],
     [
-      4.2,
-      4.36
+      4.133333333333333,
+      4.4
     ],
     [
-      8.8,
-      8.96
+      8.733333333333334,
+      9.0
     ],
     [
-      11.8,
-      11.96
+      11.733333333333334,
+      12.0
     ]
   ],
   "happyWindowsSeconds": [
@@ -56,24 +56,203 @@
       15.866507530212402
     ]
   ],
-  "binaryExpressionThreshold": 0.5,
-  "blinkVisibleFrameCount": 16,
-  "happyVisibleFrameCount": 121,
+  "expressionInterpolation": "LINEAR samples of smoothstep eyelid and smile envelopes",
+  "expressionOverridesMustAllowCombinedBlinkHappy": true,
+  "intermediateFrameCounts": [
+    24,
+    23
+  ],
+  "maximumFrameWeightDelta": [
+    0.3436998724937439,
+    0.24766463041305542
+  ],
   "rawMotionCommitted": false,
   "publicUpload": false,
   "avatarAndRuntimeVerificationPending": false,
-  "sourceExpressionMotionVerificationSha256": "5a4f6767068b81ade0d5c4724805c242b71615af8a77d7e36515d0c7f685bde3",
-  "expressionMotionAndAnimationReusedByteIdentical": true,
-  "requestedFacialBehavior": "Same Head: open-eyed mouth-only happy; blink collapses 141 iris/reflection fragments while 38 original eye sockets retain positions/normals and skin-only texture",
+  "verifiedAt": "2026-10-24T22:20:26.837877+09:00",
+  "assetRevision": "round3-refine01-continuous-expressions",
+  "avatarPath": "models/avatar-v1/charakuru/avatar.vrm",
+  "candidateVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
   "avatarAndRuntimeVerification": {
-    "passed": true,
-    "model": "models/avatar-v1/charakuru/verification/expressions/model.json",
-    "playback": "models/avatar-v1/charakuru/verification/expressions/playback.json",
-    "video": "models/avatar-v1/charakuru/verification/expressions/video.json",
-    "candidateVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1"
+    "freshImport": {
+      "passed": true,
+      "rendered": false,
+      "avatarPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01.vrm",
+      "avatarSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
+      "bodyFixtureSha256": "47a8e0fe4bdb23ee7b10eb4e55562ecfcfc54cf87196901ff0daae1fc00a110f",
+      "expressionFixtureSha256": "4ac0b457d9c5b314f98924199b8f4f5d4bf393fec1c9c9169ed01f72fb3c5726",
+      "faceContract": {
+        "passed": true,
+        "avatarSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
+        "continuousHeadMorphs": {
+          "blink": [
+            {
+              "node": 128,
+              "target": 0,
+              "weight": 1.0,
+              "changedVertexCount": 1184,
+              "maximumDisplacement": 0.029252054169774055
+            }
+          ],
+          "happy": [
+            {
+              "node": 128,
+              "target": 1,
+              "weight": 1.0,
+              "changedVertexCount": 549,
+              "maximumDisplacement": 0.016293173655867577
+            }
+          ]
+        },
+        "visualQualityVerified": false
+      },
+      "all476ImportedBodyFramesMaximumError": 9.059906005859375e-06,
+      "all476ReplayedPoseFramesMaximumError": 0.0,
+      "all476ActualShapeKeyValuesVerified": true,
+      "quarterStrengthAndCombinedShapeKeyValues": {
+        "blink=0.0,happy=0.0": {
+          "Head/BlinkContinuous": 0.0,
+          "Head/HappyContinuous": 0.0
+        },
+        "blink=0.25,happy=0.0": {
+          "Head/BlinkContinuous": 0.25,
+          "Head/HappyContinuous": 0.0
+        },
+        "blink=0.5,happy=0.0": {
+          "Head/BlinkContinuous": 0.5,
+          "Head/HappyContinuous": 0.0
+        },
+        "blink=0.75,happy=0.0": {
+          "Head/BlinkContinuous": 0.75,
+          "Head/HappyContinuous": 0.0
+        },
+        "blink=1.0,happy=0.0": {
+          "Head/BlinkContinuous": 1.0,
+          "Head/HappyContinuous": 0.0
+        },
+        "blink=0.0,happy=0.25": {
+          "Head/BlinkContinuous": 0.0,
+          "Head/HappyContinuous": 0.25
+        },
+        "blink=0.0,happy=0.5": {
+          "Head/BlinkContinuous": 0.0,
+          "Head/HappyContinuous": 0.5
+        },
+        "blink=0.0,happy=0.75": {
+          "Head/BlinkContinuous": 0.0,
+          "Head/HappyContinuous": 0.75
+        },
+        "blink=0.0,happy=1.0": {
+          "Head/BlinkContinuous": 0.0,
+          "Head/HappyContinuous": 1.0
+        },
+        "blink=0.25,happy=0.25": {
+          "Head/BlinkContinuous": 0.25,
+          "Head/HappyContinuous": 0.25
+        },
+        "blink=0.5,happy=0.5": {
+          "Head/BlinkContinuous": 0.5,
+          "Head/HappyContinuous": 0.5
+        },
+        "blink=0.75,happy=0.75": {
+          "Head/BlinkContinuous": 0.75,
+          "Head/HappyContinuous": 0.75
+        },
+        "blink=1.0,happy=1.0": {
+          "Head/BlinkContinuous": 1.0,
+          "Head/HappyContinuous": 1.0
+        }
+      },
+      "mtoonMaterialsUnchanged": true,
+      "finiteBounds": true,
+      "cameraReferenceSha256": "2221385f48f64ad700f7eec5d4fb7131a7196a68a2ece5b5b0e9d07a602482c8",
+      "camera": {
+        "projection": "ORTHO",
+        "position": [
+          0.017064839601516724,
+          -5.66257381439209,
+          0.866362988948822
+        ],
+        "target": [
+          0.017064839601516724,
+          0.016501307487487793,
+          0.866362988948822
+        ],
+        "scale": 2.256000280380249,
+        "fixedThroughoutClip": true,
+        "facing": "Actual avatar front from negative Blender Y",
+        "minimumNormalizedMargin": 0.06000444293022156
+      }
+    },
+    "independentCrosscheck": {
+      "status": "crosschecked",
+      "producerReportSha256": "0e02bb2c04adcc57b8e8b33fb8e046b0adbec0b1d394563c0c0dcfb4728b9cb1",
+      "all476ReportedActualShapeKeyValuesMatchIndependentWeights": true,
+      "maximumShapeKeyWeightError": 0,
+      "bodyReplayMaximumError": 0.0,
+      "note": "Crosschecks producer fresh-import runtime evidence; not an independent Blender solver/render run."
+    },
+    "body": {
+      "fixtureShape": [
+        476,
+        127,
+        10
+      ],
+      "all127BoneNamesPreserved": true,
+      "all65OriginalVrmaChannelsAndBinaryUnchanged": true,
+      "nonSpringChannelsEqualOriginalBody": true
+    },
+    "spring": {
+      "chains": 17,
+      "joints": 75,
+      "colliders": 9,
+      "springSettingsEqualCanonical": true,
+      "movingSpringBoneCount": 58,
+      "springBonesDifferingFromNoPhysicsBody": 58,
+      "maximumComponentDifferenceFromNoPhysicsBody": 0.3597498834133148,
+      "method": "Replayed frozen spring-baked body fixture; current renderer disables live spring simulation.",
+      "priorBakeProvenance": "Inspected build-tetris.py: exactly two native 1/60 s solver steps after every 30 fps body pose; no new solver run in this audit."
+    }
   },
-  "originalWorkerRecord": {
-    "workingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/motion-verification.json",
-    "sha256": "4c958a159b423acef0edce3ccc2272f3d2effe04707088e3cad09e433d4e83eb"
+  "actualExpressionFrameCounts": {
+    "blink": {
+      "nonzeroFrames": 36,
+      "intermediateFrames": 36,
+      "fullWeightFrames": 0
+    },
+    "happy": {
+      "nonzeroFrames": 124,
+      "intermediateFrames": 35,
+      "fullWeightFrames": 89
+    }
+  },
+  "privateVrmaWorkingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/dance-tetris-expressions.vrma",
+  "sourceReports": [
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/motion-verification.json",
+      "sha256": "a82008868836e03c22faebe21a7321af3623a411067caf0d43e765123e6ec82f",
+      "bytes": 2039
+    },
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/runtime-verification.json",
+      "sha256": "0293763b073a04a6837279a351ecc823684ee0cbc0fe5e17718a357d85da1430",
+      "bytes": 3293
+    },
+    {
+      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/root_refine01_motion_audit.json",
+      "sha256": "a7bf1cdb2b1a5a76e646ca6370c0e786ef6b49013c44c5fc62272142a89c4fee",
+      "bytes": 4957
+    }
+  ],
+  "sourceReportScope": "Candidate-stage records before adoption; runtime visual review is completed in model.json and video.json.",
+  "intermediateFrameCountThresholdsExclusive": [
+    0.05,
+    0.95
+  ],
+  "actualExpressionFrameCountDefinitions": {
+    "nonzeroFrames": "weight > 0",
+    "intermediateFrames": "0 < weight < 1",
+    "fullWeightFrames": "weight == 1",
+    "note": "Exact floating-point comparisons. Near-zero/near-one imported values are counted as intermediate; full closure in the rendered image does not require bit-exact 1."
   }
 }
