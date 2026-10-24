@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - "images/concept/showcase/**"
+      - "models/avatar-v1/charakuru/videos/**"
       - ".github/workflows/deploy-site.yml"
   workflow_dispatch:
 

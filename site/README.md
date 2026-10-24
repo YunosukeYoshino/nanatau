@@ -1,6 +1,6 @@
 # nanatau site
 
-nanatau のキャラクター紹介・MotionPNGTuber・ビジュアルアーカイブをまとめた静的ランディングページです。
+nanatau のキャラクター紹介・3Dモデルの表情と動画・ビジュアルアーカイブをまとめた静的ランディングページです。
 
 `site/` で次のコマンドを実行すると開発サーバーを起動できます。
 
@@ -24,7 +24,13 @@ bun run deploy
 `wrangler.jsonc` はViteの`dist/`を静的アセットとして配信し、React SPAの未一致URLを`index.html`へフォールバックします。
 正規URLは`https://nanatau.com/`で、`https://www.nanatau.com/`へのアクセスはWorkerが301リダイレクトします。
 
-画像の正本は `../images/concept/showcase/` に置いています。アプリケーションコードからは `@showcase-assets/*` エイリアス経由で参照します。表情パネルはReactのstateとeffectで自動再生・手動切り替えを行います。
+サイト用画像は `../images/concept/showcase/` に置き、`@showcase-assets/*` エイリアス経由で参照します。表情パネルはReactのstateとeffectで通常・まばたき・笑顔の静止画を自動／手動で切り替えます。
+
+現在の3D表情は2026-10-24採用の修正版に対応します。`nanatau-avatar-{neutral,blink,happy}.png` は [Charakuruの画像正本](../images/concept/avatar-v1/charakuru/README.md) にある `face-{neutral,blink,happy}.png` の同一内容のコピーです。モデル更新時はこの3枚も同期してください。
+
+動画は `@avatar-videos/dance-tetris-expressions.mp4` から [正本](../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4) を直接参照し、Viteがハッシュ付きアセットとして配信します。ポスター `nanatau-avatar-tetris-poster.jpg` はこの動画の先頭フレームを640×800へ縮小したものです。動画は操作して再生する方式で、`preload="none"` と `loading="lazy"` を使います。遅延読み込み非対応ブラウザーでは `preload` が読み込みを抑えます。
+
+`main` へのpushでは `site/`、サイト用画像、Charakuru動画、デプロイworkflowの変更を検知して既存のCloudflare Workerへ自動デプロイします。動画を差し替えるときはポスターも更新してください。
 
 ## 構成
 

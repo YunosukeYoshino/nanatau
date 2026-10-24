@@ -13,7 +13,8 @@
     "moduleResolution": "Bundler",
     "baseUrl": ".",
     "paths": {
-      "@showcase-assets/*": ["../images/concept/showcase/*"]
+      "@showcase-assets/*": ["../images/concept/showcase/*"],
+      "@avatar-videos/*": ["../models/avatar-v1/charakuru/videos/*"]
     },
     "resolveJsonModule": true,
     "isolatedModules": true,

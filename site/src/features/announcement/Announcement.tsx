@@ -1,5 +1,3 @@
-import { repositoryUrl } from "../../shared/config/links";
-
 export default function Announcement() {
-  return <a className="announcement" href={repositoryUrl} target="_blank" rel="noreferrer"><span className="announcement-label">開発中</span><span className="announcement-text">MotionPNGTuberとキャラクター素材のアーカイブ</span><span className="announcement-arrow">リポジトリを見る ↗</span></a>;
+  return <a className="announcement" href="#motion"><span className="announcement-label">3Dモデル更新</span><span className="announcement-text">まばたきと笑顔がつながる、新しいななたう。</span><span className="announcement-arrow">表情と動画を見る ↓</span></a>;
 }

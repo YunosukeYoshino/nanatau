@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="main-header">
       <a className="brand" href="#top" aria-label="nanatauのホーム"><Star /><span>nanatau</span></a>
-      <nav aria-label="メインナビゲーション"><a href="#topics">トピックス</a><a href="#profile">プロフィール</a><a href="#motion">モーション</a><a href="#visuals">ビジュアル</a></nav>
+      <nav aria-label="メインナビゲーション"><a href="#topics">トピックス</a><a href="#profile">プロフィール</a><a href="#motion">3Dの表情と動画</a><a href="#visuals">ビジュアル</a></nav>
       <a className="menu-button" href={repositoryUrl} target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
     </header>
   );

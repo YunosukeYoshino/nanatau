@@ -9,7 +9,7 @@ type Topic = {
 
 const topics: readonly Topic[] = [
   { index: "01", meta: "キャラクター / 01", tag: "ビジュアル", title: "Approved artwork and references", description: "淡い黄色の髪と琥珀色の瞳。ななたうの姿を確かめるための、基準となる素材です。" },
-  { index: "02", meta: "モーション / 02", tag: "PNGチューバー", title: "Motion, built from expression", description: "まばたき、照れ、こぼれそうな涙。小さな反応を、動きとして残していきます。" },
+  { index: "02", meta: "モーション / 02", tag: "3Dモデル", title: "A blink, a smile, a little dance", description: "顔立ちはそのままに、まばたきから笑顔へ。3つの表情と、音付きの「テトリス」を公開しました。", href: "#motion" },
   { index: "03", meta: "日記 / 03", tag: "ブログ", title: "Notes from behind the character", description: "実験と発見の過程を、日々のメモとして綴っています。" },
 ]; 
 
