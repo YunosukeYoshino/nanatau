@@ -44,11 +44,11 @@
 Charakuruで制作した3Dのななたう。顔立ちはそのままに、まばたきと笑顔がなめらかにつながります。
 
 <p align="center">
-  <a href="images/concept/avatar-v1/charakuru/face-neutral.png"><img src="images/concept/avatar-v1/charakuru/face-neutral.png" alt="いつもの顔" width="250"></a>
-  <a href="images/concept/avatar-v1/charakuru/face-blink.png"><img src="images/concept/avatar-v1/charakuru/face-blink.png" alt="そっと目を閉じた、まばたきの顔" width="250"></a>
-  <a href="images/concept/avatar-v1/charakuru/face-happy.png"><img src="images/concept/avatar-v1/charakuru/face-happy.png" alt="目を開けたまま、口元でにっこり" width="250"></a>
+  <a href="images/concept/showcase/nanatau-avatar-neutral-1440.webp"><img src="images/concept/showcase/nanatau-avatar-neutral-1440.webp" alt="いつもの顔" width="250"></a>
+  <a href="images/concept/showcase/nanatau-avatar-blink-1440.webp"><img src="images/concept/showcase/nanatau-avatar-blink-1440.webp" alt="そっと目を閉じた、まばたきの顔" width="250"></a>
+  <a href="images/concept/showcase/nanatau-avatar-happy-1440.webp"><img src="images/concept/showcase/nanatau-avatar-happy-1440.webp" alt="目を開けたまま、口元でにっこり" width="250"></a>
   <br>
-  <sub>いつもの顔 · まばたき · ちょっぴりにっこり</sub>
+  <sub>いつもの顔 · まばたき · ちょっぴりにっこり<br>2026-10-25に正本モデルから撮り直した1440×1680pxの画像です。</sub>
 </p>
 
 <p align="center">
