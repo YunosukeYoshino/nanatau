@@ -16,13 +16,15 @@
 
 2026-10-24、ユーザーの「今回の修正版を正本に採用して」により、Round 3を基準に仕上げた`refine01`を採用した。まばたきと笑顔を連続変形にし、まつげ内の肌色の欠けと目頭寄りの線の折れを整えた。検証済みのVRM・静的Blend・表情画像3枚・表情付きテトリスと検証記録を既存の固定パスへ反映する。更新前の正本はGitチェックポイント`869557f`に保持する。
 
-2026-10-26、通常顔Kの比較に対するユーザーの「ではこれで」を受け、元絵に合わせた顔・輪郭・首を採用した。KのHeadの通常形状・UVを保ち、まばたきと笑顔を仕上げている。現在の採用版は`approved-reference-face-k5`、VRM内のバージョンは`1.3.0-approved-face-k5`。更新前の正本と検証はGitチェックポイント`2b2d379`に残る。以前のダンス動画は当時の記録として保持する。
+2026-10-26、通常顔Kの比較に対するユーザーの「ではこれで」を受け、元絵に合わせた顔・輪郭・首を採用した。KのHeadの通常形状・UVを保ち、まばたきと笑顔を仕上げている。この時点の採用版は`approved-reference-face-k5`、VRM内のバージョンは`1.3.0-approved-face-k5`。更新前の正本と検証はGitチェックポイント`2b2d379`に残る。以前のダンス動画は当時の記録として保持する。
+
+同日、顎先のスクリーンショットへの「ここだけちょっと気になる。自然に丸みを帯びさせて」を反映し、先端だけを局所的に丸めた。現在の採用版は`approved-reference-face-k6-rounded-chin`、VRM内のバージョンは`1.3.1-rounded-chin-k6`。直前のK5はGitチェックポイント`753eec8`に残る。モデルと画像を更新し、12秒動画は顎先調整前のK5の記録として保持する。
 
 | ファイル | 用途 |
 | --- | --- |
 | [avatar.blend](avatar.blend) | 静的な編集用正本。Headの`HappyContinuous`とEyelids・Lashesの`BlinkContinuous`を編集する |
-| [avatar.vrm](avatar.vrm) | MToon・連続値の`blink`・`happy`を保存したVRM 1.0。採用版`approved-reference-face-k5` |
-| [face-neck-motion.mp4](videos/face-neck-motion.mp4) | 現モデルの動作確認。全身と顔アップ、12秒、1540×900、24fps、無音 |
+| [avatar.vrm](avatar.vrm) | MToon・連続値の`blink`・`happy`を保存したVRM 1.0。採用版`approved-reference-face-k6-rounded-chin` |
+| [face-neck-motion.mp4](videos/face-neck-motion.mp4) | 顎先調整前のK5の動作記録。全身と顔アップ、12秒、1540×900、24fps、無音 |
 | [project.charakit](project.charakit) | 表情追加前の身体制作スナップショット。元絵、8方向素材、候補、配置、骨対応、制作履歴を保持 |
 | [review.fbx](review.fbx) | 表情追加前の髪を含むスキニング確認用。現在の表情・VRM物理・利用条件は保存しない |
 | [dance-tetris-expressions.mp4](videos/dance-tetris-expressions.mp4) | 2026-10-24版の表情付きテトリス。1080×1350、30fps、約15.87秒、公式伴奏付き |
@@ -39,7 +41,7 @@
 
 `avatar.blend`が形状・ウェイト・材質・VRM物理・表情設定の正本。現在のVRMは9メッシュ、141,076三角面、127骨、51 Humanoid対応、17揺れチェーン・75ジョイント・9コライダー、6 MToon材質、5埋め込み画像を持つ。通常顔には元絵からベイクした2048×2048の素材を使い、表情によるUV切り替えは行わない。Headの`HappyContinuous`、EyelidsとLashesの`BlinkContinuous`を編集する。Blendには非表示の編集用投影面も保存しているが、VRMには書き出さない。
 
-採用したVRMとBlendは検証済みの`approved-face-k5`とバイト単位で同一。VRMメタデータのバージョンは`1.3.0-approved-face-k5`で、manifestの`expressionUpdate.revision`とSHA-256でも識別する。
+採用したVRMとBlendは検証済みの`approved-face-k6`とバイト単位で同一。VRMメタデータのバージョンは`1.3.1-rounded-chin-k6`で、manifestの`expressionUpdate.revision`とSHA-256でも識別する。
 
 現在の表情を編集・復元するにはBlendとVRMを使う。`.charakit`とFBXは身体制作時のスナップショットを保持し、新しい顔表情を含まない。`.charakit`だけではBlend内の揺れ設定も復元できない。作業を`output/`で行い、採用した更新をこの固定パスへ反映する。このディレクトリは採用チェックポイントであり、日付別の正本を増やさない。
 
@@ -87,7 +89,19 @@ Charakuru v1.0.3で正本VRMと`output/charakuru/nanatau-avatar-v1/dance-tetris/
 
 検証記録は`verification/tetris/motion.json`（頭の対応補正と51骨・物理）、`verification/tetris/video.json`（撮影・映像音声の全体デコード・同期・画面クレジット）、`verification/tetris/provenance.json`（出典・利用条件・素材ハッシュ）、`verification/tetris/playback.json`（Charakuruでの実再生）に保存する。
 
-## 現在の顔・首・連続表情：2026-10-26
+## 現在の顎先の丸み：2026-10-26
+
+K5の顎先に残る小さな角を、左右の輪郭につながる丸い弧で置き換えた。下顎全体を短くしたり幅を変えたりせず、先端の703頂点を最大約1.54mmだけ動かしている。顎先の高さは約1.48mm上がる。X・Y座標、UV・画像・ウェイト・表情の変形量、首・喉の境界と他の9メッシュ（非表示の制作補助を含む）は保持した。
+
+修正前のモデルで「顎先がまだ尖っている」の回帰検査が失敗し、K6で通過した。数値は局所変更の確認に使い、丸みの自然さは同じカメラ・照明の修正前後と正面・斜めの実画像で確認した。笑顔の反転三角形は0個。VRM書き出し後はHeadのPOSITIONとNORMALだけが変わり、他のメッシュ・UV・ウェイト・材質・5枚の埋め込み画像・SpringBone設定と表情bindは一致する。メタデータの変更はversionだけ。
+
+新しいVRMを読み直し、表情45通り、全身6方向、1440×1680の3表情を再撮影した。首接続は4ポーズと手付け動作の全288フレームで最大距離0m。動作の5時点を全身と顔アップで確認した。今回の動作は静止画検査までで、新しいMP4・通常速度の実再生・揺れ物の物理再計算は行っていない。既存の12秒動画とその再生記録はK5を対象とする。
+
+[顎先の比較画像](../../../images/concept/avatar-v1/charakuru/chin-rounding-comparison.png)と`verification/expressions/`に現版の記録を保存した。再現用ソースは`output/face-likeness-20261026/round_chin_k6.py`、回帰検査は`check_chin_rounding.py`、書き出しは`export_validate_k6.py`。ローカル採用のみで、push・デプロイ・秘密情報や権限の変更は行っていない。
+
+## 顎先調整前の顔・首・連続表情：2026-10-26 K5
+
+以下はK5の採用記録。現在のK6は上記の局所修正を加えている。
 
 元絵`images/concept/avatar-v1/approved-design.png`の目・口・眉を、編集可能なBlenderのUV投影とマスクから2048×2048の顔素材へベイクした。左右それぞれの瞳を使い、元画像への加筆や完成レンダーの描き直しは行っていない。肌の一部には先行制作の画像生成素材を引き継いでおり、元画像・生成指示とハッシュを`verification/expressions/production.json`へ記録した。今回の採用後の表情仕上げでは新たな画像生成をしていない。
 

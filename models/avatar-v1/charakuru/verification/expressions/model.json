@@ -67,8 +67,8 @@
   ],
   "renders": [
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-000-front.png",
-      "sha256": "56706e682dcf0273314f2b64565f2d90b8b2d2d712eeb50a4539c76886d88cde",
+      "path": "output/face-likeness-20261026/k6-final-blink-000-front.png",
+      "sha256": "f912248b70ef2a0510f8c2ef6f3facfeab2b6a18f396b7c9849999c12913df39",
       "resolution": [
         600,
         700
@@ -80,8 +80,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-000-quarter.png",
-      "sha256": "44163df299f87bfcbf9ebb28cbd852fff140abe7f5a738728320dab57a764362",
+      "path": "output/face-likeness-20261026/k6-final-blink-000-quarter.png",
+      "sha256": "b720a99495cae19f2097f5899760d757fb7b1348a49408dc171ffd1a0b79ee0c",
       "resolution": [
         600,
         700
@@ -93,8 +93,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-000-profile.png",
-      "sha256": "72db1fc6eb7874c68d41828673598f8c1e460dd9e2378abf502396d80191f51e",
+      "path": "output/face-likeness-20261026/k6-final-blink-000-profile.png",
+      "sha256": "c8761e8a45425b3fc1c5f1370bef8efec6665824cc26e99c82c25354bb3ab131",
       "resolution": [
         600,
         700
@@ -106,21 +106,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-025-front.png",
-      "sha256": "98595668602edc92605de104fd4d47487ebb150797cae270424dc87f609c9000",
-      "resolution": [
-        600,
-        700
-      ],
-      "expressionWeights": {
-        "Head": 0.0,
-        "Eyelids": 0.25,
-        "Lashes": 0.25
-      }
-    },
-    {
-      "path": "output/face-likeness-20261026/k5-final-blink-025-quarter.png",
-      "sha256": "3ec368d1aeef72a65d3925fb1165f14aae3bdd753770c84d2183b06f6dc604da",
+      "path": "output/face-likeness-20261026/k6-final-blink-025-front.png",
+      "sha256": "35bfdb7b9c9a37763ec108330a03d9634c8a825f9b7eb26aed11f21c0e49a2b7",
       "resolution": [
         600,
         700
@@ -132,8 +119,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-025-profile.png",
-      "sha256": "e1c5b04d40ffe4bb95daf6fd4d2f18676e51809d70b1ad3e8151ea9b15c0d0ee",
+      "path": "output/face-likeness-20261026/k6-final-blink-025-quarter.png",
+      "sha256": "1b9504ac95aed531a9dc094ce2880b41f28dce72ad51f63a78af3538715a6461",
       "resolution": [
         600,
         700
@@ -145,8 +132,21 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-050-front.png",
-      "sha256": "e047bc04de8418599593b1a1a4b8895989b90494d7dfba6496e721c21140c7ff",
+      "path": "output/face-likeness-20261026/k6-final-blink-025-profile.png",
+      "sha256": "8d71c3acb7f41dc8eef91d500947e29947c9cc338d3b4d5231f807ccbb297838",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.25,
+        "Lashes": 0.25
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k6-final-blink-050-front.png",
+      "sha256": "6ebd8c1b6abdc26076b1eb919ef0f17f4c807593e4665d8a18b056e324fe14c9",
       "resolution": [
         600,
         700
@@ -158,8 +158,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-050-quarter.png",
-      "sha256": "278c3ef1263ecc8b91bd1285a71f21568a46dc84d516919a9775cc99de6be31f",
+      "path": "output/face-likeness-20261026/k6-final-blink-050-quarter.png",
+      "sha256": "b92b120f0b13c322e030e0f8df78fc23da393c5dc64b1e1400c38f8a3fd66013",
       "resolution": [
         600,
         700
@@ -171,8 +171,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-050-profile.png",
-      "sha256": "ad02e88a6ae70914bc910fbf358ad1d4a0b4e0c27d8d384f161e47872a274ded",
+      "path": "output/face-likeness-20261026/k6-final-blink-050-profile.png",
+      "sha256": "7488c6158f5547e1fbfd1030e9c28f6b863750b27484d64f2e75aed3f20d679d",
       "resolution": [
         600,
         700
@@ -184,8 +184,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-075-front.png",
-      "sha256": "cf14a53e9b8c50113857dceb9444c821eddc6a0587e9a93af06babecc24d8bf0",
+      "path": "output/face-likeness-20261026/k6-final-blink-075-front.png",
+      "sha256": "6fe97bf49c142aec2cabc7e68a02ba11d30f7d0bd1c925c8c7d062b402f81c4e",
       "resolution": [
         600,
         700
@@ -197,8 +197,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-075-quarter.png",
-      "sha256": "471f1cef93ba5298f6520111b985cd5967e9984bf2fa16be5303ef970f05cdbe",
+      "path": "output/face-likeness-20261026/k6-final-blink-075-quarter.png",
+      "sha256": "d2c9fc83d0cc5518ad06b757a1d42befa184cab5750e54310de54df15a670729",
       "resolution": [
         600,
         700
@@ -210,8 +210,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-075-profile.png",
-      "sha256": "0cc267b032742e43dc932ef510252d245872136a66bd897aa0374e9561260ce6",
+      "path": "output/face-likeness-20261026/k6-final-blink-075-profile.png",
+      "sha256": "d64c367c3d526cbf263bea9087a4e32b1fad33f501efc52277babc363126e36c",
       "resolution": [
         600,
         700
@@ -223,8 +223,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-100-front.png",
-      "sha256": "88a5483edf76a564b55e75cdd81e651072d32c165f781fbb88ac70dfb744243b",
+      "path": "output/face-likeness-20261026/k6-final-blink-100-front.png",
+      "sha256": "722abd2ee31e663b7f6a86de2efa796f927f7f47b6fb73f9ac07cae8a1fbb029",
       "resolution": [
         600,
         700
@@ -236,8 +236,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-100-quarter.png",
-      "sha256": "d38d1425290ba1657114aed3fbbbe14dd7612b5cdd9da2f176b6230bd2d993a6",
+      "path": "output/face-likeness-20261026/k6-final-blink-100-quarter.png",
+      "sha256": "7481109e035a0d2aff0763f6373ebdae351db511d02e8013987e750f5a8c5049",
       "resolution": [
         600,
         700
@@ -249,8 +249,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-blink-100-profile.png",
-      "sha256": "13aea61ceafb3dbc29f09e114eb40783c1039a37b5171985c2a6d59260f9d842",
+      "path": "output/face-likeness-20261026/k6-final-blink-100-profile.png",
+      "sha256": "f577e1cb628559cb0fd666ed90ffbcf5172f2e02af93b6ca258b9760ba4e501d",
       "resolution": [
         600,
         700
@@ -262,8 +262,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-000-front.png",
-      "sha256": "e28edc21e9b348def5c3fc185f5fd0efce6013d56750bb822a5cc558749ed7ab",
+      "path": "output/face-likeness-20261026/k6-final-happy-000-front.png",
+      "sha256": "70edcb7e294d8c0805eb262a2774b52b3e13eeed16ea931b88c809ca74d0f4e8",
       "resolution": [
         600,
         700
@@ -275,8 +275,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-000-quarter.png",
-      "sha256": "ba011e457d0acdc9603e66f0e9e643123259f9a0a1c1b2be8bbabde4c78a8dff",
+      "path": "output/face-likeness-20261026/k6-final-happy-000-quarter.png",
+      "sha256": "1480f943ab39c130a2654e0dd8a7cd81038f3ededd6a56596299e5a3e2a62c5a",
       "resolution": [
         600,
         700
@@ -288,8 +288,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-000-profile.png",
-      "sha256": "837ce6792002074ede9b90f66b73564cf54c7236254fccb108471e9d0602f54e",
+      "path": "output/face-likeness-20261026/k6-final-happy-000-profile.png",
+      "sha256": "d198542ea7ad1ed4629ee311a57ed7f72d900844fc76659c90f8b4de32b80eb8",
       "resolution": [
         600,
         700
@@ -301,8 +301,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-025-front.png",
-      "sha256": "04da7dff130f08d6608048aa56336e0a309fb7debfbe108aacb1463851374632",
+      "path": "output/face-likeness-20261026/k6-final-happy-025-front.png",
+      "sha256": "6969f33e16683f4ab907ace21ed82774b2bfb40ca40b5f0faec2e216e7146c38",
       "resolution": [
         600,
         700
@@ -314,8 +314,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-025-quarter.png",
-      "sha256": "57f42c49d4a6fbf0ab362cf9cdc7b4646159cfb2545a5a58b2c23048aa59bddd",
+      "path": "output/face-likeness-20261026/k6-final-happy-025-quarter.png",
+      "sha256": "0019073fd0a416156ac9bb4ef5931f307e12b36c0ad1b38121a0451ca8a5a26e",
       "resolution": [
         600,
         700
@@ -327,8 +327,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-025-profile.png",
-      "sha256": "738faceaf921bcf39617441f563a2e04e6e670a001d678c5b527bb0ef982213e",
+      "path": "output/face-likeness-20261026/k6-final-happy-025-profile.png",
+      "sha256": "2cf19d56b1917e6c6747a4b634556b7e1c89efd280c0bc3a6d382b467ff21b4e",
       "resolution": [
         600,
         700
@@ -340,8 +340,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-050-front.png",
-      "sha256": "f7d583171199a87c214bd8671a600d9d9840535a79e91e5de8ea06c5712d2633",
+      "path": "output/face-likeness-20261026/k6-final-happy-050-front.png",
+      "sha256": "fa99953bc21f53bcb03c54f8cfb15ec27caeed3f3267691efac718eab207f1ea",
       "resolution": [
         600,
         700
@@ -353,8 +353,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-050-quarter.png",
-      "sha256": "c86215d7b320186acf609820dc4da96b856a769d383cf4a6ef9618fb89c69717",
+      "path": "output/face-likeness-20261026/k6-final-happy-050-quarter.png",
+      "sha256": "aba030a1bda1b8ff43c203b50a90a47555816974f762139a4e4d27639c631d1e",
       "resolution": [
         600,
         700
@@ -366,8 +366,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-050-profile.png",
-      "sha256": "13145f1ac8635229bd9e0f370c9611ae303e7eadc6085370c19a07c9870542dc",
+      "path": "output/face-likeness-20261026/k6-final-happy-050-profile.png",
+      "sha256": "3ec4fed911e8cc3222062bddaffbadf412ee063b8650b73ae3c73d1fc7cf5b7b",
       "resolution": [
         600,
         700
@@ -379,8 +379,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-075-front.png",
-      "sha256": "e7cdd439dbfde50b36879767e93aac66828bf368f1ed9d431f7ed7bc3027ed7a",
+      "path": "output/face-likeness-20261026/k6-final-happy-075-front.png",
+      "sha256": "660c174caa3df919c07a019d7116e715ba44c62fa6ff2817c88c630cbec0aa79",
       "resolution": [
         600,
         700
@@ -392,8 +392,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-075-quarter.png",
-      "sha256": "1b0545d488c3e9a472af18c979887d85724d4ebda26b90744bfb9777814222e1",
+      "path": "output/face-likeness-20261026/k6-final-happy-075-quarter.png",
+      "sha256": "db29b5d2a6c39f622b35f58fcfc5a22b99f6b40476aa175cf43809da82d90555",
       "resolution": [
         600,
         700
@@ -405,8 +405,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-075-profile.png",
-      "sha256": "ea22135ff5d328d430009bc66244164d1910730ec58c1c1285b980baf5b8fc27",
+      "path": "output/face-likeness-20261026/k6-final-happy-075-profile.png",
+      "sha256": "de3a3c057e04feab2b5516065fb04fd2e81b6519a60ca3114085f41d240d4ed8",
       "resolution": [
         600,
         700
@@ -418,8 +418,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-100-front.png",
-      "sha256": "a8c4edd2f9fa49901315b7c590db763f3691de563f82861a5c13816357e787c1",
+      "path": "output/face-likeness-20261026/k6-final-happy-100-front.png",
+      "sha256": "53a63a67315dc062b10e1b38065afb25cbbaba440bec98da171f1e534193b0bc",
       "resolution": [
         600,
         700
@@ -431,8 +431,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-100-quarter.png",
-      "sha256": "a15e4ae3eb10490333597f711d88bac98e5dace8fcbb86df5e0b9298272630de",
+      "path": "output/face-likeness-20261026/k6-final-happy-100-quarter.png",
+      "sha256": "41d235a990cd34082831c155f51b2717bf14b8e9da722f7454bc4b817034ba74",
       "resolution": [
         600,
         700
@@ -444,8 +444,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-happy-100-profile.png",
-      "sha256": "8a260f6e0eb5fbaab53c0d12a04ae2c4ff25845779d77407ed2a96c65b7a029f",
+      "path": "output/face-likeness-20261026/k6-final-happy-100-profile.png",
+      "sha256": "3cdb62ca5611678d6f1dfbc9747f72bd92b206b3d5a1be202a096bdf7eef2d3e",
       "resolution": [
         600,
         700
@@ -457,8 +457,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-000-front.png",
-      "sha256": "a7a45e4b1d27d802785b2856c08bb089f70972e03317259be1720eef6bfde824",
+      "path": "output/face-likeness-20261026/k6-final-combined-000-front.png",
+      "sha256": "83b7942e7fbf59c265aa8af76df6898e5086f0066201f7c351c01506cae2162c",
       "resolution": [
         600,
         700
@@ -470,8 +470,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-000-quarter.png",
-      "sha256": "a5bfa954e7906995cd17848e1209d1289053bff148bebfac955ef06b454fdf3b",
+      "path": "output/face-likeness-20261026/k6-final-combined-000-quarter.png",
+      "sha256": "37d3ecc8e75886d350b6ed7fdd5f8381c0b868d84532ee47c1e5618d5765b11c",
       "resolution": [
         600,
         700
@@ -483,8 +483,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-000-profile.png",
-      "sha256": "91659ad9c409f6a4a73bea322e975f24d46858c85d2102dbf011b5181d82f63a",
+      "path": "output/face-likeness-20261026/k6-final-combined-000-profile.png",
+      "sha256": "a15402536a895bbb88d2d548c9d74d3b5f7c8821933f2a0852388b0d63762a5b",
       "resolution": [
         600,
         700
@@ -496,8 +496,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-025-front.png",
-      "sha256": "93b1d644d89e41e3513762c433580dc95d91eef75beeda4ac7c26911f38b3e40",
+      "path": "output/face-likeness-20261026/k6-final-combined-025-front.png",
+      "sha256": "f702981426edfa2de9e38d88196434371c4a82e9e7498b50ad5247b7b6ff5063",
       "resolution": [
         600,
         700
@@ -509,8 +509,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-025-quarter.png",
-      "sha256": "a13aef495bc092b98aafbe08bd2b98f9196c8fea58d890e1ba9de3f5db980a67",
+      "path": "output/face-likeness-20261026/k6-final-combined-025-quarter.png",
+      "sha256": "fd6ba1bba6162dd921719884ea6a8072ba675f1c0535ebc101336614ec281ef0",
       "resolution": [
         600,
         700
@@ -522,8 +522,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-025-profile.png",
-      "sha256": "6f20d2a482f1f334e3bf293097481506c69876a5be0079c7f4a83a15bb04d2b5",
+      "path": "output/face-likeness-20261026/k6-final-combined-025-profile.png",
+      "sha256": "26510986cec6e8d32ab563ef26db067d54e9906a4546009e0f03248424759149",
       "resolution": [
         600,
         700
@@ -535,8 +535,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-050-front.png",
-      "sha256": "34ad39d93e4dd6268aa86a1844f002af7a58c15a536c9f5b2db4a8e4041868d9",
+      "path": "output/face-likeness-20261026/k6-final-combined-050-front.png",
+      "sha256": "c6b9d31d7e4b6cf9eb14e25d60323bfcd7728e0fb617294ac406b403966025fe",
       "resolution": [
         600,
         700
@@ -548,8 +548,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-050-quarter.png",
-      "sha256": "934ae76f40b08f520dfff7af1fc8d598263a43478d119cbb4347c2f540742cde",
+      "path": "output/face-likeness-20261026/k6-final-combined-050-quarter.png",
+      "sha256": "a433bd92ea2394f34bd6e66dcce54e1e725705d2e582288bf6aca9a791152fb2",
       "resolution": [
         600,
         700
@@ -561,8 +561,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-050-profile.png",
-      "sha256": "69bf6e7465a222fdd8cb0fe6e449ad875ba3dcd9278debe1e13cb67259fd1c72",
+      "path": "output/face-likeness-20261026/k6-final-combined-050-profile.png",
+      "sha256": "a6c8f34fa517ea852042aef4ee5a2c822c3b0de09b60ae93fbd5de62219cc448",
       "resolution": [
         600,
         700
@@ -574,8 +574,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-075-front.png",
-      "sha256": "cfd98285ae246f12ba39d954901ed93133b7aa2ccecd751b01e3e2c3d0487622",
+      "path": "output/face-likeness-20261026/k6-final-combined-075-front.png",
+      "sha256": "f03ce20106d6f8df7f1b8ed1b0af00ab6715d386ec00c8c1a43f4f3a18365745",
       "resolution": [
         600,
         700
@@ -587,8 +587,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-075-quarter.png",
-      "sha256": "308f7a1552acd57724e750d567c5e9eda33f2a34a79ef09ef0862c2a6bd855fd",
+      "path": "output/face-likeness-20261026/k6-final-combined-075-quarter.png",
+      "sha256": "31e0172059fa09669ff9a2d5e52dcee0858ebc94a5d3ac2a99e2d88177352a99",
       "resolution": [
         600,
         700
@@ -600,8 +600,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-075-profile.png",
-      "sha256": "bbec56d40741fa417531a97a58e32d59adce13565eb80a98b45e747b798c4f99",
+      "path": "output/face-likeness-20261026/k6-final-combined-075-profile.png",
+      "sha256": "3704f4c720e02fd44a51b2fcc92aa27e6d1527effe3a89dda4017f135e369ece",
       "resolution": [
         600,
         700
@@ -613,8 +613,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-100-front.png",
-      "sha256": "07d18b122278b23a19f3fcdbf3824462e95c51f06a32c21f79a3d2d4e86a16b1",
+      "path": "output/face-likeness-20261026/k6-final-combined-100-front.png",
+      "sha256": "9284d11623a13b25518df208376e257b59f3ace924e514fbd6c73d8159e3f321",
       "resolution": [
         600,
         700
@@ -626,8 +626,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-100-quarter.png",
-      "sha256": "43a3d2ac557693f98b13138f0ec9b1a3cbf93bc4c59eb507c7aab9a12f8dfeb4",
+      "path": "output/face-likeness-20261026/k6-final-combined-100-quarter.png",
+      "sha256": "fc93ce405392c7968cee0b60076d43b3548b9a2e9a28dcf67fb369e1f1a68dff",
       "resolution": [
         600,
         700
@@ -639,8 +639,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-combined-100-profile.png",
-      "sha256": "3e033fb6f34ebcdb83d6e4a59435062279e0f85c11f89b78412b6d92e94302a2",
+      "path": "output/face-likeness-20261026/k6-final-combined-100-profile.png",
+      "sha256": "0e6c906267d92f22c607b733c2646fe46228b5bf75565be72a27f1c248450561",
       "resolution": [
         600,
         700
@@ -652,8 +652,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-neutral-quarter-right.png",
-      "sha256": "5fb65736b50b0dd12a8b407b9e8c6e15e7723cb933f231829b3cee7f443ee6b5",
+      "path": "output/face-likeness-20261026/k6-final-neutral-quarter-right.png",
+      "sha256": "1442133825f17698767f97c0c01431269abe1674eef0087b49435b9c6f582ff3",
       "resolution": [
         600,
         700
@@ -665,8 +665,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-neutral-profile-right.png",
-      "sha256": "b73da576a870882ce33bb20cc77dac35e607f0133dfa4d5e697b2b98938b7808",
+      "path": "output/face-likeness-20261026/k6-final-neutral-profile-right.png",
+      "sha256": "6f9bd9babaae269d48e8838227dc8edaabc7582cf6c5e9e54a9d9cc61d2282dc",
       "resolution": [
         600,
         700
@@ -678,8 +678,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-neutral-back.png",
-      "sha256": "c7cf6d9b05a91c9d972e6b23cda4b3045c7f9a076fc6dc61e601fd27e425512e",
+      "path": "output/face-likeness-20261026/k6-final-neutral-back.png",
+      "sha256": "48f5ab01ae5c3b43d49a23fa07a0c039941a09d38cb55210f5e3c91c58f71998",
       "resolution": [
         600,
         700
@@ -691,8 +691,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-neutral-top.png",
-      "sha256": "250fdb24ea3325f862f68fb07126854569b7ef1731207de1f90ea6955f71cc16",
+      "path": "output/face-likeness-20261026/k6-final-neutral-top.png",
+      "sha256": "4545b6a2e362f67cc979e1c023869fc1a1a7b60d28e697d29843205be8bc5503",
       "resolution": [
         600,
         700
@@ -704,11 +704,11 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-fullbody-front.png",
-      "sha256": "c7c6fa97ceca9986e4da5a26df513d5403e2bc64ed3e224353415d3bc7f5403b",
+      "path": "output/face-likeness-20261026/k6-fullbody-front.png",
+      "sha256": "f0e60e43d6a6f35d1983bcf5ad4262e69e1ba3f6f3b896a96ca677afd05fdc1a",
       "resolution": [
-        600,
-        700
+        900,
+        900
       ],
       "expressionWeights": {
         "Head": 0.0,
@@ -717,11 +717,11 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-fullbody-quarter.png",
-      "sha256": "6925f11b801f2f7553c9a7716ee8055408841ac25654fd4b302887394c6676a3",
+      "path": "output/face-likeness-20261026/k6-fullbody-quarter.png",
+      "sha256": "462d9d83eb781a0a0338fb1948b6cd9c0e0f2c1e70b48369aec0e9d30b8a036b",
       "resolution": [
-        600,
-        700
+        900,
+        900
       ],
       "expressionWeights": {
         "Head": 0.0,
@@ -730,11 +730,11 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-fullbody-profile.png",
-      "sha256": "20aa8f08765404577b8ee2a2d18804221522ff861ad9e105012350e3d0fb4bba",
+      "path": "output/face-likeness-20261026/k6-fullbody-back.png",
+      "sha256": "e70618ad582282f99b69d0b423e63dd34ab13b605677c66f35a791a6fba70b5e",
       "resolution": [
-        600,
-        700
+        900,
+        900
       ],
       "expressionWeights": {
         "Head": 0.0,
@@ -743,11 +743,11 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-fullbody-back.png",
-      "sha256": "b3fc75c71d4fa047d7cf7d82a7197a0b85a43177d3108fb6e1b4507bb50abc76",
+      "path": "output/face-likeness-20261026/k6-fullbody-left.png",
+      "sha256": "e381c7775e1011a8877fbba3ed2eea1318db0268da2e6aac4eb2e60cd4be8055",
       "resolution": [
-        600,
-        700
+        900,
+        900
       ],
       "expressionWeights": {
         "Head": 0.0,
@@ -756,11 +756,11 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-fullbody-left.png",
-      "sha256": "d72183992c81fb33cae388a83dc5cdd4c4eea2cb83f7a9073a8fd08a515b1ad2",
+      "path": "output/face-likeness-20261026/k6-fullbody-right.png",
+      "sha256": "55593f360fe60a2633b3e1922c2c7a5d7f7f2aab90cf62309f25f64e70b18f98",
       "resolution": [
-        600,
-        700
+        900,
+        900
       ],
       "expressionWeights": {
         "Head": 0.0,
@@ -769,11 +769,11 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-fullbody-right.png",
-      "sha256": "34ed58b3aae07c4769a5282b76e0632efb785acd2ea0cd460048f7e022d80a42",
+      "path": "output/face-likeness-20261026/k6-fullbody-top.png",
+      "sha256": "30a4b3bb9c77b3964a90112a4faf27984a22a517181252a48d78cf785c270a58",
       "resolution": [
-        600,
-        700
+        900,
+        900
       ],
       "expressionWeights": {
         "Head": 0.0,
@@ -782,21 +782,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-fullbody-top.png",
-      "sha256": "6ed302e56560a856796ea76fee1403ed56fb08ddb502d67ad011681642452a7e",
-      "resolution": [
-        600,
-        700
-      ],
-      "expressionWeights": {
-        "Head": 0.0,
-        "Eyelids": 0.0,
-        "Lashes": 0.0
-      }
-    },
-    {
-      "path": "output/face-likeness-20261026/k5-portrait-neutral.png",
-      "sha256": "2e849eaf8439029473799b5a24609732e3d12b2b1be27a183b6c8468d08ba20f",
+      "path": "output/face-likeness-20261026/k6-portrait-neutral.png",
+      "sha256": "441ae17973139ae89f3ee67e2942f30e8de3f798b2851ebaec5bc611bbb15a46",
       "resolution": [
         1440,
         1680
@@ -808,8 +795,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-portrait-blink.png",
-      "sha256": "492171983ac8ecbf3e7cbc2d8e3dcbc4ff074105e75c5d009e4ce5c234fb1828",
+      "path": "output/face-likeness-20261026/k6-portrait-blink.png",
+      "sha256": "df2353ee78b0a8376cf63d39f13e484bb93ea5c1524e9c079307c1db7c3bb7e5",
       "resolution": [
         1440,
         1680
@@ -821,8 +808,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-portrait-happy.png",
-      "sha256": "774788a5d474cbffaca41cf8cca3816e90180f423767e567192541e4bda60a65",
+      "path": "output/face-likeness-20261026/k6-portrait-happy.png",
+      "sha256": "0b511658d084d01680dced2bc392fe83f6c2a61f987c98522c02e66cdbdebec3",
       "resolution": [
         1440,
         1680
@@ -834,8 +821,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-portrait-quarter.png",
-      "sha256": "72d5c04f94d4a6d6438ab6d5e06dc6f586c88a992f76ef8943c74427c3b9a18c",
+      "path": "output/face-likeness-20261026/k6-portrait-quarter.png",
+      "sha256": "796aed7e47fb4daa14cb9026be3b7a588d259c29ff784d3cd429e9f46ad64c40",
       "resolution": [
         1440,
         1680
@@ -847,8 +834,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-diagnostic-front.png",
-      "sha256": "51810f8e98c77a8a2db52ea00d7211461d46197ab76323b3ff9086fb756752b6",
+      "path": "output/face-likeness-20261026/k6-final-diagnostic-front.png",
+      "sha256": "95614c70221586a730370e1c6e74b70ea60472289b9b58a214a82669d1d5a73e",
       "resolution": [
         840,
         980
@@ -860,8 +847,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-diagnostic-quarter.png",
-      "sha256": "bd465c807913eccfde73a77ba9187f65aba10dd710885e83d63d3092257c9522",
+      "path": "output/face-likeness-20261026/k6-final-diagnostic-quarter.png",
+      "sha256": "e764d20c1e77addb3b5c84468fd74e6c191bd1b00d554915fc5d321245598652",
       "resolution": [
         840,
         980
@@ -873,8 +860,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-diagnostic-profile.png",
-      "sha256": "cb65d9028772d0889d5d54f7ebfae0513d410eba29aa3b52dd230700b08c52bf",
+      "path": "output/face-likeness-20261026/k6-final-diagnostic-profile.png",
+      "sha256": "46d63089f10d04dc6f3108979efab88a8cbe2e6b091fb20aafb5ad3012baf700",
       "resolution": [
         840,
         980
@@ -886,8 +873,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-pose-head-pitch.png",
-      "sha256": "99f494c670e71610e807878467e9de8bd12378ca24024e139c16c6f96d66c59a",
+      "path": "output/face-likeness-20261026/k6-final-pose-head-pitch.png",
+      "sha256": "6798507d706de55b4442f4cf469a38f3d9b9b91411fb65b569c9492c734dd77b",
       "resolution": [
         840,
         980
@@ -899,8 +886,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-pose-head-roll.png",
-      "sha256": "0fc55e7046a62c44fa7399ad87e1a31d08338caf9472f4d5f08f0ddea38df0cb",
+      "path": "output/face-likeness-20261026/k6-final-pose-head-roll.png",
+      "sha256": "144d4a7863e73e141610dc24c2415525f3ea5e44f408fe5e936d24f1ad21b632",
       "resolution": [
         840,
         980
@@ -912,8 +899,8 @@
       }
     },
     {
-      "path": "output/face-likeness-20261026/k5-final-pose-neck-bend.png",
-      "sha256": "861f638aaefe8fa3a07261cf564d19c0a1e8b0bac94472cd788784d8ab343b2f",
+      "path": "output/face-likeness-20261026/k6-final-pose-neck-bend.png",
+      "sha256": "d993d08d96bbf9752a28b9a01d18b8df23956b196fb19846198207da95d68024",
       "resolution": [
         840,
         980
@@ -951,52 +938,41 @@
     }
   },
   "exportIgnoreWarning": true,
-  "vrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
-  "blendSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757",
-  "renderCount": 66,
+  "vrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+  "blendSha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8",
+  "renderCount": 65,
   "visualReview": {
-    "sourceSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
-    "reviewer": "primary agent",
-    "expressionMatrices": [
-      "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
-      "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
-      "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg"
-    ],
-    "nativeDetails": [
-      "output/face-likeness-20261026/k5-final-blink-000-front.png",
-      "output/face-likeness-20261026/k5-final-blink-100-quarter.png",
-      "output/face-likeness-20261026/k5-portrait-happy.png",
-      "output/face-likeness-20261026/k5-final-pose-neck-bend.png"
-    ],
-    "observations": [
-      "Neutral likeness accepted as K by user; K base geometry and UV retained.",
-      "Irises remain static under independent moving lids.",
-      "No iris remnants visible at full closure in the inspected front/quarter views.",
-      "Smile remains open-eyed and mouth triangles do not reverse.",
-      "Profile eye visibility is partly occluded by original hair."
-    ],
-    "fullbodyTposeFraming": "Six square 900px views with 2.05m orthographic scale were rerendered and visually reviewed."
-  },
-  "revision": "approved-reference-face-k5",
-  "approvedNeutralTest": {
     "status": "passed",
-    "approvedSource": "likeness-study-k.blend",
-    "candidate": "approved-face-k5.blend",
-    "neutralHeadGeometryAndUvExact": true,
-    "blinkSurfacesVisible": true,
-    "continuousExpressions": true,
-    "happyPreservesEyes": true,
-    "happyReversedTriangles": 0
-  },
-  "scopeComparedWithApprovedK": {
-    "status": "approved_face_expression_scope_verified",
-    "source": "likeness-study-k.blend",
-    "candidate": "approved-face-k5.blend",
-    "changedMeshGeometryOrUv": [
-      "Head",
-      "Eyelids",
-      "Lashes"
+    "expressionViews": 45,
+    "matrices": [
+      "k6-matrix-blink.jpg",
+      "k6-matrix-happy.jpg",
+      "k6-matrix-combined.jpg"
     ],
+    "fullbodyViews": "k6-fullbody-views.jpg",
+    "extraViews": "k6-extra-views.jpg",
+    "chinComparison": "chin-rounding-comparison-k6.png",
+    "neutralPortrait": "k6-portrait-neutral.png",
+    "quarterPortrait": "chin-k6-after-quarter.png",
+    "neckBend": "k6-final-pose-neck-bend.png",
+    "reviewedAtStage": "final K6 after VRM fresh import, plus same-camera native before/after"
+  },
+  "revision": "approved-reference-face-k6-rounded-chin",
+  "workingDirectory": "output/face-likeness-20261026",
+  "localChinRepairCheck": {
+    "status": "passed",
+    "source": "approved-face-k5.blend",
+    "candidate": "approved-face-k6.blend",
+    "beforeProfile": {
+      "widthAtHalfMillimeter": 0.00485,
+      "chinZ": 1.3349222838487205,
+      "chinX": 0.0011999999999999997
+    },
+    "afterProfile": {
+      "widthAtHalfMillimeter": 0.008249999999999997,
+      "chinZ": 1.3364026827991842,
+      "chinX": 0.002450000000000001
+    },
     "unchangedMeshes": [
       "Body",
       "Spring_01_hair_flow",
@@ -1004,21 +980,21 @@
       "Spring_03_ribbon_left",
       "Spring_04_ribbon_right",
       "Ears",
+      "Eyelids",
+      "Lashes",
       "FaceMaterialBakeSurface"
     ],
-    "boneRestTransformsUnchanged": true,
-    "neckAndThroatBoundaryDeltaMeters": 0.0,
-    "modelSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757",
-    "neutralPaintedEyesOnly": false,
-    "blinkAndHappyRetargetingComplete": true,
-    "canonicalUpdated": false,
-    "renderTouchups": false,
-    "securityImpact": "local assets only; no secrets, permissions, network publication changes"
+    "maximumVertexMoveMeters": 0.0015372037887573242,
+    "neckAndThroatBoundaryDeltaMeters": 0,
+    "headUvAndWeightsUnchanged": true,
+    "expressionDeltasPreserved": true,
+    "happyReversedTriangles": 0,
+    "modelSha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
   },
   "exportAudit": {
     "status": "passed",
-    "vrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
-    "vrmBytes": 26826768,
+    "vrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+    "vrmBytes": 26826764,
     "meshObjects": [
       "Body",
       "Ears",
@@ -1105,12 +1081,24 @@
       "licenseUrl": "https://vrm.dev/licenses/1.0/",
       "modification": "allowModification",
       "name": "ななたう",
-      "version": "1.3.0-approved-face-k5"
+      "version": "1.3.1-rounded-chin-k6"
     },
     "metadataChangedAgainstPreviousCanonical": [
       "version"
     ],
     "expressionBinds": {
+      "aa": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "angry": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
       "blink": {
         "isBinary": false,
         "morphTargetBinds": [
@@ -1129,6 +1117,24 @@
         "overrideLookAt": "none",
         "overrideMouth": "none"
       },
+      "blinkLeft": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "blinkRight": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "ee": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
       "happy": {
         "isBinary": false,
         "morphTargetBinds": [
@@ -1141,61 +1147,117 @@
         "overrideBlink": "none",
         "overrideLookAt": "none",
         "overrideMouth": "none"
+      },
+      "ih": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "lookDown": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "lookLeft": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "lookRight": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "lookUp": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "neutral": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "oh": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "ou": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "relaxed": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "sad": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
+      },
+      "surprised": {
+        "isBinary": false,
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
       }
     },
-    "allImagesEmbedded": true
-  },
-  "fullbodyViews": {
-    "sourceVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
-    "views": [
+    "changedVertexAttributes": [
       {
-        "path": "output/face-likeness-20261026/k5-fullbody-front.png",
-        "sha256": "d344cee78d54f5c25ec75e0a659dc1016422264fc455693e5ab11be1199fb84a"
+        "mesh": "Head",
+        "primitive": 0,
+        "attribute": "NORMAL",
+        "maximumDelta": 0.1889144405722618
       },
       {
-        "path": "output/face-likeness-20261026/k5-fullbody-quarter.png",
-        "sha256": "e0165fe3f9828865c996bae6e20bbc7893ba18b26d724ebb20e03a431e1bb962"
+        "mesh": "Head",
+        "primitive": 0,
+        "attribute": "POSITION",
+        "maximumDelta": 0.001349806785583496
       },
       {
-        "path": "output/face-likeness-20261026/k5-fullbody-left.png",
-        "sha256": "5a9d0e2cdfffd0eafe7ca6250c84b7cab67437592b3e432da098d016a060aa73"
+        "mesh": "Head",
+        "primitive": 1,
+        "attribute": "NORMAL",
+        "maximumDelta": 0.2736133560538292
       },
       {
-        "path": "output/face-likeness-20261026/k5-fullbody-right.png",
-        "sha256": "ef27e56cdb2a4c65f9e76784ce4774fbb47634366f7e8043aa864c4a1890f824"
-      },
-      {
-        "path": "output/face-likeness-20261026/k5-fullbody-back.png",
-        "sha256": "ac5785d69643aeddf1c7a0f5fcb1cefefe42f8c2c2f961ef5da690b2e08e5b04"
-      },
-      {
-        "path": "output/face-likeness-20261026/k5-fullbody-top.png",
-        "sha256": "3f706f1d691f3155f45bbaf05cfa8aca80a973aff4b9ef53529c15c2cbcbf742"
+        "mesh": "Head",
+        "primitive": 1,
+        "attribute": "POSITION",
+        "maximumDelta": 0.0015372037887573242
       }
     ],
-    "resolution": [
-      900,
-      900
-    ],
-    "orthoScale": 2.05,
-    "status": "visual_review_passed",
-    "reviewedContactSheet": "images/concept/avatar-v1/charakuru/current-views.jpg",
-    "observations": [
-      "All hands, feet and accessories fit the six views.",
-      "Accepted K face remains attached to the inherited body.",
-      "Original hair and garment details remain unchanged from K."
-    ]
+    "protectedUvWeightsMaterialsAndExpressions": true,
+    "allEmbeddedImagesUnchanged": true,
+    "springSettingsUnchanged": true,
+    "previousVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925"
   },
   "canonicalEvidence": {
     "blink": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
     "happy": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
-    "combined": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg"
+    "combined": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
+    "fullbody": "images/concept/avatar-v1/charakuru/current-views.jpg",
+    "comparison": "images/concept/avatar-v1/charakuru/chin-rounding-comparison.png"
   },
   "limitations": [
-    "Profile eyes are partly obscured by hair.",
-    "Neutral Head geometry and UV match approved K; rebuilt lid surfaces change the nearby rendered skin/crease details.",
-    "External avatar hosts, tracking, LookAt and lip sync remain untested.",
-    "Spring settings are retained; the new review action does not simulate secondary motion."
-  ],
-  "workingDirectory": "output/face-likeness-20261026"
+    "Only the chin tip changed from approved K5; the earlier exact-neutral-Head-to-K assertion no longer applies to this local edit.",
+    "Profile eyes remain partly obscured by hair.",
+    "External avatar hosts, tracking, LookAt, lip sync and runtime performance remain untested.",
+    "Spring settings are retained; the review action does not simulate secondary motion.",
+    "The retained 12-second MP4 and playback report depict K5 before this chin refinement."
+  ]
 }

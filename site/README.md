@@ -26,13 +26,13 @@ bun run deploy
 
 サイト用画像は `../images/concept/showcase/` に置き、`@showcase-assets/*` エイリアス経由で参照します。表情パネルはReactのstateとeffectで通常・まばたき・笑顔の静止画を自動／手動で切り替えます。
 
-現在の3D表情は2026-10-26採用の、元絵に合わせた顔・首の修正版に対応します。`nanatau-avatar-{neutral,blink,happy}-{720,1440}.webp` は [正本VRM](../models/avatar-v1/charakuru/avatar.vrm) から作成したサイト用画像です。[Charakuruの画像正本](../images/concept/avatar-v1/charakuru/README.md) と同じカメラ・照明・表情で、1440×1680、EEVEE TAA 128 samplesにて再レンダーし、720×840版とともに可逆圧縮WebPで保存しています。モデル更新時はこの6枚も再生成してください。
+現在の3D表情は2026-10-26採用の、元絵に合わせた顔・首から顎先を丸めたK6版に対応します。`nanatau-avatar-{neutral,blink,happy}-{720,1440}.webp` は [正本VRM](../models/avatar-v1/charakuru/avatar.vrm) から作成したサイト用画像です。[Charakuruの画像正本](../images/concept/avatar-v1/charakuru/README.md) と同じカメラ・照明・表情で、1440×1680、EEVEE TAA 128 samplesにて再レンダーし、720×840版とともに可逆圧縮WebPで保存しています。モデル更新時はこの6枚も再生成してください。
 
-再レンダー元のVRM SHA-256は `6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925`。Blender 5.2.1 LTS、正投影カメラ `(0, -2, 1.398)`・注視点 `(0, -0.06, 1.398)`・scale `0.5`、Standard / None / exposure 0 / gamma 1を使用しています。表情は通常 `(blink=0, happy=0)`、まばたき `(1, 0)`、笑顔 `(0, 1)`。撮影後の画像への加筆や色補正は行っていません。
+再レンダー元のVRM SHA-256は `19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a`。Blender 5.2.1 LTS、正投影カメラ `(0, -2, 1.398)`・注視点 `(0, -0.06, 1.398)`・scale `0.5`、Standard / None / exposure 0 / gamma 1を使用しています。表情は通常 `(blink=0, happy=0)`、まばたき `(1, 0)`、笑顔 `(0, 1)`。撮影後の画像への加筆や色補正は行っていません。
 
 `srcset` と `sizes` で表示幅・画面密度に合う画像を選びます。`sizes` は `object-fit: contain` 後の実際の描画幅（モバイル最大約302px、その他約415px）に合わせています。表情切り替えにぼかし・拡大・フェードは使いません。
 
-ダンス動画は2026-10-24版の記録で、現在の顔とは区別して表示します。新しい顔・首・表情の12秒動画は `@avatar-videos/face-neck-motion.mp4` へのリンクから開けます。ダンスは `@avatar-videos/dance-tetris-expressions.mp4` から [正本](../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4) を直接参照し、Viteがハッシュ付きアセットとして配信します。ポスター `nanatau-avatar-tetris-poster.jpg` はこの動画の先頭フレームを640×800へ縮小したものです。動画は操作して再生する方式で、`preload="none"` と `loading="lazy"` を使います。遅延読み込み非対応ブラウザーでは `preload` が読み込みを抑えます。
+ダンス動画は2026-10-24版の記録で、現在の顔とは区別して表示します。顔・首・表情の12秒動画は顎先調整前のK5版です。`@avatar-videos/face-neck-motion.mp4` へのリンクにも調整前と明示します。ダンスは `@avatar-videos/dance-tetris-expressions.mp4` から [正本](../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4) を直接参照し、Viteがハッシュ付きアセットとして配信します。ポスター `nanatau-avatar-tetris-poster.jpg` はこの動画の先頭フレームを640×800へ縮小したものです。動画は操作して再生する方式で、`preload="none"` と `loading="lazy"` を使います。遅延読み込み非対応ブラウザーでは `preload` が読み込みを抑えます。
 
 `main` へのpushでは `site/`、サイト用画像、Charakuru動画、デプロイworkflowの変更を検知して既存のCloudflare Workerへ自動デプロイします。動画を差し替えるときはポスターも更新してください。
 

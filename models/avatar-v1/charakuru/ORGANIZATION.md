@@ -196,3 +196,18 @@ Branch: `main`。Mode: `knowledge-agent-ops`。ユーザーが通常顔Kの比�
 `project.charakit`・`review.fbx`・既存のダンス動画・`verification/{avatar,aipai,samba,tetris}/`は更新しない。旧モデルの検査結果を今回の合格根拠へ流用しない。今回の動画は頭・首・上体と表情の手付け動作で、揺れ物の物理再計算は含まない。配信アプリ、本人トラッキング、口パク、LookAtは検証対象外。
 
 manifestの全現パス・サイズ・SHA-256、正本へのコピー一致、対象外ファイルの不変、相対リンク、secretlint、サイトの型検査・ビルド、React Doctor、実表示を確認してローカルコミットへ保存する。push・デプロイ・追加購入・秘密情報や権限の変更は行わない。
+
+## 2026-10-26：顎先だけを丸める局所修正
+
+ユーザーの顎先のスクリーンショットと「ここだけちょっと気になる。自然に丸みを帯びさせて」に対応する。基準はGitチェックポイント`753eec8`のK5。顎先の短い区間だけを丸め、表情の変形量・UV・ウェイト・首接続・他のメッシュを保持する。既存の正本ディレクトリへ反映し、作業元は`output/face-likeness-20261026/`に残す。
+
+| 作業元 | 正本 | 更新・検証 |
+| --- | --- | --- |
+| `approved-face-k6.{blend,vrm}` | `avatar.{blend,vrm}` | 局所変更の回帰検査、VRM再読み込み、表情45通り、首接続 |
+| `k6-portrait-*.png`・`k6-matrix-*.jpg` | 画像正本の3表情・3検査画像 | 同一カメラ、表情・斜めの実視認 |
+| `k6-fullbody-views.jpg`・`joined-approved-k6/critical-body-0001.png` | 画像正本の`current-views.jpg`・`current-fullbody.png` | 全身の画角、5時点×2カメラ、全288フレームの接続検査 |
+| `chin-rounding-comparison-k6.png` | 画像正本の`chin-rounding-comparison.png` | 修正前後の同一条件の比較 |
+| `k6-portrait-*.png` | Showcaseの720/1440px WebP | 可逆圧縮、サイトの型検査・ビルド・実表示 |
+| K6の検証記録 | `verification/expressions/{model,motion,production}.json` | 現モデルと作業元のパス・ハッシュ |
+
+動画ファイルは更新しない。12秒動画とその`video.json`・`playback.json`はK5の記録と明示し、今回のK6の再生証拠にはしない。manifestの現パス・サイズ・SHA-256と資料の表記を更新し、ローカルコミットへ保存する。

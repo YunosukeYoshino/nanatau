@@ -4,7 +4,7 @@
 
 ## 現在の表情と全身
 
-2026-10-26採用の`approved-reference-face-k5`をVRMから読み込み直して撮影した。ユーザーが選んだ通常顔Kを基準に、まばたきと笑顔を0〜100%で連続変形できる。
+2026-10-26採用の顔から顎先だけを丸めた`approved-reference-face-k6-rounded-chin`を、VRMから読み込み直して撮影した。目・口・頬幅を保持し、まばたきと笑顔を0〜100%で連続変形できる。[顎先の修正前後](chin-rounding-comparison.png)も参照できる。
 
 | 表情 | 1440×1680の画像 |
 | --- | --- |
@@ -18,7 +18,7 @@
 - [笑顔5段階×3方向](expressions-happy-matrix.jpg)
 - [まばたきと笑顔の併用5段階×3方向](expressions-combined-matrix.jpg)
 
-[現在のモデルの12秒動画](../../../../models/avatar-v1/charakuru/videos/face-neck-motion.mp4)と[検証記録](../../../../models/avatar-v1/charakuru/verification/expressions/model.json)を参照できる。動画は全身と顔アップを並べた無音の動作確認で、揺れ物の物理計算を含まない。横顔の目は髪に隠れる部分がある。
+[検証記録](../../../../models/avatar-v1/charakuru/verification/expressions/model.json)と[顎先調整前の12秒動画](../../../../models/avatar-v1/charakuru/videos/face-neck-motion.mp4)を参照できる。動画はK5の全身と顔アップを並べた無音の動作確認で、揺れ物の物理計算を含まない。横顔の目は髪に隠れる部分がある。
 
 ## 表情追加前の外観
 

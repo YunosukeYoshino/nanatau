@@ -9,7 +9,7 @@
     "canonicalDirectory": "models/avatar-v1/charakuru",
     "canonicalPreviewDirectory": "images/concept/avatar-v1/charakuru",
     "metadataPolicy": "Existing Nanatau author and usage terms inherited unchanged; no new distribution permission assigned.",
-    "formalVrmExport": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+    "formalVrmExport": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
     "verification": "verification/expressions/model.json",
     "additionalCredits": 0,
     "publicationAuthorized": false,
@@ -17,9 +17,9 @@
     "initialVrmExport": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
     "bodyOnlyMtoonVrmExport": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
     "bodyOnlyVerification": "verification/avatar/vrm-reload.json",
-    "latestRevisionAdoptedAt": "2026-10-26T10:14:19.410945+09:00",
-    "latestUserInstruction": "ではこれで",
-    "latestRevision": "approved-reference-face-k5"
+    "latestRevisionAdoptedAt": "2026-10-26T18:09:38.816316+09:00",
+    "latestUserInstruction": "ここだけちょっと気になる。自然に丸みを帯びさせて",
+    "latestRevision": "approved-reference-face-k6-rounded-chin"
   },
   "workflow": "Charakuru body and accessories with reference-matched continuous head/neck and facial expressions",
   "geometry": {
@@ -79,9 +79,9 @@
     "licenseUrl": "https://vrm.dev/licenses/1.0/",
     "modification": "allowModification",
     "name": "ななたう",
-    "version": "1.3.0-approved-face-k5"
+    "version": "1.3.1-rounded-chin-k6"
   },
-  "vrmMetaSourceSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+  "vrmMetaSourceSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
   "sourceDesigns": [
     {
       "path": "images/concept/avatar-v1/approved-design.png",
@@ -120,19 +120,18 @@
     "additionalCreditsForContinuousExpressions": 0
   },
   "limitations": [
-    "Profile eyes are partly obscured by hair.",
-    "Neutral Head geometry and UV match approved K; rebuilt lid surfaces change the nearby rendered skin/crease details.",
-    "External avatar hosts, tracking, LookAt and lip sync remain untested.",
-    "Spring settings are retained; the new review action does not simulate secondary motion.",
-    "Existing dance MP4 files depict previous models; face-neck-motion.mp4 is the current model review.",
-    "project.charakit and review.fbx are older body-production snapshots.",
-    "The rebuilt model has 141076 triangles; performance in the target streaming application has not been measured."
+    "Only the chin tip changed from approved K5; the earlier exact-neutral-Head-to-K assertion no longer applies to this local edit.",
+    "Profile eyes remain partly obscured by hair.",
+    "External avatar hosts, tracking, LookAt, lip sync and runtime performance remain untested.",
+    "Spring settings are retained; the review action does not simulate secondary motion.",
+    "The retained 12-second MP4 and playback report depict K5 before this chin refinement.",
+    "project.charakit and review.fbx are older body-production snapshots."
   ],
   "files": [
     {
       "path": "images/concept/avatar-v1/charakuru/README.md",
-      "bytes": 3077,
-      "sha256": "89edc21ed25c25165a613931dbf44371f8db3b25eb482617f1ef5134ef7568a9"
+      "bytes": 3186,
+      "sha256": "2bb98174ad50cb88a122e4d644a529f4f89189d45e62c827323b9bf81e6ffa44"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/back.png",
@@ -140,44 +139,49 @@
       "sha256": "71ce8bd9ffe8551d049aad755fc56c5ec281634db6240a7fe69179cff0107a96"
     },
     {
+      "path": "images/concept/avatar-v1/charakuru/chin-rounding-comparison.png",
+      "bytes": 171402,
+      "sha256": "98e8708d6a24fcd4d40a60103ab60d515cebdc78afaa58625f9b1a16fe92625b"
+    },
+    {
       "path": "images/concept/avatar-v1/charakuru/current-fullbody.png",
-      "bytes": 577477,
-      "sha256": "239b33b658d61c15e3372c808f6f123d1edbc63cc8217a759553f26bd48b7f30"
+      "bytes": 577489,
+      "sha256": "a4347ddd2ce94f2b1f39008ab22193cb4d4b27501e9dea9efcd3bfbeae4ea024"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/current-views.jpg",
-      "bytes": 207152,
-      "sha256": "a2bcbb663372c919466579134a51456ca77eb9913f5baba8017f0aa6c48fb6b7"
+      "bytes": 169111,
+      "sha256": "1265371ffd0ff5038cba89d9b0c87596bc5d19dbe8ba1c4c83a31e29bf9086cb"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
-      "bytes": 597694,
-      "sha256": "f430428b8b7711a528224d5eb0ff711f443f80985b756b14265e7f919294dcfd"
+      "bytes": 446171,
+      "sha256": "ae62a91ef7ccec5993b2bdaa4b6c8db576dbbb3709eb52a77f36c888d8d775ca"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
-      "bytes": 600872,
-      "sha256": "723cbee28f695ee5144018b67dab00777376544d331be03ae17172c3cd1a1168"
+      "bytes": 446228,
+      "sha256": "596e6062361f594346c3470c091b74298b13a74150268d3490e728b46ac8df96"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
-      "bytes": 600684,
-      "sha256": "a52b25a599a462e15d6d95cbec4929799cc829a724ea3a2432cedca183d9e2f0"
+      "bytes": 447343,
+      "sha256": "225e92f7dbe5f4ee3ed09b45ab21cdffbde5bcd83a7871cb474779f96c8c0d7b"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-blink.png",
-      "bytes": 3232592,
-      "sha256": "492171983ac8ecbf3e7cbc2d8e3dcbc4ff074105e75c5d009e4ce5c234fb1828"
+      "bytes": 3232333,
+      "sha256": "df2353ee78b0a8376cf63d39f13e484bb93ea5c1524e9c079307c1db7c3bb7e5"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-happy.png",
-      "bytes": 3275759,
-      "sha256": "774788a5d474cbffaca41cf8cca3816e90180f423767e567192541e4bda60a65"
+      "bytes": 3275480,
+      "sha256": "0b511658d084d01680dced2bc392fe83f6c2a61f987c98522c02e66cdbdebec3"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
-      "bytes": 3275125,
-      "sha256": "2e849eaf8439029473799b5a24609732e3d12b2b1be27a183b6c8468d08ba20f"
+      "bytes": 3274876,
+      "sha256": "441ae17973139ae89f3ee67e2942f30e8de3f798b2851ebaec5bc611bbb15a46"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face.png",
@@ -271,58 +275,58 @@
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-blink-1440.webp",
-      "bytes": 1561396,
-      "sha256": "94440a5b8d80033a4ada525b68663df378d422f77a13786e79943e6095a26d39"
+      "bytes": 1561362,
+      "sha256": "cf4206706f01a495a7fb1449379228f1b05ec73484196dc9e4ae14153ff96d23"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-blink-720.webp",
-      "bytes": 524500,
-      "sha256": "08324d7c3f2433fe9f8cc318963cb9a1c88a253965054d00473b1fc035b441f9"
+      "bytes": 524492,
+      "sha256": "c00f3e46f86e7364a75af09b09bc6fc91563d3138d3874f5e41655fd74459446"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-happy-1440.webp",
-      "bytes": 1589200,
-      "sha256": "25ddd430f0bd8466da4124c693a6bbab97170cd751fa5af499a8ed3271c54946"
+      "bytes": 1589240,
+      "sha256": "4c486ad163881380d187f10a86defc64ccf3876f587d2dbafcba7592f5ecb28e"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-happy-720.webp",
-      "bytes": 535700,
-      "sha256": "ecb5236e11ed73c0a273dd07d42ab5b59f40ba0c91d2c863fbeda7137ba54546"
+      "bytes": 535540,
+      "sha256": "810c59aaf9e24f455e3490b5bafda6cd622b924088ed391fb4acd4278b1f560f"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-neutral-1440.webp",
-      "bytes": 1588588,
-      "sha256": "29321a1a8140ea998c295cbb3729552b5e19a6bd835d5f4418e18f902351b141"
+      "bytes": 1588470,
+      "sha256": "4e141384e3eeb19650bbfb176717c2981ad5339d15f389d14d03e81ee7a7aa9d"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-neutral-720.webp",
-      "bytes": 535330,
-      "sha256": "523a651a23c9140115aa1bc79e11a8a39b1f08b044bbc6110a0c57d7c1ba3722"
+      "bytes": 535272,
+      "sha256": "4d88cc2c09539045449938ceb63aa0708f9a99b90dd2852df01f95aa4c56f53a"
     },
     {
       "path": "models/avatar-v1/charakuru/ORGANIZATION.md",
-      "bytes": 29314,
-      "sha256": "9d869a02bf6470478a61df76dc13a5bc94f9510053e2bc83182b00c502837981"
+      "bytes": 31005,
+      "sha256": "6d770d9d7b2d13f2866870ebd1db086ca120f01d26d4cec044e6036862ba0695"
     },
     {
       "path": "models/avatar-v1/charakuru/PRODUCTION.md",
-      "bytes": 37212,
-      "sha256": "85fc994fc7408743a94cbeb29691482564b347372c9998dcebb5255ccc9fe5fd"
+      "bytes": 39670,
+      "sha256": "9b4e55266573446b4d805a4e9ee04459205808f6f36c9ff94d0728fa147780c7"
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 3789,
-      "sha256": "358bc4c1af9c2fd27306a5a32fb0f9c9c71ad670a56440c17ec60550b6865dc3"
+      "bytes": 4050,
+      "sha256": "37c828f86ef98750dae207ed2239b6d0d9ac9fec886ca68c8e583f3d44a369c8"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
-      "bytes": 29281764,
-      "sha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757"
+      "bytes": 29261504,
+      "sha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.vrm",
-      "bytes": 26826768,
-      "sha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925"
+      "bytes": 26826764,
+      "sha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a"
     },
     {
       "path": "models/avatar-v1/charakuru/project.charakit",
@@ -391,28 +395,28 @@
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/model.json",
-      "bytes": 32136,
-      "sha256": "348554093de7448301bc4b45a964f8d7d6e2d19cf49b4ed6e390fc31e5faf375"
+      "bytes": 32836,
+      "sha256": "d2d3814db55c99d54b8d7a16fd1ae8655beee8b34f27686f85aebeeaa544d9f2"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/motion.json",
-      "bytes": 50965,
-      "sha256": "6b7e171b986736dd43b3622efbe9359f66dd0bca590498319c8aca143c25159f"
+      "bytes": 51147,
+      "sha256": "0c58be8d3796eb6cd0aa95eaeb05c805a9e6ae5b0b86756c6cb2b8157911cc83"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/playback.json",
-      "bytes": 1574,
-      "sha256": "73b7b36716b47be7c7a203e786b58319be25d7f19e3126202ec6b47c672c86e6"
+      "bytes": 1848,
+      "sha256": "6020c93ed24cbdf385cc6a48b74852cf5a40769d7e9d52f601795a1da3eb244f"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/production.json",
-      "bytes": 15463,
-      "sha256": "e8c33f14161a65c564287972892ee6c06b5ba13ef7e95393a546a54f2d215a99"
+      "bytes": 19189,
+      "sha256": "b1b43be244679d265dc0ace58cb495390c670b90112a0d5c24602aaa90717dd7"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/video.json",
-      "bytes": 1317,
-      "sha256": "1f7b127d34e68e93d66a6b4a3db25642638e7d618e71a1f8ca1497a79813ae20"
+      "bytes": 1591,
+      "sha256": "72a634c8065a6a3e745d0e33daf305d82c5209a8a11ca91888fb21025e10bf0d"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/samba/motion.json",
@@ -698,20 +702,20 @@
     "rawAudioCommitted": false
   },
   "expressionUpdate": {
-    "updatedAt": "2026-10-26T10:14:19.410945+09:00",
-    "revision": "approved-reference-face-k5",
-    "userInstruction": "ではこれで",
+    "updatedAt": "2026-10-26T18:09:38.816316+09:00",
+    "revision": "approved-reference-face-k6-rounded-chin",
+    "userInstruction": "ここだけちょっと気になる。自然に丸みを帯びさせて",
     "approvedNeutralSource": {
       "path": "output/face-likeness-20261026/likeness-study-k.blend",
       "bytes": 29187552,
       "sha256": "77bc698a5786ab3e3834b618a9422912b458d7f4e172cbe2e2c2dcd97f897e71"
     },
-    "baselineCheckpoint": "2b2d37958c1fbebaab7ddcd28c0f05bfe8dc4e2e",
-    "previousVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
-    "previousBlendSha256": "5195e0aa0e7a15721a2effdf16d11dba54b5cdeb9964c16a46aff2adf3248008",
-    "canonicalVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
-    "canonicalBlendSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757",
-    "vrmVersion": "1.3.0-approved-face-k5",
+    "baselineCheckpoint": "753eec81e917822f6d237a22f32025f858b8f7c7",
+    "previousVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+    "previousBlendSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757",
+    "canonicalVrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+    "canonicalBlendSha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8",
+    "vrmVersion": "1.3.1-rounded-chin-k6",
     "expressionPresets": [
       "blink",
       "happy"
@@ -719,7 +723,7 @@
     "isBinary": false,
     "implementation": "Original painted irises remain on Head; Eyelids and Lashes morph continuously for blink; Head mouth-region morph creates an open-eye smile.",
     "happyOverrideBlink": "none",
-    "approvedNeutralHeadAndUvPreserved": true,
+    "approvedNeutralHeadAndUvPreserved": false,
     "bodyAndRigPreservedAgainstApprovedK": true,
     "previousCanonicalGeometryPreserved": false,
     "matrixVisualReview": {
@@ -763,10 +767,19 @@
       "video": "verification/expressions/video.json"
     },
     "previousRevision": {
-      "checkpoint": "2b2d37958c1fbebaab7ddcd28c0f05bfe8dc4e2e",
-      "revision": "round3-refine01-continuous-expressions",
-      "video": "videos/dance-tetris-expressions.mp4",
-      "vrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be"
-    }
+      "checkpoint": "753eec81e917822f6d237a22f32025f858b8f7c7",
+      "revision": "approved-reference-face-k5",
+      "video": "videos/face-neck-motion.mp4",
+      "vrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925"
+    },
+    "approvedNeutralUvPreserved": true,
+    "approvedFacePreservedExceptChinTip": true,
+    "localChinRepair": {
+      "maximumDisplacementMeters": 0.0015372037887573242,
+      "neckBoundaryDeltaMeters": 0,
+      "expressionDeltasPreserved": true
+    },
+    "videoModelRevision": "approved-reference-face-k5",
+    "videoMatchesCurrentModel": false
   }
 }

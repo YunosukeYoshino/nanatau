@@ -1,11 +1,11 @@
 {
-  "revision": "approved-reference-face-k5",
-  "adoptedAt": "2026-10-26T10:14:19.410945+09:00",
-  "userDecision": "ではこれで",
-  "decisionAppliesTo": "K neutral face and contour, followed by continuous expression completion",
-  "baselineCheckpoint": "2b2d37958c1fbebaab7ddcd28c0f05bfe8dc4e2e",
-  "previousCanonicalVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
-  "previousCanonicalBlendSha256": "5195e0aa0e7a15721a2effdf16d11dba54b5cdeb9964c16a46aff2adf3248008",
+  "revision": "approved-reference-face-k6-rounded-chin",
+  "adoptedAt": "2026-10-26T18:09:38.816316+09:00",
+  "userDecision": "ここだけちょっと気になる。自然に丸みを帯びさせて",
+  "decisionAppliesTo": "Only the small chin tip shown in the user screenshot",
+  "baselineCheckpoint": "753eec81e917822f6d237a22f32025f858b8f7c7",
+  "previousCanonicalVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+  "previousCanonicalBlendSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757",
   "priorExpressionUpdate": {
     "updatedAt": "2026-10-24T22:20:26.837877+09:00",
     "revision": "round3-refine01-continuous-expressions",
@@ -188,7 +188,7 @@
       "note": "Exact imported floating-point values; visual closure can occur at weights slightly below 1."
     }
   },
-  "method": "Unmodified approved illustration projected and baked as a native Blender face material; manually fitted continuous head/neck and independent eyelids; localized smile morph. Rendered images are not painted over.",
+  "method": "K5 face with a tangent circular fillet only at the chin tip; the same local delta is applied to every Head shape key. Original baked face material, UVs and facial controls are preserved.",
   "newImageGenerationThisAcceptancePass": false,
   "inheritedSkinImage": {
     "path": "output/face-reference-rebuild-20261025/reference-cleaned-face.png",
@@ -259,98 +259,153 @@
       "path": "output/face-likeness-20261026/check_approved_scope.py",
       "bytes": 2532,
       "sha256": "3e530d85d63dfe4b64d2c65d5c4671e053799a057b0f56d7f6b386ca65cf0b93"
+    },
+    {
+      "path": "output/face-likeness-20261026/approved-face-k5.blend",
+      "bytes": 29281764,
+      "sha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757"
+    },
+    {
+      "path": "output/face-likeness-20261026/round_chin_k6.py",
+      "bytes": 4430,
+      "sha256": "f46e697907f356857513aafe6ad3b96a5c89371e07af89f50cfa8e7ee405f24c"
+    },
+    {
+      "path": "output/face-likeness-20261026/check_chin_rounding.py",
+      "bytes": 4235,
+      "sha256": "68fe29316aa2d537d5540d391f5d73eefbb217418865bc2619a2ea4ae2f2a4cc"
+    },
+    {
+      "path": "output/face-likeness-20261026/export_validate_k6.py",
+      "bytes": 8384,
+      "sha256": "3c0973cab6760890ee78b38ec687952da4ed26e13a47c064d0deac66facde571"
+    },
+    {
+      "path": "output/face-likeness-20261026/audit_chin_vrm_k6.py",
+      "bytes": 4992,
+      "sha256": "0eb20bbe0e1ee9d85e9dd03365e4d4ba5efe981ae78a2ebded88102bdbb5711c"
+    },
+    {
+      "path": "output/face-likeness-20261026/check_chin_motion_k6.py",
+      "bytes": 8484,
+      "sha256": "4311b5cc71715e0cbf9a3f2991fbc47a3981beeea43435f55c45ed03b79ec8aa"
+    },
+    {
+      "path": "output/face-likeness-20261026/check_chin_motion_values_k6.py",
+      "bytes": 1192,
+      "sha256": "537f45263e7bf65bd09a76898a98d93106e801b32b84f1f706bd8e665abcaaa9"
+    },
+    {
+      "path": "output/face-likeness-20261026/chin-rounding-contract.json",
+      "bytes": 695,
+      "sha256": "199f7ef094964dda6d9e9a55a89a33ae23323220aba651fbf948ababb5a3f496"
+    },
+    {
+      "path": "output/face-likeness-20261026/chin-rounding-build-k6.json",
+      "bytes": 734,
+      "sha256": "c6a60021b9bc7717fa0010f271b0fcadaaf6b53f77fa0eab3b5ec7c8c3dbd9c0"
+    },
+    {
+      "path": "output/face-likeness-20261026/chin-k5-before-front.png",
+      "bytes": 1484928,
+      "sha256": "2c5060eeec379fc4c0306b919c0afd2a0c538657b25d443eb4001b111f51df10"
+    },
+    {
+      "path": "output/face-likeness-20261026/chin-k6-after-front.png",
+      "bytes": 1484824,
+      "sha256": "63452096d6b81a3a1a815d8624a6c0a1d27bc3d6eca9599e0eb0b57c47ed3851"
     }
   ],
   "adoptedFiles": [
     {
       "path": "models/avatar-v1/charakuru/avatar.vrm",
-      "bytes": 26826768,
-      "sha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925"
+      "bytes": 26826764,
+      "sha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
-      "bytes": 29281764,
-      "sha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
-      "bytes": 5208494,
-      "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1"
+      "bytes": 29261504,
+      "sha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/current-fullbody.png",
-      "bytes": 577477,
-      "sha256": "239b33b658d61c15e3372c808f6f123d1edbc63cc8217a759553f26bd48b7f30"
+      "bytes": 577489,
+      "sha256": "a4347ddd2ce94f2b1f39008ab22193cb4d4b27501e9dea9efcd3bfbeae4ea024"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/current-views.jpg",
-      "bytes": 207152,
-      "sha256": "a2bcbb663372c919466579134a51456ca77eb9913f5baba8017f0aa6c48fb6b7"
+      "bytes": 169111,
+      "sha256": "1265371ffd0ff5038cba89d9b0c87596bc5d19dbe8ba1c4c83a31e29bf9086cb"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/chin-rounding-comparison.png",
+      "bytes": 171402,
+      "sha256": "98e8708d6a24fcd4d40a60103ab60d515cebdc78afaa58625f9b1a16fe92625b"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
-      "bytes": 3275125,
-      "sha256": "2e849eaf8439029473799b5a24609732e3d12b2b1be27a183b6c8468d08ba20f"
+      "bytes": 3274876,
+      "sha256": "441ae17973139ae89f3ee67e2942f30e8de3f798b2851ebaec5bc611bbb15a46"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-blink.png",
-      "bytes": 3232592,
-      "sha256": "492171983ac8ecbf3e7cbc2d8e3dcbc4ff074105e75c5d009e4ce5c234fb1828"
+      "bytes": 3232333,
+      "sha256": "df2353ee78b0a8376cf63d39f13e484bb93ea5c1524e9c079307c1db7c3bb7e5"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/face-happy.png",
-      "bytes": 3275759,
-      "sha256": "774788a5d474cbffaca41cf8cca3816e90180f423767e567192541e4bda60a65"
+      "bytes": 3275480,
+      "sha256": "0b511658d084d01680dced2bc392fe83f6c2a61f987c98522c02e66cdbdebec3"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
-      "bytes": 597694,
-      "sha256": "f430428b8b7711a528224d5eb0ff711f443f80985b756b14265e7f919294dcfd"
+      "bytes": 446171,
+      "sha256": "ae62a91ef7ccec5993b2bdaa4b6c8db576dbbb3709eb52a77f36c888d8d775ca"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
-      "bytes": 600684,
-      "sha256": "a52b25a599a462e15d6d95cbec4929799cc829a724ea3a2432cedca183d9e2f0"
+      "bytes": 447343,
+      "sha256": "225e92f7dbe5f4ee3ed09b45ab21cdffbde5bcd83a7871cb474779f96c8c0d7b"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
-      "bytes": 600872,
-      "sha256": "723cbee28f695ee5144018b67dab00777376544d331be03ae17172c3cd1a1168"
+      "bytes": 446228,
+      "sha256": "596e6062361f594346c3470c091b74298b13a74150268d3490e728b46ac8df96"
     }
   ],
   "siteImages": [
     {
       "path": "images/concept/showcase/nanatau-avatar-neutral-720.webp",
-      "bytes": 535330,
-      "sha256": "523a651a23c9140115aa1bc79e11a8a39b1f08b044bbc6110a0c57d7c1ba3722"
+      "bytes": 535272,
+      "sha256": "4d88cc2c09539045449938ceb63aa0708f9a99b90dd2852df01f95aa4c56f53a"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-neutral-1440.webp",
-      "bytes": 1588588,
-      "sha256": "29321a1a8140ea998c295cbb3729552b5e19a6bd835d5f4418e18f902351b141"
+      "bytes": 1588470,
+      "sha256": "4e141384e3eeb19650bbfb176717c2981ad5339d15f389d14d03e81ee7a7aa9d"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-blink-720.webp",
-      "bytes": 524500,
-      "sha256": "08324d7c3f2433fe9f8cc318963cb9a1c88a253965054d00473b1fc035b441f9"
+      "bytes": 524492,
+      "sha256": "c00f3e46f86e7364a75af09b09bc6fc91563d3138d3874f5e41655fd74459446"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-blink-1440.webp",
-      "bytes": 1561396,
-      "sha256": "94440a5b8d80033a4ada525b68663df378d422f77a13786e79943e6095a26d39"
+      "bytes": 1561362,
+      "sha256": "cf4206706f01a495a7fb1449379228f1b05ec73484196dc9e4ae14153ff96d23"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-happy-720.webp",
-      "bytes": 535700,
-      "sha256": "ecb5236e11ed73c0a273dd07d42ab5b59f40ba0c91d2c863fbeda7137ba54546"
+      "bytes": 535540,
+      "sha256": "810c59aaf9e24f455e3490b5bafda6cd622b924088ed391fb4acd4278b1f560f"
     },
     {
       "path": "images/concept/showcase/nanatau-avatar-happy-1440.webp",
-      "bytes": 1589200,
-      "sha256": "25ddd430f0bd8466da4124c693a6bbab97170cd751fa5af499a8ed3271c54946"
+      "bytes": 1589240,
+      "sha256": "4c486ad163881380d187f10a86defc64ccf3876f587d2dbafcba7592f5ecb28e"
     }
   ],
-  "neutralPreservationScope": "Approved K Head Basis and UV exactly match. Lid overlays are newly built; neutral render pixels are not claimed identical.",
+  "neutralPreservationScope": "Only local chin Z coordinates and resulting normals change. Head X/Y, UVs, weights, expression deltas, neck/throat boundaries and all other meshes remain unchanged.",
   "retainedHistoricalVideos": [
     {
       "path": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
@@ -368,6 +423,11 @@
       "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d"
     },
     {
+      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+      "bytes": 5208494,
+      "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1"
+    },
+    {
       "path": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
       "bytes": 9473198,
       "sha256": "a3b52ca3e1206924187ae4b9b0226230d31f089187a151e8f2ebdc0d48e1285b"
@@ -378,5 +438,47 @@
       "sha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68"
     }
   ],
-  "securityImpact": "Local model, images, video and documentation only. No credentials, permissions, purchases, push or deployment."
+  "securityImpact": "Local model, images and documentation only. No credentials, permissions, purchases, push or deployment.",
+  "previousCanonicalRevision": {
+    "revision": "approved-reference-face-k5",
+    "checkpoint": "753eec81e917822f6d237a22f32025f858b8f7c7",
+    "vrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+    "blendSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757"
+  },
+  "acceptedFaceDecision": {
+    "userStatement": "ではこれで",
+    "source": "K neutral face"
+  },
+  "localChinRepair": {
+    "status": "passed",
+    "source": "approved-face-k5.blend",
+    "candidate": "approved-face-k6.blend",
+    "beforeProfile": {
+      "widthAtHalfMillimeter": 0.00485,
+      "chinZ": 1.3349222838487205,
+      "chinX": 0.0011999999999999997
+    },
+    "afterProfile": {
+      "widthAtHalfMillimeter": 0.008249999999999997,
+      "chinZ": 1.3364026827991842,
+      "chinX": 0.002450000000000001
+    },
+    "unchangedMeshes": [
+      "Body",
+      "Spring_01_hair_flow",
+      "Spring_02_skirt",
+      "Spring_03_ribbon_left",
+      "Spring_04_ribbon_right",
+      "Ears",
+      "Eyelids",
+      "Lashes",
+      "FaceMaterialBakeSurface"
+    ],
+    "maximumVertexMoveMeters": 0.0015372037887573242,
+    "neckAndThroatBoundaryDeltaMeters": 0,
+    "headUvAndWeightsUnchanged": true,
+    "expressionDeltasPreserved": true,
+    "happyReversedTriangles": 0,
+    "modelSha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
+  }
 }

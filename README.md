@@ -48,13 +48,13 @@ Charakuruで制作した3Dのななたう。元絵に合わせた顔と輪郭に
   <a href="images/concept/showcase/nanatau-avatar-blink-1440.webp"><img src="images/concept/showcase/nanatau-avatar-blink-1440.webp" alt="そっと目を閉じた、まばたきの顔" width="250"></a>
   <a href="images/concept/showcase/nanatau-avatar-happy-1440.webp"><img src="images/concept/showcase/nanatau-avatar-happy-1440.webp" alt="目を開けたまま、口元でにっこり" width="250"></a>
   <br>
-  <sub>いつもの顔 · まばたき · ちょっぴりにっこり<br>2026-10-26採用の正本モデルから撮影した1440×1680pxの画像です。</sub>
+  <sub>いつもの顔 · まばたき · ちょっぴりにっこり<br>2026-10-26に顎先を整えた正本モデルから撮影した1440×1680pxの画像です。</sub>
 </p>
 
 <p align="center">
   <strong><a href="models/avatar-v1/charakuru/videos/face-neck-motion.mp4">▶ 顔と全身の動きを見る</a></strong>
   <br>
-  <sub>12秒 · 1540×900 · 24fps · 無音</sub>
+  <sub>12秒 · 1540×900 · 24fps · 無音 · 顎先調整前のK5版</sub>
 </p>
 
 <details>
@@ -65,7 +65,7 @@ Charakuruで制作した3Dのななたう。元絵に合わせた顔と輪郭に
 - VRM 1.0・MToon。髪と衣装の揺れ物設定を含みます。
 - まばたきと笑顔は0〜100%で変形し、重ねて使えます。
 - 表情の強さ・方向・組み合わせを変えた45通り、Blendの保存・再読み込み、VRMの再書き出しを確認しています。
-- 現モデルの動画は、左右の首振り・うなずき・まばたき・笑顔を全身と顔アップで確認できます。揺れ物の物理計算は含みません。
+- 動画は顎先調整前の版で、左右の首振り・うなずき・まばたき・笑顔を全身と顔アップで確認できます。揺れ物の物理計算は含みません。
 
 詳しい検証結果と残っている課題は、[3D成果物一覧](models/avatar-v1/charakuru/README.md)を参照してください。
 

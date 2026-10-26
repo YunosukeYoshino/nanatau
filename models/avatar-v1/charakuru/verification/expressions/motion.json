@@ -1,9 +1,9 @@
 {
-  "status": "all_frames_rendered_and_reviewed",
+  "status": "sampled_motion_review_passed",
   "sourceVrm": "models/avatar-v1/charakuru/avatar.vrm",
-  "sourceSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
-  "blend": "output/face-likeness-20261026/joined-approved-k5/joined-approved-k5-motion.blend",
-  "blendSha256": "01149e75c46e17ca552cc8054ae3e8a768e418e3481abb5107fbb5406c4b4eaf",
+  "sourceSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+  "blend": "output/face-likeness-20261026/joined-approved-k6/joined-approved-k6-motion.blend",
+  "blendSha256": "69083d7df76f1a834f32ec15f5cd826c7730d88330efe3c233a75a749c09270d",
   "blender": "5.2.1 LTS",
   "fps": 24,
   "frames": 288,
@@ -2650,17 +2650,30 @@
   "motionType": "authored bone and shape key action; no spring simulation",
   "canonicalUpdated": true,
   "externalRuntimeVerified": false,
-  "criticalViewsInspected": [
-    "critical-body-0001.png",
-    "critical-face-0064.png",
-    "critical-face-0234.png",
-    "critical-body-0260.png"
+  "reviewedFrames": [
+    1,
+    64,
+    132,
+    234,
+    260
   ],
-  "revision": "approved-reference-face-k5",
-  "renderedFramesPerView": 288,
+  "reviewedCameras": [
+    "body",
+    "face"
+  ],
+  "contactSheet": "output/face-likeness-20261026/k6-motion-critical.jpg",
+  "videoRendered": false,
+  "actualExpressionValuesCheckedFrames": 288,
+  "actualExpressionFrameCounts": {
+    "blink": 35,
+    "happy": 79,
+    "combined": 14
+  },
+  "revision": "approved-reference-face-k6-rounded-chin",
+  "renderedFramesPerView": 5,
   "renderedViews": [
     "body",
     "face"
   ],
-  "video": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4"
+  "encodedVideoForThisRevision": false
 }

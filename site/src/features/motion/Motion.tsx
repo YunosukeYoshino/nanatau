@@ -153,7 +153,7 @@ export default function Motion() {
             <div><dt>モデル</dt><dd>ななたう（Nanatau）</dd></div>
           </dl>
           <div className="motion-video-links">
-            <a href={faceMotion}>現在のモデルの動き（12秒・無音） <span aria-hidden="true">↗</span></a>
+            <a href={faceMotion}>顔と全身の動き（顎先調整前・12秒） <span aria-hidden="true">↗</span></a>
             <a href={avatarArchiveUrl} target="_blank" rel="noreferrer">表情と動画の一覧 <span aria-hidden="true">↗</span></a>
             <a href={avatarProductionUrl} target="_blank" rel="noreferrer">制作記録・クレジット <span aria-hidden="true">↗</span></a>
           </div>

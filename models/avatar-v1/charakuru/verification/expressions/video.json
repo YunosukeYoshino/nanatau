@@ -43,5 +43,9 @@
   "encodedContactSheet": "output/face-likeness-20261026/encoded-motion-k5.jpg",
   "encodedContactSheetVisuallyInspected": true,
   "springSimulationEnabled": false,
-  "revision": "approved-reference-face-k5"
+  "revision": "approved-reference-face-k5",
+  "appliesToModelRevision": "approved-reference-face-k5",
+  "currentModelRevision": "approved-reference-face-k6-rounded-chin",
+  "matchesCurrentModel": false,
+  "scopeNote": "Retained K5 video, captured before the local K6 chin refinement. This is not a K6 playback test."
 }

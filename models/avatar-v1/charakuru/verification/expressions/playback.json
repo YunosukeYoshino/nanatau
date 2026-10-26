@@ -52,5 +52,9 @@
   "visualReview": "Reviewed browser screenshots at 3, 7 and 10 seconds alongside the encoded critical-frame sheet.",
   "counterScope": "Encoded stream has 288 frames. Browser totalVideoFrames includes initial loading/seeking; requestVideoFrameCallback samples are observations, not an assertion that every frame was captured.",
   "revision": "approved-reference-face-k5",
-  "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4"
+  "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+  "appliesToModelRevision": "approved-reference-face-k5",
+  "currentModelRevision": "approved-reference-face-k6-rounded-chin",
+  "matchesCurrentModel": false,
+  "scopeNote": "Retained K5 video, captured before the local K6 chin refinement. This is not a K6 playback test."
 }
