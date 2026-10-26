@@ -7,6 +7,7 @@ import happy from "@showcase-assets/nanatau-avatar-happy-720.webp";
 import happyLarge from "@showcase-assets/nanatau-avatar-happy-1440.webp";
 import tetrisPoster from "@showcase-assets/nanatau-avatar-tetris-poster.jpg";
 import danceTetris from "@avatar-videos/dance-tetris-expressions.mp4";
+import faceMotion from "@avatar-videos/face-neck-motion.mp4";
 import { avatarArchiveUrl, avatarProductionUrl } from "../../shared/config/links";
 
 type MotionState = {
@@ -144,7 +145,7 @@ export default function Motion() {
         <div className="motion-video-copy">
           <p className="motion-video-label">DANCE / TETRIS</p>
           <h3 id="motion-video-title">表情もいっしょに、<br />踊る。</h3>
-          <p id="motion-video-description">「テトリス」に合わせて踊るななたう。まばたきや笑顔が自然につながる様子を、短い動画にまとめました。</p>
+          <p id="motion-video-description">「テトリス」に合わせて踊るななたう。2026年10月24日版のモデルによる、以前のダンス記録です。</p>
           <p id="motion-video-audio">再生すると音が出ます。公式の伴奏音源を使用し、歌声は含まれていません。</p>
           <dl className="motion-video-credits">
             <div><dt>楽曲</dt><dd><a href="https://youtu.be/Soy4jGPHr3g" target="_blank" rel="noreferrer">テトリス / 柊マグネタイト ↗</a></dd></div>
@@ -152,6 +153,7 @@ export default function Motion() {
             <div><dt>モデル</dt><dd>ななたう（Nanatau）</dd></div>
           </dl>
           <div className="motion-video-links">
+            <a href={faceMotion}>現在のモデルの動き（12秒・無音） <span aria-hidden="true">↗</span></a>
             <a href={avatarArchiveUrl} target="_blank" rel="noreferrer">表情と動画の一覧 <span aria-hidden="true">↗</span></a>
             <a href={avatarProductionUrl} target="_blank" rel="noreferrer">制作記録・クレジット <span aria-hidden="true">↗</span></a>
           </div>

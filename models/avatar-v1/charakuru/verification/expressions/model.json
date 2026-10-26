@@ -1,1361 +1,1201 @@
 {
-  "passed": true,
-  "scope": "Approved Round 3 refine01: continuous same-Head blink and happy",
-  "verifiedAt": "2026-10-24T22:20:26.837877+09:00",
-  "assetRevision": "round3-refine01-continuous-expressions",
-  "avatarPath": "models/avatar-v1/charakuru/avatar.vrm",
-  "blendPath": "models/avatar-v1/charakuru/avatar.blend",
-  "baselineCheckpoint": "869557f047f854bc67ab6e960a433be820f149a0",
-  "baselineVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
-  "candidateVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
-  "candidateBlendSha256": "5195e0aa0e7a15721a2effdf16d11dba54b5cdeb9964c16a46aff2adf3248008",
-  "metadataVersionPreserved": "1.2.0-charakuru-open-eye-smile",
-  "expressionPresets": {
-    "blink": {
-      "isBinary": false,
-      "overrideBlink": "none",
-      "overrideLookAt": "none",
-      "overrideMouth": "none",
-      "morphTargetBinds": [
-        {
-          "node": 128,
-          "index": 0,
-          "weight": 1.0
-        }
-      ]
-    },
-    "happy": {
-      "isBinary": false,
-      "overrideBlink": "none",
-      "overrideLookAt": "none",
-      "overrideMouth": "none",
-      "morphTargetBinds": [
-        {
-          "node": 128,
-          "index": 1,
-          "weight": 1.0
-        }
-      ]
-    }
-  },
-  "headMorphNames": [
-    "BlinkContinuous",
-    "HappyContinuous"
-  ],
-  "headMorphChannels": [
-    "POSITION"
-  ],
-  "headVertices": 2726,
-  "headTriangles": 3577,
-  "construction": {
-    "sourceRound3Sha256": "6bcee350d32758e8bec0a45831b4f58203c856b1edeb31902c37445ce866cd42",
-    "existingSkinLashesAndMouthDeformedContinuously": true,
-    "textureSwitching": false,
-    "newTexturePainting": false,
-    "lowerLashDepthAdjustmentMeters": 0.00015,
-    "changedBlinkVertexCountPerAxis": {
-      "X": 0,
-      "Y": 34,
-      "Z": 336
-    },
-    "neutralAndHappyPreservedFromOriginalRound3": true
-  },
-  "protectedDataAudit": {
-    "passed": true,
-    "checks": [
-      {
-        "name": "frozen_original_round3_source",
-        "passed": true,
-        "actualSha256": "6bcee350d32758e8bec0a45831b4f58203c856b1edeb31902c37445ce866cd42"
-      },
-      {
-        "name": "frozen_canonical_source",
-        "passed": true,
-        "actualSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1"
-      },
-      {
-        "name": "nodes_exact",
-        "passed": true
-      },
-      {
-        "name": "skins_exact",
-        "passed": true
-      },
-      {
-        "name": "materials_exact",
-        "passed": true
-      },
-      {
-        "name": "images_exact",
-        "passed": true
-      },
-      {
-        "name": "textures_exact",
-        "passed": true
-      },
-      {
-        "name": "samplers_exact",
-        "passed": true
-      },
-      {
-        "name": "scene_exact",
-        "passed": true
-      },
-      {
-        "name": "scenes_exact",
-        "passed": true
-      },
-      {
-        "name": "VRMC_springBone_exact",
-        "passed": true
-      },
-      {
-        "name": "VRMC_node_constraint_exact",
-        "passed": true
-      },
-      {
-        "name": "vrm_humanoid_exact",
-        "passed": true
-      },
-      {
-        "name": "vrm_lookAt_exact",
-        "passed": true
-      },
-      {
-        "name": "vrm_meta_exact",
-        "passed": true
-      },
-      {
-        "name": "vrm_firstPerson_exact",
-        "passed": true
-      },
-      {
-        "name": "vrm_expressions_exact",
-        "passed": true
-      },
-      {
-        "name": "inverse_bind_matrices_exact",
-        "passed": true
-      },
-      {
-        "name": "all_embedded_image_bytes_exact",
-        "passed": true
-      },
-      {
-        "name": "same_head_identity",
-        "passed": true
-      },
-      {
-        "name": "same_mesh_count",
-        "passed": true
-      },
-      {
-        "name": "same_original_head_neutral_all_attributes_indices",
-        "passed": true
-      },
-      {
-        "name": "mesh_0_metadata_exact",
-        "passed": true
-      },
-      {
-        "name": "non_head_mesh_0_all_arrays_and_targets_exact",
-        "passed": true
-      },
-      {
-        "name": "mesh_1_metadata_exact",
-        "passed": true
-      },
-      {
-        "name": "mesh_2_metadata_exact",
-        "passed": true
-      },
-      {
-        "name": "non_head_mesh_2_all_arrays_and_targets_exact",
-        "passed": true
-      },
-      {
-        "name": "mesh_3_metadata_exact",
-        "passed": true
-      },
-      {
-        "name": "non_head_mesh_3_all_arrays_and_targets_exact",
-        "passed": true
-      },
-      {
-        "name": "mesh_4_metadata_exact",
-        "passed": true
-      },
-      {
-        "name": "non_head_mesh_4_all_arrays_and_targets_exact",
-        "passed": true
-      },
-      {
-        "name": "mesh_5_metadata_exact",
-        "passed": true
-      },
-      {
-        "name": "non_head_mesh_5_all_arrays_and_targets_exact",
-        "passed": true
-      },
-      {
-        "name": "canonical_neutral_arrays_all_meshes_exact",
-        "passed": true
-      },
-      {
-        "name": "head_target_count_exact",
-        "passed": true
-      },
-      {
-        "name": "target_0_channel_set_exact",
-        "passed": true,
-        "channelsBefore": [
-          "POSITION"
-        ],
-        "channelsAfter": [
-          "POSITION"
-        ]
-      },
-      {
-        "name": "target_1_channel_set_exact",
-        "passed": true,
-        "channelsBefore": [
-          "POSITION"
-        ],
-        "channelsAfter": [
-          "POSITION"
-        ]
-      },
-      {
-        "name": "non_blink_target_1_all_channels_exact",
-        "passed": true,
-        "channelsBefore": [
-          "POSITION"
-        ],
-        "channelsAfter": [
-          "POSITION"
-        ]
-      },
-      {
-        "name": "blink_POSITION_finite",
-        "passed": true
-      },
-      {
-        "name": "blink_POSITION_changes_only_local_eye_vertices",
-        "passed": true,
-        "changedVertices": [
-          96,
-          104,
-          105,
-          106,
-          107,
-          115,
-          123,
-          129,
-          130,
-          131,
-          138,
-          139,
-          140,
-          141,
-          146,
-          147,
-          148,
-          149,
-          150,
-          161,
-          162,
-          163,
-          164,
-          165,
-          166,
-          167,
-          168,
-          170,
-          171,
-          172,
-          174,
-          175,
-          176,
-          177,
-          178,
-          179,
-          180,
-          181,
-          182,
-          183,
-          184,
-          189,
-          190,
-          191,
-          194,
-          195,
-          196,
-          199,
-          201,
-          202,
-          203,
-          205,
-          207,
-          208,
-          209,
-          212,
-          214,
-          215,
-          217,
-          218,
-          223,
-          224,
-          225,
-          226,
-          227,
-          234,
-          235,
-          249,
-          269,
-          270,
-          283,
-          284,
-          285,
-          294,
-          321,
-          653,
-          684,
-          693,
-          694,
-          695,
-          705,
-          706,
-          722,
-          727,
-          728,
-          745,
-          746,
-          747,
-          755,
-          759,
-          760,
-          761,
-          762,
-          770,
-          774,
-          780,
-          781,
-          792,
-          814,
-          824,
-          835,
-          842,
-          845,
-          846,
-          847,
-          853,
-          856,
-          857,
-          858,
-          865,
-          866,
-          867,
-          869,
-          870,
-          871,
-          872,
-          873,
-          874,
-          877,
-          878,
-          879,
-          880,
-          881,
-          883,
-          884,
-          885,
-          886,
-          887,
-          888,
-          893,
-          894,
-          895,
-          896,
-          897,
-          903,
-          904,
-          905,
-          906,
-          907,
-          918,
-          919,
-          920,
-          921,
-          928,
-          929,
-          930,
-          936,
-          943,
-          947,
-          948,
-          949,
-          950,
-          960,
-          971,
-          1162,
-          1163,
-          1164,
-          1165,
-          1166,
-          1167,
-          1168,
-          1169,
-          1170,
-          1171,
-          1172,
-          1173,
-          1174,
-          1175,
-          1176,
-          1177,
-          1178,
-          1349,
-          1350,
-          1351,
-          1352,
-          1353,
-          1354,
-          1355,
-          1356,
-          1357,
-          1358,
-          1359,
-          1360,
-          1361,
-          1362,
-          1363,
-          1364,
-          1365,
-          1582,
-          1595,
-          1596,
-          1598,
-          1600,
-          1601,
-          1606,
-          1611,
-          1613,
-          1614,
-          1618,
-          1629,
-          1630,
-          1639,
-          1641,
-          1643,
-          1649,
-          1650,
-          1657,
-          1658,
-          1661,
-          1667,
-          1669,
-          1674,
-          1678,
-          1679,
-          1680,
-          1681,
-          1683,
-          1685,
-          1698,
-          1703,
-          1704,
-          1705,
-          1706,
-          1707,
-          1708,
-          1712,
-          1719,
-          1720,
-          1721,
-          1724,
-          1728,
-          1730,
-          1738,
-          1746,
-          1747,
-          1748,
-          1750,
-          1755,
-          1756,
-          1761,
-          1764,
-          1765,
-          1767,
-          1771,
-          1772,
-          1779,
-          1782,
-          1786,
-          1788,
-          1792,
-          1797,
-          1798,
-          1803,
-          1806,
-          1807,
-          1809,
-          1810,
-          1811,
-          1814,
-          1816,
-          1820,
-          1825,
-          1826,
-          1832,
-          1836,
-          1844,
-          1847,
-          1848,
-          1849,
-          1851,
-          1852,
-          1862,
-          1867,
-          1868,
-          1874,
-          1876,
-          1881,
-          1885,
-          1890,
-          1891,
-          1892,
-          2329,
-          2330,
-          2333,
-          2334,
-          2338,
-          2341,
-          2345,
-          2347,
-          2348,
-          2355,
-          2356,
-          2357,
-          2358,
-          2359,
-          2364,
-          2366,
-          2372,
-          2375,
-          2377,
-          2379,
-          2380,
-          2381,
-          2382,
-          2383,
-          2386,
-          2388,
-          2391,
-          2395,
-          2396,
-          2399,
-          2401,
-          2405,
-          2409,
-          2413,
-          2414,
-          2416,
-          2417,
-          2418,
-          2423,
-          2424,
-          2427,
-          2429,
-          2430,
-          2431,
-          2437,
-          2441,
-          2443,
-          2445,
-          2448,
-          2449,
-          2450,
-          2453,
-          2455,
-          2456,
-          2458,
-          2459,
-          2460,
-          2461,
-          2463,
-          2472,
-          2475,
-          2477,
-          2478,
-          2479,
-          2481,
-          2482,
-          2483,
-          2487,
-          2490,
-          2496,
-          2497,
-          2502,
-          2503,
-          2505,
-          2507,
-          2509,
-          2514,
-          2515,
-          2522,
-          2524,
-          2527,
-          2530,
-          2533,
-          2537,
-          2538,
-          2541,
-          2542,
-          2549,
-          2555
-        ]
-      },
-      {
-        "name": "blink_POSITION_irises_and_deep_caps_unchanged",
-        "passed": true
-      },
-      {
-        "name": "happy_POSITION_finite",
-        "passed": true
-      },
-      {
-        "name": "happy_POSITION_effective_values_exact",
-        "passed": true
-      },
-      {
-        "name": "blink_NORMAL_finite",
-        "passed": true
-      },
-      {
-        "name": "blink_NORMAL_changes_only_local_eye_vertices",
-        "passed": true,
-        "changedVertices": []
-      },
-      {
-        "name": "blink_NORMAL_irises_and_deep_caps_unchanged",
-        "passed": true
-      },
-      {
-        "name": "happy_NORMAL_finite",
-        "passed": true
-      },
-      {
-        "name": "happy_NORMAL_effective_values_exact",
-        "passed": true
-      }
-    ]
-  },
-  "roundtrip": {
-    "kind": "reexport",
-    "directCandidate": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01.vrm",
-    "directSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
-    "exportedCandidate": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01-roundtrip.vrm",
-    "exportedSha256": "a35f730f6d0f3b5cd22c3673be9319aeb000b120dbb4e239fb46230299e6a77a",
-    "strictPassed": false,
-    "checks": [
-      {
-        "name": "node_names_hierarchy_skin_joint_mapping",
-        "passed": true
-      },
-      {
-        "name": "world_rest_joint_positions",
-        "passed": true,
-        "maxAbsoluteMeters": 8.557760694527516e-07,
-        "toleranceMeters": 5e-06
-      },
-      {
-        "name": "vrm_humanoid_semantics",
-        "passed": true
-      },
-      {
-        "name": "vrm_expressions_semantics",
-        "passed": true
-      },
-      {
-        "name": "vrm_firstPerson_semantics",
-        "passed": true
-      },
-      {
-        "name": "vrm_look_at_parameters_and_world_offset",
-        "passed": true,
-        "offsetWorldMaxErrorMeters": 3.3080631234305713e-07,
-        "rawOffsetBefore": [
-          0.029999999329447746,
-          0.03541666641831398,
-          0.0
-        ],
-        "rawOffsetAfter": [
-          0.029999999329447746,
-          1.2122608472608931e-09,
-          -0.03541666641831398
-        ]
-      },
-      {
-        "name": "spring_chains_parameters_groups",
-        "passed": true
-      },
-      {
-        "name": "spring_world_collider_shapes",
-        "passed": true,
-        "colliders": [
-          {
-            "node": "head",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 1.5217418040773534e-07
-            }
-          },
-          {
-            "node": "neck",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 4.748547297594996e-07
-            }
-          },
-          {
-            "node": "chest",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 1.0946257011923421e-07
-            }
-          },
-          {
-            "node": "spine",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 2.4340352577922886e-07
-            }
-          },
-          {
-            "node": "hips",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 2.472520576057846e-07
-            }
-          },
-          {
-            "node": "upper_leg.L",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 2.0497187536161476e-07
-            }
-          },
-          {
-            "node": "upper_arm.L",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 3.5194140113326e-07
-            }
-          },
-          {
-            "node": "upper_leg.R",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 3.204941971812758e-07
-            }
-          },
-          {
-            "node": "upper_arm.R",
-            "radiusError": 0.0,
-            "worldPositionErrors": {
-              "offset": 7.947262825602763e-08
-            }
-          }
-        ]
-      },
-      {
-        "name": "materials_mtoon_texture_pixels_and_samplers",
-        "passed": true,
-        "materials": [
-          {
-            "name": "SmartUV Untextured.001",
-            "settingsExactAfterReindexing": true,
-            "textures": [
-              {
-                "channel": "base",
-                "pixelsExact": true,
-                "samplerExact": true
-              },
-              {
-                "channel": "shade",
-                "pixelsExact": true,
-                "samplerExact": true
-              }
-            ]
-          },
-          {
-            "name": "SmartUV Untextured",
-            "settingsExactAfterReindexing": true,
-            "textures": [
-              {
-                "channel": "base",
-                "pixelsExact": true,
-                "samplerExact": true
-              },
-              {
-                "channel": "shade",
-                "pixelsExact": true,
-                "samplerExact": true
-              }
-            ]
-          },
-          {
-            "name": "SmartUV Untextured.002",
-            "settingsExactAfterReindexing": true,
-            "textures": [
-              {
-                "channel": "base",
-                "pixelsExact": true,
-                "samplerExact": true
-              },
-              {
-                "channel": "shade",
-                "pixelsExact": true,
-                "samplerExact": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "neutral_corner_positions_uv_skinning_all_non_normal_attributes",
-        "passed": true,
-        "meshes": [
-          {
-            "mesh": "body_00001.002",
-            "triangles": 37171,
-            "vertices": [
-              28567,
-              28624
-            ],
-            "cornerChannelMaxAbsoluteErrors": {
-              "JOINTS_0": 0.0,
-              "NORMAL": 0.006696127355098724,
-              "POSITION": 3.0100345611572266e-06,
-              "TEXCOORD_0": 0.0,
-              "WEIGHTS_0": 1.1920928955078125e-07
-            }
-          },
-          {
-            "mesh": "head_00003.003",
-            "triangles": 3577,
-            "vertices": [
-              2726,
-              2740
-            ],
-            "cornerChannelMaxAbsoluteErrors": {
-              "JOINTS_0": 0.0,
-              "NORMAL": 0.0035933852195739746,
-              "POSITION": 2.384185791015625e-07,
-              "TEXCOORD_0": 2.9802322387695312e-08,
-              "WEIGHTS_0": 0.0
-            }
-          },
-          {
-            "mesh": "head_00001.001",
-            "triangles": 40261,
-            "vertices": [
-              33979,
-              34066
-            ],
-            "cornerChannelMaxAbsoluteErrors": {
-              "JOINTS_0": 0.0,
-              "NORMAL": 1.000000053385076,
-              "POSITION": 5.960464477539062e-07,
-              "TEXCOORD_0": 0.0,
-              "WEIGHTS_0": 1.7881393432617188e-07
-            }
-          },
-          {
-            "mesh": "body_00105.003",
-            "triangles": 10278,
-            "vertices": [
-              8548,
-              8583
-            ],
-            "cornerChannelMaxAbsoluteErrors": {
-              "JOINTS_0": 0.0,
-              "NORMAL": 0.00609058141708374,
-              "POSITION": 3.5762786865234375e-07,
-              "TEXCOORD_0": 0.0,
-              "WEIGHTS_0": 1.1920928955078125e-07
-            }
-          },
-          {
-            "mesh": "body_00019.003",
-            "triangles": 5389,
-            "vertices": [
-              3958,
-              3963
-            ],
-            "cornerChannelMaxAbsoluteErrors": {
-              "JOINTS_0": 0.0,
-              "NORMAL": 0.00013518333435058594,
-              "POSITION": 3.5762786865234375e-07,
-              "TEXCOORD_0": 0.0,
-              "WEIGHTS_0": 5.960464477539063e-08
-            }
-          },
-          {
-            "mesh": "body_00534.002",
-            "triangles": 75,
-            "vertices": [
-              71,
-              71
-            ],
-            "cornerChannelMaxAbsoluteErrors": {
-              "JOINTS_0": 0.0,
-              "NORMAL": 0.00011008977890014648,
-              "POSITION": 2.086162567138672e-07,
-              "TEXCOORD_0": 0.0,
-              "WEIGHTS_0": 0.0
-            }
-          }
-        ]
-      },
-      {
-        "name": "weighted_rest_skinned_geometry",
-        "passed": true,
-        "meshes": [
-          {
-            "mesh": "body_00001.002",
-            "maximumRestSkinnedCornerErrorMeters": 1.441865328579134e-06
-          },
-          {
-            "mesh": "head_00003.003",
-            "maximumRestSkinnedCornerErrorMeters": 2.3802591625257162e-07
-          },
-          {
-            "mesh": "head_00001.001",
-            "maximumRestSkinnedCornerErrorMeters": 8.161308095643459e-07
-          },
-          {
-            "mesh": "body_00105.003",
-            "maximumRestSkinnedCornerErrorMeters": 5.854415909359526e-07
-          },
-          {
-            "mesh": "body_00019.003",
-            "maximumRestSkinnedCornerErrorMeters": 4.47985656215109e-07
-          },
-          {
-            "mesh": "body_00534.002",
-            "maximumRestSkinnedCornerErrorMeters": 1.6406313600096196e-07
-          }
-        ]
-      },
-      {
-        "name": "all_morph_position_and_other_non_normal_channels",
-        "passed": true,
-        "targets": [
-          {
-            "mesh": "head_00003.003",
-            "index": 0,
-            "name": "BlinkContinuous",
-            "directChannels": [
-              "POSITION"
-            ],
-            "exportChannels": [
-              "POSITION"
-            ],
-            "channels": {
-              "NORMAL": {
-                "maxAbsoluteError": 0.0,
-                "directNonzeroCorners": 0,
-                "exportNonzeroCorners": 0,
-                "channelPresentBefore": false,
-                "channelPresentAfter": false
-              },
-              "POSITION": {
-                "maxAbsoluteError": 5.960464477539063e-08,
-                "directNonzeroCorners": 4364,
-                "exportNonzeroCorners": 4364,
-                "channelPresentBefore": true,
-                "channelPresentAfter": true
-              }
-            }
-          },
-          {
-            "mesh": "head_00003.003",
-            "index": 1,
-            "name": "HappyContinuous",
-            "directChannels": [
-              "POSITION"
-            ],
-            "exportChannels": [
-              "POSITION"
-            ],
-            "channels": {
-              "NORMAL": {
-                "maxAbsoluteError": 0.0,
-                "directNonzeroCorners": 0,
-                "exportNonzeroCorners": 0,
-                "channelPresentBefore": false,
-                "channelPresentAfter": false
-              },
-              "POSITION": {
-                "maxAbsoluteError": 1.7601996660232544e-07,
-                "directNonzeroCorners": 2179,
-                "exportNonzeroCorners": 2179,
-                "channelPresentBefore": true,
-                "channelPresentAfter": true
-              }
-            }
-          }
-        ]
-      },
-      {
-        "name": "all_morph_normal_delta_values",
-        "passed": true,
-        "tolerance": 1e-06
-      },
-      {
-        "name": "all_neutral_normal_values_exact_with_float_tolerance",
-        "passed": false,
-        "tolerance": 1e-06,
-        "meshes": [
-          {
-            "mesh": "body_00001.002",
-            "maxNormalVectorDifference": 0.006813231389969587,
-            "nondegenerateMaxNormalVectorDifference": 0.006813231389969587,
-            "nondegenerateTrianglesWithNormalErrorAbove0_01": 0
-          },
-          {
-            "mesh": "head_00003.003",
-            "maxNormalVectorDifference": 0.0038911050651222467,
-            "nondegenerateMaxNormalVectorDifference": 0.0038911050651222467,
-            "nondegenerateTrianglesWithNormalErrorAbove0_01": 0
-          },
-          {
-            "mesh": "head_00001.001",
-            "maxNormalVectorDifference": 1.4142135381698608,
-            "nondegenerateMaxNormalVectorDifference": 0.0009880863362923265,
-            "nondegenerateTrianglesWithNormalErrorAbove0_01": 0
-          },
-          {
-            "mesh": "body_00105.003",
-            "maxNormalVectorDifference": 0.00788780115544796,
-            "nondegenerateMaxNormalVectorDifference": 0.00788780115544796,
-            "nondegenerateTrianglesWithNormalErrorAbove0_01": 0
-          },
-          {
-            "mesh": "body_00019.003",
-            "maxNormalVectorDifference": 0.00015715080371592194,
-            "nondegenerateMaxNormalVectorDifference": 0.00015715080371592194,
-            "nondegenerateTrianglesWithNormalErrorAbove0_01": 0
-          },
-          {
-            "mesh": "body_00534.002",
-            "maxNormalVectorDifference": 0.00013508505071513355,
-            "nondegenerateMaxNormalVectorDifference": 0.00013508505071513355,
-            "nondegenerateTrianglesWithNormalErrorAbove0_01": 0
-          }
-        ]
-      }
-    ],
-    "originalRound3ReexportComparison": {
-      "source": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-roundtrip.vrm",
-      "sourceSha256": "4a1879fc86713410bccc6267ab72a950bc4757b0c1d7f438ed83ee48b9390e49",
-      "neutralIncludingNormalsAndHappyValuesPreservedWithin1e_6": true,
-      "meshes": [
-        {
-          "mesh": "body_00001.002",
-          "neutralCornerChannelMaxAbsoluteErrors": {
-            "JOINTS_0": 0.0,
-            "NORMAL": 0.0,
-            "POSITION": 0.0,
-            "TEXCOORD_0": 0.0,
-            "WEIGHTS_0": 0.0
-          },
-          "happyChannelMaxAbsoluteErrors": []
-        },
-        {
-          "mesh": "head_00003.003",
-          "neutralCornerChannelMaxAbsoluteErrors": {
-            "JOINTS_0": 0.0,
-            "NORMAL": 0.0,
-            "POSITION": 0.0,
-            "TEXCOORD_0": 0.0,
-            "WEIGHTS_0": 0.0
-          },
-          "happyChannelMaxAbsoluteErrors": {
-            "POSITION": 0.0
-          }
-        },
-        {
-          "mesh": "head_00001.001",
-          "neutralCornerChannelMaxAbsoluteErrors": {
-            "JOINTS_0": 0.0,
-            "NORMAL": 0.0,
-            "POSITION": 0.0,
-            "TEXCOORD_0": 0.0,
-            "WEIGHTS_0": 0.0
-          },
-          "happyChannelMaxAbsoluteErrors": []
-        },
-        {
-          "mesh": "body_00105.003",
-          "neutralCornerChannelMaxAbsoluteErrors": {
-            "JOINTS_0": 0.0,
-            "NORMAL": 0.0,
-            "POSITION": 0.0,
-            "TEXCOORD_0": 0.0,
-            "WEIGHTS_0": 0.0
-          },
-          "happyChannelMaxAbsoluteErrors": []
-        },
-        {
-          "mesh": "body_00019.003",
-          "neutralCornerChannelMaxAbsoluteErrors": {
-            "JOINTS_0": 0.0,
-            "NORMAL": 0.0,
-            "POSITION": 0.0,
-            "TEXCOORD_0": 0.0,
-            "WEIGHTS_0": 0.0
-          },
-          "happyChannelMaxAbsoluteErrors": []
-        },
-        {
-          "mesh": "body_00534.002",
-          "neutralCornerChannelMaxAbsoluteErrors": {
-            "JOINTS_0": 0.0,
-            "NORMAL": 0.0,
-            "POSITION": 0.0,
-            "TEXCOORD_0": 0.0,
-            "WEIGHTS_0": 0.0
-          },
-          "happyChannelMaxAbsoluteErrors": []
-        }
-      ]
-    },
-    "visualAcceptance": "separate_required",
-    "limitations": [
-      "Corner order is verified through positions, UVs and skinning; no vertex-prefix matching is assumed.",
-      "Rest bone axes may be reparameterized; comparison checks world joints and weighted rest-skinned geometry.",
-      "A failed normal check is included in strictPassed, never excluded to report overall preservation."
-    ]
-  },
-  "roundtripInterpretation": {
-    "baseNormalsStrictlyIdentical": false,
-    "otherAuditedSemanticsPreserved": true,
-    "neutralNormalsAndHappyEqualOriginalRound3Roundtrip": true,
-    "normalMorphAddedOrLost": false,
-    "reimportVisualReview": {
-      "inspectedImages": 4,
-      "exactPixels": false,
-      "meanAbsoluteRGBAErrorRange": [
-        0.0005329241071428571,
-        0.001076078869047619
-      ],
-      "maxChannelError": 11,
-      "visualFinding": "Opened neutral/50%/100% front and 100% quarter reimports; no visible new breakage in the face or lashes."
-    }
-  },
-  "visual": {
-    "passed": true,
-    "matrix": {
-      "expressions": [
-        "blink",
-        "happy",
-        "combined"
-      ],
-      "weights": [
+  "status": "passed_with_documented_limits",
+  "source": "models/avatar-v1/charakuru/avatar.blend",
+  "vrm": "models/avatar-v1/charakuru/avatar.vrm",
+  "blender": "5.2.1 LTS",
+  "poseContacts": [
+    {
+      "pose": "neutral",
+      "maximumGapMeters": 0.0,
+      "samples": 90,
+      "headEulerDegrees": [
         0,
-        0.25,
-        0.5,
-        0.75,
-        1
+        0,
+        0
       ],
-      "views": [
-        "front",
-        "quarter",
-        "profile"
-      ],
-      "imagesInspectedViaThreeContactSheets": 45
+      "neckEulerDegrees": [
+        0,
+        0,
+        0
+      ]
     },
-    "findings": [
-      "Original Round 3 cheek/lid integration and identity retained; no large lower-lid skin panels",
-      "Intruding skin flecks in closed lash core greatly reduced while original upper lash highlight is retained",
-      "Visible inner pink crease angular corner reduced to a thin continuous slant; brow and cheek shapes preserved",
-      "No new holes or broad patches observed in the inspected front/quarter intermediates and combined expressions",
-      "Profile eye contact is partly obscured by unchanged hair"
+    {
+      "pose": "head-pitch",
+      "maximumGapMeters": 0.0,
+      "samples": 90,
+      "headEulerDegrees": [
+        20,
+        0,
+        0
+      ],
+      "neckEulerDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pose": "head-roll",
+      "maximumGapMeters": 0.0,
+      "samples": 90,
+      "headEulerDegrees": [
+        0,
+        0,
+        25
+      ],
+      "neckEulerDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pose": "neck-bend",
+      "maximumGapMeters": 0.0,
+      "samples": 90,
+      "headEulerDegrees": [
+        0,
+        0,
+        0
+      ],
+      "neckEulerDegrees": [
+        15,
+        0,
+        10
+      ]
+    }
+  ],
+  "renders": [
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-000-front.png",
+      "sha256": "56706e682dcf0273314f2b64565f2d90b8b2d2d712eeb50a4539c76886d88cde",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-000-quarter.png",
+      "sha256": "44163df299f87bfcbf9ebb28cbd852fff140abe7f5a738728320dab57a764362",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-000-profile.png",
+      "sha256": "72db1fc6eb7874c68d41828673598f8c1e460dd9e2378abf502396d80191f51e",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-025-front.png",
+      "sha256": "98595668602edc92605de104fd4d47487ebb150797cae270424dc87f609c9000",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.25,
+        "Lashes": 0.25
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-025-quarter.png",
+      "sha256": "3ec368d1aeef72a65d3925fb1165f14aae3bdd753770c84d2183b06f6dc604da",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.25,
+        "Lashes": 0.25
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-025-profile.png",
+      "sha256": "e1c5b04d40ffe4bb95daf6fd4d2f18676e51809d70b1ad3e8151ea9b15c0d0ee",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.25,
+        "Lashes": 0.25
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-050-front.png",
+      "sha256": "e047bc04de8418599593b1a1a4b8895989b90494d7dfba6496e721c21140c7ff",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.5,
+        "Lashes": 0.5
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-050-quarter.png",
+      "sha256": "278c3ef1263ecc8b91bd1285a71f21568a46dc84d516919a9775cc99de6be31f",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.5,
+        "Lashes": 0.5
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-050-profile.png",
+      "sha256": "ad02e88a6ae70914bc910fbf358ad1d4a0b4e0c27d8d384f161e47872a274ded",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.5,
+        "Lashes": 0.5
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-075-front.png",
+      "sha256": "cf14a53e9b8c50113857dceb9444c821eddc6a0587e9a93af06babecc24d8bf0",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.75,
+        "Lashes": 0.75
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-075-quarter.png",
+      "sha256": "471f1cef93ba5298f6520111b985cd5967e9984bf2fa16be5303ef970f05cdbe",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.75,
+        "Lashes": 0.75
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-075-profile.png",
+      "sha256": "0cc267b032742e43dc932ef510252d245872136a66bd897aa0374e9561260ce6",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.75,
+        "Lashes": 0.75
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-100-front.png",
+      "sha256": "88a5483edf76a564b55e75cdd81e651072d32c165f781fbb88ac70dfb744243b",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 1.0,
+        "Lashes": 1.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-100-quarter.png",
+      "sha256": "d38d1425290ba1657114aed3fbbbe14dd7612b5cdd9da2f176b6230bd2d993a6",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 1.0,
+        "Lashes": 1.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-blink-100-profile.png",
+      "sha256": "13aea61ceafb3dbc29f09e114eb40783c1039a37b5171985c2a6d59260f9d842",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 1.0,
+        "Lashes": 1.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-000-front.png",
+      "sha256": "e28edc21e9b348def5c3fc185f5fd0efce6013d56750bb822a5cc558749ed7ab",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-000-quarter.png",
+      "sha256": "ba011e457d0acdc9603e66f0e9e643123259f9a0a1c1b2be8bbabde4c78a8dff",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-000-profile.png",
+      "sha256": "837ce6792002074ede9b90f66b73564cf54c7236254fccb108471e9d0602f54e",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-025-front.png",
+      "sha256": "04da7dff130f08d6608048aa56336e0a309fb7debfbe108aacb1463851374632",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.25,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-025-quarter.png",
+      "sha256": "57f42c49d4a6fbf0ab362cf9cdc7b4646159cfb2545a5a58b2c23048aa59bddd",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.25,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-025-profile.png",
+      "sha256": "738faceaf921bcf39617441f563a2e04e6e670a001d678c5b527bb0ef982213e",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.25,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-050-front.png",
+      "sha256": "f7d583171199a87c214bd8671a600d9d9840535a79e91e5de8ea06c5712d2633",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.5,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-050-quarter.png",
+      "sha256": "c86215d7b320186acf609820dc4da96b856a769d383cf4a6ef9618fb89c69717",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.5,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-050-profile.png",
+      "sha256": "13145f1ac8635229bd9e0f370c9611ae303e7eadc6085370c19a07c9870542dc",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.5,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-075-front.png",
+      "sha256": "e7cdd439dbfde50b36879767e93aac66828bf368f1ed9d431f7ed7bc3027ed7a",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.75,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-075-quarter.png",
+      "sha256": "1b0545d488c3e9a472af18c979887d85724d4ebda26b90744bfb9777814222e1",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.75,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-075-profile.png",
+      "sha256": "ea22135ff5d328d430009bc66244164d1910730ec58c1c1285b980baf5b8fc27",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.75,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-100-front.png",
+      "sha256": "a8c4edd2f9fa49901315b7c590db763f3691de563f82861a5c13816357e787c1",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 1.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-100-quarter.png",
+      "sha256": "a15e4ae3eb10490333597f711d88bac98e5dace8fcbb86df5e0b9298272630de",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 1.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-happy-100-profile.png",
+      "sha256": "8a260f6e0eb5fbaab53c0d12a04ae2c4ff25845779d77407ed2a96c65b7a029f",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 1.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-000-front.png",
+      "sha256": "a7a45e4b1d27d802785b2856c08bb089f70972e03317259be1720eef6bfde824",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-000-quarter.png",
+      "sha256": "a5bfa954e7906995cd17848e1209d1289053bff148bebfac955ef06b454fdf3b",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-000-profile.png",
+      "sha256": "91659ad9c409f6a4a73bea322e975f24d46858c85d2102dbf011b5181d82f63a",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-025-front.png",
+      "sha256": "93b1d644d89e41e3513762c433580dc95d91eef75beeda4ac7c26911f38b3e40",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.25,
+        "Eyelids": 0.25,
+        "Lashes": 0.25
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-025-quarter.png",
+      "sha256": "a13aef495bc092b98aafbe08bd2b98f9196c8fea58d890e1ba9de3f5db980a67",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.25,
+        "Eyelids": 0.25,
+        "Lashes": 0.25
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-025-profile.png",
+      "sha256": "6f20d2a482f1f334e3bf293097481506c69876a5be0079c7f4a83a15bb04d2b5",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.25,
+        "Eyelids": 0.25,
+        "Lashes": 0.25
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-050-front.png",
+      "sha256": "34ad39d93e4dd6268aa86a1844f002af7a58c15a536c9f5b2db4a8e4041868d9",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.5,
+        "Eyelids": 0.5,
+        "Lashes": 0.5
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-050-quarter.png",
+      "sha256": "934ae76f40b08f520dfff7af1fc8d598263a43478d119cbb4347c2f540742cde",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.5,
+        "Eyelids": 0.5,
+        "Lashes": 0.5
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-050-profile.png",
+      "sha256": "69bf6e7465a222fdd8cb0fe6e449ad875ba3dcd9278debe1e13cb67259fd1c72",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.5,
+        "Eyelids": 0.5,
+        "Lashes": 0.5
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-075-front.png",
+      "sha256": "cfd98285ae246f12ba39d954901ed93133b7aa2ccecd751b01e3e2c3d0487622",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.75,
+        "Eyelids": 0.75,
+        "Lashes": 0.75
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-075-quarter.png",
+      "sha256": "308f7a1552acd57724e750d567c5e9eda33f2a34a79ef09ef0862c2a6bd855fd",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.75,
+        "Eyelids": 0.75,
+        "Lashes": 0.75
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-075-profile.png",
+      "sha256": "bbec56d40741fa417531a97a58e32d59adce13565eb80a98b45e747b798c4f99",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.75,
+        "Eyelids": 0.75,
+        "Lashes": 0.75
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-100-front.png",
+      "sha256": "07d18b122278b23a19f3fcdbf3824462e95c51f06a32c21f79a3d2d4e86a16b1",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 1.0,
+        "Eyelids": 1.0,
+        "Lashes": 1.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-100-quarter.png",
+      "sha256": "43a3d2ac557693f98b13138f0ec9b1a3cbf93bc4c59eb507c7aab9a12f8dfeb4",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 1.0,
+        "Eyelids": 1.0,
+        "Lashes": 1.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-combined-100-profile.png",
+      "sha256": "3e033fb6f34ebcdb83d6e4a59435062279e0f85c11f89b78412b6d92e94302a2",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 1.0,
+        "Eyelids": 1.0,
+        "Lashes": 1.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-neutral-quarter-right.png",
+      "sha256": "5fb65736b50b0dd12a8b407b9e8c6e15e7723cb933f231829b3cee7f443ee6b5",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-neutral-profile-right.png",
+      "sha256": "b73da576a870882ce33bb20cc77dac35e607f0133dfa4d5e697b2b98938b7808",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-neutral-back.png",
+      "sha256": "c7cf6d9b05a91c9d972e6b23cda4b3045c7f9a076fc6dc61e601fd27e425512e",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-neutral-top.png",
+      "sha256": "250fdb24ea3325f862f68fb07126854569b7ef1731207de1f90ea6955f71cc16",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-fullbody-front.png",
+      "sha256": "c7c6fa97ceca9986e4da5a26df513d5403e2bc64ed3e224353415d3bc7f5403b",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-fullbody-quarter.png",
+      "sha256": "6925f11b801f2f7553c9a7716ee8055408841ac25654fd4b302887394c6676a3",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-fullbody-profile.png",
+      "sha256": "20aa8f08765404577b8ee2a2d18804221522ff861ad9e105012350e3d0fb4bba",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-fullbody-back.png",
+      "sha256": "b3fc75c71d4fa047d7cf7d82a7197a0b85a43177d3108fb6e1b4507bb50abc76",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-fullbody-left.png",
+      "sha256": "d72183992c81fb33cae388a83dc5cdd4c4eea2cb83f7a9073a8fd08a515b1ad2",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-fullbody-right.png",
+      "sha256": "34ed58b3aae07c4769a5282b76e0632efb785acd2ea0cd460048f7e022d80a42",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-fullbody-top.png",
+      "sha256": "6ed302e56560a856796ea76fee1403ed56fb08ddb502d67ad011681642452a7e",
+      "resolution": [
+        600,
+        700
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-portrait-neutral.png",
+      "sha256": "2e849eaf8439029473799b5a24609732e3d12b2b1be27a183b6c8468d08ba20f",
+      "resolution": [
+        1440,
+        1680
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-portrait-blink.png",
+      "sha256": "492171983ac8ecbf3e7cbc2d8e3dcbc4ff074105e75c5d009e4ce5c234fb1828",
+      "resolution": [
+        1440,
+        1680
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 1.0,
+        "Lashes": 1.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-portrait-happy.png",
+      "sha256": "774788a5d474cbffaca41cf8cca3816e90180f423767e567192541e4bda60a65",
+      "resolution": [
+        1440,
+        1680
+      ],
+      "expressionWeights": {
+        "Head": 1.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-portrait-quarter.png",
+      "sha256": "72d5c04f94d4a6d6438ab6d5e06dc6f586c88a992f76ef8943c74427c3b9a18c",
+      "resolution": [
+        1440,
+        1680
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-diagnostic-front.png",
+      "sha256": "51810f8e98c77a8a2db52ea00d7211461d46197ab76323b3ff9086fb756752b6",
+      "resolution": [
+        840,
+        980
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-diagnostic-quarter.png",
+      "sha256": "bd465c807913eccfde73a77ba9187f65aba10dd710885e83d63d3092257c9522",
+      "resolution": [
+        840,
+        980
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-diagnostic-profile.png",
+      "sha256": "cb65d9028772d0889d5d54f7ebfae0513d410eba29aa3b52dd230700b08c52bf",
+      "resolution": [
+        840,
+        980
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-pose-head-pitch.png",
+      "sha256": "99f494c670e71610e807878467e9de8bd12378ca24024e139c16c6f96d66c59a",
+      "resolution": [
+        840,
+        980
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-pose-head-roll.png",
+      "sha256": "0fc55e7046a62c44fa7399ad87e1a31d08338caf9472f4d5f08f0ddea38df0cb",
+      "resolution": [
+        840,
+        980
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    },
+    {
+      "path": "output/face-likeness-20261026/k5-final-pose-neck-bend.png",
+      "sha256": "861f638aaefe8fa3a07261cf564d19c0a1e8b0bac94472cd788784d8ab343b2f",
+      "resolution": [
+        840,
+        980
+      ],
+      "expressionWeights": {
+        "Head": 0.0,
+        "Eyelids": 0.0,
+        "Lashes": 0.0
+      }
+    }
+  ],
+  "externalRuntimeVerified": false,
+  "springSimulationRebaked": false,
+  "canonicalAdopted": true,
+  "authored": {
+    "Head": {
+      "vertices": 17889,
+      "polygons": 18336,
+      "maxInfluences": 4,
+      "maxWeightSumError": 4.377216100692749e-08,
+      "boundaryEdges": 10,
+      "nonManifoldInternalEdges": 0
+    },
+    "Eyelids": {
+      "vertices": 5252,
+      "polygons": 4800,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0.0
+    },
+    "Lashes": {
+      "vertices": 1414,
+      "polygons": 1200,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0.0
+    }
+  },
+  "exportIgnoreWarning": true,
+  "vrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+  "blendSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757",
+  "renderCount": 66,
+  "visualReview": {
+    "sourceSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+    "reviewer": "primary agent",
+    "expressionMatrices": [
+      "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
+      "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
+      "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg"
     ],
-    "canonicalFaceFrames": {
-      "neutral": {
-        "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
-        "bytes": 441679,
-        "sha256": "f8915d372537247101c950557cf87135f9b5412cee6269ae545a14f0430fa7b2",
-        "dimensions": [
-          480,
-          560
-        ]
+    "nativeDetails": [
+      "output/face-likeness-20261026/k5-final-blink-000-front.png",
+      "output/face-likeness-20261026/k5-final-blink-100-quarter.png",
+      "output/face-likeness-20261026/k5-portrait-happy.png",
+      "output/face-likeness-20261026/k5-final-pose-neck-bend.png"
+    ],
+    "observations": [
+      "Neutral likeness accepted as K by user; K base geometry and UV retained.",
+      "Irises remain static under independent moving lids.",
+      "No iris remnants visible at full closure in the inspected front/quarter views.",
+      "Smile remains open-eyed and mouth triangles do not reverse.",
+      "Profile eye visibility is partly occluded by original hair."
+    ],
+    "fullbodyTposeFraming": "Six square 900px views with 2.05m orthographic scale were rerendered and visually reviewed."
+  },
+  "revision": "approved-reference-face-k5",
+  "approvedNeutralTest": {
+    "status": "passed",
+    "approvedSource": "likeness-study-k.blend",
+    "candidate": "approved-face-k5.blend",
+    "neutralHeadGeometryAndUvExact": true,
+    "blinkSurfacesVisible": true,
+    "continuousExpressions": true,
+    "happyPreservesEyes": true,
+    "happyReversedTriangles": 0
+  },
+  "scopeComparedWithApprovedK": {
+    "status": "approved_face_expression_scope_verified",
+    "source": "likeness-study-k.blend",
+    "candidate": "approved-face-k5.blend",
+    "changedMeshGeometryOrUv": [
+      "Head",
+      "Eyelids",
+      "Lashes"
+    ],
+    "unchangedMeshes": [
+      "Body",
+      "Spring_01_hair_flow",
+      "Spring_02_skirt",
+      "Spring_03_ribbon_left",
+      "Spring_04_ribbon_right",
+      "Ears",
+      "FaceMaterialBakeSurface"
+    ],
+    "boneRestTransformsUnchanged": true,
+    "neckAndThroatBoundaryDeltaMeters": 0.0,
+    "modelSha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757",
+    "neutralPaintedEyesOnly": false,
+    "blinkAndHappyRetargetingComplete": true,
+    "canonicalUpdated": false,
+    "renderTouchups": false,
+    "securityImpact": "local assets only; no secrets, permissions, network publication changes"
+  },
+  "exportAudit": {
+    "status": "passed",
+    "vrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+    "vrmBytes": 26826768,
+    "meshObjects": [
+      "Body",
+      "Ears",
+      "Eyelids",
+      "Head",
+      "Lashes",
+      "Spring_01_hair_flow",
+      "Spring_02_skirt",
+      "Spring_03_ribbon_left",
+      "Spring_04_ribbon_right"
+    ],
+    "meshCount": 9,
+    "triangles": 141076,
+    "skinJointCount": 127,
+    "humanoidBones": 51,
+    "springChains": 17,
+    "springJoints": 75,
+    "colliders": 9,
+    "materials": [
+      {
+        "name": "SmartUV Untextured.001",
+        "mtoon": true
       },
+      {
+        "name": "NeckSkinTransition",
+        "mtoon": true
+      },
+      {
+        "name": "SmartUV Untextured",
+        "mtoon": true
+      },
+      {
+        "name": "ApprovedFaceLidMaterial",
+        "mtoon": true
+      },
+      {
+        "name": "BakedOriginalFace",
+        "mtoon": true
+      },
+      {
+        "name": "SmartUV Untextured.002",
+        "mtoon": true
+      }
+    ],
+    "embeddedImages": [
+      {
+        "name": "body_texture_4k.jpg",
+        "bytes": 4251995,
+        "sha256": "a71afe8027430649669dfbf72fcb0e7bf64c50da8b909ade20042664d25b6bab"
+      },
+      {
+        "name": "ApprovedReferenceCleanedFace",
+        "bytes": 1269648,
+        "sha256": "bf937297956d53f48eb758e5fc50440a5c733a3517d6454502996648bc47f8cf"
+      },
+      {
+        "name": "Nanatau_OpenEyeSmileAtlas.png",
+        "bytes": 10208452,
+        "sha256": "609e32ae3b40680848a6bd110a572921763f8670c4fbd53fe425c43d8cb195bc"
+      },
+      {
+        "name": "OriginalFaceProjectionBaked",
+        "bytes": 653735,
+        "sha256": "9f0969f462b50133adc63340932d4f804950d2b8128f283438e1ec086c927cc2"
+      },
+      {
+        "name": "head_texture_4k.jpg.001",
+        "bytes": 3259498,
+        "sha256": "88471b2ee0a1ce8e70e624b3955cd88be44fa879fd3eddc02f94a8da7ce4c7e6"
+      }
+    ],
+    "metadata": {
+      "allowAntisocialOrHateUsage": false,
+      "allowExcessivelySexualUsage": false,
+      "allowExcessivelyViolentUsage": false,
+      "allowPoliticalOrReligiousUsage": false,
+      "allowRedistribution": false,
+      "authors": [
+        "Nanatau"
+      ],
+      "avatarPermission": "onlyAuthor",
+      "commercialUsage": "personalProfit",
+      "creditNotation": "required",
+      "licenseUrl": "https://vrm.dev/licenses/1.0/",
+      "modification": "allowModification",
+      "name": "ななたう",
+      "version": "1.3.0-approved-face-k5"
+    },
+    "metadataChangedAgainstPreviousCanonical": [
+      "version"
+    ],
+    "expressionBinds": {
       "blink": {
-        "path": "images/concept/avatar-v1/charakuru/face-blink.png",
-        "bytes": 439873,
-        "sha256": "9fe3ae9fb92953f2ccbca44cb676b7523d623c3224e4f4859ce8c2db96f70566",
-        "dimensions": [
-          480,
-          560
-        ]
+        "isBinary": false,
+        "morphTargetBinds": [
+          {
+            "index": 0,
+            "node": 129,
+            "weight": 1.0
+          },
+          {
+            "index": 0,
+            "node": 131,
+            "weight": 1.0
+          }
+        ],
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
       },
       "happy": {
-        "path": "images/concept/avatar-v1/charakuru/face-happy.png",
-        "bytes": 441761,
-        "sha256": "33d0e9b9c0cc250998454b5b25433e4fa84493426af74a06e5e4333c2f5d3f76",
-        "dimensions": [
-          480,
-          560
-        ]
+        "isBinary": false,
+        "morphTargetBinds": [
+          {
+            "index": 1,
+            "node": 130,
+            "weight": 1.0
+          }
+        ],
+        "overrideBlink": "none",
+        "overrideLookAt": "none",
+        "overrideMouth": "none"
       }
     },
-    "regressions": {
-      "round3-closed-flecks-test.json": {
-        "revision": "round3",
-        "regions": [
-          {
-            "roi": [
-              250,
-              308,
-              430,
-              328
-            ],
-            "palePixelCount": 419,
-            "paleFraction": 0.11638888888888889,
-            "darkCoreFraction": 0.8038888888888889
-          },
-          {
-            "roi": [
-              775,
-              308,
-              950,
-              328
-            ],
-            "palePixelCount": 508,
-            "paleFraction": 0.14514285714285713,
-            "darkCoreFraction": 0.7634285714285715
-          }
-        ],
-        "maximumPaleFraction": 0.05,
-        "passed": false,
-        "limits": "Fixed ROI only; preserve intended upper highlights and source lash character; whole-face visual review required."
-      },
-      "refine01-closed-flecks-test.json": {
-        "revision": "refine01",
-        "regions": [
-          {
-            "roi": [
-              250,
-              308,
-              430,
-              328
-            ],
-            "palePixelCount": 5,
-            "paleFraction": 0.001388888888888889,
-            "darkCoreFraction": 0.9788888888888889
-          },
-          {
-            "roi": [
-              775,
-              308,
-              950,
-              328
-            ],
-            "palePixelCount": 1,
-            "paleFraction": 0.00028571428571428574,
-            "darkCoreFraction": 0.9994285714285714
-          }
-        ],
-        "maximumPaleFraction": 0.05,
-        "passed": true,
-        "limits": "Fixed ROI only; preserve intended upper highlights and source lash character; whole-face visual review required."
-      },
-      "round3-visible-crease-test.json": {
-        "revision": "round3",
-        "checks": [
-          {
-            "vertices": [
-              1352,
-              1353
-            ],
-            "sourceXDistanceMeters": 0.0004396699368953705,
-            "sourceYDifferenceMeters": 0.00043976306915283203,
-            "closedYDifferenceMeters": 0.00481104850769043
-          },
-          {
-            "vertices": [
-              1175,
-              1174
-            ],
-            "sourceXDistanceMeters": 0.0004396699368953705,
-            "sourceYDifferenceMeters": 0.00043976306915283203,
-            "closedYDifferenceMeters": 0.0048215389251708984
-          }
-        ],
-        "maximumClosedYJumpMeters": 0.002,
-        "passed": false,
-        "scope": "Actual identified visible crease strip; skin-triangle2587 prior metric is superseded and cannot establish white-crease improvement."
-      },
-      "refine01-visible-crease-test.json": {
-        "revision": "refine01",
-        "checks": [
-          {
-            "vertices": [
-              1352,
-              1353
-            ],
-            "sourceXDistanceMeters": 0.0004396699368953705,
-            "sourceYDifferenceMeters": 0.00043976306915283203,
-            "closedYDifferenceMeters": 0.0004614591598510742
-          },
-          {
-            "vertices": [
-              1175,
-              1174
-            ],
-            "sourceXDistanceMeters": 0.0004396699368953705,
-            "sourceYDifferenceMeters": 0.00043976306915283203,
-            "closedYDifferenceMeters": 0.000461578369140625
-          }
-        ],
-        "maximumClosedYJumpMeters": 0.002,
-        "passed": true,
-        "scope": "Actual identified visible crease strip; skin-triangle2587 prior metric is superseded and cannot establish white-crease improvement."
-      }
-    }
+    "allImagesEmbedded": true
   },
-  "sourceReports": [
-    {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/root_round3_refine_refine01_contract.json",
-      "sha256": "87ed16c06935472aa5a5a4dcf7d29c60fe9a62ccf6275ecd97dc3a6d7a18e857",
-      "bytes": 30629
-    },
-    {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/root_round3_refine_final_audit.json",
-      "sha256": "51a3e8a1bef16bd16c37b1d2b10912ab1c6a31795eee13df5f46e60c015da419",
-      "bytes": 2076
-    },
-    {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/root_visual_review_round3_refinement.json",
-      "sha256": "2d6d85477cc57d6fffc42906794850e1d6531ba1c7be914525ca75cbae70243f",
-      "bytes": 22970
-    },
-    {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01-final-verification.json",
-      "sha256": "8ef22db63eca776cdb8d2da6743603c7e6fc322bab489e2cfc67e25abd6d8f7e",
-      "bytes": 18691
-    }
-  ],
-  "sourceReportScope": "Immutable candidate-stage evidence before canonical adoption; baseline canonical hashes in source reports refer to baselineCheckpoint.",
+  "fullbodyViews": {
+    "sourceVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
+    "views": [
+      {
+        "path": "output/face-likeness-20261026/k5-fullbody-front.png",
+        "sha256": "d344cee78d54f5c25ec75e0a659dc1016422264fc455693e5ab11be1199fb84a"
+      },
+      {
+        "path": "output/face-likeness-20261026/k5-fullbody-quarter.png",
+        "sha256": "e0165fe3f9828865c996bae6e20bbc7893ba18b26d724ebb20e03a431e1bb962"
+      },
+      {
+        "path": "output/face-likeness-20261026/k5-fullbody-left.png",
+        "sha256": "5a9d0e2cdfffd0eafe7ca6250c84b7cab67437592b3e432da098d016a060aa73"
+      },
+      {
+        "path": "output/face-likeness-20261026/k5-fullbody-right.png",
+        "sha256": "ef27e56cdb2a4c65f9e76784ce4774fbb47634366f7e8043aa864c4a1890f824"
+      },
+      {
+        "path": "output/face-likeness-20261026/k5-fullbody-back.png",
+        "sha256": "ac5785d69643aeddf1c7a0f5fcb1cefefe42f8c2c2f961ef5da690b2e08e5b04"
+      },
+      {
+        "path": "output/face-likeness-20261026/k5-fullbody-top.png",
+        "sha256": "3f706f1d691f3155f45bbaf05cfa8aca80a973aff4b9ef53529c15c2cbcbf742"
+      }
+    ],
+    "resolution": [
+      900,
+      900
+    ],
+    "orthoScale": 2.05,
+    "status": "visual_review_passed",
+    "reviewedContactSheet": "images/concept/avatar-v1/charakuru/current-views.jpg",
+    "observations": [
+      "All hands, feet and accessories fit the six views.",
+      "Accepted K face remains attached to the inherited body.",
+      "Original hair and garment details remain unchanged from K."
+    ]
+  },
+  "canonicalEvidence": {
+    "blink": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
+    "happy": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
+    "combined": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg"
+  },
   "limitations": [
-    "Blender re-export changes base normals as in the original Round 3; no new regression, but not a lossless-normal roundtrip.",
-    "Profile eyes are partly obscured by unchanged hair; visual acceptance is limited to inspected visible surfaces.",
-    "External VRM host applications and human tracking remain untested for this revision."
+    "Profile eyes are partly obscured by hair.",
+    "Neutral Head geometry and UV match approved K; rebuilt lid surfaces change the nearby rendered skin/crease details.",
+    "External avatar hosts, tracking, LookAt and lip sync remain untested.",
+    "Spring settings are retained; the new review action does not simulate secondary motion."
   ],
-  "publicUpload": false,
-  "additionalPurchase": false
+  "workingDirectory": "output/face-likeness-20261026"
 }

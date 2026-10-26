@@ -1,74 +1,56 @@
 {
-  "passed": true,
-  "verifiedAt": "2026-10-24T22:20:26.837877+09:00",
-  "assetRevision": "round3-refine01-continuous-expressions",
-  "title": "Completed refine01 MP4 playback and Blender fresh-import checks",
-  "scope": "Normal-speed browser playback of the rendered MP4; live VRM playback in Charakuru or streaming hosts is not claimed.",
-  "avatarPath": "models/avatar-v1/charakuru/avatar.vrm",
-  "candidateVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
-  "videoPath": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
-  "videoSha256": "a3b52ca3e1206924187ae4b9b0226230d31f089187a151e8f2ebdc0d48e1285b",
-  "completed": true,
-  "browserVideo": {
-    "duration": 15.866667,
-    "currentTime": 15.866667,
-    "ended": true,
-    "playbackRate": 1,
-    "readyState": 4,
-    "error": null,
-    "width": 1080,
-    "height": 1350,
-    "totalVideoFrames": 952,
-    "droppedVideoFrames": 0,
-    "wallEnd": 1792832040942,
-    "playedVideoFrames": 476,
-    "droppedDuringPlayback": 0,
-    "elapsedWallSeconds": 16.03,
-    "screenshots": [
-      "output/charakuru/nanatau-avatar-v1/astra-expressions/root_refine01_motion_playback_4s.png",
-      "output/charakuru/nanatau-avatar-v1/astra-expressions/root_refine01_motion_playback_12s.png"
-    ],
-    "historicalPlaybackUrl": "http://127.0.0.1:49406/dance-tetris-expressions.mp4"
-  },
-  "visualScreenshotReviewPending": false,
-  "visualScreenshotReview": [
-    "Final encoded ten-checkpoint contact inspected; complete character and credits remain visible.",
-    "Encoded frames125–131 inspected as consecutive diagnostic face crops: approved eyelids retained during closing and reopening.",
-    "Two actual full-speed browser screenshots inspected for solo video.",
-    "Comparison encoded frame129 and full-speed screenshot inspected; left is the pre-adoption baseline and right is refine01."
+  "ended": true,
+  "playbackRate": 1,
+  "error": null,
+  "currentTime": 12,
+  "duration": 12,
+  "dimensions": [
+    1540,
+    900
   ],
-  "freshBlenderImportPassed": true,
-  "all476ActualShapeKeyValuesVerified": true,
-  "all127BodyPoseMaximumComponentError": 0.0,
-  "mtoonMaterialsUnchanged": true,
-  "springPlayback": {
-    "chains": 17,
-    "joints": 75,
-    "colliders": 9,
-    "springSettingsEqualCanonical": true,
-    "movingSpringBoneCount": 58,
-    "springBonesDifferingFromNoPhysicsBody": 58,
-    "maximumComponentDifferenceFromNoPhysicsBody": 0.3597498834133148,
-    "method": "Replayed frozen spring-baked body fixture; current renderer disables live spring simulation.",
-    "priorBakeProvenance": "Inspected build-tetris.py: exactly two native 1/60 s solver steps after every 30 fps body pose; no new solver run in this audit."
-  },
-  "externalAvatarHostPlaybackVerified": false,
-  "sourceReports": [
+  "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1",
+  "totalVideoFrames": 292,
+  "droppedVideoFrames": 0,
+  "playbackWallSeconds": 12.03080000001192,
+  "events": [
     {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/root_refine01_motion_final_playback.json",
-      "sha256": "f8fb6614e8c23d03e55cd1d2f5160278f4feeeba8c83dd01e186efa3cbefab68",
-      "bytes": 715
+      "event": "seeking",
+      "time": 0,
+      "at": 59824.5
     },
     {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/root_refine01_motion_visual_review.json",
-      "sha256": "c4732cc89cad0c21e7cc83b91ce7c1aeebebcc033bca7d967fa58fd0b4660f1b",
-      "bytes": 5471
+      "event": "play",
+      "time": 0,
+      "at": 59824.5
     },
     {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/runtime-verification.json",
-      "sha256": "0293763b073a04a6837279a351ecc823684ee0cbc0fe5e17718a357d85da1430",
-      "bytes": 3293
+      "event": "seeked",
+      "time": 0.0002,
+      "at": 59854.09999996424
+    },
+    {
+      "event": "pause",
+      "time": 12,
+      "at": 71855.19999998808
+    },
+    {
+      "event": "ended",
+      "time": 12,
+      "at": 71855.30000001192
     }
   ],
-  "publicUpload": false
+  "presentedFrameSamples": 217,
+  "firstMediaTime": 0,
+  "lastMediaTime": 11.958333,
+  "source": "http://127.0.0.1:18731/joined-approved-k5/face-neck-motion.mp4",
+  "screenshots": [
+    "output/face-likeness-20261026/playback-k5-3.png",
+    "output/face-likeness-20261026/playback-k5-7.png",
+    "output/face-likeness-20261026/playback-k5-10.png"
+  ],
+  "externalAvatarHostVerified": false,
+  "visualReview": "Reviewed browser screenshots at 3, 7 and 10 seconds alongside the encoded critical-frame sheet.",
+  "counterScope": "Encoded stream has 288 frames. Browser totalVideoFrames includes initial loading/seeking; requestVideoFrameCallback samples are observations, not an assertion that every frame was captured.",
+  "revision": "approved-reference-face-k5",
+  "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4"
 }

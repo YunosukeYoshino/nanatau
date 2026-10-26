@@ -176,3 +176,23 @@ VRM・Blend・画像・動画は検証済みのコピー元とバイト単位で
 検証JSONは採用成果物を指す参照を現正本パスへ置き換え、作業元のパスとハッシュを来歴として残す。以前のCharakuruの実再生検査を今回の修正版に対する試験として引き継がない。動画の髪・衣装は既存の60Hz計算済み入力を再生し、今回の物理再計算は行っていない。保存検証に失敗した補助の`animated-unvalidated.blend`は採用対象から除外する。
 
 検証対象はmanifest全行の実パス・サイズ・SHA-256、相対Markdownリンク、JSONの現パス、旧スナップショットの不変、正本へのコピー一致、原素材のGit非混入、対象Markdown/JSONのsecretlintと`git diff --check`。比較動画・元モーション・音源・生成素材・制作スクリプトは`output/`に保持する。site/blogのコード・参照・CI・依存・LFS設定は変更しないため、site/blogビルドは対象外。全作業はローカルで行い、追加購入・外部公開・push・秘密情報の変更は行わない。
+
+## 2026-10-26：元絵に合わせた顔・首と連続表情の採用
+
+Branch: `main`。Mode: `knowledge-agent-ops`。ユーザーが通常顔Kの比較へ「ではこれで」と回答したため、Kの通常形状・UVを保ち、まばたきと笑顔を仕上げた`approved-face-k5`を採用する。更新前の正本・検証はGitチェックポイント`2b2d37958c1fbebaab7ddcd28c0f05bfe8dc4e2e`に保持する。
+
+以下は`output/face-likeness-20261026/`からのコピー・更新表。既存ディレクトリを使い、元ファイルは移動・削除しない。VRMとBlendは検証済みファイルを再書き出さずにコピーする。表情付きテトリスを含む既存のダンス動画は旧モデルの記録として保持し、新しい顔の動作動画と区別する。
+
+| Current path | New path | Reason | Updates needed | Validation |
+| --- | --- | --- | --- | --- |
+| `approved-face-k5.vrm` | `models/avatar-v1/charakuru/avatar.vrm` | 承認された顔と首、連続表情を正本へ反映 | README・PRODUCTION・manifest・検証の現SHA | 通常顔保持・45通り・VRM再読み込み・首接続・SHA-256 |
+| `approved-face-k5.blend` | `models/avatar-v1/charakuru/avatar.blend` | 編集可能な静的正本 | 同上 | 保存・再読み込み・画像pack・表情bind・SHA-256 |
+| `k5-portrait-{neutral,blink,happy}.png` | `images/concept/avatar-v1/charakuru/face-{neutral,blink,happy}.png` | 現モデルの1440×1680画像 | 画像README・manifest | 実視認・元VRMのSHA・3表情 |
+| `k5-matrix-{blink,happy,combined}.jpg`・全身確認画像 | `images/concept/avatar-v1/charakuru/`の表情検査・全身画像 | 現モデルの確認根拠を保存 | 画像README・manifest | 45通り・全身の画角・実視認 |
+| `joined-approved-k5/face-neck-motion.mp4` | `models/avatar-v1/charakuru/videos/face-neck-motion.mp4` | 全身と顔アップを並べた12秒の動作確認 | README・PRODUCTION・manifest | 全288フレーム・全体デコード・通常速度の実再生 |
+| `validation-k5.json`等の現版検証 | `models/avatar-v1/charakuru/verification/expressions/{model,motion,playback,production,video}.json` | 現版の根拠と検証範囲へ更新 | README・PRODUCTION・manifest | 現ファイルの参照・SHA-256・JSON |
+| `k5-portrait-{neutral,blink,happy}.png`からのWebP出力 | `images/concept/showcase/nanatau-avatar-{neutral,blink,happy}-{720,1440}.webp` | サイトの表情画像を現モデルにそろえる | Showcase・siteのREADME | 寸法・可逆圧縮・ビルド・実表示 |
+
+`project.charakit`・`review.fbx`・既存のダンス動画・`verification/{avatar,aipai,samba,tetris}/`は更新しない。旧モデルの検査結果を今回の合格根拠へ流用しない。今回の動画は頭・首・上体と表情の手付け動作で、揺れ物の物理再計算は含まない。配信アプリ、本人トラッキング、口パク、LookAtは検証対象外。
+
+manifestの全現パス・サイズ・SHA-256、正本へのコピー一致、対象外ファイルの不変、相対リンク、secretlint、サイトの型検査・ビルド、React Doctor、実表示を確認してローカルコミットへ保存する。push・デプロイ・追加購入・秘密情報や権限の変更は行わない。

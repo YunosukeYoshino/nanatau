@@ -16,13 +16,16 @@
 
 2026-10-24、ユーザーの「今回の修正版を正本に採用して」により、Round 3を基準に仕上げた`refine01`を採用した。まばたきと笑顔を連続変形にし、まつげ内の肌色の欠けと目頭寄りの線の折れを整えた。検証済みのVRM・静的Blend・表情画像3枚・表情付きテトリスと検証記録を既存の固定パスへ反映する。更新前の正本はGitチェックポイント`869557f`に保持する。
 
+2026-10-26、通常顔Kの比較に対するユーザーの「ではこれで」を受け、元絵に合わせた顔・輪郭・首を採用した。KのHeadの通常形状・UVを保ち、まばたきと笑顔を仕上げている。現在の採用版は`approved-reference-face-k5`、VRM内のバージョンは`1.3.0-approved-face-k5`。更新前の正本と検証はGitチェックポイント`2b2d379`に残る。以前のダンス動画は当時の記録として保持する。
+
 | ファイル | 用途 |
 | --- | --- |
-| [avatar.blend](avatar.blend) | 保存・再読み込みを確認した静的な編集用正本。Headの`BlinkContinuous`・`HappyContinuous`を編集する |
-| [avatar.vrm](avatar.vrm) | MToon・連続値の`blink`・`happy`を保存したVRM 1.0。採用版`round3-refine01-continuous-expressions` |
+| [avatar.blend](avatar.blend) | 静的な編集用正本。Headの`HappyContinuous`とEyelids・Lashesの`BlinkContinuous`を編集する |
+| [avatar.vrm](avatar.vrm) | MToon・連続値の`blink`・`happy`を保存したVRM 1.0。採用版`approved-reference-face-k5` |
+| [face-neck-motion.mp4](videos/face-neck-motion.mp4) | 現モデルの動作確認。全身と顔アップ、12秒、1540×900、24fps、無音 |
 | [project.charakit](project.charakit) | 表情追加前の身体制作スナップショット。元絵、8方向素材、候補、配置、骨対応、制作履歴を保持 |
 | [review.fbx](review.fbx) | 表情追加前の髪を含むスキニング確認用。現在の表情・VRM物理・利用条件は保存しない |
-| [dance-tetris-expressions.mp4](videos/dance-tetris-expressions.mp4) | 表情付きテトリス。1080×1350、30fps、約15.87秒、公式伴奏付き、連続まばたき4回・笑顔3区間 |
+| [dance-tetris-expressions.mp4](videos/dance-tetris-expressions.mp4) | 2026-10-24版の表情付きテトリス。1080×1350、30fps、約15.87秒、公式伴奏付き |
 | [dance-demo.mp4](videos/dance-demo.mp4) | デモ用サンバ。1080×1080、30fps、18.2秒、音声なし。全身と揺れ物を確認する |
 | [dance-short.mp4](videos/dance-short.mp4) | 採用ダンス動画。720×1280、30fps、16秒、音付き。全身と揺れ物を確認できる |
 | [dance-tetris.mp4](videos/dance-tetris.mp4) | 表情追加前のテトリス。1080×1350、30fps、約15.87秒、公式伴奏付き。正面全身と揺れ物を確認する |
@@ -34,13 +37,13 @@
 
 ## 編集と保存
 
-`avatar.blend`が形状・ウェイト・材質・VRM物理・表情設定の正本。現在のBlendとVRMは6メッシュ、96,751三角面、127骨、51 Humanoid対応、17揺れチェーン・75ジョイント・9コライダー、3材質のMToon、3種類の有効な4096×4096画像を持つ。Headは2,726頂点・3,577三角面。身体と髪は元の4K画像を使い、顔は既存の4Kアトラスの通常顔を固定で使う。顔の実効解像度は2048×2048で、表情によるUV切り替えは行わない。`BlinkContinuous`・`HappyContinuous`の形状キーでまぶたと口元を連続変形する。表情追加前の編集用Blendは未使用の非変形目骨2本を含む129骨だった。
+`avatar.blend`が形状・ウェイト・材質・VRM物理・表情設定の正本。現在のVRMは9メッシュ、141,076三角面、127骨、51 Humanoid対応、17揺れチェーン・75ジョイント・9コライダー、6 MToon材質、5埋め込み画像を持つ。通常顔には元絵からベイクした2048×2048の素材を使い、表情によるUV切り替えは行わない。Headの`HappyContinuous`、EyelidsとLashesの`BlinkContinuous`を編集する。Blendには非表示の編集用投影面も保存しているが、VRMには書き出さない。
 
-採用したVRMとBlendは検証済みの`refine01`とバイト単位で同一。VRMメタデータのバージョン文字列`1.2.0-charakuru-open-eye-smile`は来歴として保持し、現在の採用版はmanifestの`expressionUpdate.revision`（`round3-refine01-continuous-expressions`）とSHA-256で識別する。
+採用したVRMとBlendは検証済みの`approved-face-k5`とバイト単位で同一。VRMメタデータのバージョンは`1.3.0-approved-face-k5`で、manifestの`expressionUpdate.revision`とSHA-256でも識別する。
 
 現在の表情を編集・復元するにはBlendとVRMを使う。`.charakit`とFBXは身体制作時のスナップショットを保持し、新しい顔表情を含まない。`.charakit`だけではBlend内の揺れ設定も復元できない。作業を`output/`で行い、採用した更新をこの固定パスへ反映する。このディレクトリは採用チェックポイントであり、日付別の正本を増やさない。
 
-MToonはv1.0.3の共通設定（陰色係数0.64、影境界0、トゥーン係数0.9、間接光均等化1、輪郭線なし）を使う。手元のVRM Add-on 4.7.1に合わせ、配布スクリプトの`gi_intensity_factor`を`gi_equalization_factor`へ修正した。元VRMの色係数`[1,1,1,1]`も保持し、未使用のPrincipled入力値による暗色化を防ぐ。配布ZIP・修正スクリプトのハッシュと修正前後の検査結果は`verification/avatar/mtoon-upgrade.json`に記録する。
+身体制作時のMToon更新ではv1.0.3の共通設定（陰色係数0.64、影境界0、トゥーン係数0.9、間接光均等化1、輪郭線なし）を使った。現在の顔・肌・まぶたの材質はこの設定から調整している。手元のVRM Add-on 4.7.1に合わせ、配布スクリプトの`gi_intensity_factor`を`gi_equalization_factor`へ修正した。元VRMの色係数`[1,1,1,1]`も保持し、未使用のPrincipled入力値による暗色化を防ぐ。配布ZIP・修正スクリプトのハッシュと修正前後の検査結果は`verification/avatar/mtoon-upgrade.json`に記録する。
 
 `project.charakit`は100MiBを超えるためGit LFSで管理する。チェックアウト後に実体が未取得なら`git lfs pull`を実行する。公開やpushは別途ユーザーの指示に従う。
 
@@ -84,7 +87,23 @@ Charakuru v1.0.3で正本VRMと`output/charakuru/nanatau-avatar-v1/dance-tetris/
 
 検証記録は`verification/tetris/motion.json`（頭の対応補正と51骨・物理）、`verification/tetris/video.json`（撮影・映像音声の全体デコード・同期・画面クレジット）、`verification/tetris/provenance.json`（出典・利用条件・素材ハッシュ）、`verification/tetris/playback.json`（Charakuruでの実再生）に保存する。
 
-## 現在の表情とテトリス：2026-10-24
+## 現在の顔・首・連続表情：2026-10-26
+
+元絵`images/concept/avatar-v1/approved-design.png`の目・口・眉を、編集可能なBlenderのUV投影とマスクから2048×2048の顔素材へベイクした。左右それぞれの瞳を使い、元画像への加筆や完成レンダーの描き直しは行っていない。肌の一部には先行制作の画像生成素材を引き継いでおり、元画像・生成指示とハッシュを`verification/expressions/production.json`へ記録した。今回の採用後の表情仕上げでは新たな画像生成をしていない。
+
+輪郭はユーザーが選んだKを使用する。KはFの頬・顎の幅と高さを保ち、外形の角ばりを局所的にならした版。顎を短く広げたHは不採用で、以前のr13も完成候補としては不採用。r13の身体接続などを制作の土台として使った後、元絵の投影・輪郭修正を行ってKに至った。表情仕上げの前後でKのHead BasisとUVの完全一致、表情以外のメッシュと骨の静止変換、首・喉の境界の不変を確認した。可動まぶたを作り直したため、通常顔の全画素がKと一致するとはしていない。
+
+`blink`はEyelidsとLashesの`BlinkContinuous`を動かす。瞳はHead上に固定され、まぶたが覆うので途中で虹彩をつぶさない。`happy`はHeadの`HappyContinuous`で口元を動かし、目元は変形しない。両方とも連続値で、併用できる。修正前に隠れたまぶたの検査が失敗することを確認し、修正後は通過した。笑顔の形状検査では試作K4に反転三角形15個を検出し、最終K5では0個になった。
+
+公式VRM Add-onから書き出し、新規シーンへ再読み込みした。0/25/50/75/100%×正面・斜め・側面×まばたき・笑顔・併用の45通り、反対側・背面・上面、全身6方向、1440×1680の3表情を確認した。メッシュ9個、141,076三角形、127骨、51 Humanoid骨、6 MToon材質、5埋め込み画像、17 SpringBoneチェーン・75ジョイント・9コライダーを保存している。作者・利用条件は継承し、VRMメタデータの変更はversionだけである。
+
+首と胴体の接続は、10個の境界頂点に対応する各辺を細分した90点で検査した。4ポーズと動画の全288フレームで最大距離0m。動画はVRMを読み直して作った12秒・24fpsの手付け動作で、左右の首振り、うなずき、傾き、5回のまばたき、笑顔を含む。全身640×900と顔アップ900×900を並べ、1540×900のH.264・無音MP4へ保存した。全体デコードと通常速度での最後までのブラウザー再生を確認した。再生時間12.03秒、再生エラーなし、ブラウザー報告のコマ落ち0。最終値は`video.json`・`playback.json`に記録している。
+
+検証は`verification/expressions/`の5件のJSONへ更新した。既存のテトリス・愛包・サンバの動画、`.charakit`・FBXと身体制作時の検証は保持した。新しい動画では揺れ物の物理計算を行っていない。配信アプリ・本人トラッキング・口パク・LookAtは未検証で、横顔の目元には髪の遮蔽が残る。三角形数が増えたため、実配信時の負荷は測定が必要。作業素材・連番・再現用スクリプトは`output/face-likeness-20261026/`に保持する。今回はローカル採用のみで、push・デプロイ・追加購入・秘密情報や権限の変更は行っていない。
+
+## 以前の表情とテトリス：2026-10-24
+
+以下はRound 3採用時点の記録。現在の顔と動画の検証は上記2026-10-26の節を参照する。
 
 Round 3修正版`refine01`を採用した。`blink`と`happy`はどちらも`isBinary=false`のPOSITIONモーフで、0〜100%の強度を連続的に反映する。`happy.overrideBlink`は`none`で、笑顔とまばたきを重ねられる。新しいNORMALモーフやUV切り替えは追加していない。通常顔、目の形、頬と目元のつながり、笑顔はユーザーが基準に選んだ元Round 3を保持する。
 

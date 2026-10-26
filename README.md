@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <a href="models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4"><img src="images/readme/card-video.svg" alt="動画を見る — まばたきと笑顔の16秒" width="250"></a>
+  <a href="models/avatar-v1/charakuru/videos/face-neck-motion.mp4"><img src="images/readme/card-video.svg" alt="動画を見る — 顔と全身の12秒" width="250"></a>
   <a href="#materials"><img src="images/readme/card-model.svg" alt="3Dモデル — VRMとBlender" width="250"></a>
   <a href="images/concept/showcase/"><img src="images/readme/card-gallery.svg" alt="ビジュアル — イラストと表情素材" width="250"></a>
 </p>
@@ -41,31 +41,31 @@
 
 <h2 id="avatar"><img src="images/readme/heading-model.svg" alt="3Dのななたう" width="480"></h2>
 
-Charakuruで制作した3Dのななたう。顔立ちはそのままに、まばたきと笑顔がなめらかにつながります。
+Charakuruで制作した3Dのななたう。元絵に合わせた顔と輪郭に、なめらかなまばたきと笑顔を加えました。
 
 <p align="center">
   <a href="images/concept/showcase/nanatau-avatar-neutral-1440.webp"><img src="images/concept/showcase/nanatau-avatar-neutral-1440.webp" alt="いつもの顔" width="250"></a>
   <a href="images/concept/showcase/nanatau-avatar-blink-1440.webp"><img src="images/concept/showcase/nanatau-avatar-blink-1440.webp" alt="そっと目を閉じた、まばたきの顔" width="250"></a>
   <a href="images/concept/showcase/nanatau-avatar-happy-1440.webp"><img src="images/concept/showcase/nanatau-avatar-happy-1440.webp" alt="目を開けたまま、口元でにっこり" width="250"></a>
   <br>
-  <sub>いつもの顔 · まばたき · ちょっぴりにっこり<br>2026-10-25に正本モデルから撮り直した1440×1680pxの画像です。</sub>
+  <sub>いつもの顔 · まばたき · ちょっぴりにっこり<br>2026-10-26採用の正本モデルから撮影した1440×1680pxの画像です。</sub>
 </p>
 
 <p align="center">
-  <strong><a href="models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4">▶ まばたきと笑顔の「テトリス」を見る</a></strong>
+  <strong><a href="models/avatar-v1/charakuru/videos/face-neck-motion.mp4">▶ 顔と全身の動きを見る</a></strong>
   <br>
-  <sub>約16秒 · 1080×1350 · 30fps · 音声付き</sub>
+  <sub>12秒 · 1540×900 · 24fps · 無音</sub>
 </p>
 
 <details>
 <summary>モデルの仕様と、確認できていること</summary>
 
-2026-10-24に採用した修正版が現在の正本です。
+2026-10-26に採用した、元絵に合わせた顔・首の修正版が現在の正本です。
 
 - VRM 1.0・MToon。髪と衣装の揺れ物設定を含みます。
 - まばたきと笑顔は0〜100%で変形し、重ねて使えます。
 - 表情の強さ・方向・組み合わせを変えた45通り、Blendの保存・再読み込み、VRMの再書き出しを確認しています。
-- テトリス動画は、まばたき4回と笑顔3区間。髪と衣装は、既存の計算済みの揺れを再生しています。
+- 現モデルの動画は、左右の首振り・うなずき・まばたき・笑顔を全身と顔アップで確認できます。揺れ物の物理計算は含みません。
 
 詳しい検証結果と残っている課題は、[3D成果物一覧](models/avatar-v1/charakuru/README.md)を参照してください。
 
@@ -74,8 +74,9 @@ Charakuruで制作した3Dのななたう。顔立ちはそのままに、まば
 <details>
 <summary>ほかのダンスと、全身の参考画像</summary>
 
-以下は表情追加前のモデルによる記録です。
+以下は以前のモデルによる記録です。
 
+- [表情付きテトリス](models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：2026-10-24版。約16秒、公式伴奏付き。
 - [Samba Dancing](models/avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒、無音。全身と揺れ物の動作確認。
 - [愛包ダンスホール](models/avatar-v1/charakuru/videos/dance-short.mp4)：16秒、音声付きの縦動画。
 - [6方向・全身・動作確認画像](images/concept/avatar-v1/charakuru/README.md)：現在の3表情と、身体制作時の外観を掲載。

@@ -1,18 +1,24 @@
 # Charakuru版の確認画像
 
-[採用モデル・動画・検証の一覧](../../../../models/avatar-v1/charakuru/README.md)に対応する画像正本。表情の3枚は現在のVRM、外観・動作の画像は表情追加前のMToon版VRMを再読み込みして撮影した。
+[採用モデル・動画・検証の一覧](../../../../models/avatar-v1/charakuru/README.md)に対応する画像正本。
 
-## 現在の表情
+## 現在の表情と全身
 
-2026-10-24に採用したRound 3修正版`refine01`の通常顔・まばたき・笑顔。現在の`avatar.vrm`と`avatar.blend`に対応する。顔立ちを保ち、まばたきと笑顔を0〜100%で連続変形できる。下記は通常顔と各表情100%の正面画像で、中間状態と併用を含む45通りの確認結果はモデルの検証記録を参照する。横顔は髪で目元が隠れる部分がある。口パクは含まない。
+2026-10-26採用の`approved-reference-face-k5`をVRMから読み込み直して撮影した。ユーザーが選んだ通常顔Kを基準に、まばたきと笑顔を0〜100%で連続変形できる。
 
-| 表情 | 画像 |
+| 表情 | 1440×1680の画像 |
 | --- | --- |
 | 通常顔 | [face-neutral.png](face-neutral.png) |
 | まばたき | [face-blink.png](face-blink.png) |
 | 目を開けたにっこり | [face-happy.png](face-happy.png) |
 
-[表情モデルの検証](../../../../models/avatar-v1/charakuru/verification/expressions/model.json)と[表情付きテトリス](../../../../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)を参照できる。
+- [髪・衣装と組み合わせた全身](current-fullbody.png)
+- [全身の6方向](current-views.jpg)
+- [まばたき5段階×3方向](expressions-blink-matrix.jpg)
+- [笑顔5段階×3方向](expressions-happy-matrix.jpg)
+- [まばたきと笑顔の併用5段階×3方向](expressions-combined-matrix.jpg)
+
+[現在のモデルの12秒動画](../../../../models/avatar-v1/charakuru/videos/face-neck-motion.mp4)と[検証記録](../../../../models/avatar-v1/charakuru/verification/expressions/model.json)を参照できる。動画は全身と顔アップを並べた無音の動作確認で、揺れ物の物理計算を含まない。横顔の目は髪に隠れる部分がある。
 
 ## 表情追加前の外観
 

@@ -1,215 +1,382 @@
 {
-  "date": "2026-10-24",
-  "adoptedAt": "2026-10-24T22:20:26.837877+09:00",
-  "character": "Nanatau",
-  "assetRevision": "round3-refine01-continuous-expressions",
-  "userInstruction": "じゃあ、今回の修正版を正本に採用して。",
-  "workflow": "Existing same Head; continuous POSITION morphs for eyelids and mouth, followed by approved local lash/crease refinement",
-  "baselineCheckpoint": "869557f047f854bc67ab6e960a433be820f149a0",
-  "baselineVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
-  "modelVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
-  "modelBlendSha256": "5195e0aa0e7a15721a2effdf16d11dba54b5cdeb9964c16a46aff2adf3248008",
-  "canonicalDirectory": "models/avatar-v1/charakuru",
-  "canonicalFaceFrames": {
-    "neutral": {
-      "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
-      "bytes": 441679,
-      "sha256": "f8915d372537247101c950557cf87135f9b5412cee6269ae545a14f0430fa7b2",
-      "dimensions": [
-        480,
-        560
-      ]
+  "revision": "approved-reference-face-k5",
+  "adoptedAt": "2026-10-26T10:14:19.410945+09:00",
+  "userDecision": "ではこれで",
+  "decisionAppliesTo": "K neutral face and contour, followed by continuous expression completion",
+  "baselineCheckpoint": "2b2d37958c1fbebaab7ddcd28c0f05bfe8dc4e2e",
+  "previousCanonicalVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
+  "previousCanonicalBlendSha256": "5195e0aa0e7a15721a2effdf16d11dba54b5cdeb9964c16a46aff2adf3248008",
+  "priorExpressionUpdate": {
+    "updatedAt": "2026-10-24T22:20:26.837877+09:00",
+    "revision": "round3-refine01-continuous-expressions",
+    "userInstruction": "じゃあ、今回の修正版を正本に採用して。",
+    "baselineCheckpoint": "869557f047f854bc67ab6e960a433be820f149a0",
+    "previousVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
+    "previousBlendSha256": "81b56a444c5cc557415eb51fe819b7aab78ad59a1f77c3e06a4d6a7ac7e8a303",
+    "previousExpressionVideoSha256": "69551201ea40726839d3a8f4b678c02ac77de6cbe62491e1903c5c454ad3d4b2",
+    "canonicalVrmSha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be",
+    "canonicalBlendSha256": "5195e0aa0e7a15721a2effdf16d11dba54b5cdeb9964c16a46aff2adf3248008",
+    "vrmVersion": "1.2.0-charakuru-open-eye-smile",
+    "versionPolicy": "Embedded version is inherited unchanged from the frozen candidate; revision and hashes identify this adoption.",
+    "expressionPresets": [
+      "blink",
+      "happy"
+    ],
+    "isBinary": false,
+    "implementation": "Single shared Head with BlinkContinuous and HappyContinuous POSITION morphs; existing neutral UV/atlas fixed, no expression texture switching.",
+    "happyOverrideBlink": "none",
+    "headMorphNames": [
+      "BlinkContinuous",
+      "HappyContinuous"
+    ],
+    "headMorphVertexCounts": {
+      "blink": 1184,
+      "happy": 549
     },
-    "blink": {
-      "path": "images/concept/avatar-v1/charakuru/face-blink.png",
-      "bytes": 439873,
-      "sha256": "9fe3ae9fb92953f2ccbca44cb676b7523d623c3224e4f4859ce8c2db96f70566",
-      "dimensions": [
-        480,
-        560
-      ]
-    },
-    "happy": {
-      "path": "images/concept/avatar-v1/charakuru/face-happy.png",
-      "bytes": 441761,
-      "sha256": "33d0e9b9c0cc250998454b5b25433e4fa84493426af74a06e5e4333c2f5d3f76",
-      "dimensions": [
-        480,
-        560
-      ]
-    }
-  },
-  "metadataPolicy": "Candidate bytes, author, usage terms and embedded version retained exactly; revision is identified separately by name and SHA-256.",
-  "newTextureGenerationForAdoptedRevision": false,
-  "inheritedTextureGeneration": {
-    "scope": "Historical source-atlas provenance, not new texture generation or current model hashes.",
-    "gitCheckpoint": "869557f047f854bc67ab6e960a433be820f149a0",
-    "record": {
-      "date": "2026-10-13",
-      "modelVrmSha256": "0791fe0ded7f7bb082b11f095d94264e6ff707ead331197e308511196616b9b1",
-      "imagePrompts": [
-        {
-          "mode": "built-in image_gen edit",
-          "intent": "open-eyed visible smile, mouth-only registered UV edit",
-          "prompt": "Use case: precise-object-edit. Edit Image1, a registered 1100x846 UV texture crop for an existing 3D anime character head. It contains a tilted facial skin island and surrounding hair/accessory UV fragments. Image2 is only an identity/style reference. This is a UV asset edit, not a new portrait.\nPreserve the exact crop aspect, island outlines, placement and orientation, original eyes, eyelashes, eyebrows, glasses lines, nose, cheek color, hair, ornaments and all pixels outside the mouth area. Do not recenter, rotate, scale, redraw or rearrange any UV island. The existing mouth is the tiny brown curved mark centered approximately (405,555) in the 1100x846 crop, inside the facial skin. Match the TILTED face's mouth axis and orientation, not the horizontal canvas.\nReplace ONLY that tiny mouth with a clearly readable warm, happy smiling mouth: lifted corners, a modest but visible opening, a narrow warm-white upper-tooth crescent and soft warm peach lower lip/interior. The expression should unmistakably read as smiling at 3D avatar viewing distance, instead of a tiny ambiguous comma. Target width about 75-95 pixels along the mouth's tilted local axis and height about 30-45 pixels, centered at exactly the existing mouth. Keep it within the mouth neighborhood x320..490,y490..620. Make a friendly gentle open-mouth smile; not a wide scream or exaggerated grin. Do not add lipstick, chin shadow, tongue sticking out, dimples, extra teeth or marks. Do not change the eyes: they remain the same original OPEN eyes from Image1. Face proportions, geometry, identity and all other features are fixed. Return the same registered UV crop layout.\n## Art Style (MANDATORY for all nanatau generations)\n- Proportions: 5.5-6 head ratio. NOT chibi, NOT tall-realistic. Compact-cute middle ground.\n- Lineart: Clean, thin-to-medium weight lines with clear intent. Hair strands clearly separated with visible flow direction. NOT thick chunky outlines, NOT sketchy.\n- Coloring: FLAT cel shading only. Warm color temperature throughout. Minimal shadows (soft single-layer if any). NO excessive gradients, NO AI-like glossy sheen, NO heavy rendering.\n- Eyes: Large but proportionally natural. Round with multiple highlight layers. Detailed iris (gradient within, visible reflection layers). Expressive and emotional — the eyes carry the character's personality. Preserve the existing open eyes exactly in this edit.\n- Expression preference: Introverted, fragile emotions — teary, sleepy, embarrassed, trying-her-best. \"Quiet bravery in vulnerability.\" NOT genki/energetic, NOT cool/sharp.\n- Composition: Character-centered, 1-2 poses per image (character sheet style works well). Props held close to body. For this technical edit preserve the input UV layout.\n- Background: MINIMAL. Simple warm gradient (cream/pale yellow to white) or dark navy night sky with stars. Never complex or distracting. For this technical edit preserve every existing UV fragment.\n- Color temperature: WARM throughout. Even dark backgrounds should feel warm due to the character's yellow palette.\n- Overall feel: Soft, gentle, healing. The kind of illustration that makes you feel warm and want to protect this character. Existing accents Pale Butter Yellow #FFFDE7 / Soft Navy #2C3E6B / Warm White #FFF8E1.",
-          "inputs": [
-            "output/charakuru/nanatau-avatar-v1/expression-fix/happy-mouth-target.png",
-            "images/concept/avatar-v1/charakuru/face-neutral.png"
-          ],
-          "additionalTripoCredits": 0,
-          "recordType": "Exact prompt passed to built-in image_gen edit",
-          "outputs": {
-            "mode": "built-in image_gen edit",
-            "generatedSource": "output/charakuru/nanatau-avatar-v1/expression-fix/happy-mouth-source-generated.png",
-            "sourceDimensions": [
-              1430,
-              1100
-            ],
-            "savedPath": "output/charakuru/nanatau-avatar-v1/expression-fix/happy-mouth-generated.png",
-            "savedDimensions": [
-              1100,
-              846
-            ],
-            "savedSha256": "1cf7d5dc4fad3c401f15b0d29ed6259d59c219ecab84637b383227fee4e9b41e",
-            "processing": "aspect-preserving registered crop resize; builder composites mouth mask only",
-            "additionalTripoCredits": 0,
-            "generatedSourceCopySha256": "475422f680bed4208a578bd8e4813afee0faf8095e0fd47484da7fec60263545"
-          }
-        },
-        {
-          "mode": "built-in image_gen edit",
-          "prompt": "Use case: precise-object-edit. Technical 3D avatar UV repair, registered crop 550x400. Image1 has TWO pale pink teardrop-shaped eyelid-skin UV islands on a background of unrelated hair/accessory fragments. Image2 is only a skin-color reference. Keep the exact canvas aspect, each island outline, size, orientation, location and every background pixel. Do not rearrange, rotate, reframe, enlarge or crop anything.\nInside ONLY the two pale pink skin islands, remove ALL black/gray eyelash strokes and red line hatching. Replace those strokes with smooth pale warm peach-pink eyelid skin matching the surrounding existing pink skin within the same island, with only its subtle soft blush. The whole two island interiors must be SKIN ONLY, no eyes, lashes, eyebrows, gold spots, highlights, lines or new features. Preserve skin color coherently, no white disks, no dark gray patches, no harsh boundaries. The separate existing 3D skin surface already carries the desired closed eyelashes, so any lash inside these UV islands would duplicate it. This output will be composited using the exact original island mask; make it a technically registered texture correction. No portrait output. Preserve the two island contours and the surrounding dark/hair UV layout exactly.\n## Art Style (MANDATORY for all nanatau generations)\n- Proportions: 5.5-6 head ratio. NOT chibi, NOT tall-realistic. Compact-cute middle ground.\n- Lineart: Clean, thin-to-medium weight lines with clear intent. Hair strands clearly separated with visible flow direction. NOT thick chunky outlines, NOT sketchy.\n- Coloring: FLAT cel shading only. Warm color temperature throughout. Minimal shadows (soft single-layer if any). NO excessive gradients, NO AI-like glossy sheen, NO heavy rendering.\n- Eyes: Large but proportionally natural. Round with multiple highlight layers. Detailed iris (gradient within, visible reflection layers). Expressive and emotional — the eyes carry the character's personality. Preserve the existing open eyes exactly in this edit.\n- Expression preference: Introverted, fragile emotions — teary, sleepy, embarrassed, trying-her-best. \"Quiet bravery in vulnerability.\" NOT genki/energetic, NOT cool/sharp.\n- Composition: Character-centered, 1-2 poses per image (character sheet style works well). Props held close to body. For this technical edit preserve the input UV layout.\n- Background: MINIMAL. Simple warm gradient (cream/pale yellow to white) or dark navy night sky with stars. Never complex or distracting. For this technical edit preserve every existing UV fragment.\n- Color temperature: WARM throughout. Even dark backgrounds should feel warm due to the character's yellow palette.\n- Overall feel: Soft, gentle, healing. The kind of illustration that makes you feel warm and want to protect this character. Existing accents Pale Butter Yellow #FFFDE7 / Soft Navy #2C3E6B / Warm White #FFF8E1.",
-          "inputs": [
-            "output/charakuru/nanatau-avatar-v1/expression-fix/root-cap-skin-target.png",
-            "output/charakuru/nanatau-avatar-v1/expression-fix/face-happy.png"
-          ],
-          "skinIslandsOnly": true,
-          "additionalTripoCredits": 0,
-          "recordType": "Exact prompt passed to built-in image_gen edit",
-          "outputs": {
-            "mode": "built-in image_gen edit",
-            "promptFile": "cap-skin-prompt.json",
-            "generatedSource": "output/charakuru/nanatau-avatar-v1/expression-fix/blink-cap-skin-source-generated.png",
-            "sourceDimensions": [
-              1470,
-              1070
-            ],
-            "savedPath": "output/charakuru/nanatau-avatar-v1/expression-fix/blink-cap-skin-generated.png",
-            "savedDimensions": [
-              550,
-              400
-            ],
-            "sha256": "434e5f923e071134ae466e6afee73c9b99dcdc67122e5318951f41e35da841f6",
-            "registration": "technical crop resize only; actual socket mask composite by builder",
-            "generatedSourceCopySha256": "868adcda085331a025d8f54032dc0abf068ed4cee3e9e65a024082e7901f5bb3"
-          }
-        }
+    "baseGeometrySkinningAndSpringsPreserved": true,
+    "materialsAndEmbeddedImagesPreserved": true,
+    "matrixVisualReview": {
+      "expressions": [
+        "blink",
+        "happy",
+        "combined"
       ],
-      "reusedBlinkTexture": {
-        "sourceVrmWorkingPath": "output/charakuru/nanatau-avatar-v1/expression-fix/baseline-avatar.vrm",
-        "sourceVrmSha256": "75800a898e57472e29836afd4ee4ad13c6e048a8e35bcee3564beb068c86ff54",
-        "source": "Original blink tile, altered only within 38 socket UV triangles plus gutter; existing main-face eyelash drawing retained",
-        "historicalPromptDocumentation": "Original 2026-10-11 record at Git checkpoint d71bbb0; earlier blink prompt is a summary, not newly reconstructed exact text"
+      "weights": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "views": [
+        "front",
+        "quarter",
+        "profile"
+      ],
+      "imagesInspectedViaThreeContactSheets": 45
+    },
+    "sameHeadIdentityVisuallyVerified": true,
+    "cleanBlendAndVrmRoundtripVerified": true,
+    "reexportBaseNormalsStrictlyPreserved": false,
+    "reexportAdditionalRegressionAgainstOriginalRound3": false,
+    "sourceProductionSnapshots": [
+      {
+        "path": "models/avatar-v1/charakuru/project.charakit",
+        "sha256": "fb428067d68963c3f0a7967e13f3bb61bf2994b87dc1a2363ffa4f2001f1c75c",
+        "expressionsIncluded": false,
+        "checkpoint": "22258cd"
       },
-      "textureAssembly": {
-        "happy": "Neutral tile copied exact; generated mouth composited only inside ellipse x320..490,y490..620 within original crop [0,3250,1100,4096]",
-        "blink": "Original blink tile with masked skin-only socket fill; no duplication of eyelash marks",
-        "atlasDimensions": [
-          4096,
-          4096
-        ],
-        "perStateResolution": [
-          2048,
-          2048
-        ],
-        "mechanicalOperations": [
-          "registered crop resize",
-          "UV mask composition",
-          "atlas placement"
-        ]
+      {
+        "path": "models/avatar-v1/charakuru/review.fbx",
+        "sha256": "5aa64dd00f2bbea9774021cb1539e6470e2eddfbb2ce8811171ec52cf8ee325f",
+        "expressionsIncluded": false,
+        "checkpoint": "22258cd"
       }
+    ],
+    "priorBodyOnlyVideo": {
+      "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+      "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d",
+      "modelVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9"
+    },
+    "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
+    "videoSha256": "a3b52ca3e1206924187ae4b9b0226230d31f089187a151e8f2ebdc0d48e1285b",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "fps": 30,
+    "frames": 476,
+    "seconds": 15.866666666666667,
+    "videoCodec": "h264",
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "audioChannels": 2,
+    "audioType": "Official instrumental; no vocal recording",
+    "sourceClipSeconds": [
+      36.0841875,
+      51.950854166666666
+    ],
+    "audioWaveformCorrelation": 0.9931912819288106,
+    "audioStartErrorSamples": 0,
+    "blinkWindowsSeconds": [
+      [
+        1.7333333333333334,
+        2.0
+      ],
+      [
+        4.133333333333333,
+        4.4
+      ],
+      [
+        8.733333333333334,
+        9.0
+      ],
+      [
+        11.733333333333334,
+        12.0
+      ]
+    ],
+    "happyWindowsSeconds": [
+      [
+        2.35,
+        2.95
+      ],
+      [
+        6.0,
+        6.6
+      ],
+      [
+        13.0,
+        15.866507530212402
+      ]
+    ],
+    "expressionInterpolation": "LINEAR samples of smoothstep eyelid and smile envelopes",
+    "actualExpressionFrameCounts": {
+      "blink": {
+        "nonzeroFrames": 36,
+        "intermediateFrames": 36,
+        "fullWeightFrames": 0
+      },
+      "happy": {
+        "nonzeroFrames": 124,
+        "intermediateFrames": 35,
+        "fullWeightFrames": 89
+      }
+    },
+    "privateVrma": {
+      "path": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/dance-tetris-expressions.vrma",
+      "sha256": "8b13100d85ebb8869d04b4e45af0630107ad04229eb6e6150c4f5fec5b415786",
+      "bytes": 675780,
+      "rawMotionCommitted": false
+    },
+    "renderedVideoPlaybackVerified": true,
+    "externalAvatarHostPlaybackVerified": false,
+    "renderedVideoPlayback": {
+      "frames": 476,
+      "playbackRate": 1,
+      "droppedFrames": 0,
+      "ended": true
+    },
+    "mtoonMaterials": 3,
+    "springSegments": 58,
+    "springMethod": "Original 60Hz/2-substep baked motion replayed on all127 bones; no new simulation.",
+    "verification": {
+      "model": "verification/expressions/model.json",
+      "motion": "verification/expressions/motion.json",
+      "playback": "verification/expressions/playback.json",
+      "production": "verification/expressions/production.json",
+      "video": "verification/expressions/video.json"
+    },
+    "faceFrames": {
+      "neutral": "images/concept/avatar-v1/charakuru/face-neutral.png",
+      "blink": "images/concept/avatar-v1/charakuru/face-blink.png",
+      "happy": "images/concept/avatar-v1/charakuru/face-happy.png"
+    },
+    "additionalTripoCredits": 0,
+    "additionalPurchase": false,
+    "publicUpload": false,
+    "pushAuthorized": false,
+    "rawMotionCommitted": false,
+    "rawAudioCommitted": false,
+    "lipSync": false,
+    "lookAt": false,
+    "actualExpressionFrameCountDefinitions": {
+      "nonzeroFrames": "weight > 0",
+      "intermediateFrames": "0 < weight < 1",
+      "fullWeightFrames": "weight == 1",
+      "note": "Exact imported floating-point values; visual closure can occur at weights slightly below 1."
     }
   },
-  "geometryAssembly": {
-    "builder": {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/build_continuous.py",
-      "sha256": "ba06d18dbadab67e55d24162efbc27230446742caf2d0e48149a1f2016035f7c",
-      "bytes": 2942
-    },
-    "refinementBuilder": {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/build_refine01.py",
-      "sha256": "9a7474e28f5ad221b33b37763da036e2f5f60541447cdd8edae19c98968b5a59",
-      "bytes": 1436
-    },
-    "singleSharedHead": true,
-    "wholeHeadReplacement": false,
-    "existingNeutralMeshUvTexturesRigSpringsPreserved": true,
-    "expressions": {
-      "blink": "BlinkContinuous",
-      "happy": "HappyContinuous"
+  "method": "Unmodified approved illustration projected and baked as a native Blender face material; manually fitted continuous head/neck and independent eyelids; localized smile morph. Rendered images are not painted over.",
+  "newImageGenerationThisAcceptancePass": false,
+  "inheritedSkinImage": {
+    "path": "output/face-reference-rebuild-20261025/reference-cleaned-face.png",
+    "bytes": 1269648,
+    "sha256": "bf937297956d53f48eb758e5fc50440a5c733a3517d6454502996648bc47f8cf"
+  },
+  "inheritedSkinGeneration": {
+    "mode": "built-in imagegen in the preceding reference rebuild",
+    "prompt": "Edit the attached image of the approved character face. This is a highly constrained cleanup to prepare a 3D face albedo, NOT a redesign or re-illustration. Preserve the exact original two eyes, pupils, iris colors and reflection details, the exact upper eyelashes, eyebrow curvature, nose highlight, blush and tiny open mouth, at their exact current pixel locations. Do not make the eyes bigger, change their angle or shape, symmetrize them, or change expression. Remove ALL the hair/bangs/strands, ears, collar, clothing, flowers, and the black triangular outside areas. Remove the face contour line/chin outline too. Fill every removed area with seamless pale peach warm skin matching the central cheek. The entire square canvas must be continuous pale skin, so the only visible features are the ORIGINAL eyes/eyebrows/nose/blush/mouth copied as faithfully as possible. Keep their positions and proportions exactly as in input, including the slight difference in eye height. No newly invented detailed eyes. Reconstruct only the very small feature portions covered by strands if necessary. Increase clean detail while maintaining the same drawings. Clean warm subtle flat cel anime coloring, no realism, no chunky lines or added gradients. Original character has 5.5-6 head ratio, pale butter yellow/navy/warm-white costume but no costume visible in this technical texture. Save a square face texture with no other elements.\n",
+    "promptFile": {
+      "path": "output/face-reference-rebuild-20261025/reference-cleaned-face-prompt.txt",
+      "bytes": 1428,
+      "sha256": "398049ca4c67640c67dd705b94fb51096d080e89ad671bcce942203dd0ce8f48"
     }
   },
-  "adoptedCopies": [
+  "sourceFiles": [
     {
-      "source": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01.vrm",
-      "destination": "models/avatar-v1/charakuru/avatar.vrm",
-      "sha256": "88d772bb45fb59abb7e7a040a7b01d29d43f90fe84442bd6d2b18d69176bc4be"
+      "path": "output/face-likeness-20261026/likeness-study-k.blend",
+      "bytes": 29187552,
+      "sha256": "77bc698a5786ab3e3834b618a9422912b458d7f4e172cbe2e2c2dcd97f897e71"
     },
     {
-      "source": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01.blend",
-      "destination": "models/avatar-v1/charakuru/avatar.blend",
-      "sha256": "5195e0aa0e7a15721a2effdf16d11dba54b5cdeb9964c16a46aff2adf3248008"
+      "path": "images/concept/avatar-v1/approved-design.png",
+      "bytes": 2492520,
+      "sha256": "03b3cf8bc3bbd6e5954dacc62d27980e1a499ba49ecee77f67d1ac940e9292e9"
     },
     {
-      "source": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/dance-tetris-expressions.mp4",
-      "destination": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
+      "path": "output/face-likeness-20261026/original-face-projection.png",
+      "bytes": 653735,
+      "sha256": "9f0969f462b50133adc63340932d4f804950d2b8128f283438e1ec086c927cc2"
+    },
+    {
+      "path": "output/face-likeness-20261026/bake_original_face.py",
+      "bytes": 6129,
+      "sha256": "5cf8ba1f39962b6aa9d80f8b569e0402764237f1a63bc4c3fab09479b31ea52f"
+    },
+    {
+      "path": "output/face-likeness-20261026/smooth_convex_jaw.py",
+      "bytes": 5154,
+      "sha256": "d285e4ac12cd65d2723254fadf81dd1f28eb0c5a8fc327d9a30f267478a560b3"
+    },
+    {
+      "path": "output/face-likeness-20261026/finish_approved_expressions_k5.py",
+      "bytes": 5865,
+      "sha256": "60d86f9bf2bfe12dbea26a7d034ce2e72ef67a1e48d8098d87c7ecedb2a0142c"
+    },
+    {
+      "path": "output/face-likeness-20261026/export_validate_k5.py",
+      "bytes": 8397,
+      "sha256": "d2f696b2e0726abf1f353c74a8bb043cd861e9693c2bb5b6fc48eb3d5cf6deff"
+    },
+    {
+      "path": "output/face-likeness-20261026/build_approved_motion.py",
+      "bytes": 8486,
+      "sha256": "a17c8db3de3c56768176e671ac626d23be2176a826c9fba75eca9b8be91dadab"
+    },
+    {
+      "path": "output/face-likeness-20261026/render_approved_motion.py",
+      "bytes": 1807,
+      "sha256": "a5800f39133068edb387488548c83028d3171778e7b84ee4a3aa71ea3430fc20"
+    },
+    {
+      "path": "output/face-likeness-20261026/check_approved_face.py",
+      "bytes": 2468,
+      "sha256": "991c46978429a2a0f2cc14cd433e154f99000226b0c32d3fb03c1f449d02ee16"
+    },
+    {
+      "path": "output/face-likeness-20261026/check_approved_scope.py",
+      "bytes": 2532,
+      "sha256": "3e530d85d63dfe4b64d2c65d5c4671e053799a057b0f56d7f6b386ca65cf0b93"
+    }
+  ],
+  "adoptedFiles": [
+    {
+      "path": "models/avatar-v1/charakuru/avatar.vrm",
+      "bytes": 26826768,
+      "sha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/avatar.blend",
+      "bytes": 29281764,
+      "sha256": "f468b90623e6d06dea78d72230a3fa706ec8c8481d4974725d1d7b46fb7b1757"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+      "bytes": 5208494,
+      "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/current-fullbody.png",
+      "bytes": 577477,
+      "sha256": "239b33b658d61c15e3372c808f6f123d1edbc63cc8217a759553f26bd48b7f30"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/current-views.jpg",
+      "bytes": 207152,
+      "sha256": "a2bcbb663372c919466579134a51456ca77eb9913f5baba8017f0aa6c48fb6b7"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
+      "bytes": 3275125,
+      "sha256": "2e849eaf8439029473799b5a24609732e3d12b2b1be27a183b6c8468d08ba20f"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/face-blink.png",
+      "bytes": 3232592,
+      "sha256": "492171983ac8ecbf3e7cbc2d8e3dcbc4ff074105e75c5d009e4ce5c234fb1828"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/face-happy.png",
+      "bytes": 3275759,
+      "sha256": "774788a5d474cbffaca41cf8cca3816e90180f423767e567192541e4bda60a65"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
+      "bytes": 597694,
+      "sha256": "f430428b8b7711a528224d5eb0ff711f443f80985b756b14265e7f919294dcfd"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
+      "bytes": 600684,
+      "sha256": "a52b25a599a462e15d6d95cbec4929799cc829a724ea3a2432cedca183d9e2f0"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
+      "bytes": 600872,
+      "sha256": "723cbee28f695ee5144018b67dab00777376544d331be03ae17172c3cd1a1168"
+    }
+  ],
+  "siteImages": [
+    {
+      "path": "images/concept/showcase/nanatau-avatar-neutral-720.webp",
+      "bytes": 535330,
+      "sha256": "523a651a23c9140115aa1bc79e11a8a39b1f08b044bbc6110a0c57d7c1ba3722"
+    },
+    {
+      "path": "images/concept/showcase/nanatau-avatar-neutral-1440.webp",
+      "bytes": 1588588,
+      "sha256": "29321a1a8140ea998c295cbb3729552b5e19a6bd835d5f4418e18f902351b141"
+    },
+    {
+      "path": "images/concept/showcase/nanatau-avatar-blink-720.webp",
+      "bytes": 524500,
+      "sha256": "08324d7c3f2433fe9f8cc318963cb9a1c88a253965054d00473b1fc035b441f9"
+    },
+    {
+      "path": "images/concept/showcase/nanatau-avatar-blink-1440.webp",
+      "bytes": 1561396,
+      "sha256": "94440a5b8d80033a4ada525b68663df378d422f77a13786e79943e6095a26d39"
+    },
+    {
+      "path": "images/concept/showcase/nanatau-avatar-happy-720.webp",
+      "bytes": 535700,
+      "sha256": "ecb5236e11ed73c0a273dd07d42ab5b59f40ba0c91d2c863fbeda7137ba54546"
+    },
+    {
+      "path": "images/concept/showcase/nanatau-avatar-happy-1440.webp",
+      "bytes": 1589200,
+      "sha256": "25ddd430f0bd8466da4124c693a6bbab97170cd751fa5af499a8ed3271c54946"
+    }
+  ],
+  "neutralPreservationScope": "Approved K Head Basis and UV exactly match. Lid overlays are newly built; neutral render pixels are not claimed identical.",
+  "retainedHistoricalVideos": [
+    {
+      "path": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
+      "bytes": 10007965,
+      "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/dance-short.mp4",
+      "bytes": 6467915,
+      "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+      "bytes": 9405868,
+      "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
+      "bytes": 9473198,
       "sha256": "a3b52ca3e1206924187ae4b9b0226230d31f089187a151e8f2ebdc0d48e1285b"
     },
     {
-      "source": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01-blink-000-front.png",
-      "destination": "images/concept/avatar-v1/charakuru/face-neutral.png",
-      "sha256": "f8915d372537247101c950557cf87135f9b5412cee6269ae545a14f0430fa7b2"
-    },
-    {
-      "source": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01-blink-100-front.png",
-      "destination": "images/concept/avatar-v1/charakuru/face-blink.png",
-      "sha256": "9fe3ae9fb92953f2ccbca44cb676b7523d623c3224e4f4859ce8c2db96f70566"
-    },
-    {
-      "source": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01-happy-100-front.png",
-      "destination": "images/concept/avatar-v1/charakuru/face-happy.png",
-      "sha256": "33d0e9b9c0cc250998454b5b25433e4fa84493426af74a06e5e4333c2f5d3f76"
+      "path": "models/avatar-v1/charakuru/videos/motion-16s.mp4",
+      "bytes": 4938207,
+      "sha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68"
     }
   ],
-  "sourceReports": [
-    {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/round3-refinement/refine01-final-verification.json",
-      "sha256": "8ef22db63eca776cdb8d2da6743603c7e6fc322bab489e2cfc67e25abd6d8f7e",
-      "bytes": 18691
-    },
-    {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/root_refine01_motion_visual_review.json",
-      "sha256": "c4732cc89cad0c21e7cc83b91ce7c1aeebebcc033bca7d967fa58fd0b4660f1b",
-      "bytes": 5471
-    },
-    {
-      "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/delivery-manifest.json",
-      "sha256": "73edbd0a534ff726940a28c56ec6bdfe4d3003f3722bb170deaa01d24cc505b2",
-      "bytes": 4586
-    }
-  ],
-  "excludedWorkingArtifact": {
-    "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/motion/dance-tetris-refine01-animated-unvalidated.blend",
-    "reason": "Optional animated Blend failed expression reload; the separately validated static refine01.blend is adopted."
-  },
-  "additionalTripoCredits": 0,
-  "additionalPurchase": false,
-  "publicationAuthorized": false,
-  "pushAuthorized": false,
-  "visualGuidance": {
-    "workingPath": "output/charakuru/nanatau-avatar-v1/astra-expressions/reference/half-blink-generated.png",
-    "sha256": "0e075cdcbc2fb3b49a50c07de7508d4a92b130f1076b6f373544e40720805acf",
-    "bytes": 1798342,
-    "role": "Reference only; not part of adopted textures."
-  }
+  "securityImpact": "Local model, images, video and documentation only. No credentials, permissions, purchases, push or deployment."
 }
