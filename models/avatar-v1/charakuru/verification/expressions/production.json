@@ -314,6 +314,46 @@
       "path": "output/face-likeness-20261026/chin-k6-after-front.png",
       "bytes": 1484824,
       "sha256": "63452096d6b81a3a1a815d8624a6c0a1d27bc3d6eca9599e0eb0b57c47ed3851"
+    },
+    {
+      "path": "output/face-likeness-20261026/render_chin_motion_k6.py",
+      "bytes": 3702,
+      "sha256": "7e54ed0f801a6636e88bbfbc17b1dbcd9deeb5f659004dc420ddbb512d65e158"
+    },
+    {
+      "path": "output/face-likeness-20261026/encode_chin_motion_k6.py",
+      "bytes": 4544,
+      "sha256": "cf7a205cd37ecc3eadbd3dfdf2b0bf3744bb0d91ee4a4f2690138b89236efd36"
+    },
+    {
+      "path": "output/face-likeness-20261026/adopt_video_k6.py",
+      "bytes": 10672,
+      "sha256": "82dc1a37c56449a6ce07c436ed454e4de979637b0e1056803c199850bf508947"
+    },
+    {
+      "path": "output/face-likeness-20261026/video-k6-contract.json",
+      "bytes": 828,
+      "sha256": "f1de0542c4977952d7f9dcb16ff31702ad7ebb3fdefd1d5fb3856b06c855e292"
+    },
+    {
+      "path": "output/face-likeness-20261026/joined-approved-k6/joined-approved-k6-motion.blend",
+      "bytes": 25760717,
+      "sha256": "69083d7df76f1a834f32ec15f5cd826c7730d88330efe3c233a75a749c09270d"
+    },
+    {
+      "path": "output/face-likeness-20261026/joined-approved-k6/render-manifest.json",
+      "bytes": 1608,
+      "sha256": "707dd7e7478d94b667ebceaa2d58f85c58e166e9bf983651c3882cd441e8455f"
+    },
+    {
+      "path": "output/face-likeness-20261026/joined-approved-k6/video-report.json",
+      "bytes": 4562,
+      "sha256": "04243b661cf38111e048917b7f6843c91cd0bd2ec270438cb2e8842380653b15"
+    },
+    {
+      "path": "output/face-likeness-20261026/joined-approved-k6/playback-report.json",
+      "bytes": 1687,
+      "sha256": "e254d907d6920e66f93c997b82ea94e3575499f30df44c007989c39970687ee2"
     }
   ],
   "adoptedFiles": [
@@ -371,6 +411,11 @@
       "path": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
       "bytes": 446228,
       "sha256": "596e6062361f594346c3470c091b74298b13a74150268d3490e728b46ac8df96"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+      "bytes": 5206220,
+      "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693"
     }
   ],
   "siteImages": [
@@ -421,11 +466,6 @@
       "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
       "bytes": 9405868,
       "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
-      "bytes": 5208494,
-      "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1"
     },
     {
       "path": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
@@ -480,5 +520,82 @@
     "expressionDeltasPreserved": true,
     "happyReversedTriangles": 0,
     "modelSha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
+  },
+  "videoUpdate": {
+    "createdAt": "2026-10-28T04:43:23.022811+00:00",
+    "userInstruction": "動画を作って",
+    "revision": "approved-reference-face-k6-rounded-chin",
+    "sourceVrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+    "animatedBlend": {
+      "path": "output/face-likeness-20261026/joined-approved-k6/joined-approved-k6-motion.blend",
+      "bytes": 25760717,
+      "sha256": "69083d7df76f1a834f32ec15f5cd826c7730d88330efe3c233a75a749c09270d"
+    },
+    "video": {
+      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+      "bytes": 5206220,
+      "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693"
+    },
+    "previousVideo": {
+      "checkpoint": "7936d2a41533e83c3f8359f9fba7a0ec9d8f777c",
+      "revision": "approved-reference-face-k5",
+      "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1",
+      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4"
+    },
+    "render": {
+      "status": "all_frames_rendered",
+      "source": "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/face-likeness-20261026/joined-approved-k6/joined-approved-k6-motion.blend",
+      "sourceSha256": "69083d7df76f1a834f32ec15f5cd826c7730d88330efe3c233a75a749c09270d",
+      "sourceVrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+      "blender": "5.2.1 LTS",
+      "engine": "BLENDER_EEVEE",
+      "samples": 48,
+      "threads": 2,
+      "frameRate": 24,
+      "frameRange": [
+        1,
+        288
+      ],
+      "views": [
+        "body",
+        "face"
+      ],
+      "preview": false,
+      "colorManagement": {
+        "viewTransform": "Standard",
+        "look": "None",
+        "exposure": 0.0,
+        "gamma": 1.0
+      },
+      "denoising": "none; EEVEE temporal sampling",
+      "springSimulation": false,
+      "startedAt": "2026-10-28T04:29:28.027002+00:00",
+      "lastFrame": 288,
+      "lastView": "face",
+      "renderedThisRun": 558,
+      "reusedThisRun": 18,
+      "gpu": {
+        "backend": "unavailable",
+        "device": "unavailable",
+        "vendor": "unavailable",
+        "renderer": "unavailable",
+        "version": "unavailable"
+      },
+      "elapsedSeconds": 681.847,
+      "expressionValuesCheckedEveryRenderedOrReusedFrame": true,
+      "gpuIdentificationNote": "Full-run GPU query occurred while reusing the first preview frame, before initialization, so its GPU strings are unavailable. The separate preview process positively reported Metal on Apple M2 Pro with the same frozen scene and settings.",
+      "previewGpu": {
+        "backend": "METAL",
+        "device": "APPLE",
+        "vendor": "Apple M2 Pro",
+        "renderer": "Metal API",
+        "version": "1.2"
+      },
+      "previewRenderSeconds": 23.427
+    },
+    "normalSpeedPlaybackVerified": true,
+    "modelsUnchanged": true,
+    "springSimulation": false,
+    "newImageGeneration": false
   }
 }

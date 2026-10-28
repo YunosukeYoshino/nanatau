@@ -1,10 +1,14 @@
 {
   "status": "encoded_and_visually_reviewed",
   "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
-  "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1",
-  "bytes": 5208494,
-  "sourceVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925",
-  "sourceAnimatedBlendSha256": "01149e75c46e17ca552cc8054ae3e8a768e418e3481abb5107fbb5406c4b4eaf",
+  "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693",
+  "bytes": 5206220,
+  "sourceVrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+  "sourceAnimatedBlendSha256": "69083d7df76f1a834f32ec15f5cd826c7730d88330efe3c233a75a749c09270d",
+  "revision": "approved-reference-face-k6-rounded-chin",
+  "appliesToModelRevision": "approved-reference-face-k6-rounded-chin",
+  "currentModelRevision": "approved-reference-face-k6-rounded-chin",
+  "matchesCurrentModel": true,
   "codec": "h264",
   "pixelFormat": "yuv420p",
   "dimensions": [
@@ -20,11 +24,11 @@
   "sourceFrames": {
     "body": {
       "count": 288,
-      "orderedNameAndHashDigest": "91f11841f8442c15be5fa96e3c0961049a6216e0e351009faf9f5139992fd74e"
+      "orderedNameAndHashDigest": "e55331894fbc79398ad271a27aa405ff98c10ffe433cc88c555f4da5bd56d3c3"
     },
     "face": {
       "count": 288,
-      "orderedNameAndHashDigest": "a6c216e1ed994c7b5aabde349c5c798cc69c07bdf6113cc9eda5644679751f46"
+      "orderedNameAndHashDigest": "bcac0e8fb49e20f76135bdd4d27b06276ca7d477c8a9c95af9803b3f07056205"
     }
   },
   "expressionValuesCheckedEveryFrame": true,
@@ -40,12 +44,106 @@
     259,
     287
   ],
-  "encodedContactSheet": "output/face-likeness-20261026/encoded-motion-k5.jpg",
+  "encodedContactSheet": "output/face-likeness-20261026/joined-approved-k6/encoded-contact-sheet.jpg",
   "encodedContactSheetVisuallyInspected": true,
   "springSimulationEnabled": false,
-  "revision": "approved-reference-face-k5",
-  "appliesToModelRevision": "approved-reference-face-k5",
-  "currentModelRevision": "approved-reference-face-k6-rounded-chin",
-  "matchesCurrentModel": false,
-  "scopeNote": "Retained K5 video, captured before the local K6 chin refinement. This is not a K6 playback test."
+  "renderSettings": {
+    "status": "all_frames_rendered",
+    "source": "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/face-likeness-20261026/joined-approved-k6/joined-approved-k6-motion.blend",
+    "sourceSha256": "69083d7df76f1a834f32ec15f5cd826c7730d88330efe3c233a75a749c09270d",
+    "sourceVrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
+    "blender": "5.2.1 LTS",
+    "engine": "BLENDER_EEVEE",
+    "samples": 48,
+    "threads": 2,
+    "frameRate": 24,
+    "frameRange": [
+      1,
+      288
+    ],
+    "views": [
+      "body",
+      "face"
+    ],
+    "preview": false,
+    "colorManagement": {
+      "viewTransform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    },
+    "denoising": "none; EEVEE temporal sampling",
+    "springSimulation": false,
+    "startedAt": "2026-10-28T04:29:28.027002+00:00",
+    "lastFrame": 288,
+    "lastView": "face",
+    "renderedThisRun": 558,
+    "reusedThisRun": 18,
+    "gpu": {
+      "backend": "unavailable",
+      "device": "unavailable",
+      "vendor": "unavailable",
+      "renderer": "unavailable",
+      "version": "unavailable"
+    },
+    "elapsedSeconds": 681.847,
+    "expressionValuesCheckedEveryRenderedOrReusedFrame": true,
+    "gpuIdentificationNote": "Full-run GPU query occurred while reusing the first preview frame, before initialization, so its GPU strings are unavailable. The separate preview process positively reported Metal on Apple M2 Pro with the same frozen scene and settings.",
+    "previewGpu": {
+      "backend": "METAL",
+      "device": "APPLE",
+      "vendor": "Apple M2 Pro",
+      "renderer": "Metal API",
+      "version": "1.2"
+    },
+    "previewRenderSeconds": 23.427
+  },
+  "encodingCommand": [
+    "ffmpeg",
+    "-y",
+    "-hide_banner",
+    "-loglevel",
+    "warning",
+    "-threads",
+    "2",
+    "-framerate",
+    "24",
+    "-start_number",
+    "1",
+    "-i",
+    "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/face-likeness-20261026/joined-approved-k6/frames-body/%04d.png",
+    "-threads",
+    "2",
+    "-framerate",
+    "24",
+    "-start_number",
+    "1",
+    "-i",
+    "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/face-likeness-20261026/joined-approved-k6/frames-face/%04d.png",
+    "-filter_complex_threads",
+    "2",
+    "-filter_complex",
+    "[0:v][1:v]hstack=inputs=2[v]",
+    "-map",
+    "[v]",
+    "-frames:v",
+    "288",
+    "-c:v",
+    "libx264",
+    "-threads",
+    "2",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "-an",
+    "/Users/yoshinoyuunosuke/Documents/GitHub/nanatau/output/face-likeness-20261026/joined-approved-k6/face-neck-motion.mp4"
+  ],
+  "scopeNote": "K6 rounded-chin model; authored head, neck, torso and facial motion, without spring simulation.",
+  "visualReview": "Inspected all nine encoded critical frames. Full-body framing, rounded chin and neck connection remain visible through head turns, nodding, blinking and smiling.",
+  "verifiedAt": "2026-10-28T04:43:23.022811+00:00"
 }

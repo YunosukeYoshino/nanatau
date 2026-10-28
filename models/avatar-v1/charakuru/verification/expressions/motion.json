@@ -1,5 +1,5 @@
 {
-  "status": "sampled_motion_review_passed",
+  "status": "motion_render_and_playback_review_passed",
   "sourceVrm": "models/avatar-v1/charakuru/avatar.vrm",
   "sourceSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
   "blend": "output/face-likeness-20261026/joined-approved-k6/joined-approved-k6-motion.blend",
@@ -2662,7 +2662,7 @@
     "face"
   ],
   "contactSheet": "output/face-likeness-20261026/k6-motion-critical.jpg",
-  "videoRendered": false,
+  "videoRendered": true,
   "actualExpressionValuesCheckedFrames": 288,
   "actualExpressionFrameCounts": {
     "blink": 35,
@@ -2670,10 +2670,25 @@
     "combined": 14
   },
   "revision": "approved-reference-face-k6-rounded-chin",
-  "renderedFramesPerView": 5,
+  "renderedFramesPerView": 288,
   "renderedViews": [
     "body",
     "face"
   ],
-  "encodedVideoForThisRevision": false
+  "encodedVideoForThisRevision": true,
+  "encodedVideo": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+  "videoSha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693",
+  "encodedReviewedFrames": [
+    1,
+    26,
+    64,
+    86,
+    132,
+    196,
+    234,
+    260,
+    288
+  ],
+  "encodedContactSheet": "output/face-likeness-20261026/joined-approved-k6/encoded-contact-sheet.jpg",
+  "normalSpeedPlaybackVerified": true
 }

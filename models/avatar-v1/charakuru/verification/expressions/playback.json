@@ -8,53 +8,59 @@
     1540,
     900
   ],
-  "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1",
   "totalVideoFrames": 292,
   "droppedVideoFrames": 0,
-  "playbackWallSeconds": 12.03080000001192,
+  "playbackWallSeconds": 12.025,
   "events": [
     {
       "event": "seeking",
       "time": 0,
-      "at": 59824.5
+      "at": 37215.5
     },
     {
       "event": "play",
       "time": 0,
-      "at": 59824.5
+      "at": 37215.60000002384
     },
     {
       "event": "seeked",
-      "time": 0.0002,
-      "at": 59854.09999996424
+      "time": 0.0001,
+      "at": 37238.799999952316
     },
     {
       "event": "pause",
       "time": 12,
-      "at": 71855.19999998808
+      "at": 49240.60000002384
     },
     {
       "event": "ended",
       "time": 12,
-      "at": 71855.30000001192
+      "at": 49240.60000002384
     }
   ],
-  "presentedFrameSamples": 217,
+  "presentedFrameSamples": 220,
   "firstMediaTime": 0,
   "lastMediaTime": 11.958333,
-  "source": "http://127.0.0.1:18731/joined-approved-k5/face-neck-motion.mp4",
+  "source": "http://127.0.0.1:18736/joined-approved-k6/face-neck-motion.mp4",
+  "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693",
   "screenshots": [
-    "output/face-likeness-20261026/playback-k5-3.png",
-    "output/face-likeness-20261026/playback-k5-7.png",
-    "output/face-likeness-20261026/playback-k5-10.png"
+    "output/face-likeness-20261026/playback-k6-3.png",
+    "output/face-likeness-20261026/playback-k6-7.png",
+    "output/face-likeness-20261026/playback-k6-10.png"
   ],
   "externalAvatarHostVerified": false,
-  "visualReview": "Reviewed browser screenshots at 3, 7 and 10 seconds alongside the encoded critical-frame sheet.",
-  "counterScope": "Encoded stream has 288 frames. Browser totalVideoFrames includes initial loading/seeking; requestVideoFrameCallback samples are observations, not an assertion that every frame was captured.",
-  "revision": "approved-reference-face-k5",
+  "visualReview": "Inspected browser screenshots at 3, 7 and 10 seconds alongside all nine encoded critical frames. Rounded chin, framing and neck connection remain consistent through the authored motion.",
+  "counterScope": "Encoded stream has 288 frames. Browser counters include initial loading; requestVideoFrameCallback samples are observations, not a claim to have captured every frame.",
+  "beforePlayback": {
+    "totalVideoFrames": 4,
+    "droppedVideoFrames": 0
+  },
+  "droppedFramesDuringPlayback": 0,
+  "screenshotsVisuallyInspected": true,
+  "revision": "approved-reference-face-k6-rounded-chin",
   "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
-  "appliesToModelRevision": "approved-reference-face-k5",
+  "appliesToModelRevision": "approved-reference-face-k6-rounded-chin",
   "currentModelRevision": "approved-reference-face-k6-rounded-chin",
-  "matchesCurrentModel": false,
-  "scopeNote": "Retained K5 video, captured before the local K6 chin refinement. This is not a K6 playback test."
+  "matchesCurrentModel": true,
+  "scopeNote": "K6 rounded-chin model; authored head, neck, torso and facial motion, without spring simulation."
 }

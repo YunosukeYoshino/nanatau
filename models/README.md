@@ -4,7 +4,7 @@
 
 | 成果物 | 確認先 |
 | --- | --- |
-| 顎先調整前の動作確認 | [顔と全身の12秒動画](avatar-v1/charakuru/videos/face-neck-motion.mp4)：K5版・1540×900・24fps・無音 |
+| 現在のモデルの動作確認 | [顔と全身の12秒動画](avatar-v1/charakuru/videos/face-neck-motion.mp4)：K6版・1540×900・24fps・無音 |
 | モデル・動画・検証の一覧 | [Charakuru成果物一覧](avatar-v1/charakuru/README.md) |
 | 以前の表情付きテトリス | [まばたきと笑顔の動画](avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：約15.87秒・1080×1350・公式伴奏付き |
 | 身体制作時のデモ | [Samba Dancing](avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒・1080×1080・無音 |

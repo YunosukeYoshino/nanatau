@@ -32,7 +32,7 @@ bun run deploy
 
 `srcset` と `sizes` で表示幅・画面密度に合う画像を選びます。`sizes` は `object-fit: contain` 後の実際の描画幅（モバイル最大約302px、その他約415px）に合わせています。表情切り替えにぼかし・拡大・フェードは使いません。
 
-ダンス動画は2026-10-24版の記録で、現在の顔とは区別して表示します。顔・首・表情の12秒動画は顎先調整前のK5版です。`@avatar-videos/face-neck-motion.mp4` へのリンクにも調整前と明示します。ダンスは `@avatar-videos/dance-tetris-expressions.mp4` から [正本](../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4) を直接参照し、Viteがハッシュ付きアセットとして配信します。ポスター `nanatau-avatar-tetris-poster.jpg` はこの動画の先頭フレームを640×800へ縮小したものです。動画は操作して再生する方式で、`preload="none"` と `loading="lazy"` を使います。遅延読み込み非対応ブラウザーでは `preload` が読み込みを抑えます。
+ダンス動画は2026-10-24版の記録で、現在の顔とは区別して表示します。顔・首・表情の12秒動画は顎先を丸めた現在のK6版です。`@avatar-videos/face-neck-motion.mp4` から正本を直接参照します。ダンスは `@avatar-videos/dance-tetris-expressions.mp4` から [正本](../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4) を直接参照し、Viteがハッシュ付きアセットとして配信します。ポスター `nanatau-avatar-tetris-poster.jpg` はこの動画の先頭フレームを640×800へ縮小したものです。動画は操作して再生する方式で、`preload="none"` と `loading="lazy"` を使います。遅延読み込み非対応ブラウザーでは `preload` が読み込みを抑えます。
 
 `main` へのpushでは `site/`、サイト用画像、Charakuru動画、デプロイworkflowの変更を検知して既存のCloudflare Workerへ自動デプロイします。動画を差し替えるときはポスターも更新してください。
 

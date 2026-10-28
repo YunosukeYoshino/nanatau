@@ -211,3 +211,14 @@ manifestの全現パス・サイズ・SHA-256、正本へのコピー一致、�
 | K6の検証記録 | `verification/expressions/{model,motion,production}.json` | 現モデルと作業元のパス・ハッシュ |
 
 動画ファイルは更新しない。12秒動画とその`video.json`・`playback.json`はK5の記録と明示し、今回のK6の再生証拠にはしない。manifestの現パス・サイズ・SHA-256と資料の表記を更新し、ローカルコミットへ保存する。
+
+## 2026-10-28：K6の動作動画を更新
+
+ユーザーの「動画を作って」に合わせ、顎先を丸めたK6の動画を既存の固定パスへ反映した。モデル・画像・旧ダンス動画は保持し、ディレクトリの追加・移動・削除は行わない。以前のK5動画と検証記録はGitチェックポイント`7936d2a`に残る。
+
+| 作業元 | 正本 | 更新・検証 |
+| --- | --- | --- |
+| `output/face-likeness-20261026/joined-approved-k6/face-neck-motion.mp4` | `videos/face-neck-motion.mp4` | 全288フレーム×2カメラ、1540×900・24fps・12秒、全体デコード、最終映像9時点、通常速度の全編再生 |
+| 同作業領域の動画・再生記録 | `verification/expressions/{video,playback,motion,production}.json` | 現モデルと動画のSHA-256、描画条件、検証範囲 |
+
+`model.json`とmanifestの旧動画に関する制限を更新し、各入口・サイトの「顎先調整前」の表記を現版にそろえる。manifestの現パス・サイズ・SHA-256、対象外ファイルの不変、相対リンク、secretlint、サイトの型検査・ビルド・表示を確認する。再現用ソースと連番は`output/`に保持。全作業はローカルで行う。

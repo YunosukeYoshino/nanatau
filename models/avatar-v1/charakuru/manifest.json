@@ -124,14 +124,13 @@
     "Profile eyes remain partly obscured by hair.",
     "External avatar hosts, tracking, LookAt, lip sync and runtime performance remain untested.",
     "Spring settings are retained; the review action does not simulate secondary motion.",
-    "The retained 12-second MP4 and playback report depict K5 before this chin refinement.",
     "project.charakit and review.fbx are older body-production snapshots."
   ],
   "files": [
     {
       "path": "images/concept/avatar-v1/charakuru/README.md",
-      "bytes": 3186,
-      "sha256": "2bb98174ad50cb88a122e4d644a529f4f89189d45e62c827323b9bf81e6ffa44"
+      "bytes": 3182,
+      "sha256": "053e61fcb58ed8ad21bc1e31f70bb46b98951200bd335e9fe0d3315dafac6d23"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/back.png",
@@ -305,18 +304,18 @@
     },
     {
       "path": "models/avatar-v1/charakuru/ORGANIZATION.md",
-      "bytes": 31005,
-      "sha256": "6d770d9d7b2d13f2866870ebd1db086ca120f01d26d4cec044e6036862ba0695"
+      "bytes": 32264,
+      "sha256": "f313e21826403867b9d28fcec9ecce57170a1b7fcca7ba9b3dcee4dffaf498df"
     },
     {
       "path": "models/avatar-v1/charakuru/PRODUCTION.md",
-      "bytes": 39670,
-      "sha256": "9b4e55266573446b4d805a4e9ee04459205808f6f36c9ff94d0728fa147780c7"
+      "bytes": 40397,
+      "sha256": "fdaa9c14e9de67fbc25b62d7a0790193ced1fb253687267ce1d305c8a3581547"
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 4050,
-      "sha256": "37c828f86ef98750dae207ed2239b6d0d9ac9fec886ca68c8e583f3d44a369c8"
+      "bytes": 4159,
+      "sha256": "50f3af8e90f4c11051cd0552777e2d1cb7a83d047f840a96fb003f6a183ce63c"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
@@ -395,28 +394,28 @@
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/model.json",
-      "bytes": 32836,
-      "sha256": "d2d3814db55c99d54b8d7a16fd1ae8655beee8b34f27686f85aebeeaa544d9f2"
+      "bytes": 32743,
+      "sha256": "d7945be7552d1ac87a19d5f2eeb06d006ea09370c53de9398766f2ece99fbe0f"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/motion.json",
-      "bytes": 51147,
-      "sha256": "0c58be8d3796eb6cd0aa95eaeb05c805a9e6ae5b0b86756c6cb2b8157911cc83"
+      "bytes": 51571,
+      "sha256": "051b87ad07c6d6b39f3d13862575bba3351f6cb5f1e6bce801efedc768903099"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/playback.json",
-      "bytes": 1848,
-      "sha256": "6020c93ed24cbdf385cc6a48b74852cf5a40769d7e9d52f601795a1da3eb244f"
+      "bytes": 2097,
+      "sha256": "2be9cfacedc39f142a892a29203b85ad6167c02645495f8e479673b181f776e3"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/production.json",
-      "bytes": 19189,
-      "sha256": "b1b43be244679d265dc0ace58cb495390c670b90112a0d5c24602aaa90717dd7"
+      "bytes": 23726,
+      "sha256": "8e0871af4736a2a77cc0e49ce90533d1fcc6164baa7d8e85cbe0414a7c29d43c"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/expressions/video.json",
-      "bytes": 1591,
-      "sha256": "72a634c8065a6a3e745d0e33daf305d82c5209a8a11ca91888fb21025e10bf0d"
+      "bytes": 4599,
+      "sha256": "a992d5888310928dd77371492e1985cad6fee5c12b7ac7f70bc9bf7538f1fa91"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/samba/motion.json",
@@ -480,8 +479,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
-      "bytes": 5208494,
-      "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1"
+      "bytes": 5206220,
+      "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693"
     },
     {
       "path": "models/avatar-v1/charakuru/videos/motion-16s.mp4",
@@ -747,7 +746,7 @@
       "images": 45
     },
     "canonicalVideo": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
-    "videoSha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1",
+    "videoSha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693",
     "dimensions": [
       1540,
       900
@@ -779,7 +778,14 @@
       "neckBoundaryDeltaMeters": 0,
       "expressionDeltasPreserved": true
     },
-    "videoModelRevision": "approved-reference-face-k5",
-    "videoMatchesCurrentModel": false
+    "videoModelRevision": "approved-reference-face-k6-rounded-chin",
+    "videoMatchesCurrentModel": true,
+    "videoUpdatedAt": "2026-10-28T04:43:23.022811+00:00",
+    "videoUserInstruction": "動画を作って",
+    "previousVideo": {
+      "checkpoint": "7936d2a41533e83c3f8359f9fba7a0ec9d8f777c",
+      "revision": "approved-reference-face-k5",
+      "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1"
+    }
   }
 }
