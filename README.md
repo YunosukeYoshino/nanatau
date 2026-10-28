@@ -57,6 +57,8 @@ Charakuruで制作した3Dのななたう。元絵に合わせた顔と輪郭に
   <sub>12秒 · 1540×900 · 24fps · 無音 · 顎先を丸めたK6版</sub>
 </p>
 
+真正面の顔を作り直した[試作と12秒の動作動画](models/avatar-v1/charakuru/studies/true-front-b/README.md)も保存しています。こちらは通常顔の確認用で、まばたきと笑顔は調整前です。
+
 <details>
 <summary>モデルの仕様と、確認できていること</summary>
 

@@ -129,8 +129,8 @@
   "files": [
     {
       "path": "images/concept/avatar-v1/charakuru/README.md",
-      "bytes": 3182,
-      "sha256": "053e61fcb58ed8ad21bc1e31f70bb46b98951200bd335e9fe0d3315dafac6d23"
+      "bytes": 3678,
+      "sha256": "681057fb5f54904a8b64ae71be2d4dcb4809a068af1073af70dce4585ee5eb84"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/back.png",
@@ -273,6 +273,26 @@
       "sha256": "a1516313afc978aa1eb5b3e7f027aab3cc772bb4d6241f2b3e23c42decdf5372"
     },
     {
+      "path": "images/concept/avatar-v1/charakuru/true-front-b/comparison.png",
+      "bytes": 908522,
+      "sha256": "21884cd0a7780af401810ff7252623d11fe484c2553a4ae34a0e4f3b0a83613b"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/true-front-b/front.png",
+      "bytes": 1283781,
+      "sha256": "c3ed014f6de156d47ef7f12460742d17b09221f0d12c069d29151fe1c6e7e1f0"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/true-front-b/motion-contact-sheet.jpg",
+      "bytes": 916579,
+      "sha256": "7f62766ff01e44b116d0b16e6adef021885136acd8feedbfe3625daf939666c5"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/true-front-b/reference.png",
+      "bytes": 2548118,
+      "sha256": "4f1cb08e373bdef3b8a6e2939af862a78679510efedaa6053d8c5b4121cc1d70"
+    },
+    {
       "path": "images/concept/showcase/nanatau-avatar-blink-1440.webp",
       "bytes": 1561362,
       "sha256": "cf4206706f01a495a7fb1449379228f1b05ec73484196dc9e4ae14153ff96d23"
@@ -304,8 +324,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/ORGANIZATION.md",
-      "bytes": 32264,
-      "sha256": "f313e21826403867b9d28fcec9ecce57170a1b7fcca7ba9b3dcee4dffaf498df"
+      "bytes": 44200,
+      "sha256": "974e3284b9ab25acf9c6a301b16a9ed689cb9f1c3608c53555cb049766112ffd"
     },
     {
       "path": "models/avatar-v1/charakuru/PRODUCTION.md",
@@ -314,8 +334,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 4159,
-      "sha256": "50f3af8e90f4c11051cd0552777e2d1cb7a83d047f840a96fb003f6a183ce63c"
+      "bytes": 4365,
+      "sha256": "7f0dc1433d5f1e269a0f08f905e798c45bab2bd4003a4cb30564756dca8e9b6a"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
@@ -336,6 +356,31 @@
       "path": "models/avatar-v1/charakuru/review.fbx",
       "bytes": 12486476,
       "sha256": "5aa64dd00f2bbea9774021cb1539e6470e2eddfbb2ce8811171ec52cf8ee325f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/studies/true-front-b/README.md",
+      "bytes": 2385,
+      "sha256": "f1da50880c6cbe830abd759ad602060f236f6964af285d65b67603dcec2dcf2a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/studies/true-front-b/motion.blend",
+      "bytes": 34002669,
+      "sha256": "e1a6c7c92ad4a2cf5c3575b0e9b59c6cf9d82ec7cfdb6ecd2a0c451d88205d14"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/studies/true-front-b/motion.mp4",
+      "bytes": 5216799,
+      "sha256": "35a86202303f4cee4d2f8034d065cf431862837c04376c22f49f9b917e17ebc1"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/studies/true-front-b/production.json",
+      "bytes": 9559,
+      "sha256": "8d68533ba0e3f4f5f221af07915a56f47519c7fecfd0265b112111bbaecf9910"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/studies/true-front-b/verification.json",
+      "bytes": 49918,
+      "sha256": "48cfe4e17e226fdc86a9007dc8f36349ebf219418ed633955c117b046e010c04"
     },
     {
       "path": "models/avatar-v1/charakuru/verification/aipai/playback.json",
@@ -626,7 +671,8 @@
     "sourceMediaBytesPreserved": true,
     "rawMotionCommitted": false,
     "appliedMoveCount": 19,
-    "lastAddedDate": "2026-10-26"
+    "lastAddedDate": "2026-10-29",
+    "studies": "models/avatar-v1/charakuru/studies"
   },
   "danceTetris": {
     "completedAt": "2026-10-11T05:12:04.867768+00:00",
@@ -786,6 +832,22 @@
       "checkpoint": "7936d2a41533e83c3f8359f9fba7a0ec9d8f777c",
       "revision": "approved-reference-face-k5",
       "sha256": "3671ca9fd102b40340b6676e8fa343a1f914e9a04180b16c02d3a3c6b24fe6a1"
+    }
+  },
+  "studies": {
+    "true-front-b": {
+      "status": "neutral-face-study",
+      "savedDate": "2026-10-29",
+      "entrypoint": "models/avatar-v1/charakuru/studies/true-front-b/README.md",
+      "editableBlend": "models/avatar-v1/charakuru/studies/true-front-b/motion.blend",
+      "video": "models/avatar-v1/charakuru/studies/true-front-b/motion.mp4",
+      "images": "images/concept/avatar-v1/charakuru/true-front-b",
+      "production": "models/avatar-v1/charakuru/studies/true-front-b/production.json",
+      "verification": "models/avatar-v1/charakuru/studies/true-front-b/verification.json",
+      "workingDirectory": "output/face-likeness-20261026/true-front-b",
+      "replacesCanonicalModel": false,
+      "facialExpressionsReady": false,
+      "sourceMediaBytesPreserved": true
     }
   }
 }

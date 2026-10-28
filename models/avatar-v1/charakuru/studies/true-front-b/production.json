@@ -1,0 +1,48 @@
+{
+  "revision": "true-front-b-neutral-study",
+  "savedAt": "2026-10-29",
+  "status": "review_study_saved_for_version_control",
+  "userRequest": "コミットして directory-architecture で生成物など整理して",
+  "relationshipToCanonical": "Review study only. The adopted K6 VRM, Blend, expressions and website remain identified separately.",
+  "editableBlend": {
+    "path": "models/avatar-v1/charakuru/studies/true-front-b/motion.blend",
+    "sha256": "e1a6c7c92ad4a2cf5c3575b0e9b59c6cf9d82ec7cfdb6ecd2a0c451d88205d14",
+    "contains": "Neutral front-face study plus authored 288-frame bone motion; packed images"
+  },
+  "video": {
+    "path": "models/avatar-v1/charakuru/studies/true-front-b/motion.mp4",
+    "sha256": "35a86202303f4cee4d2f8034d065cf431862837c04376c22f49f9b917e17ebc1"
+  },
+  "reference": {
+    "path": "images/concept/avatar-v1/charakuru/true-front-b/reference.png",
+    "sha256": "4f1cb08e373bdef3b8a6e2939af862a78679510efedaa6053d8c5b4121cc1d70",
+    "generationMethod": "built-in image_gen",
+    "sourceReferences": [
+      "images/concept/avatar-v1/approved-turnaround.png",
+      "images/concept/avatar-v1/approved-design.png"
+    ],
+    "prompts": [
+      {
+        "stage": "a",
+        "fullText": "Use case: identity-preserve.\nAsset type: a strict front-view face reference for rebuilding this exact anime VTuber's 3D face.\nInput images: Image 1 (approved-turnaround.png) is the authoritative character design sheet, including the exact character identity, hairstyle, accessories and costume. Image 2 (approved-design.png) is a supporting close-up for the EXACT eye design, facial softness and expression. These are references; do not reproduce their tilted head pose or perspective.\nPrimary request: Create ONE large, clean head-and-upper-shoulders portrait of the SAME character, genuinely straight-on in a neutral orthographic front view. This is a technical front-view reference, not a new character design. Head yaw exactly 0 degrees, roll 0 degrees, pitch 0 degrees. Camera centered on the face at eye height. Vertical face centerline: forehead, small nose, mouth and rounded chin aligned. Both eyes at the same height, same apparent width/height and distance from center, matching the reference's large soft round warm amber eyes and delicate eyelashes. Pupils look directly forward. Both cheeks equally visible, equal foreshortening, chin centered. No three-quarter angle, no side glance, no tilted eye line, no head tilt, no bent neck.\nIdentity invariants: same delicate young-adult anime character, pale butter-blonde flowing hair, same forehead/bangs design and natural asymmetry of hair, same navy-and-pale-yellow ribbon and white flower arrangement on VIEWER RIGHT (character's left), smaller white flower detail on VIEWER LEFT, same amber layered iris highlights and fine dark lashes. Preserve original small softly open oval mouth, shy quiet neutral expression, soft blush and softly rounded tapering jaw. Do not broaden face, shorten chin drastically, change age, make generic doll eyes, enlarge mouth, make a grin or close the mouth. Facial structure must be genuinely frontal, while hair/ornaments retain their correct asymmetric design. Preserve the characteristic face of the close-up, translated into a true front view.\nComposition: square canvas, head and upper shoulders centered, complete crown/hair ornament visible with small margin, face large and legible. Neck vertical, shoulders level. Plain warm-white background. Exactly one portrait, no panels, borders, captions, labels, measurement marks or watermark. Flat, even lighting suitable for a diffuse face texture; no directional cast shadows, no baked hard nose shadow.\nPalette: Pale Butter Yellow #FFFDE7, Soft Navy #2C3E6B, Warm White #FFF8E1 as the design palette; preserve the reference's natural warm skin and warm golden-amber iris detail.\n## Art Style (MANDATORY for all nanatau generations)\n- Proportions: 5.5-6 head ratio. NOT chibi, NOT tall-realistic. Compact-cute middle ground.\n- Lineart: Clean, thin-to-medium weight lines with clear intent. Hair strands clearly separated with visible flow direction. NOT thick chunky outlines, NOT sketchy.\n- Coloring: FLAT cel shading only. Warm color temperature throughout. Minimal shadows (soft single-layer if any). NO excessive gradients, NO AI-like glossy sheen, NO heavy rendering.\n- Eyes: Large but proportionally natural. Round with multiple highlight layers. Detailed iris (gradient within, visible reflection layers). Expressive and emotional — the eyes carry the character's personality.\n- Expression preference: Introverted, fragile emotions — teary, sleepy, embarrassed, trying-her-best. \"Quiet bravery in vulnerability.\" NOT genki/energetic, NOT cool/sharp.\n- Composition: Character-centered, 1-2 poses per image (character sheet style works well). Props held close to body.\n- Background: MINIMAL. Simple warm gradient (cream/pale yellow to white) or dark navy night sky with stars. Never complex or distracting.\n- Color temperature: WARM throughout. Even dark backgrounds should feel warm due to the character's yellow palette.\n- Overall feel: Soft, gentle, healing. The kind of illustration that makes you feel warm and want to protect this character.\n"
+      },
+      {
+        "stage": "b",
+        "fullText": "Edit this portrait for STRICT ORTHOGRAPHIC FRONTAL FACE ALIGNMENT. Preserve this exact character identity, detailed eyes, hair, accessories, colors, gentle expression and composition. Change ONLY the remaining head/face pose and facial perspective. The current image is NOT quite straight: the eye on the viewer's left sits lower, the eye on the viewer's right sits higher, and the mouth/chin lean slightly right. Correct those issues.\nBoth irises and both eye corners must lie on the SAME HORIZONTAL EYE LINE. Identical apparent eye size and equal distance either side of the face centerline. Both pupils looking straight at camera. The nose, mouth center, chin tip, neck midpoint and collar jewel must align on ONE VERTICAL CENTERLINE. Both cheek silhouettes at matching depths and widths. Head has ZERO roll, ZERO yaw, ZERO pitch. Shoulders horizontal. This must look like a real straight-on symmetrical facial anatomy reference, not a three-quarter anime pose or a tilted face leveled by cropping.\nKeep the original large softly round amber eyes, soft dark lashes, small softly open oval mouth and same chin length/rounded shape. Preserve the natural asymmetric HAIR and ornament arrangement: large navy/yellow ribbon and white flowers on viewer right, smaller flower strands on viewer left. Do not symmetrize the hairstyle or duplicate ornaments. Do not replace the character with a different face. No grin, no closed mouth, no added objects or writing. Same single upper-shoulder portrait, minimal plain warm-white background.\n## Art Style (MANDATORY for all nanatau generations)\n- Proportions: 5.5-6 head ratio. NOT chibi, NOT tall-realistic. Compact-cute middle ground.\n- Lineart: Clean, thin-to-medium weight lines with clear intent. Hair strands clearly separated with visible flow direction. NOT thick chunky outlines, NOT sketchy.\n- Coloring: FLAT cel shading only. Warm color temperature throughout. Minimal shadows (soft single-layer if any). NO excessive gradients, NO AI-like glossy sheen, NO heavy rendering.\n- Eyes: Large but proportionally natural. Round with multiple highlight layers. Detailed iris (gradient within, visible reflection layers). Expressive and emotional — the eyes carry the character's personality.\n- Expression preference: Introverted, fragile emotions — teary, sleepy, embarrassed, trying-her-best. \"Quiet bravery in vulnerability.\" NOT genki/energetic, NOT cool/sharp.\n- Composition: Character-centered, 1-2 poses per image (character sheet style works well). Props held close to body.\n- Background: MINIMAL. Simple warm gradient (cream/pale yellow to white) or dark navy night sky with stars. Never complex or distracting.\n- Color temperature: WARM throughout. Even dark backgrounds should feel warm due to the character's yellow palette.\n- Overall feel: Soft, gentle, healing. The kind of illustration that makes you feel warm and want to protect this character.\n- Design colors: Pale Butter Yellow (#FFFDE7), Soft Navy (#2C3E6B), Warm White (#FFF8E1); retain warm skin and amber iris detail from the exact reference.\n"
+      }
+    ],
+    "selection": "B selected for the frontal study after A retained a tilted eye line; production-face approval was not inferred."
+  },
+  "workingDirectory": "output/face-likeness-20261026/true-front-b",
+  "localSources": [
+    "output/face-likeness-20261026/true-front-b/scripts/build_true_front_motion.py",
+    "output/face-likeness-20261026/true-front-b/scripts/build_true_front_study.py",
+    "output/face-likeness-20261026/true-front-b/scripts/check_true_front_baseline.py",
+    "output/face-likeness-20261026/true-front-b/scripts/diagnose_front_k6.py",
+    "output/face-likeness-20261026/true-front-b/scripts/encode_true_front_motion.py",
+    "output/face-likeness-20261026/true-front-b/scripts/render_true_front_motion.py",
+    "output/face-likeness-20261026/true-front-b/scripts/review_true_front_study.py"
+  ],
+  "mediaPolicy": "Selected model, video, reference and inspection images stored byte-identically. Logs, raw frames, generation candidate A and backup remain in ignored output.",
+  "securityImpact": "Local files and local Git commit only; no secrets, permissions, remote publication, push, dependency or CI changes."
+}

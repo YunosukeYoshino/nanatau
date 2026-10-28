@@ -4,6 +4,7 @@
 
 | 目的 | ファイル | 内容 |
 | --- | --- | --- |
+| 正面顔の新しい試作を見る | [真正面の顔B](studies/true-front-b/README.md) | 通常顔の確認用Blend・12秒動画・資料・検証。新しい顔のまばたきと笑顔は調整前 |
 | 現在のモデルの動きを見る | [顔と全身の12秒動画](videos/face-neck-motion.mp4) | K6の記録。1540×900・24fps・無音。左右の首振り、うなずき、まばたき、笑顔 |
 | VRMを使う | [avatar.vrm](avatar.vrm) | VRM 1.0・MToon、連続値の`blink`・`happy`、髪と衣装のSpringBone設定 |
 | モデルを編集する | [avatar.blend](avatar.blend) | 画像を内包した静的な編集用正本。Headの笑顔、Eyelids・Lashesのまばたきを編集する |

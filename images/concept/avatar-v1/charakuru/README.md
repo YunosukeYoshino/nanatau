@@ -2,6 +2,15 @@
 
 [採用モデル・動画・検証の一覧](../../../../models/avatar-v1/charakuru/README.md)に対応する画像正本。
 
+## 真正面の顔Bのスタディ
+
+2026-10-29に制作記録として保存した確認用画像。新しい顔のまばたき・笑顔は調整前で、[試作モデルと動画](../../../../models/avatar-v1/charakuru/studies/true-front-b/README.md)に対応する。
+
+- [正面資料](true-front-b/reference.png)
+- [3Dの通常顔](true-front-b/front.png)
+- [K6との同一カメラでの比較](true-front-b/comparison.png)
+- [12秒動画の各場面](true-front-b/motion-contact-sheet.jpg)
+
 ## 現在の表情と全身
 
 2026-10-26採用の顔から顎先だけを丸めた`approved-reference-face-k6-rounded-chin`を、VRMから読み込み直して撮影した。目・口・頬幅を保持し、まばたきと笑顔を0〜100%で連続変形できる。[顎先の修正前後](chin-rounding-comparison.png)も参照できる。

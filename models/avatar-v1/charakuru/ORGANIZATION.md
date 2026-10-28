@@ -222,3 +222,73 @@ manifestの全現パス・サイズ・SHA-256、正本へのコピー一致、�
 | 同作業領域の動画・再生記録 | `verification/expressions/{video,playback,motion,production}.json` | 現モデルと動画のSHA-256、描画条件、検証範囲 |
 
 `model.json`とmanifestの旧動画に関する制限を更新し、各入口・サイトの「顎先調整前」の表記を現版にそろえる。manifestの現パス・サイズ・SHA-256、対象外ファイルの不変、相対リンク、secretlint、サイトの型検査・ビルド・表示を確認する。再現用ソースと連番は`output/`に保持。全作業はローカルで行う。
+
+## 2026-10-29：真正面の顔Bのスタディと作業出力を整理
+
+Branch: `apply`。Mode: `knowledge-agent-ops`。Directory Architectureの `references/patterns.md` → **Knowledge / Agent Operations Repo** を読み、既存の `models/`・`images/`・`output/` 配置を優先した。ユーザーの「コミットして directory-architecture で生成物など整理して」に対応する。
+
+### 配置判断
+
+- `studies/true-front-b/` に画像内包の動作入りBlend・MP4・README・制作と検証のJSONを保存する。通常顔の試作として管理し、採用済みK6の表情付きVRMと区別する。
+- 記録用に選んだ画像4枚は `images/concept/avatar-v1/charakuru/true-front-b/` にコピーする。
+- 作業用の資料・診断・中間Blend・スクリプト・連番・ログ・バックアップは `output/face-likeness-20261026/true-front-b/` にまとめる。候補Aや旧K6の制作物を削除しない。
+- ルートはBun secretlint、Python環境は別系統のMotionPNGTuber用。siteのaliasはShowcase画像と既存videosを参照しており、新しいstudyを自動収集しない。site/blogのコード・alias・依存・CI・LFS設定は変更対象外。
+- `AGENTS.md` は既にDirectory Architectureの共通指示への参照を持つ。`.codegraph/` は存在しない。
+
+### 移動・コピー表
+
+以下は移動前に作成した表。moveはGit管理外のローカル移動、copyは選択成果物のGit管理先へのバイト同一コピー。全行を適用し、既存の追跡ファイルの移動はない。移動元に対する個別ファイル633件のサイズ・SHA-256と移動結果はローカルの `output/face-likeness-20261026/true-front-organization-plan.json` に記録する。
+
+| Current path | New path | Reason | Updates needed | Validation |
+| --- | --- | --- | --- | --- |
+| `build_true_front_study.py` | `true-front-b/scripts/build_true_front_study.py` | 作業用のscripts | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `diagnose_front_k6.py` | `true-front-b/scripts/diagnose_front_k6.py` | 作業用のscripts | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `check_true_front_baseline.py` | `true-front-b/scripts/check_true_front_baseline.py` | 作業用のscripts | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `review_true_front_study.py` | `true-front-b/scripts/review_true_front_study.py` | 作業用のscripts | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `build_true_front_motion.py` | `true-front-b/scripts/build_true_front_motion.py` | 作業用のscripts | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `render_true_front_motion.py` | `true-front-b/scripts/render_true_front_motion.py` | 作業用のscripts | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `encode_true_front_motion.py` | `true-front-b/scripts/encode_true_front_motion.py` | 作業用のscripts | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-reference-a.png` | `true-front-b/reference/true-front-reference-a.png` | 作業用のreference | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-reference-b.png` | `true-front-b/reference/true-front-reference-b.png` | 作業用のreference | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-reference-a-prompt.txt` | `true-front-b/reference/true-front-reference-a-prompt.txt` | 作業用のreference | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-reference-b-prompt.txt` | `true-front-b/reference/true-front-reference-b-prompt.txt` | 作業用のreference | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-reference-generation.json` | `true-front-b/reference/true-front-reference-generation.json` | 作業用のreference | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `front-diagnosis-k6-true-front.png` | `true-front-b/diagnostics/front-diagnosis-k6-true-front.png` | 作業用のdiagnostics | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `front-diagnosis-k6-video-camera.png` | `true-front-b/diagnostics/front-diagnosis-k6-video-camera.png` | 作業用のdiagnostics | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `front-diagnosis-k6.json` | `true-front-b/diagnostics/front-diagnosis-k6.json` | 作業用のdiagnostics | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-baseline-check.json` | `true-front-b/diagnostics/true-front-baseline-check.json` | 作業用のdiagnostics | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-comparison-after.png` | `true-front-b/study/true-front-comparison-after.png` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-comparison-before.png` | `true-front-b/study/true-front-comparison-before.png` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-comparison-settings.json` | `true-front-b/study/true-front-comparison-settings.json` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-comparison.png` | `true-front-b/study/true-front-comparison.png` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-face-baked.png` | `true-front-b/study/true-front-face-baked.png` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-study-b-front.png` | `true-front-b/study/true-front-study-b-front.png` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-study-b-quarter-left.png` | `true-front-b/study/true-front-study-b-quarter-left.png` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-study-b-quarter-right.png` | `true-front-b/study/true-front-study-b-quarter-right.png` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-study-b.blend` | `true-front-b/study/true-front-study-b.blend` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-study-b.json` | `true-front-b/study/true-front-study-b.json` | 作業用のstudy | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `build-true-front-motion.log` | `true-front-b/logs/build-true-front-motion.log` | 作業用のlogs | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `front-diagnosis-k6.log` | `true-front-b/logs/front-diagnosis-k6.log` | 作業用のlogs | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `render-true-front-motion.log` | `true-front-b/logs/render-true-front-motion.log` | 作業用のlogs | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `render-true-front-preview.log` | `true-front-b/logs/render-true-front-preview.log` | 作業用のlogs | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-comparison.log` | `true-front-b/logs/true-front-comparison.log` | 作業用のlogs | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-study-b.log` | `true-front-b/logs/true-front-study-b.log` | 作業用のlogs | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-study-b.blend1` | `true-front-b/archive/true-front-study-b.blend1` | 作業用のarchive | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-review.md` | `true-front-b/README.md` | 作業用のwork entrypoint | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-motion-b` | `true-front-b/motion` | 作業用のcomplete render run, including frames and evidence | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-b/motion/true-front-motion.blend` | `models/avatar-v1/charakuru/studies/true-front-b/motion.blend` | 確認用成果物の保存 | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-b/motion/true-front-motion.mp4` | `models/avatar-v1/charakuru/studies/true-front-b/motion.mp4` | 確認用成果物の保存 | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-b/reference/true-front-reference-b.png` | `images/concept/avatar-v1/charakuru/true-front-b/reference.png` | 確認用成果物の保存 | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-b/study/true-front-study-b-front.png` | `images/concept/avatar-v1/charakuru/true-front-b/front.png` | 確認用成果物の保存 | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-b/study/true-front-comparison.png` | `images/concept/avatar-v1/charakuru/true-front-b/comparison.png` | 確認用成果物の保存 | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+| `true-front-b/motion/encoded-contact-sheet.jpg` | `images/concept/avatar-v1/charakuru/true-front-b/motion-contact-sheet.jpg` | 確認用成果物の保存 | スクリプト・README・現パス・manifest | SHA-256・リンク・再読み込み |
+
+`output/`で始まらない作業側の相対パスは `output/face-likeness-20261026/` 基準。`models/`と`images/`はリポジトリルート基準。`true-front-motion-b/`から`true-front-b/motion/`への移動には576枚の連番を含む。スクリプト7本の基準ディレクトリと相互参照、README、JSONの現パスを更新した。JSONの更新前内容は作業領域の `archive/metadata-before-relocation.json` に保持し、描画ログの過去パスは来歴としてそのまま残す。
+
+新規ドキュメントはstudyの `README.md`・`production.json`・`verification.json`。ルートとmodelsの入口、Charakuruと画像の一覧、manifestを更新する。最新の制作工程に必要なK6と過去の頭部トポロジーの参照元は現位置に保持する。
+
+### 検証
+
+`python3 output/face-likeness-20261026/verify_true_front_organization.py` で全移動先・コピー一致・未変更媒体のSHA-256・Python構文と入力パス・相対リンク・現manifest・既存正本の保全を確認する。保存先のBlendを新しいBlenderプロセスで開き、画像pack・全288フレームの通常顔・正面カメラを検査し、1フレームを再描画する。保存したMP4の全体デコード、変更テキストのsecretlint、`git diff --check`を実行する。結果はstudyの検証JSONとローカル整理検証に記録する。
+
+表示コード・import・ルートを変更しないためsite/blogビルドは対象外。全作業とコミットはローカルで行い、外部公開・push・秘密情報や権限の変更は行わない。
