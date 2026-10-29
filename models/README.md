@@ -4,7 +4,7 @@
 
 | 成果物 | 確認先 |
 | --- | --- |
-| 正面顔の新しい試作 | [真正面の顔Bと12秒動画](avatar-v1/charakuru/studies/true-front-b/README.md)：通常顔の確認用、表情調整前 |
+| 顔の方向性を確認した最新モデル | [真正面の顔Bと12秒動画](avatar-v1/charakuru/studies/true-front-b/README.md)：通常顔・表情調整前、2026-10-29確認済み |
 | 現在のモデルの動作確認 | [顔と全身の12秒動画](avatar-v1/charakuru/videos/face-neck-motion.mp4)：K6版・1540×900・24fps・無音 |
 | モデル・動画・検証の一覧 | [Charakuru成果物一覧](avatar-v1/charakuru/README.md) |
 | 以前の表情付きテトリス | [まばたきと笑顔の動画](avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：約15.87秒・1080×1350・公式伴奏付き |

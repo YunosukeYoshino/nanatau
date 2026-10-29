@@ -129,8 +129,8 @@
   "files": [
     {
       "path": "images/concept/avatar-v1/charakuru/README.md",
-      "bytes": 3678,
-      "sha256": "681057fb5f54904a8b64ae71be2d4dcb4809a068af1073af70dce4585ee5eb84"
+      "bytes": 3732,
+      "sha256": "fcc4ce89ba90f9da885d8d96c32893941b079abe6771b0821a4368748418e402"
     },
     {
       "path": "images/concept/avatar-v1/charakuru/back.png",
@@ -334,8 +334,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 4365,
-      "sha256": "7f0dc1433d5f1e269a0f08f905e798c45bab2bd4003a4cb30564756dca8e9b6a"
+      "bytes": 4378,
+      "sha256": "2358f6d960795794498ece9504fa233e68b00f45777cb3c2a4bc77fe1b0ab95c"
     },
     {
       "path": "models/avatar-v1/charakuru/avatar.blend",
@@ -359,8 +359,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/README.md",
-      "bytes": 2385,
-      "sha256": "f1da50880c6cbe830abd759ad602060f236f6964af285d65b67603dcec2dcf2a"
+      "bytes": 2665,
+      "sha256": "caa6f1ef03e983ccff78e718a332d36a3e148a96b3b641c1f8f7df002596e8bc"
     },
     {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/motion.blend",
@@ -374,8 +374,8 @@
     },
     {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/production.json",
-      "bytes": 9559,
-      "sha256": "8d68533ba0e3f4f5f221af07915a56f47519c7fecfd0265b112111bbaecf9910"
+      "bytes": 10172,
+      "sha256": "f9c243bd4a690bc1fced978705fccd400eb9f75179095eda7b1c4c4912f32444"
     },
     {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/verification.json",
@@ -847,7 +847,10 @@
       "workingDirectory": "output/face-likeness-20261026/true-front-b",
       "replacesCanonicalModel": false,
       "facialExpressionsReady": false,
-      "sourceMediaBytesPreserved": true
+      "sourceMediaBytesPreserved": true,
+      "faceDirectionApproved": true,
+      "faceDirectionApprovedDate": "2026-10-29",
+      "approvalScope": "Frontal reference B appearance; neutral model and motion checkpoint, before expression work and VRM integration."
     }
   }
 }

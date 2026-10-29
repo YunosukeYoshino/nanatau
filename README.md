@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <a href="models/avatar-v1/charakuru/videos/face-neck-motion.mp4"><img src="images/readme/card-video.svg" alt="動画を見る — 顔と全身の12秒" width="250"></a>
+  <a href="models/avatar-v1/charakuru/studies/true-front-b/motion.mp4"><img src="images/readme/card-video.svg" alt="動画を見る — 顔と全身の12秒" width="250"></a>
   <a href="#materials"><img src="images/readme/card-model.svg" alt="3Dモデル — VRMとBlender" width="250"></a>
   <a href="images/concept/showcase/"><img src="images/readme/card-gallery.svg" alt="ビジュアル — イラストと表情素材" width="250"></a>
 </p>
@@ -41,33 +41,40 @@
 
 <h2 id="avatar"><img src="images/readme/heading-model.svg" alt="3Dのななたう" width="480"></h2>
 
-Charakuruで制作した3Dのななたう。元絵に合わせた顔と輪郭に、なめらかなまばたきと笑顔を加えました。
+Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気を確認し、この顔の方向性で一区切りにしました。現在の制作地点は、通常顔のモデルと12秒の動作動画です。
 
 <p align="center">
-  <a href="images/concept/showcase/nanatau-avatar-neutral-1440.webp"><img src="images/concept/showcase/nanatau-avatar-neutral-1440.webp" alt="いつもの顔" width="250"></a>
-  <a href="images/concept/showcase/nanatau-avatar-blink-1440.webp"><img src="images/concept/showcase/nanatau-avatar-blink-1440.webp" alt="そっと目を閉じた、まばたきの顔" width="250"></a>
-  <a href="images/concept/showcase/nanatau-avatar-happy-1440.webp"><img src="images/concept/showcase/nanatau-avatar-happy-1440.webp" alt="目を開けたまま、口元でにっこり" width="250"></a>
+  <a href="images/concept/avatar-v1/charakuru/true-front-b/reference.png"><img src="images/concept/avatar-v1/charakuru/true-front-b/reference.png" alt="顔の雰囲気を確認した、真正面の顔資料B" width="360"></a>
+  <a href="images/concept/avatar-v1/charakuru/true-front-b/front.png"><img src="images/concept/avatar-v1/charakuru/true-front-b/front.png" alt="正面顔Bをもとに作った3Dモデルの通常顔" width="360"></a>
   <br>
-  <sub>いつもの顔 · まばたき · ちょっぴりにっこり<br>2026-10-26に顎先を整えた正本モデルから撮影した1440×1680pxの画像です。</sub>
+  <sub>確認済みの正面資料B · 3Dモデルの通常顔</sub>
 </p>
 
 <p align="center">
-  <strong><a href="models/avatar-v1/charakuru/videos/face-neck-motion.mp4">▶ 顔と全身の動きを見る</a></strong>
+  <strong><a href="models/avatar-v1/charakuru/studies/true-front-b/motion.mp4">▶ 最新の顔と全身の動きを見る</a></strong>
   <br>
-  <sub>12秒 · 1540×900 · 24fps · 無音 · 顎先を丸めたK6版</sub>
+  <sub>12秒 · 1540×900 · 24fps · 無音 · 左右の首振り、うなずき、首かしげ</sub>
 </p>
 
-真正面の顔を作り直した[試作と12秒の動作動画](models/avatar-v1/charakuru/studies/true-front-b/README.md)も保存しています。こちらは通常顔の確認用で、まばたきと笑顔は調整前です。
+[モデル・資料・検証記録](models/avatar-v1/charakuru/studies/true-front-b/README.md)をまとめています。この顔のまばたき・笑顔・口パクは調整前で、VRMへの再書き出しはまだ行っていません。
 
 <details>
-<summary>モデルの仕様と、確認できていること</summary>
+<summary>表情付きVRM（K6）と、確認済みの仕様</summary>
 
-2026-10-26に採用した、元絵に合わせた顔・首の修正版が現在の正本です。
+配信用のVRM正本は、2026-10-26に顎先を整えたK6版です。上の正面顔Bより前の顔で、まばたきと笑顔を実装しています。
+
+<p align="center">
+  <a href="images/concept/showcase/nanatau-avatar-neutral-1440.webp"><img src="images/concept/showcase/nanatau-avatar-neutral-1440.webp" alt="K6の通常顔" width="250"></a>
+  <a href="images/concept/showcase/nanatau-avatar-blink-1440.webp"><img src="images/concept/showcase/nanatau-avatar-blink-1440.webp" alt="K6のまばたき" width="250"></a>
+  <a href="images/concept/showcase/nanatau-avatar-happy-1440.webp"><img src="images/concept/showcase/nanatau-avatar-happy-1440.webp" alt="K6の笑顔" width="250"></a>
+  <br>
+  <sub>K6の通常顔 · まばたき · 笑顔</sub>
+</p>
 
 - VRM 1.0・MToon。髪と衣装の揺れ物設定を含みます。
 - まばたきと笑顔は0〜100%で変形し、重ねて使えます。
 - 表情の強さ・方向・組み合わせを変えた45通り、Blendの保存・再読み込み、VRMの再書き出しを確認しています。
-- 動画は現在のK6版で、左右の首振り・うなずき・まばたき・笑顔を全身と顔アップで確認できます。揺れ物の物理計算は含みません。
+- [K6の12秒動画](models/avatar-v1/charakuru/videos/face-neck-motion.mp4)では、左右の首振り・うなずき・まばたき・笑顔を全身と顔アップで確認できます。揺れ物の物理計算は含みません。
 
 詳しい検証結果と残っている課題は、[3D成果物一覧](models/avatar-v1/charakuru/README.md)を参照してください。
 
@@ -93,8 +100,9 @@ Charakuruで制作した3Dのななたう。元絵に合わせた顔と輪郭に
 
 | 目的 | ファイル・資料 |
 | --- | --- |
-| 現在の3Dモデルを開く | [avatar.vrm](models/avatar-v1/charakuru/avatar.vrm) |
-| Blenderでモデルを編集する | [avatar.blend](models/avatar-v1/charakuru/avatar.blend) |
+| 最新の正面顔と動きを編集する | [正面顔BのBlenderファイル](models/avatar-v1/charakuru/studies/true-front-b/motion.blend) |
+| 表情付きVRM（K6）を使う | [avatar.vrm](models/avatar-v1/charakuru/avatar.vrm) |
+| 表情付きモデル（K6）を編集する | [avatar.blend](models/avatar-v1/charakuru/avatar.blend) |
 | イラストや表情素材を見る | [Showcaseのビジュアル](images/concept/showcase/) |
 | 配信用の2D素材を見る | [透過PNG](images/png-tuber/transparent/)・[MotionPNGTuber](images/png-tuber/motion/) |
 | 制作過程・検証・出典を読む | [Charakuru制作記録](models/avatar-v1/charakuru/PRODUCTION.md) |

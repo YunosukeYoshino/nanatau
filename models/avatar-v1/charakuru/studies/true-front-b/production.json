@@ -3,7 +3,7 @@
   "savedAt": "2026-10-29",
   "status": "review_study_saved_for_version_control",
   "userRequest": "コミットして directory-architecture で生成物など整理して",
-  "relationshipToCanonical": "Review study only. The adopted K6 VRM, Blend, expressions and website remain identified separately.",
+  "relationshipToCanonical": "The user confirmed the appearance of frontal reference B. This neutral study is the current design checkpoint; the adopted K6 VRM and its facial expressions remain separately identified.",
   "editableBlend": {
     "path": "models/avatar-v1/charakuru/studies/true-front-b/motion.blend",
     "sha256": "e1a6c7c92ad4a2cf5c3575b0e9b59c6cf9d82ec7cfdb6ecd2a0c451d88205d14",
@@ -31,7 +31,7 @@
         "fullText": "Edit this portrait for STRICT ORTHOGRAPHIC FRONTAL FACE ALIGNMENT. Preserve this exact character identity, detailed eyes, hair, accessories, colors, gentle expression and composition. Change ONLY the remaining head/face pose and facial perspective. The current image is NOT quite straight: the eye on the viewer's left sits lower, the eye on the viewer's right sits higher, and the mouth/chin lean slightly right. Correct those issues.\nBoth irises and both eye corners must lie on the SAME HORIZONTAL EYE LINE. Identical apparent eye size and equal distance either side of the face centerline. Both pupils looking straight at camera. The nose, mouth center, chin tip, neck midpoint and collar jewel must align on ONE VERTICAL CENTERLINE. Both cheek silhouettes at matching depths and widths. Head has ZERO roll, ZERO yaw, ZERO pitch. Shoulders horizontal. This must look like a real straight-on symmetrical facial anatomy reference, not a three-quarter anime pose or a tilted face leveled by cropping.\nKeep the original large softly round amber eyes, soft dark lashes, small softly open oval mouth and same chin length/rounded shape. Preserve the natural asymmetric HAIR and ornament arrangement: large navy/yellow ribbon and white flowers on viewer right, smaller flower strands on viewer left. Do not symmetrize the hairstyle or duplicate ornaments. Do not replace the character with a different face. No grin, no closed mouth, no added objects or writing. Same single upper-shoulder portrait, minimal plain warm-white background.\n## Art Style (MANDATORY for all nanatau generations)\n- Proportions: 5.5-6 head ratio. NOT chibi, NOT tall-realistic. Compact-cute middle ground.\n- Lineart: Clean, thin-to-medium weight lines with clear intent. Hair strands clearly separated with visible flow direction. NOT thick chunky outlines, NOT sketchy.\n- Coloring: FLAT cel shading only. Warm color temperature throughout. Minimal shadows (soft single-layer if any). NO excessive gradients, NO AI-like glossy sheen, NO heavy rendering.\n- Eyes: Large but proportionally natural. Round with multiple highlight layers. Detailed iris (gradient within, visible reflection layers). Expressive and emotional — the eyes carry the character's personality.\n- Expression preference: Introverted, fragile emotions — teary, sleepy, embarrassed, trying-her-best. \"Quiet bravery in vulnerability.\" NOT genki/energetic, NOT cool/sharp.\n- Composition: Character-centered, 1-2 poses per image (character sheet style works well). Props held close to body.\n- Background: MINIMAL. Simple warm gradient (cream/pale yellow to white) or dark navy night sky with stars. Never complex or distracting.\n- Color temperature: WARM throughout. Even dark backgrounds should feel warm due to the character's yellow palette.\n- Overall feel: Soft, gentle, healing. The kind of illustration that makes you feel warm and want to protect this character.\n- Design colors: Pale Butter Yellow (#FFFDE7), Soft Navy (#2C3E6B), Warm White (#FFF8E1); retain warm skin and amber iris detail from the exact reference.\n"
       }
     ],
-    "selection": "B selected for the frontal study after A retained a tilted eye line; production-face approval was not inferred."
+    "selection": "B selected after A retained a tilted eye line. The user explicitly confirmed the appearance of B on 2026-10-29 and chose to stop at this checkpoint."
   },
   "workingDirectory": "output/face-likeness-20261026/true-front-b",
   "localSources": [
@@ -44,5 +44,12 @@
     "output/face-likeness-20261026/true-front-b/scripts/review_true_front_study.py"
   ],
   "mediaPolicy": "Selected model, video, reference and inspection images stored byte-identically. Logs, raw frames, generation candidate A and backup remain in ignored output.",
-  "securityImpact": "Local files and local Git commit only; no secrets, permissions, remote publication, push, dependency or CI changes."
+  "securityImpact": "Local files and local Git commit only; no secrets, permissions, remote publication, push, dependency or CI changes.",
+  "faceDirectionApproval": {
+    "confirmedDate": "2026-10-29",
+    "question": "生成した2枚目の正面顔は、ななたうの顔の雰囲気として合っていますか？",
+    "answer": "あってるのでここで区切ろう",
+    "scope": "Appearance and direction of the generated second frontal-face reference (B). Facial expressions and VRM integration are not completed or approved by this answer.",
+    "stopPoint": "Neutral face and 12-second bone-motion study."
+  }
 }

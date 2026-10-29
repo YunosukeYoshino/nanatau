@@ -2,9 +2,9 @@
 
 [採用モデル・動画・検証の一覧](../../../../models/avatar-v1/charakuru/README.md)に対応する画像正本。
 
-## 真正面の顔Bのスタディ
+## 確認済みの正面顔B
 
-2026-10-29に制作記録として保存した確認用画像。新しい顔のまばたき・笑顔は調整前で、[試作モデルと動画](../../../../models/avatar-v1/charakuru/studies/true-front-b/README.md)に対応する。
+2026-10-29に本人が顔の雰囲気を確認した正面資料Bと、それをもとにした3Dモデルの画像。新しい顔のまばたき・笑顔は調整前で、[通常顔のモデルと動画](../../../../models/avatar-v1/charakuru/studies/true-front-b/README.md)に対応する。
 
 - [正面資料](true-front-b/reference.png)
 - [3Dの通常顔](true-front-b/front.png)
