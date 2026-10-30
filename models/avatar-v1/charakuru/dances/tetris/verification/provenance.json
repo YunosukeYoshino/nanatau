@@ -125,7 +125,7 @@
   },
   "status": "Adopted finished dance video; original model and sources unchanged",
   "video": {
-    "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+    "path": "models/avatar-v1/charakuru/dances/tetris/motion.mp4",
     "filename": "dance-tetris.mp4",
     "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d",
     "bytes": 9405868,

@@ -243,9 +243,9 @@
     "テトリス / 柊マグネタイト",
     "モーション：八ツ橋まろん"
   ],
-  "browserVerification": "models/avatar-v1/charakuru/verification/tetris/playback.json",
+  "browserVerification": "models/avatar-v1/charakuru/dances/tetris/verification/playback.json",
   "video": {
-    "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+    "path": "models/avatar-v1/charakuru/dances/tetris/motion.mp4",
     "filename": "dance-tetris.mp4",
     "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d",
     "bytes": 9405868,

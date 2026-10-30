@@ -14,7 +14,8 @@
     "baseUrl": ".",
     "paths": {
       "@showcase-assets/*": ["../images/concept/showcase/*"],
-      "@avatar-videos/*": ["../models/avatar-v1/charakuru/videos/*"]
+      "@avatar-videos/face-neck-motion.mp4": ["../models/avatar-v1/charakuru/releases/k6/motion.mp4"],
+      "@avatar-videos/dance-tetris-expressions.mp4": ["../models/avatar-v1/charakuru/dances/tetris-expressions/motion.mp4"]
     },
     "resolveJsonModule": true,
     "isolatedModules": true,

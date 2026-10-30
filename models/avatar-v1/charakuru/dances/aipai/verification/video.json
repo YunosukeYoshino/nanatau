@@ -206,6 +206,6 @@
     ]
   },
   "videoPlayback": "One 16-second clip, without an encoded repetition; excerpt endpoints are not a seamless loop",
-  "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-short.mp4",
+  "canonicalVideo": "models/avatar-v1/charakuru/dances/aipai/motion.mp4",
   "rawMotionCommitted": false
 }

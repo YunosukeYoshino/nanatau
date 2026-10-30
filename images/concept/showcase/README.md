@@ -13,8 +13,8 @@
 画像を開くと1440px版を確認できます。サイトは画面の大きさ・密度に応じて720px版と1440px版を選んで表示します。どちらも可逆圧縮のWebPです。
 
 - [公開サイトで表情を見る](https://nanatau.com/#motion)
-- [現在のK6の12秒動画](../../../models/avatar-v1/charakuru/videos/face-neck-motion.mp4)
-- [以前の「テトリス」の表情付き動画](../../../models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)
+- [現在のK6の12秒動画](../../../models/avatar-v1/charakuru/releases/k6/motion.mp4)
+- [以前の「テトリス」の表情付き動画](../../../models/avatar-v1/charakuru/dances/tetris-expressions/motion.mp4)
 - [モデル・画像・動画の正本](../../../models/avatar-v1/charakuru/README.md)
 - [レンダー条件とサイトへの組み込み](../../../site/README.md)
 

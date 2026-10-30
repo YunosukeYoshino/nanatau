@@ -1,16 +1,16 @@
 # 採用3Dモデル
 
-ななたうの3D制作は、採用した **Charakuru版**を基準にする。作業用の候補・原モーション・音源は `output/` に保持する。
+ななたうの3D制作は採用した **Charakuru版**を基準にする。作業用の候補・原モーション・音源は `output/` に保持する。
 
 | 成果物 | 確認先 |
 | --- | --- |
-| 顔の方向性を確認した最新モデル | [真正面の顔Bと12秒動画](avatar-v1/charakuru/studies/true-front-b/README.md)：通常顔・表情調整前、2026-10-29確認済み |
-| 現在のモデルの動作確認 | [顔と全身の12秒動画](avatar-v1/charakuru/videos/face-neck-motion.mp4)：K6版・1540×900・24fps・無音 |
+| 確認済みの正面顔B | [真正面の顔Bと12秒動画](avatar-v1/charakuru/studies/true-front-b/README.md)：通常顔・表情調整前、2026-10-29確認済み |
+| K6の動作確認 | [顔と全身の12秒動画](avatar-v1/charakuru/releases/k6/motion.mp4)：K6版・1540×900・24fps・無音 |
 | モデル・動画・検証の一覧 | [Charakuru成果物一覧](avatar-v1/charakuru/README.md) |
-| 以前の表情付きテトリス | [まばたきと笑顔の動画](avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：約15.87秒・1080×1350・公式伴奏付き |
-| 身体制作時のデモ | [Samba Dancing](avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒・1080×1080・無音 |
-| VRM 1.0 / MToon | [avatar.vrm](avatar-v1/charakuru/avatar.vrm)：元絵に合わせた顔・首と連続表情、顎先を丸めた2026-10-26 K6版 |
-| 編集用Blender | [avatar.blend](avatar-v1/charakuru/avatar.blend) |
+| 以前の表情付きテトリス | [まばたきと笑顔の動画](avatar-v1/charakuru/dances/tetris-expressions/motion.mp4)：約15.87秒・1080×1350・公式伴奏付き |
+| 身体制作時のデモ | [Samba Dancing](avatar-v1/charakuru/dances/samba/motion.mp4)：18.2秒・1080×1080・無音 |
+| VRM 1.0 / MToon | [avatar.vrm](avatar-v1/charakuru/releases/k6/avatar.vrm)：元絵に合わせた顔・首と連続表情、顎先を丸めた2026-10-26 K6版 |
+| 編集用Blender | [avatar.blend](avatar-v1/charakuru/releases/k6/avatar.blend) |
 | 外観・動作確認画像 | [画像一覧](../images/concept/avatar-v1/charakuru/README.md) |
 
-表情追加前の「愛包ダンスホール」の16秒縦動画と[「テトリス」の約15.87秒動画](avatar-v1/charakuru/videos/dance-tetris.mp4)、Charakuruプロジェクト、利用条件と確認範囲も、成果物一覧から参照できる。
+表情追加前の「愛包ダンスホール」の16秒縦動画と[「テトリス」の約15.87秒動画](avatar-v1/charakuru/dances/tetris/motion.mp4)、Charakuruプロジェクト、利用条件と確認範囲も、成果物一覧から参照できる。

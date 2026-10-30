@@ -358,62 +358,62 @@
   ],
   "adoptedFiles": [
     {
-      "path": "models/avatar-v1/charakuru/avatar.vrm",
+      "path": "models/avatar-v1/charakuru/releases/k6/avatar.vrm",
       "bytes": 26826764,
       "sha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a"
     },
     {
-      "path": "models/avatar-v1/charakuru/avatar.blend",
+      "path": "models/avatar-v1/charakuru/releases/k6/avatar.blend",
       "bytes": 29261504,
       "sha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/current-fullbody.png",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/current-fullbody.png",
       "bytes": 577489,
       "sha256": "a4347ddd2ce94f2b1f39008ab22193cb4d4b27501e9dea9efcd3bfbeae4ea024"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/current-views.jpg",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/current-views.jpg",
       "bytes": 169111,
       "sha256": "1265371ffd0ff5038cba89d9b0c87596bc5d19dbe8ba1c4c83a31e29bf9086cb"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/chin-rounding-comparison.png",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/chin-rounding-comparison.png",
       "bytes": 171402,
       "sha256": "98e8708d6a24fcd4d40a60103ab60d515cebdc78afaa58625f9b1a16fe92625b"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/face-neutral.png",
       "bytes": 3274876,
       "sha256": "441ae17973139ae89f3ee67e2942f30e8de3f798b2851ebaec5bc611bbb15a46"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/face-blink.png",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/face-blink.png",
       "bytes": 3232333,
       "sha256": "df2353ee78b0a8376cf63d39f13e484bb93ea5c1524e9c079307c1db7c3bb7e5"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/face-happy.png",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/face-happy.png",
       "bytes": 3275480,
       "sha256": "0b511658d084d01680dced2bc392fe83f6c2a61f987c98522c02e66cdbdebec3"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/expressions-blink-matrix.jpg",
       "bytes": 446171,
       "sha256": "ae62a91ef7ccec5993b2bdaa4b6c8db576dbbb3709eb52a77f36c888d8d775ca"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/expressions-happy-matrix.jpg",
       "bytes": 447343,
       "sha256": "225e92f7dbe5f4ee3ed09b45ab21cdffbde5bcd83a7871cb474779f96c8c0d7b"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/expressions-combined-matrix.jpg",
       "bytes": 446228,
       "sha256": "596e6062361f594346c3470c091b74298b13a74150268d3490e728b46ac8df96"
     },
     {
-      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+      "path": "models/avatar-v1/charakuru/releases/k6/motion.mp4",
       "bytes": 5206220,
       "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693"
     }
@@ -453,27 +453,27 @@
   "neutralPreservationScope": "Only local chin Z coordinates and resulting normals change. Head X/Y, UVs, weights, expression deltas, neck/throat boundaries and all other meshes remain unchanged.",
   "retainedHistoricalVideos": [
     {
-      "path": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
+      "path": "models/avatar-v1/charakuru/dances/samba/motion.mp4",
       "bytes": 10007965,
       "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
     },
     {
-      "path": "models/avatar-v1/charakuru/videos/dance-short.mp4",
+      "path": "models/avatar-v1/charakuru/dances/aipai/motion.mp4",
       "bytes": 6467915,
       "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
     },
     {
-      "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+      "path": "models/avatar-v1/charakuru/dances/tetris/motion.mp4",
       "bytes": 9405868,
       "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d"
     },
     {
-      "path": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
+      "path": "models/avatar-v1/charakuru/dances/tetris-expressions/motion.mp4",
       "bytes": 9473198,
       "sha256": "a3b52ca3e1206924187ae4b9b0226230d31f089187a151e8f2ebdc0d48e1285b"
     },
     {
-      "path": "models/avatar-v1/charakuru/videos/motion-16s.mp4",
+      "path": "models/avatar-v1/charakuru/archive/body/motion.mp4",
       "bytes": 4938207,
       "sha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68"
     }
@@ -532,7 +532,7 @@
       "sha256": "69083d7df76f1a834f32ec15f5cd826c7730d88330efe3c233a75a749c09270d"
     },
     "video": {
-      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+      "path": "models/avatar-v1/charakuru/releases/k6/motion.mp4",
       "bytes": 5206220,
       "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693"
     },

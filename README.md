@@ -41,11 +41,11 @@
 
 <h2 id="avatar"><img src="images/readme/heading-model.svg" alt="3Dのななたう" width="480"></h2>
 
-Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気を確認し、この顔の方向性で一区切りにしました。現在の制作地点は、通常顔のモデルと12秒の動作動画です。
+Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気を確認しました。通常顔のモデルと12秒の動作動画を制作し、ここで一区切りにしています。
 
 <p align="center">
-  <a href="images/concept/avatar-v1/charakuru/true-front-b/reference.png"><img src="images/concept/avatar-v1/charakuru/true-front-b/reference.png" alt="顔の雰囲気を確認した、真正面の顔資料B" width="360"></a>
-  <a href="images/concept/avatar-v1/charakuru/true-front-b/front.png"><img src="images/concept/avatar-v1/charakuru/true-front-b/front.png" alt="正面顔Bをもとに作った3Dモデルの通常顔" width="360"></a>
+  <a href="images/concept/avatar-v1/charakuru/studies/true-front-b/reference.png"><img src="images/concept/avatar-v1/charakuru/studies/true-front-b/reference.png" alt="顔の雰囲気を確認した、真正面の顔資料B" width="360"></a>
+  <a href="images/concept/avatar-v1/charakuru/studies/true-front-b/front.png"><img src="images/concept/avatar-v1/charakuru/studies/true-front-b/front.png" alt="正面顔Bをもとに作った3Dモデルの通常顔" width="360"></a>
   <br>
   <sub>確認済みの正面資料B · 3Dモデルの通常顔</sub>
 </p>
@@ -56,12 +56,12 @@ Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気�
   <sub>12秒 · 1540×900 · 24fps · 無音 · 左右の首振り、うなずき、首かしげ</sub>
 </p>
 
-[モデル・資料・検証記録](models/avatar-v1/charakuru/studies/true-front-b/README.md)をまとめています。この顔のまばたき・笑顔・口パクは調整前で、VRMへの再書き出しはまだ行っていません。
+[モデル・資料・検証結果](models/avatar-v1/charakuru/studies/true-front-b/README.md)をまとめています。この顔のまばたき・笑顔・口パクは調整前で、VRMへの再書き出しはまだ行っていません。
 
 <details>
 <summary>表情付きVRM（K6）と、確認済みの仕様</summary>
 
-配信用のVRM正本は、2026-10-26に顎先を整えたK6版です。上の正面顔Bより前の顔で、まばたきと笑顔を実装しています。
+配信用のVRM正本は2026-10-26に顎先を整えたK6版です。上の正面顔Bより前の顔で、まばたきと笑顔を実装しています。
 
 <p align="center">
   <a href="images/concept/showcase/nanatau-avatar-neutral-1440.webp"><img src="images/concept/showcase/nanatau-avatar-neutral-1440.webp" alt="K6の通常顔" width="250"></a>
@@ -74,7 +74,7 @@ Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気�
 - VRM 1.0・MToon。髪と衣装の揺れ物設定を含みます。
 - まばたきと笑顔は0〜100%で変形し、重ねて使えます。
 - 表情の強さ・方向・組み合わせを変えた45通り、Blendの保存・再読み込み、VRMの再書き出しを確認しています。
-- [K6の12秒動画](models/avatar-v1/charakuru/videos/face-neck-motion.mp4)では、左右の首振り・うなずき・まばたき・笑顔を全身と顔アップで確認できます。揺れ物の物理計算は含みません。
+- [K6の12秒動画](models/avatar-v1/charakuru/releases/k6/motion.mp4)では左右の首振り・うなずき・まばたき・笑顔を全身と顔アップで確認できます。揺れ物の物理計算は含みません。
 
 詳しい検証結果と残っている課題は、[3D成果物一覧](models/avatar-v1/charakuru/README.md)を参照してください。
 
@@ -85,9 +85,9 @@ Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気�
 
 以下は以前のモデルによる記録です。
 
-- [表情付きテトリス](models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4)：2026-10-24版。約16秒、公式伴奏付き。
-- [Samba Dancing](models/avatar-v1/charakuru/videos/dance-demo.mp4)：18.2秒、無音。全身と揺れ物の動作確認。
-- [愛包ダンスホール](models/avatar-v1/charakuru/videos/dance-short.mp4)：16秒、音声付きの縦動画。
+- [表情付きテトリス](models/avatar-v1/charakuru/dances/tetris-expressions/motion.mp4)：2026-10-24版。約16秒、公式伴奏付き。
+- [Samba Dancing](models/avatar-v1/charakuru/dances/samba/motion.mp4)：18.2秒、無音。全身と揺れ物の動作確認。
+- [愛包ダンスホール](models/avatar-v1/charakuru/dances/aipai/motion.mp4)：16秒、音声付きの縦動画。
 - [6方向・全身・動作確認画像](images/concept/avatar-v1/charakuru/README.md)：現在の3表情と、身体制作時の外観を掲載。
 
 </details>
@@ -101,8 +101,8 @@ Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気�
 | 目的 | ファイル・資料 |
 | --- | --- |
 | 最新の正面顔と動きを編集する | [正面顔BのBlenderファイル](models/avatar-v1/charakuru/studies/true-front-b/motion.blend) |
-| 表情付きVRM（K6）を使う | [avatar.vrm](models/avatar-v1/charakuru/avatar.vrm) |
-| 表情付きモデル（K6）を編集する | [avatar.blend](models/avatar-v1/charakuru/avatar.blend) |
+| 表情付きVRM（K6）を使う | [avatar.vrm](models/avatar-v1/charakuru/releases/k6/avatar.vrm) |
+| 表情付きモデル（K6）を編集する | [avatar.blend](models/avatar-v1/charakuru/releases/k6/avatar.blend) |
 | イラストや表情素材を見る | [Showcaseのビジュアル](images/concept/showcase/) |
 | 配信用の2D素材を見る | [透過PNG](images/png-tuber/transparent/)・[MotionPNGTuber](images/png-tuber/motion/) |
 | 制作過程・検証・出典を読む | [Charakuru制作記録](models/avatar-v1/charakuru/PRODUCTION.md) |
@@ -124,9 +124,24 @@ bun run dev
 表示されたURL（通常は <http://localhost:5173/>）を開いてください。サイトの構成やデプロイ方法は[サイト開発ガイド](site/README.md)にあります。
 
 <details>
+<summary>ディレクトリ構成</summary>
+
+| 保存先 | 内容 |
+| --- | --- |
+| `models/` | 採用モデル、確認用モデル、動画、検証記録 |
+| `images/` | 採用したイラスト、モデルの確認画像、サイト用画像 |
+| `output/` | 生成途中のデータと再現用スクリプト。Git管理外 |
+| `site/` | React / Viteのキャラクター紹介サイト |
+| `blog/` | Lumeのブログ |
+
+Charakuruの成果物は[表情付きモデル](models/avatar-v1/charakuru/releases/k6/README.md)、[通常顔のモデル](models/avatar-v1/charakuru/studies/true-front-b/README.md)、[曲ごとのダンス](models/avatar-v1/charakuru/dances/README.md)、[身体制作時のデータ](models/avatar-v1/charakuru/archive/body/README.md)にまとめています。詳しい保存先は[成果物一覧](models/avatar-v1/charakuru/README.md)を参照してください。
+
+</details>
+
+<details>
 <summary>型チェック・ビルド・秘密情報チェック</summary>
 
-サイトの型チェックと本番ビルド（`site/`で実行）:
+サイトの型チェックと本番ビルドは `site/` で実行します。
 
 ```bash
 bun run typecheck
@@ -134,7 +149,7 @@ bun run build
 bun run preview
 ```
 
-秘密情報チェック（リポジトリ直下で実行）:
+秘密情報チェックはリポジトリ直下で実行します。
 
 ```bash
 bun install
@@ -172,7 +187,7 @@ deno task serve
 
 配色はPale Butter Yellow（`#FFFDE7`）・Soft Navy（`#2C3E6B`）・Warm White（`#FFF8E1`）。詳しくは[スタイルガイド](.claude/skills/nanatau/STYLE_GUIDE.md)を参照してください。
 
-キャラクター制作の基本プロンプト:
+キャラクター制作では次の基本プロンプトを使います。
 
 ```text
 Soft pale yellow hair, warm golden amber eyes with layered highlights,
@@ -200,7 +215,7 @@ Soft Navy (#2C3E6B), Warm White (#FFF8E1).
 <details>
 <summary>どのファイルが最新のモデルですか？</summary>
 
-`models/avatar-v1/charakuru/avatar.vrm`と`avatar.blend`が正本です。現在の表情はこの2つに含まれます。`.charakit`とFBXは表情追加前の身体制作の記録です。
+最新の顔は[正面顔BのBlend](models/avatar-v1/charakuru/studies/true-front-b/motion.blend)に保存しています。まばたきと笑顔を含むVRM正本は[K6のVRMとBlend](models/avatar-v1/charakuru/releases/k6/README.md)です。`.charakit`とFBXは表情追加前の身体制作の記録です。
 
 </details>
 
@@ -214,7 +229,7 @@ Soft Navy (#2C3E6B), Warm White (#FFF8E1).
 <details>
 <summary>Charakuruの制作プロジェクトが開けません</summary>
 
-`project.charakit`はGit LFSで管理しています。実体を取得していない場合は、リポジトリ直下で`git lfs pull`を実行してください。現在の表情を編集する場合は、`avatar.blend`を使ってください。
+[project.charakit](models/avatar-v1/charakuru/archive/body/project.charakit)はGit LFSで管理しています。実体を取得していない場合は、リポジトリ直下で`git lfs pull`を実行してください。現在の表情を編集する場合は、[K6のBlend](models/avatar-v1/charakuru/releases/k6/avatar.blend)を使ってください。
 
 </details>
 

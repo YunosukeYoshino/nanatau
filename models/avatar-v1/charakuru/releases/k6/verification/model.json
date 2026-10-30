@@ -1,7 +1,7 @@
 {
   "status": "passed_with_documented_limits",
-  "source": "models/avatar-v1/charakuru/avatar.blend",
-  "vrm": "models/avatar-v1/charakuru/avatar.vrm",
+  "source": "models/avatar-v1/charakuru/releases/k6/avatar.blend",
+  "vrm": "models/avatar-v1/charakuru/releases/k6/avatar.vrm",
   "blender": "5.2.1 LTS",
   "poseContacts": [
     {
@@ -1247,11 +1247,11 @@
     "previousVrmSha256": "6823c68b803cc3bf2c959a362b2705896f788d7dec17455e12496305dd77d925"
   },
   "canonicalEvidence": {
-    "blink": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
-    "happy": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
-    "combined": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
-    "fullbody": "images/concept/avatar-v1/charakuru/current-views.jpg",
-    "comparison": "images/concept/avatar-v1/charakuru/chin-rounding-comparison.png"
+    "blink": "images/concept/avatar-v1/charakuru/releases/k6/expressions-blink-matrix.jpg",
+    "happy": "images/concept/avatar-v1/charakuru/releases/k6/expressions-happy-matrix.jpg",
+    "combined": "images/concept/avatar-v1/charakuru/releases/k6/expressions-combined-matrix.jpg",
+    "fullbody": "images/concept/avatar-v1/charakuru/releases/k6/current-views.jpg",
+    "comparison": "images/concept/avatar-v1/charakuru/releases/k6/chin-rounding-comparison.png"
   },
   "limitations": [
     "Only the chin tip changed from approved K5; the earlier exact-neutral-Head-to-K assertion no longer applies to this local edit.",

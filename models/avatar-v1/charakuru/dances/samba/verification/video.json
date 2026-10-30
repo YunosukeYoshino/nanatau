@@ -173,6 +173,6 @@
     "newGeometryOrMaterialChanges": false
   },
   "videoPlayback": "One full 18.2-second Samba clip; no encoded repetition or audio",
-  "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
+  "canonicalVideo": "models/avatar-v1/charakuru/dances/samba/motion.mp4",
   "rawMotionCommitted": false
 }

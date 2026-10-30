@@ -1958,7 +1958,7 @@
     "facialExpressionAnimation": false,
     "springSimulationEnabled": false,
     "canonicalManifestEntriesUnchanged": 72,
-    "encodedContactSheet": "images/concept/avatar-v1/charakuru/true-front-b/motion-contact-sheet.jpg",
+    "encodedContactSheet": "images/concept/avatar-v1/charakuru/studies/true-front-b/motion-contact-sheet.jpg",
     "securityImpact": "Local output only; no secrets, permissions, publication, push or canonical asset changes.",
     "encodingCommand": [
       "ffmpeg",

@@ -58,7 +58,7 @@
   "droppedFramesDuringPlayback": 0,
   "screenshotsVisuallyInspected": true,
   "revision": "approved-reference-face-k6-rounded-chin",
-  "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+  "path": "models/avatar-v1/charakuru/releases/k6/motion.mp4",
   "appliesToModelRevision": "approved-reference-face-k6-rounded-chin",
   "currentModelRevision": "approved-reference-face-k6-rounded-chin",
   "matchesCurrentModel": true,

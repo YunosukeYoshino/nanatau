@@ -10,13 +10,13 @@
     "canonicalPreviewDirectory": "images/concept/avatar-v1/charakuru",
     "metadataPolicy": "Existing Nanatau author and usage terms inherited unchanged; no new distribution permission assigned.",
     "formalVrmExport": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
-    "verification": "verification/expressions/model.json",
+    "verification": "releases/k6/verification/model.json",
     "additionalCredits": 0,
     "publicationAuthorized": false,
     "pushAuthorized": false,
     "initialVrmExport": "3cbd1a2a9db584a50dc3af943b69ca05573616f75aa22254db0c7a57f3688052",
     "bodyOnlyMtoonVrmExport": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
-    "bodyOnlyVerification": "verification/avatar/vrm-reload.json",
+    "bodyOnlyVerification": "archive/body/verification/vrm-reload.json",
     "latestRevisionAdoptedAt": "2026-10-26T18:09:38.816316+09:00",
     "latestUserInstruction": "ここだけちょっと気になる。自然に丸みを帯びさせて",
     "latestRevision": "approved-reference-face-k6-rounded-chin"
@@ -129,166 +129,166 @@
   "files": [
     {
       "path": "images/concept/avatar-v1/charakuru/README.md",
-      "bytes": 3732,
-      "sha256": "fcc4ce89ba90f9da885d8d96c32893941b079abe6771b0821a4368748418e402"
+      "bytes": 3945,
+      "sha256": "f17371d899095ed94fee877720737ea11ec5d9b83a06891eaa248543a740e9cc"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/back.png",
+      "path": "images/concept/avatar-v1/charakuru/archive/body/back.png",
       "bytes": 1747652,
       "sha256": "71ce8bd9ffe8551d049aad755fc56c5ec281634db6240a7fe69179cff0107a96"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/chin-rounding-comparison.png",
-      "bytes": 171402,
-      "sha256": "98e8708d6a24fcd4d40a60103ab60d515cebdc78afaa58625f9b1a16fe92625b"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/current-fullbody.png",
-      "bytes": 577489,
-      "sha256": "a4347ddd2ce94f2b1f39008ab22193cb4d4b27501e9dea9efcd3bfbeae4ea024"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/current-views.jpg",
-      "bytes": 169111,
-      "sha256": "1265371ffd0ff5038cba89d9b0c87596bc5d19dbe8ba1c4c83a31e29bf9086cb"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/expressions-blink-matrix.jpg",
-      "bytes": 446171,
-      "sha256": "ae62a91ef7ccec5993b2bdaa4b6c8db576dbbb3709eb52a77f36c888d8d775ca"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/expressions-combined-matrix.jpg",
-      "bytes": 446228,
-      "sha256": "596e6062361f594346c3470c091b74298b13a74150268d3490e728b46ac8df96"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/expressions-happy-matrix.jpg",
-      "bytes": 447343,
-      "sha256": "225e92f7dbe5f4ee3ed09b45ab21cdffbde5bcd83a7871cb474779f96c8c0d7b"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/face-blink.png",
-      "bytes": 3232333,
-      "sha256": "df2353ee78b0a8376cf63d39f13e484bb93ea5c1524e9c079307c1db7c3bb7e5"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/face-happy.png",
-      "bytes": 3275480,
-      "sha256": "0b511658d084d01680dced2bc392fe83f6c2a61f987c98522c02e66cdbdebec3"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/face-neutral.png",
-      "bytes": 3274876,
-      "sha256": "441ae17973139ae89f3ee67e2942f30e8de3f798b2851ebaec5bc611bbb15a46"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/face.png",
+      "path": "images/concept/avatar-v1/charakuru/archive/body/face.png",
       "bytes": 1969808,
       "sha256": "d2dd7ff68a8651187dec5158a4d03bb8d5e49516a8af5bf6c8a2296ddaefd25a"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/front.png",
+      "path": "images/concept/avatar-v1/charakuru/archive/body/front.png",
       "bytes": 1801308,
       "sha256": "804fe824e425b4163cf33cdf58e9930fb2157cf0132939d062878eca841b766c"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/left.png",
+      "path": "images/concept/avatar-v1/charakuru/archive/body/left.png",
       "bytes": 1626312,
       "sha256": "f629b5dd7d5f66d406989eb4de2fa48065b2b49b0c8af914841af84051c37a2e"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/left45.png",
+      "path": "images/concept/avatar-v1/charakuru/archive/body/left45.png",
       "bytes": 1747688,
       "sha256": "b287e939b9f32a89bf5a0c98e06003ce24f7867b2caab41df4908260676e3ff5"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0001.png",
-      "bytes": 613716,
-      "sha256": "b4e87644a23d8d87429ff5ece9710b9b6751f170951ff5ae5b618020edd7f043"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0091.png",
-      "bytes": 594083,
-      "sha256": "f7cec3a09bbf288af22bde3b7ca6f7faff34a51d28b129fd5e84b631d9e50ebf"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0181.png",
-      "bytes": 596781,
-      "sha256": "18814fd7269c95be0237edd9933301f917402b3bfd2c55ad9533ce8cab98a9ac"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0271.png",
-      "bytes": 609295,
-      "sha256": "725b3b717c041a7cab80152eb690a2ecd897e6261ec243df14d89762d73b8ecc"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0361.png",
-      "bytes": 603222,
-      "sha256": "6e25c2dc1397a3b65d4bf87917db10ccba185fafbaaa7c6b97ff4abfb0d37721"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/front-0480.png",
-      "bytes": 592671,
-      "sha256": "02b52bb9fa86ad95b2adc6718c334a9db6c851b68284855967b12da052dc18c6"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0001.png",
-      "bytes": 570350,
-      "sha256": "6b10c4b000f79ba09423a16c39556bb4c529c86fff641cd8e206e9b9ecc95ae9"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0091.png",
-      "bytes": 599358,
-      "sha256": "66a11ece40ab40f952f901889244acae44f89f0aa95413e9c0d084419b671afa"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0181.png",
-      "bytes": 580598,
-      "sha256": "9fa00b261e33e881abee9d0fc53aafdc5aad854237d4413d0900ada6d5298bc8"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0271.png",
-      "bytes": 594740,
-      "sha256": "88d4025620f3f9957149b20991e60af852955d0edc7248f4db083d8301dc3742"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0361.png",
-      "bytes": 576814,
-      "sha256": "cbbdbce1020fd921c465203c52bffaaef48d951fd7fca580d5f7fb6e58ab33f1"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/motion-review/side-0480.png",
-      "bytes": 590108,
-      "sha256": "7cd2b67c356ae5c2b8ed6f0750c9042f9372197eed58ebd366115d7ff12e31fb"
-    },
-    {
-      "path": "images/concept/avatar-v1/charakuru/right.png",
+      "path": "images/concept/avatar-v1/charakuru/archive/body/right.png",
       "bytes": 1635647,
       "sha256": "d52f058ab8e2dcd9df0d982ab47de316d57a28d3dad40aca942f188694804ebb"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/right45.png",
+      "path": "images/concept/avatar-v1/charakuru/archive/body/right45.png",
       "bytes": 1744937,
       "sha256": "a1516313afc978aa1eb5b3e7f027aab3cc772bb4d6241f2b3e23c42decdf5372"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/true-front-b/comparison.png",
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/front-0001.png",
+      "bytes": 613716,
+      "sha256": "b4e87644a23d8d87429ff5ece9710b9b6751f170951ff5ae5b618020edd7f043"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/front-0091.png",
+      "bytes": 594083,
+      "sha256": "f7cec3a09bbf288af22bde3b7ca6f7faff34a51d28b129fd5e84b631d9e50ebf"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/front-0181.png",
+      "bytes": 596781,
+      "sha256": "18814fd7269c95be0237edd9933301f917402b3bfd2c55ad9533ce8cab98a9ac"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/front-0271.png",
+      "bytes": 609295,
+      "sha256": "725b3b717c041a7cab80152eb690a2ecd897e6261ec243df14d89762d73b8ecc"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/front-0361.png",
+      "bytes": 603222,
+      "sha256": "6e25c2dc1397a3b65d4bf87917db10ccba185fafbaaa7c6b97ff4abfb0d37721"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/front-0480.png",
+      "bytes": 592671,
+      "sha256": "02b52bb9fa86ad95b2adc6718c334a9db6c851b68284855967b12da052dc18c6"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/side-0001.png",
+      "bytes": 570350,
+      "sha256": "6b10c4b000f79ba09423a16c39556bb4c529c86fff641cd8e206e9b9ecc95ae9"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/side-0091.png",
+      "bytes": 599358,
+      "sha256": "66a11ece40ab40f952f901889244acae44f89f0aa95413e9c0d084419b671afa"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/side-0181.png",
+      "bytes": 580598,
+      "sha256": "9fa00b261e33e881abee9d0fc53aafdc5aad854237d4413d0900ada6d5298bc8"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/side-0271.png",
+      "bytes": 594740,
+      "sha256": "88d4025620f3f9957149b20991e60af852955d0edc7248f4db083d8301dc3742"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/side-0361.png",
+      "bytes": 576814,
+      "sha256": "cbbdbce1020fd921c465203c52bffaaef48d951fd7fca580d5f7fb6e58ab33f1"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/dances/aipai/side-0480.png",
+      "bytes": 590108,
+      "sha256": "7cd2b67c356ae5c2b8ed6f0750c9042f9372197eed58ebd366115d7ff12e31fb"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/chin-rounding-comparison.png",
+      "bytes": 171402,
+      "sha256": "98e8708d6a24fcd4d40a60103ab60d515cebdc78afaa58625f9b1a16fe92625b"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/current-fullbody.png",
+      "bytes": 577489,
+      "sha256": "a4347ddd2ce94f2b1f39008ab22193cb4d4b27501e9dea9efcd3bfbeae4ea024"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/current-views.jpg",
+      "bytes": 169111,
+      "sha256": "1265371ffd0ff5038cba89d9b0c87596bc5d19dbe8ba1c4c83a31e29bf9086cb"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/expressions-blink-matrix.jpg",
+      "bytes": 446171,
+      "sha256": "ae62a91ef7ccec5993b2bdaa4b6c8db576dbbb3709eb52a77f36c888d8d775ca"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/expressions-combined-matrix.jpg",
+      "bytes": 446228,
+      "sha256": "596e6062361f594346c3470c091b74298b13a74150268d3490e728b46ac8df96"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/expressions-happy-matrix.jpg",
+      "bytes": 447343,
+      "sha256": "225e92f7dbe5f4ee3ed09b45ab21cdffbde5bcd83a7871cb474779f96c8c0d7b"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/face-blink.png",
+      "bytes": 3232333,
+      "sha256": "df2353ee78b0a8376cf63d39f13e484bb93ea5c1524e9c079307c1db7c3bb7e5"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/face-happy.png",
+      "bytes": 3275480,
+      "sha256": "0b511658d084d01680dced2bc392fe83f6c2a61f987c98522c02e66cdbdebec3"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/releases/k6/face-neutral.png",
+      "bytes": 3274876,
+      "sha256": "441ae17973139ae89f3ee67e2942f30e8de3f798b2851ebaec5bc611bbb15a46"
+    },
+    {
+      "path": "images/concept/avatar-v1/charakuru/studies/true-front-b/comparison.png",
       "bytes": 908522,
       "sha256": "21884cd0a7780af401810ff7252623d11fe484c2553a4ae34a0e4f3b0a83613b"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/true-front-b/front.png",
+      "path": "images/concept/avatar-v1/charakuru/studies/true-front-b/front.png",
       "bytes": 1283781,
       "sha256": "c3ed014f6de156d47ef7f12460742d17b09221f0d12c069d29151fe1c6e7e1f0"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/true-front-b/motion-contact-sheet.jpg",
+      "path": "images/concept/avatar-v1/charakuru/studies/true-front-b/motion-contact-sheet.jpg",
       "bytes": 916579,
       "sha256": "7f62766ff01e44b116d0b16e6adef021885136acd8feedbfe3625daf939666c5"
     },
     {
-      "path": "images/concept/avatar-v1/charakuru/true-front-b/reference.png",
+      "path": "images/concept/avatar-v1/charakuru/studies/true-front-b/reference.png",
       "bytes": 2548118,
       "sha256": "4f1cb08e373bdef3b8a6e2939af862a78679510efedaa6053d8c5b4121cc1d70"
     },
@@ -324,43 +324,238 @@
     },
     {
       "path": "models/avatar-v1/charakuru/ORGANIZATION.md",
-      "bytes": 44200,
-      "sha256": "974e3284b9ab25acf9c6a301b16a9ed689cb9f1c3608c53555cb049766112ffd"
+      "bytes": 20658,
+      "sha256": "af429ba6e082b8eed25a1cf232264b5740e11dc5afc1a87d368bd3aae5ac80ff"
     },
     {
       "path": "models/avatar-v1/charakuru/PRODUCTION.md",
-      "bytes": 40397,
-      "sha256": "fdaa9c14e9de67fbc25b62d7a0790193ced1fb253687267ce1d305c8a3581547"
+      "bytes": 3641,
+      "sha256": "f90febb9a0dbc745eeddb000f3c25c9ef4f81c6d978a81ef987269f99ea582c0"
     },
     {
       "path": "models/avatar-v1/charakuru/README.md",
-      "bytes": 4378,
-      "sha256": "2358f6d960795794498ece9504fa233e68b00f45777cb3c2a4bc77fe1b0ab95c"
+      "bytes": 1949,
+      "sha256": "905ef11bac48ad35d704b69696d161894336091e5009439e69a88b351cd4a3b2"
     },
     {
-      "path": "models/avatar-v1/charakuru/avatar.blend",
-      "bytes": 29261504,
-      "sha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
+      "path": "models/avatar-v1/charakuru/archive/body/README.md",
+      "bytes": 947,
+      "sha256": "cc26f0ed4755692e2d280904c4ef58dc0ea09f812951be0fb3afe01458740748"
     },
     {
-      "path": "models/avatar-v1/charakuru/avatar.vrm",
-      "bytes": 26826764,
-      "sha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a"
+      "path": "models/avatar-v1/charakuru/archive/body/motion.mp4",
+      "bytes": 4938207,
+      "sha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68"
     },
     {
-      "path": "models/avatar-v1/charakuru/project.charakit",
+      "path": "models/avatar-v1/charakuru/archive/body/project.charakit",
       "bytes": 120512239,
       "sha256": "fb428067d68963c3f0a7967e13f3bb61bf2994b87dc1a2363ffa4f2001f1c75c"
     },
     {
-      "path": "models/avatar-v1/charakuru/review.fbx",
+      "path": "models/avatar-v1/charakuru/archive/body/review.fbx",
       "bytes": 12486476,
       "sha256": "5aa64dd00f2bbea9774021cb1539e6470e2eddfbb2ce8811171ec52cf8ee325f"
     },
     {
+      "path": "models/avatar-v1/charakuru/archive/body/verification/fbx-roundtrip.json",
+      "bytes": 636,
+      "sha256": "3b16ec2d27ecaa2a656751900bb80f21c86e5824d41844de71f82a0c5585c369"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/body/verification/manual-rig.json",
+      "bytes": 1656,
+      "sha256": "185fb46651efbbf90b288b291dd587b55c27aec1338b5a5f0ed3151ea9fa9e8a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/body/verification/mtoon-render.json",
+      "bytes": 1598,
+      "sha256": "a758063bea9aa164b09686f5f0daa6cdb06301e54f4cc8390a58bed872c2f5ea"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/body/verification/mtoon-upgrade.json",
+      "bytes": 1488,
+      "sha256": "76fec3acae39ba6079fc0970efa85728ad39e9e0da70b6598008024167d441b7"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/body/verification/video.json",
+      "bytes": 793,
+      "sha256": "50f6723f6be97cb845a438c7434793f500beb9bc27ea922fece1775fb8daee57"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/body/verification/vrm-export.json",
+      "bytes": 6384,
+      "sha256": "69b05f95f0f83c0e7a2c3c7cb93f11d87bffc392ec1e1079a7efa4a22c800252"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/body/verification/vrm-reload.json",
+      "bytes": 2094,
+      "sha256": "9c83d8b5585465300457a1d5269ba04cfaf070484108ab99d859753a6dd86300"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/layout-history.md",
+      "bytes": 44425,
+      "sha256": "2f29530171fa8e7e3e88528c7a314f90f488491d1fc68808b2a73634e401c5c2"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/archive/production-history.md",
+      "bytes": 40699,
+      "sha256": "54d81d8b3cd68a788c3383b02a3788bc80f02e018d486eed6f4c59bf9e03ba5a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/README.md",
+      "bytes": 852,
+      "sha256": "2d29fcb50cdaf096df1f574f2cd1f8f2227cf557cd56396dd76c9121479ae0b2"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/aipai/README.md",
+      "bytes": 539,
+      "sha256": "951c4b8baf2a946d2a83dcdedb59989deba374f4f0f1f15ecbde89a2d0d23b42"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/aipai/motion.mp4",
+      "bytes": 6467915,
+      "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/aipai/verification/playback.json",
+      "bytes": 1561,
+      "sha256": "6618a54c8b63a5d6b1a44158c4b9d19709e3858d8382d74be719cfecb16406c6"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/aipai/verification/provenance.json",
+      "bytes": 2036,
+      "sha256": "497ecd09cd5118dfaf94e605eeb067c3e1c8c350af9ee720662e7c6583ae946f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/aipai/verification/video.json",
+      "bytes": 6195,
+      "sha256": "38a81fee5ec6f2cd6fa278014eb014fa72734288f1bb9b7a67a8cab62b7e9833"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/aipai/verification/vrma.json",
+      "bytes": 2041,
+      "sha256": "ebca570a96dac61ee6f6cd2ff12f311722c23df08fedf5a328b90766ccd325a8"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/samba/README.md",
+      "bytes": 534,
+      "sha256": "4da0e10684149c904849f63ca7eec817ad1449849a949c53cc4f97e1b713bc3f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/samba/motion.mp4",
+      "bytes": 10007965,
+      "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/samba/verification/motion.json",
+      "bytes": 3285,
+      "sha256": "33ba2bee0df814f768053e747816759492cffdbc71d506b4a449bb47a0426d53"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/samba/verification/provenance.json",
+      "bytes": 2154,
+      "sha256": "c131d7d5e53ad4eee3815dfa249bd197002282d1bd8e7f51f2422ab2354d7d77"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/samba/verification/video.json",
+      "bytes": 5155,
+      "sha256": "5c691e68fc7ed16fe8d122f44c9922638c21b0218790060bb314c3bb0f1d024e"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/samba/verification/vrma.json",
+      "bytes": 1432,
+      "sha256": "d823d2911911aaec4a55f311e74ccc313705cf2658aac298621747c2c0630b1a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris-expressions/README.md",
+      "bytes": 712,
+      "sha256": "107f0217b1b5c8e2d50278b7b920c220c301ba46f67d7401dfe52029a5adf677"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris-expressions/motion.mp4",
+      "bytes": 9473198,
+      "sha256": "a3b52ca3e1206924187ae4b9b0226230d31f089187a151e8f2ebdc0d48e1285b"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris/README.md",
+      "bytes": 592,
+      "sha256": "64bb276d13027b38e3119f32f375c90f77182e0c1cb689c45340b0360288186a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris/motion.mp4",
+      "bytes": 9405868,
+      "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris/verification/motion.json",
+      "bytes": 39805,
+      "sha256": "273854c2b284a5ab1cb6dec3e693d7d1bac88114d298be5f58a150b48fa0cbc8"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris/verification/playback.json",
+      "bytes": 14504,
+      "sha256": "dfed9cdef4d898e81a53114eb8289d348dd04062fe27984e3592ad69ea0dbdec"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris/verification/provenance.json",
+      "bytes": 6387,
+      "sha256": "5bdf93c9f2a9c8c798befd1136e7d1f4876102626d494ce54ce31baee6a5918f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/dances/tetris/verification/video.json",
+      "bytes": 7717,
+      "sha256": "5497a201e6c0aa065550c34ee0b3b1bb8a315a214eab6b2e0582bec411e007bd"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/README.md",
+      "bytes": 1265,
+      "sha256": "a2a3df7960367a7b7195f0e492f9a84cd98462cbb65d77d09f100ade1fc9eb9b"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/avatar.blend",
+      "bytes": 29261504,
+      "sha256": "c82eafbde3fcd930bcee5fe7102e31184c1fabb4e523434b76947a42f95b28b8"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/avatar.vrm",
+      "bytes": 26826764,
+      "sha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/motion.mp4",
+      "bytes": 5206220,
+      "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/verification/model.json",
+      "bytes": 32827,
+      "sha256": "cbdaa72f089f18cfe9e66b6d58768bf32d6442dcf465cdd34a2899cce6ad5d76"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/verification/motion.json",
+      "bytes": 51578,
+      "sha256": "e6b5062bc58d3f59267a854ff17b97c81afb4da37ba154ad0e7c66a0ec48346f"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/verification/playback.json",
+      "bytes": 2092,
+      "sha256": "974304168fe4a5989eb84f3fe7d2d63f0268c29551ffdfcf2d8e4a9a06c5d33b"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/verification/production.json",
+      "bytes": 23855,
+      "sha256": "b3ae5a2ba9e3e1df6cc7878f639f9a25b595e08e5d7421f928ddd865d2c678bf"
+    },
+    {
+      "path": "models/avatar-v1/charakuru/releases/k6/verification/video.json",
+      "bytes": 4594,
+      "sha256": "0dd4c927a1692b7936905f43a63f24b4a7282cf9b7bdc6a968d8b49d81565d5f"
+    },
+    {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/README.md",
-      "bytes": 2665,
-      "sha256": "caa6f1ef03e983ccff78e718a332d36a3e148a96b3b641c1f8f7df002596e8bc"
+      "bytes": 2715,
+      "sha256": "45bbe4354bafdfb8349bf4584c97317aac0735206d7ba61903b5d1e7f55c3fa4"
     },
     {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/motion.blend",
@@ -374,163 +569,13 @@
     },
     {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/production.json",
-      "bytes": 10172,
-      "sha256": "f9c243bd4a690bc1fced978705fccd400eb9f75179095eda7b1c4c4912f32444"
+      "bytes": 10180,
+      "sha256": "c8e9e1299c743b74971a2ab6e61f56c58d5630a45a7e2ef1f03ed55d31c7c653"
     },
     {
       "path": "models/avatar-v1/charakuru/studies/true-front-b/verification.json",
-      "bytes": 49918,
-      "sha256": "48cfe4e17e226fdc86a9007dc8f36349ebf219418ed633955c117b046e010c04"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/aipai/playback.json",
-      "bytes": 1561,
-      "sha256": "6618a54c8b63a5d6b1a44158c4b9d19709e3858d8382d74be719cfecb16406c6"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/aipai/provenance.json",
-      "bytes": 2035,
-      "sha256": "86c1e4752163172e29acf992d91e96331779486ba9baa9480694e88363535890"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/aipai/video.json",
-      "bytes": 6194,
-      "sha256": "83dc0cc3ee1ea5d178c21569e5c6e6da52267fcf0392f01fb99ad03c1cc838eb"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/aipai/vrma.json",
-      "bytes": 2041,
-      "sha256": "ebca570a96dac61ee6f6cd2ff12f311722c23df08fedf5a328b90766ccd325a8"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/avatar/fbx-roundtrip.json",
-      "bytes": 636,
-      "sha256": "3b16ec2d27ecaa2a656751900bb80f21c86e5824d41844de71f82a0c5585c369"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/avatar/manual-rig.json",
-      "bytes": 1656,
-      "sha256": "185fb46651efbbf90b288b291dd587b55c27aec1338b5a5f0ed3151ea9fa9e8a"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/avatar/mtoon-render.json",
-      "bytes": 1598,
-      "sha256": "a758063bea9aa164b09686f5f0daa6cdb06301e54f4cc8390a58bed872c2f5ea"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/avatar/mtoon-upgrade.json",
-      "bytes": 1488,
-      "sha256": "76fec3acae39ba6079fc0970efa85728ad39e9e0da70b6598008024167d441b7"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/avatar/video.json",
-      "bytes": 793,
-      "sha256": "50f6723f6be97cb845a438c7434793f500beb9bc27ea922fece1775fb8daee57"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/avatar/vrm-export.json",
-      "bytes": 6384,
-      "sha256": "69b05f95f0f83c0e7a2c3c7cb93f11d87bffc392ec1e1079a7efa4a22c800252"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/avatar/vrm-reload.json",
-      "bytes": 2094,
-      "sha256": "9c83d8b5585465300457a1d5269ba04cfaf070484108ab99d859753a6dd86300"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/expressions/model.json",
-      "bytes": 32743,
-      "sha256": "d7945be7552d1ac87a19d5f2eeb06d006ea09370c53de9398766f2ece99fbe0f"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/expressions/motion.json",
-      "bytes": 51571,
-      "sha256": "051b87ad07c6d6b39f3d13862575bba3351f6cb5f1e6bce801efedc768903099"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/expressions/playback.json",
-      "bytes": 2097,
-      "sha256": "2be9cfacedc39f142a892a29203b85ad6167c02645495f8e479673b181f776e3"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/expressions/production.json",
-      "bytes": 23726,
-      "sha256": "8e0871af4736a2a77cc0e49ce90533d1fcc6164baa7d8e85cbe0414a7c29d43c"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/expressions/video.json",
-      "bytes": 4599,
-      "sha256": "a992d5888310928dd77371492e1985cad6fee5c12b7ac7f70bc9bf7538f1fa91"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/samba/motion.json",
-      "bytes": 3285,
-      "sha256": "33ba2bee0df814f768053e747816759492cffdbc71d506b4a449bb47a0426d53"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/samba/provenance.json",
-      "bytes": 2152,
-      "sha256": "be5e12e99dffcd0dc7f5a746cdf212de30cac9d15d370749cff221014b6599b8"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/samba/video.json",
-      "bytes": 5153,
-      "sha256": "03578a939a9292f5af47c3454746630972945851c92083eed773bcc46f13eeb9"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/samba/vrma.json",
-      "bytes": 1432,
-      "sha256": "d823d2911911aaec4a55f311e74ccc313705cf2658aac298621747c2c0630b1a"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/tetris/motion.json",
-      "bytes": 39805,
-      "sha256": "273854c2b284a5ab1cb6dec3e693d7d1bac88114d298be5f58a150b48fa0cbc8"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/tetris/playback.json",
-      "bytes": 14504,
-      "sha256": "dfed9cdef4d898e81a53114eb8289d348dd04062fe27984e3592ad69ea0dbdec"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/tetris/provenance.json",
-      "bytes": 6386,
-      "sha256": "85d6688d609835049116648399520d921241fc90e077e58b3b9ee824c9e87f7a"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/verification/tetris/video.json",
-      "bytes": 7709,
-      "sha256": "e472956a27d2a35881f594910e6aa928cc6f139a9fbf4a735114ffe11334e3a1"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
-      "bytes": 10007965,
-      "sha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/dance-short.mp4",
-      "bytes": 6467915,
-      "sha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/dance-tetris-expressions.mp4",
-      "bytes": 9473198,
-      "sha256": "a3b52ca3e1206924187ae4b9b0226230d31f089187a151e8f2ebdc0d48e1285b"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
-      "bytes": 9405868,
-      "sha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
-      "bytes": 5206220,
-      "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693"
-    },
-    {
-      "path": "models/avatar-v1/charakuru/videos/motion-16s.mp4",
-      "bytes": 4938207,
-      "sha256": "dc84215cc388dfc517fba0179fc22815f24a5878ffe08588ac8186ea6a731a68"
+      "bytes": 49926,
+      "sha256": "575b1f8a9c61a95a22db3a00412d3d6f7e7108150f7891b852ab3619716ae131"
     }
   ],
   "materialUpdate": {
@@ -564,12 +609,12 @@
     ],
     "workingProjectSha256": "fb428067d68963c3f0a7967e13f3bb61bf2994b87dc1a2363ffa4f2001f1c75c",
     "additionalCredits": 0,
-    "verification": "verification/avatar/mtoon-upgrade.json"
+    "verification": "archive/body/verification/mtoon-upgrade.json"
   },
   "dance": {
     "completedAt": "2026-10-08T15:33:10.657736+00:00",
     "userInstruction": "なのさんがやってるところまで仕上げたい！踊らせるところまで？",
-    "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-short.mp4",
+    "canonicalVideo": "models/avatar-v1/charakuru/dances/aipai/motion.mp4",
     "videoSha256": "d34306b382a06d1d8f2b0963a5c8782c33cbbe7d5b361d71b3c998d2b6b03773",
     "dimensions": [
       720,
@@ -599,16 +644,16 @@
     "canonicalVrmUnchanged": true,
     "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
     "verification": {
-      "animation": "verification/aipai/vrma.json",
-      "playback": "verification/aipai/playback.json",
-      "video": "verification/aipai/video.json",
-      "provenance": "verification/aipai/provenance.json"
+      "animation": "dances/aipai/verification/vrma.json",
+      "playback": "dances/aipai/verification/playback.json",
+      "video": "dances/aipai/verification/video.json",
+      "provenance": "dances/aipai/verification/provenance.json"
     },
     "additionalCredits": 0,
     "additionalPurchase": false,
     "publicUpload": false
   },
-  "preferredDemo": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+  "preferredDemo": "models/avatar-v1/charakuru/releases/k6/motion.mp4",
   "danceDemo": {
     "completedAt": "2026-10-09T01:47:28.188132+09:00",
     "userInstruction": "よくデモで使われるダンスをつかって",
@@ -616,7 +661,7 @@
     "motion": "Samba Dancing",
     "motionProvider": "Adobe Mixamo",
     "referenceDemo": "https://threejs.org/examples/webgl_loader_fbx.html",
-    "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-demo.mp4",
+    "canonicalVideo": "models/avatar-v1/charakuru/dances/samba/motion.mp4",
     "videoSha256": "277aec3efd0e9440e172b9dad321a3487574d386f60adac91f52ab7e0b0c261c",
     "dimensions": [
       1080,
@@ -642,37 +687,32 @@
     "canonicalModelsUnchanged": true,
     "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
     "verification": {
-      "motion": "verification/samba/motion.json",
-      "vrma": "verification/samba/vrma.json",
-      "video": "verification/samba/video.json",
-      "provenance": "verification/samba/provenance.json"
+      "motion": "dances/samba/verification/motion.json",
+      "vrma": "dances/samba/verification/vrma.json",
+      "video": "dances/samba/verification/video.json",
+      "provenance": "dances/samba/verification/provenance.json"
     },
     "additionalCredits": 0,
     "additionalPurchase": false,
     "publicUpload": false
   },
   "layout": {
-    "organizedDate": "2026-10-09",
+    "organizedDate": "2026-10-31",
     "mode": "knowledge-agent-ops",
     "entrypoint": "models/avatar-v1/charakuru/README.md",
     "productionNotes": "models/avatar-v1/charakuru/PRODUCTION.md",
     "organizationRecord": "models/avatar-v1/charakuru/ORGANIZATION.md",
-    "videos": "models/avatar-v1/charakuru/videos",
-    "verification": {
-      "avatar": "models/avatar-v1/charakuru/verification/avatar",
-      "aipai": "models/avatar-v1/charakuru/verification/aipai",
-      "samba": "models/avatar-v1/charakuru/verification/samba",
-      "tetris": "models/avatar-v1/charakuru/verification/tetris",
-      "expressions": "models/avatar-v1/charakuru/verification/expressions"
-    },
     "images": "images/concept/avatar-v1/charakuru/README.md",
     "workingDirectory": "output/face-likeness-20261026",
-    "canonicalModelPathsPreserved": true,
+    "canonicalModelPathsPreserved": false,
     "sourceMediaBytesPreserved": true,
     "rawMotionCommitted": false,
-    "appliedMoveCount": 19,
-    "lastAddedDate": "2026-10-29",
-    "studies": "models/avatar-v1/charakuru/studies"
+    "appliedMoveCount": 68,
+    "lastAddedDate": "2026-10-31",
+    "studies": "models/avatar-v1/charakuru/studies",
+    "releases": "models/avatar-v1/charakuru/releases",
+    "dances": "models/avatar-v1/charakuru/dances",
+    "archive": "models/avatar-v1/charakuru/archive"
   },
   "danceTetris": {
     "completedAt": "2026-10-11T05:12:04.867768+00:00",
@@ -681,7 +721,7 @@
     "motion": "テトリス",
     "motionProvider": "八ツ橋まろん",
     "motionItem": "https://booth.pm/ja/items/6438933",
-    "canonicalVideo": "models/avatar-v1/charakuru/videos/dance-tetris.mp4",
+    "canonicalVideo": "models/avatar-v1/charakuru/dances/tetris/motion.mp4",
     "videoSha256": "9e8e23ef16c6cd303a961f052b7e6ce04ad5077f3b315efffe576d89aac2313d",
     "dimensions": [
       1080,
@@ -734,10 +774,10 @@
     "canonicalVrmSha256": "c53a027ec2cc357b11122415659a532a2b2eec7b8b3955bd7c5671cd49fcbaf9",
     "faceAnimation": "Fixed normal face; no blink, lip sync or expressions",
     "verification": {
-      "motion": "verification/tetris/motion.json",
-      "video": "verification/tetris/video.json",
-      "provenance": "verification/tetris/provenance.json",
-      "playback": "verification/tetris/playback.json"
+      "motion": "dances/tetris/verification/motion.json",
+      "video": "dances/tetris/verification/video.json",
+      "provenance": "dances/tetris/verification/provenance.json",
+      "playback": "dances/tetris/verification/playback.json"
     },
     "additionalCredits": 0,
     "additionalPurchase": false,
@@ -791,7 +831,7 @@
       ],
       "images": 45
     },
-    "canonicalVideo": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+    "canonicalVideo": "models/avatar-v1/charakuru/releases/k6/motion.mp4",
     "videoSha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693",
     "dimensions": [
       1540,
@@ -805,11 +845,11 @@
     "renderedVideoPlaybackVerified": true,
     "externalAvatarHostPlaybackVerified": false,
     "verification": {
-      "model": "verification/expressions/model.json",
-      "motion": "verification/expressions/motion.json",
-      "playback": "verification/expressions/playback.json",
-      "production": "verification/expressions/production.json",
-      "video": "verification/expressions/video.json"
+      "model": "releases/k6/verification/model.json",
+      "motion": "releases/k6/verification/motion.json",
+      "playback": "releases/k6/verification/playback.json",
+      "production": "releases/k6/verification/production.json",
+      "video": "releases/k6/verification/video.json"
     },
     "previousRevision": {
       "checkpoint": "753eec81e917822f6d237a22f32025f858b8f7c7",

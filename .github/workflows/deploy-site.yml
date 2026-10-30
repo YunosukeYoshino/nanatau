@@ -6,7 +6,8 @@ on:
     paths:
       - "site/**"
       - "images/concept/showcase/**"
-      - "models/avatar-v1/charakuru/videos/**"
+      - "models/avatar-v1/charakuru/releases/k6/motion.mp4"
+      - "models/avatar-v1/charakuru/dances/tetris-expressions/motion.mp4"
       - ".github/workflows/deploy-site.yml"
   workflow_dispatch:
 

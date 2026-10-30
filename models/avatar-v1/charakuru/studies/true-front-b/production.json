@@ -14,7 +14,7 @@
     "sha256": "35a86202303f4cee4d2f8034d065cf431862837c04376c22f49f9b917e17ebc1"
   },
   "reference": {
-    "path": "images/concept/avatar-v1/charakuru/true-front-b/reference.png",
+    "path": "images/concept/avatar-v1/charakuru/studies/true-front-b/reference.png",
     "sha256": "4f1cb08e373bdef3b8a6e2939af862a78679510efedaa6053d8c5b4121cc1d70",
     "generationMethod": "built-in image_gen",
     "sourceReferences": [

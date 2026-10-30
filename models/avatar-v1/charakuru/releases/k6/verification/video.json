@@ -1,6 +1,6 @@
 {
   "status": "encoded_and_visually_reviewed",
-  "path": "models/avatar-v1/charakuru/videos/face-neck-motion.mp4",
+  "path": "models/avatar-v1/charakuru/releases/k6/motion.mp4",
   "sha256": "2c63852e2d2f33da549d6b1883d4b418e98707a51ba089e18d1f75e08692f693",
   "bytes": 5206220,
   "sourceVrmSha256": "19be35ce5f58d219cff029d0c0f19032752ecdfe7cbd6cf528703aa458a2990a",
