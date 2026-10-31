@@ -52,7 +52,7 @@ output/                     -- 生成出力（.gitignore）
    ```bash
    export $(grep GEMINI_API_KEY .env | xargs)
    python3 .claude/skills/nanatau/scripts/generate_image.py \
-     --ref images/concept/reference_sheet.png \
+     --ref images/concept/initial/reference_sheet.png \
      --model gemini-3.1-flash-image-preview \
      "プロンプト" output/character/images/<name>.png
    ```

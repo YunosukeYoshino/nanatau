@@ -104,7 +104,7 @@ Charakuruで制作した3Dのななたう。2026-10-29に正面顔Bの雰囲気�
 | 表情付きVRM（K6）を使う | [avatar.vrm](models/avatar-v1/charakuru/releases/k6/avatar.vrm) |
 | 表情付きモデル（K6）を編集する | [avatar.blend](models/avatar-v1/charakuru/releases/k6/avatar.blend) |
 | イラストや表情素材を見る | [Showcaseのビジュアル](images/concept/showcase/) |
-| 配信用の2D素材を見る | [透過PNG](images/png-tuber/transparent/)・[MotionPNGTuber](images/png-tuber/motion/) |
+| 配信用の2D素材を見る | [PNGアバター素材一覧](images/png-tuber/README.md) |
 | 制作過程・検証・出典を読む | [Charakuru制作記録](models/avatar-v1/charakuru/PRODUCTION.md) |
 
 3Dモデルは本人のみ使用・再配布不可の設定です。モデル固有の利用条件は[制作記録](models/avatar-v1/charakuru/PRODUCTION.md)とVRMメタデータを確認してください。動画の楽曲・モーションの出典と条件も、同じ制作記録にまとめています。
@@ -129,7 +129,8 @@ bun run dev
 | 保存先 | 内容 |
 | --- | --- |
 | `models/` | 採用モデル、確認用モデル、動画、検証記録 |
-| `images/` | 採用したイラスト、モデルの確認画像、サイト用画像 |
+| [images/](images/README.md) | 採用したイラスト、モデルの確認画像、サイト用画像、参照資料 |
+| [docs/](docs/README.md) | 制作方針、過去の試作履歴、ブログのデザイン原稿 |
 | `output/` | 生成途中のデータと再現用スクリプト。Git管理外 |
 | `site/` | React / Viteのキャラクター紹介サイト |
 | `blog/` | Lumeのブログ |
