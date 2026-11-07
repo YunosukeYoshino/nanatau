@@ -6,7 +6,7 @@ readme = ".claude/skills/motion-pngtuber-nanatau/README.md"
 requires-python = "==3.10.*"
 # ML toolchain deps (torch/mmdet/mmpose/anime-face-detector) are intentionally undeclared; they are installed separately via mim (see .claude/skills/motion-pngtuber-nanatau/README.md).
 dependencies = [
-    "numpy>=1.24.0,<2.0.0",
+    "numpy>=1.24.0,<3.0.0",
     "opencv-python>=4.8.0",
     "pillow>=10.0.0",
     "scipy>=1.10.0",
